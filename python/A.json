@@ -1,0 +1,279 @@
+{
+  "A": {
+    "code": "A",
+    "subject": "General Works",
+    "count": 0,
+    "children": {
+      "AC": {
+        "id": "AC",
+        "subject": "Collections.  Series.  Collected works",
+        "count": 0,
+        "children": {
+          "AC1-195": {
+            "id": "AC1-195",
+            "subject": "Collections of monographs, essays, etc.",
+            "count": 0,
+            "children": {
+              "AC1-8": {
+                "id": "AC1-8",
+                "subject": "American and English",
+                "count": 3036,
+                "children": {}
+              },
+              "AC9-195": {
+                "id": "AC9-195",
+                "subject": "Other languages",
+                "count": 8216,
+                "children": {}
+              }
+            }
+          },
+          "AC1-999": {
+            "id": "AC1-999",
+            "subject": "Collections.  Series.  Collected works",
+            "count": 1,
+            "children": {
+              "AC901-995": {
+                "id": "AC901-995",
+                "subject": "Pamphlet collections",
+                "count": 9279,
+                "children": {}
+              },
+              "AC801-895": {
+                "id": "AC801-895",
+                "subject": "Inaugural and program dissertations",
+                "count": 19,
+                "children": {}
+              },
+              "AC999": {
+                "id": "AC999",
+                "subject": "Scrapbooks",
+                "count": 3,
+                "children": {}
+              }
+            }
+          }
+        }
+      },
+      "AE": {
+        "id": "AE",
+        "subject": "Encyclopedias",
+        "count": 0,
+        "children": {
+          "AE1-90": {
+            "id": "AE1-90",
+            "subject": "Encyclopedias",
+            "count": 312,
+            "children": {
+              "AE5-90": {
+                "id": "AE5-90",
+                "subject": "By language",
+                "count": 1219,
+                "children": {}
+              }
+            }
+          }
+        }
+      },
+      "AG": {
+        "id": "AG",
+        "subject": "Dictionaries and other general reference works",
+        "count": 0,
+        "children": {
+          "AG2-600": {
+            "id": "AG2-600",
+            "subject": "Dictionaries and other general reference works",
+            "count": 2997,
+            "children": {}
+          }
+        }
+      },
+      "AZ": {
+        "id": "AZ",
+        "subject": "History of scholarship and learning.  The humanities",
+        "count": 0,
+        "children": {
+          "AZ20-999": {
+            "id": "AZ20-999",
+            "subject": "History of scholarship and learning.  The humanities",
+            "count": 330,
+            "children": {
+              "AZ200-361": {
+                "id": "AZ200-361",
+                "subject": "History",
+                "count": 268,
+                "children": {}
+              },
+              "AZ101-181": {
+                "id": "AZ101-181",
+                "subject": "Philosophy.  Theory",
+                "count": 354,
+                "children": {}
+              },
+              "AZ501-908": {
+                "id": "AZ501-908",
+                "subject": "By region or country",
+                "count": 745,
+                "children": {}
+              },
+              "AZ191-193": {
+                "id": "AZ191-193",
+                "subject": "Evaluation",
+                "count": 20,
+                "children": {}
+              }
+            }
+          }
+        }
+      },
+      "AM": {
+        "id": "AM",
+        "subject": "Museums.  Collectors and collecting",
+        "count": 0,
+        "children": {
+          "AM1-501": {
+            "id": "AM1-501",
+            "subject": "Museums.  Collectors and collecting",
+            "count": 2022,
+            "children": {
+              "AM10-100": {
+                "id": "AM10-100",
+                "subject": "By country",
+                "count": 1756,
+                "children": {}
+              },
+              "AM200-501": {
+                "id": "AM200-501",
+                "subject": "Collectors and collecting",
+                "count": 318,
+                "children": {}
+              },
+              "AM111-160": {
+                "id": "AM111-160",
+                "subject": "Museology.  Museum methods, technique, etc.",
+                "count": 533,
+                "children": {}
+              }
+            }
+          }
+        }
+      },
+      "AS": {
+        "id": "AS",
+        "subject": "Academies and learned societies",
+        "count": 0,
+        "children": {
+          "AS1-945": {
+            "id": "AS1-945",
+            "subject": "Academies and learned societies",
+            "count": 729,
+            "children": {
+              "AS11-785": {
+                "id": "AS11-785",
+                "subject": "By region or country",
+                "count": 14298,
+                "children": {}
+              },
+              "AS2.5-4": {
+                "id": "AS2.5-4",
+                "subject": "International associations, congresses, conferences, etc.",
+                "count": 619,
+                "children": {}
+              }
+            }
+          }
+        }
+      },
+      "AP": {
+        "id": "AP",
+        "subject": "Periodicals",
+        "count": 0,
+        "children": {
+          "AP1-271": {
+            "id": "AP1-271",
+            "subject": "Periodicals",
+            "count": 613,
+            "children": {
+              "AP200-230": {
+                "id": "AP200-230",
+                "subject": "Juvenile periodicals",
+                "count": 10,
+                "children": {}
+              },
+              "AP101-115": {
+                "id": "AP101-115",
+                "subject": "Humorous periodicals",
+                "count": 3,
+                "children": {}
+              },
+              "AP250-265": {
+                "id": "AP250-265",
+                "subject": "Periodicals for women",
+                "count": 1,
+                "children": {}
+              }
+            }
+          }
+        }
+      },
+      "AY": {
+        "id": "AY",
+        "subject": "Yearbooks.  Almanacs.  Directories",
+        "count": 0,
+        "children": {
+          "AY10-2001": {
+            "id": "AY10-2001",
+            "subject": "Yearbooks.  Almanacs.  Directories",
+            "count": 1,
+            "children": {
+              "AY30-1730": {
+                "id": "AY30-1730",
+                "subject": "Almanacs",
+                "count": 259,
+                "children": {}
+              },
+              "AY10-29": {
+                "id": "AY10-29",
+                "subject": "Annuals",
+                "count": 84,
+                "children": {}
+              },
+              "AY2001": {
+                "id": "AY2001",
+                "subject": "Directories",
+                "count": 3,
+                "children": {}
+              }
+            }
+          }
+        }
+      },
+      "AI": {
+        "id": "AI",
+        "subject": "Indexes",
+        "count": 0,
+        "children": {
+          "AI1-21": {
+            "id": "AI1-21",
+            "subject": "Indexes",
+            "count": 270,
+            "children": {}
+          }
+        }
+      },
+      "AN": {
+        "id": "AN",
+        "subject": "Newspapers",
+        "count": 0,
+        "children": {
+          "AN": {
+            "id": "AN",
+            "subject": "Newspapers",
+            "count": 1,
+            "children": {}
+          }
+        }
+      }
+    }
+  }
+}
