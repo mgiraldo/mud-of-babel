@@ -298,7 +298,9 @@ function getLocationDescription(game, forcedLongDescription){
 	var currentLocation = getCurrentLocation(game);
 	var description;
 	if(currentLocation.firstVisit || forcedLongDescription){
-		description = currentLocation.description;
+		description = currentLocation.displayName + '\n';
+		description = description.concat('-'.repeat(currentLocation.displayName.length) + '\n');
+		description = description.concat(currentLocation.description);
 		if(currentLocation.items){
 			description = description.concat(itemsToString(currentLocation.items));
 		}
@@ -308,6 +310,7 @@ function getLocationDescription(game, forcedLongDescription){
 	} else {
 		description = currentLocation.displayName;
 	}
+	description = '\n'.concat(description);
 	return description;
 }
 

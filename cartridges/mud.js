@@ -12,7 +12,7 @@ var gameData = {
     "Plaza": {
       "firstVisit": true,
       "displayName": "General Works Plaza",
-      "description": "General Works Plaza\n-------------------\nYou are in an expansive plaza surrounded by 10 buildings conforming General Works.\nThe buildings are accessible via their classification code, visible above the main door: [A_AC] \u201cCollections.  Series.  Collected works\u201d Building, [A_AE] \u201cEncyclopedias\u201d Building, [A_AG] \u201cDictionaries and other general reference works\u201d Building, [A_AZ] \u201cHistory of scholarship and learning.  The humanities\u201d Building, [A_AM] \u201cMuseums.  Collectors and collecting\u201d Building, [A_AS] \u201cAcademies and learned societies\u201d Building, [A_AP] \u201cPeriodicals\u201d Building, [A_AY] \u201cYearbooks.  Almanacs.  Directories\u201d Building, [A_AI] \u201cIndexes\u201d Building, [A_AN] \u201cNewspapers\u201d Building.",
+      "description": "You are in an expansive plaza surrounded by 10 buildings conforming General Works.\nThe buildings are accessible via their classification code, visible above the main door: [A_AC] \u201cCollections.  Series.  Collected works\u201d Building, [A_AE] \u201cEncyclopedias\u201d Building, [A_AG] \u201cDictionaries and other general reference works\u201d Building, [A_AZ] \u201cHistory of scholarship and learning.  The humanities\u201d Building, [A_AM] \u201cMuseums.  Collectors and collecting\u201d Building, [A_AS] \u201cAcademies and learned societies\u201d Building, [A_AP] \u201cPeriodicals\u201d Building, [A_AY] \u201cYearbooks.  Almanacs.  Directories\u201d Building, [A_AI] \u201cIndexes\u201d Building, [A_AN] \u201cNewspapers\u201d Building.",
       "interactables": {},
       "items": {},
       "exits": {
@@ -61,7 +61,7 @@ var gameData = {
     "A_AC": {
       "firstVisit": true,
       "displayName": "Collections.  Series.  Collected works",
-      "description": "\n\u201cCollections.  Series.  Collected works\u201d Building\n-------------------------------------------------\nThere are 2 rooms throughout this building. Visit them with the appropriate code. [A_AC_AC1-195] \u201cCollections of monographs, essays, etc.\u201d Room, [A_AC_AC1-999] \u201cCollections.  Series.  Collected works\u201d Room.",
+      "description": "There are 2 rooms throughout this building. Visit them with the appropriate code. [A_AC_AC1-195] \u201cCollections of monographs, essays, etc.\u201d Room, [A_AC_AC1-999] \u201cCollections.  Series.  Collected works\u201d Room.",
       "interactables": {},
       "items": {},
       "exits": {
@@ -108,7 +108,7 @@ var gameData = {
     "A_AE": {
       "firstVisit": true,
       "displayName": "Encyclopedias",
-      "description": "\n\u201cEncyclopedias\u201d Building\n------------------------\nThere are 1 rooms throughout this building. Visit them with the appropriate code. [A_AE_AE1-90] \u201cEncyclopedias\u201d Room.",
+      "description": "There is 1 room throughout this building. Visit it with the appropriate code. [A_AE_AE1-90] \u201cEncyclopedias\u201d Room.",
       "interactables": {},
       "items": {},
       "exits": {
@@ -138,7 +138,7 @@ var gameData = {
     "A_AG": {
       "firstVisit": true,
       "displayName": "Dictionaries and other general reference works",
-      "description": "\n\u201cDictionaries and other general reference works\u201d Building\n---------------------------------------------------------\nThere are 1 rooms throughout this building. Visit them with the appropriate code. [A_AG_AG2-600] \u201cDictionaries and other general reference works\u201d Room.",
+      "description": "There is 1 room throughout this building. Visit it with the appropriate code. [A_AG_AG2-600] \u201cDictionaries and other general reference works\u201d Room.",
       "interactables": {},
       "items": {},
       "exits": {
@@ -168,7 +168,7 @@ var gameData = {
     "A_AZ": {
       "firstVisit": true,
       "displayName": "History of scholarship and learning.  The humanities",
-      "description": "\n\u201cHistory of scholarship and learning.  The humanities\u201d Building\n---------------------------------------------------------------\nThere are 1 rooms throughout this building. Visit them with the appropriate code. [A_AZ_AZ20-999] \u201cHistory of scholarship and learning.  The humanities\u201d Room.",
+      "description": "There is 1 room throughout this building. Visit it with the appropriate code. [A_AZ_AZ20-999] \u201cHistory of scholarship and learning.  The humanities\u201d Room.",
       "interactables": {},
       "items": {},
       "exits": {
@@ -198,7 +198,7 @@ var gameData = {
     "A_AM": {
       "firstVisit": true,
       "displayName": "Museums.  Collectors and collecting",
-      "description": "\n\u201cMuseums.  Collectors and collecting\u201d Building\n----------------------------------------------\nThere are 1 rooms throughout this building. Visit them with the appropriate code. [A_AM_AM1-501] \u201cMuseums.  Collectors and collecting\u201d Room.",
+      "description": "There is 1 room throughout this building. Visit it with the appropriate code. [A_AM_AM1-501] \u201cMuseums.  Collectors and collecting\u201d Room.",
       "interactables": {},
       "items": {},
       "exits": {
@@ -228,7 +228,7 @@ var gameData = {
     "A_AS": {
       "firstVisit": true,
       "displayName": "Academies and learned societies",
-      "description": "\n\u201cAcademies and learned societies\u201d Building\n------------------------------------------\nThere are 1 rooms throughout this building. Visit them with the appropriate code. [A_AS_AS1-945] \u201cAcademies and learned societies\u201d Room.",
+      "description": "There is 1 room throughout this building. Visit it with the appropriate code. [A_AS_AS1-945] \u201cAcademies and learned societies\u201d Room.",
       "interactables": {},
       "items": {},
       "exits": {
@@ -258,7 +258,7 @@ var gameData = {
     "A_AP": {
       "firstVisit": true,
       "displayName": "Periodicals",
-      "description": "\n\u201cPeriodicals\u201d Building\n----------------------\nThere are 1 rooms throughout this building. Visit them with the appropriate code. [A_AP_AP1-271] \u201cPeriodicals\u201d Room.",
+      "description": "There is 1 room throughout this building. Visit it with the appropriate code. [A_AP_AP1-271] \u201cPeriodicals\u201d Room.",
       "interactables": {},
       "items": {},
       "exits": {
@@ -288,7 +288,7 @@ var gameData = {
     "A_AY": {
       "firstVisit": true,
       "displayName": "Yearbooks.  Almanacs.  Directories",
-      "description": "\n\u201cYearbooks.  Almanacs.  Directories\u201d Building\n---------------------------------------------\nThere are 1 rooms throughout this building. Visit them with the appropriate code. [A_AY_AY10-2001] \u201cYearbooks.  Almanacs.  Directories\u201d Room.",
+      "description": "There is 1 room throughout this building. Visit it with the appropriate code. [A_AY_AY10-2001] \u201cYearbooks.  Almanacs.  Directories\u201d Room.",
       "interactables": {},
       "items": {},
       "exits": {
@@ -318,7 +318,7 @@ var gameData = {
     "A_AI": {
       "firstVisit": true,
       "displayName": "Indexes",
-      "description": "\n\u201cIndexes\u201d Building\n------------------\nThere are 1 rooms throughout this building. Visit them with the appropriate code. [A_AI_AI1-21] \u201cIndexes\u201d Room.",
+      "description": "There is 1 room throughout this building. Visit it with the appropriate code. [A_AI_AI1-21] \u201cIndexes\u201d Room.",
       "interactables": {},
       "items": {},
       "exits": {
@@ -348,7 +348,7 @@ var gameData = {
     "A_AN": {
       "firstVisit": true,
       "displayName": "Newspapers",
-      "description": "\n\u201cNewspapers\u201d Building\n---------------------\nThere are 1 rooms throughout this building. Visit them with the appropriate code. [A_AN_AN] \u201cNewspapers\u201d Room.",
+      "description": "There is 1 room throughout this building. Visit it with the appropriate code. [A_AN_AN] \u201cNewspapers\u201d Room.",
       "interactables": {},
       "items": {},
       "exits": {
