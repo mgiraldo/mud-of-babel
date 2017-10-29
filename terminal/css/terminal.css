@@ -8,31 +8,33 @@
 	outline: none;
 }
 html, body, #input, #display{
+	font-family: "Input Mono", "Courier New", Courier, monospace;
+	font-size: 16px;
 	width: 100%;
 	height: 100%;
 }
 #input{
-	height: 30px;
+	height: 1rem;
 	position: absolute;
 	bottom: 0;
-	border-top: 1px solid #00D100;
-	padding: 10px;
+	border-top: 0.05rem solid #00D100;
+	padding: 0.8rem;
 }
 #display{
 	line-height: 1.5em;
-	padding: 10px;
+	padding: 0.7rem;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	resize: none;
 }
 #display::-webkit-scrollbar
 {
-	width: 14px;
+	width: 1rem;
 }
 #display::-webkit-scrollbar-thumb
 {
 	background-color: #00D100;
-	border: 6px solid #000000;
+	border: 0.33rem solid #000000;
 }
 #display::-webkit-scrollbar-track
 {
