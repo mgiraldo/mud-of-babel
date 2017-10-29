@@ -1,3 +1,9 @@
+# Mac ignores
+.DS_Store
+venv/
+venv3/
+.ipynb_checkpoints/
+
 # Logs
 logs
 *.log
