@@ -1,4 +1,4 @@
-{
+var gameData = {
   "commandCounter": 0,
   "gameOver": false,
   "introText": "\n\nWelcome to the MUD of Babel!\n",
@@ -346,4 +346,25 @@
       }
     }
   }
+}
+
+var gameActions = {
+
+}
+
+module.exports.gameData = gameData;
+module.exports.gameActions = gameActions;
+
+function end(){
+  if(gameData.player.lightSource){
+    gameData.map['End'].description = 'You found more gold than you can carry.';
+  } else {
+    gameData.map['End'].description = 'It is so dark, you can\'t see anything! You fall down an unseen crevice. Your body is never recovered.';
+  }
+  gameData.gameOver = true;
+}
+
+function useLightSource(){
+  gameData.player.lightSource = true;
+  return 'You click on the light attached to the helmet.'
 }
