@@ -272,10 +272,10 @@ function exitsToString(exitsObject){
 		case 0:
 			return '';
 		case 	1:
-			var returnString = ' Exit is ';
+			var returnString = '\n\nExit is: ';
 			break;
 		default :
-			var returnString = ' Exits are ';
+			var returnString = '\n\nExits are: ';
 	}
 	for(i=0; i<visibleExits.length; ++i){
 		returnString = returnString.concat(visibleExits[i]);
