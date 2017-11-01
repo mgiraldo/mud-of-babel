@@ -1,0 +1,3988 @@
+{
+  "B": {
+    "code": "B",
+    "subject": "Philosophy, Psychology, Religion",
+    "count": 0,
+    "children": {
+      "BV": {
+        "id": "BV",
+        "subject": "Practical Theology",
+        "count": 0,
+        "children": {
+          "BV1-5099": {
+            "id": "BV1-5099",
+            "subject": "Practical Theology",
+            "count": 205,
+            "children": {
+              "BV4000-4470": {
+                "id": "BV4000-4470",
+                "subject": "Pastoral theology",
+                "count": 2616,
+                "children": {
+                  "BV4200-4317": {
+                    "id": "BV4200-4317",
+                    "subject": "Preaching.  Homiletics",
+                    "count": 2064,
+                    "children": {
+                      "BV4239-4317": {
+                        "id": "BV4239-4317",
+                        "subject": "Sermons",
+                        "count": 2005,
+                        "children": {}
+                      }
+                    }
+                  },
+                  "BV4390-4399": {
+                    "id": "BV4390-4399",
+                    "subject": "Personal life of the clergy",
+                    "count": 373,
+                    "children": {}
+                  },
+                  "BV4400-4470": {
+                    "id": "BV4400-4470",
+                    "subject": "Practical church work.  Social work.  Work of the layman",
+                    "count": 2489,
+                    "children": {}
+                  },
+                  "BV4019-4180": {
+                    "id": "BV4019-4180",
+                    "subject": "Education",
+                    "count": 0,
+                    "children": {
+                      "BV4019-4167": {
+                        "id": "BV4019-4167",
+                        "subject": "Training for the ordained ministry",
+                        "count": 653,
+                        "children": {}
+                      },
+                      "BV4168-4180": {
+                        "id": "BV4168-4180",
+                        "subject": "Training for lay workers",
+                        "count": 7,
+                        "children": {}
+                      }
+                    }
+                  }
+                }
+              },
+              "BV2000-3705": {
+                "id": "BV2000-3705",
+                "subject": "Missions",
+                "count": 2124,
+                "children": {
+                  "BV2750-3695": {
+                    "id": "BV2750-3695",
+                    "subject": "Missions in individual countries",
+                    "count": 6095,
+                    "children": {}
+                  },
+                  "BV2123-2595": {
+                    "id": "BV2123-2595",
+                    "subject": "Special churches",
+                    "count": 25,
+                    "children": {
+                      "BV2350-2595": {
+                        "id": "BV2350-2595",
+                        "subject": "Protestant churches",
+                        "count": 940,
+                        "children": {}
+                      },
+                      "BV2130-2300": {
+                        "id": "BV2130-2300",
+                        "subject": "Roman Catholic Church",
+                        "count": 562,
+                        "children": {}
+                      }
+                    }
+                  },
+                  "BV2610-2695": {
+                    "id": "BV2610-2695",
+                    "subject": "Special types of missions",
+                    "count": 695,
+                    "children": {}
+                  }
+                }
+              },
+              "BV3750-3799": {
+                "id": "BV3750-3799",
+                "subject": "Evangelism.  Revivals",
+                "count": 2325,
+                "children": {}
+              },
+              "BV590-1652": {
+                "id": "BV590-1652",
+                "subject": "Ecclesiastical theology",
+                "count": 1546,
+                "children": {
+                  "BV1460-1615": {
+                    "id": "BV1460-1615",
+                    "subject": "Religious education (General)",
+                    "count": 3762,
+                    "children": {}
+                  },
+                  "BV800-873": {
+                    "id": "BV800-873",
+                    "subject": "Sacraments.  Ordinances",
+                    "count": 338,
+                    "children": {
+                      "BV803-814": {
+                        "id": "BV803-814",
+                        "subject": "Baptism",
+                        "count": 442,
+                        "children": {}
+                      },
+                      "BV823-828": {
+                        "id": "BV823-828",
+                        "subject": "Holy Communion.  Lord's Supper.  Eucharist",
+                        "count": 585,
+                        "children": {}
+                      },
+                      "BV835-838": {
+                        "id": "BV835-838",
+                        "subject": "Marriage",
+                        "count": 701,
+                        "children": {}
+                      },
+                      "BV840-850": {
+                        "id": "BV840-850",
+                        "subject": "Penance",
+                        "count": 75,
+                        "children": {}
+                      }
+                    }
+                  },
+                  "BV652-652.9": {
+                    "id": "BV652-652.9",
+                    "subject": "Church management.  Efficiency",
+                    "count": 1548,
+                    "children": {}
+                  },
+                  "BV598-603": {
+                    "id": "BV598-603",
+                    "subject": "The Church",
+                    "count": 1901,
+                    "children": {}
+                  },
+                  "BV770-777": {
+                    "id": "BV770-777",
+                    "subject": "Church finance.  Church property",
+                    "count": 598,
+                    "children": {}
+                  },
+                  "BV700-707": {
+                    "id": "BV700-707",
+                    "subject": "Parish.  Congregation.  The local church",
+                    "count": 120,
+                    "children": {}
+                  },
+                  "BV659-683": {
+                    "id": "BV659-683",
+                    "subject": "Ministry.  Clergy.  Religious vocations",
+                    "count": 938,
+                    "children": {}
+                  },
+                  "BV900-1450": {
+                    "id": "BV900-1450",
+                    "subject": "Religious societies, associations, etc.",
+                    "count": 40,
+                    "children": {
+                      "BV950-1280": {
+                        "id": "BV950-1280",
+                        "subject": "Religious societies of men, brotherhoods, etc.",
+                        "count": 70,
+                        "children": {
+                          "BV1000-1220": {
+                            "id": "BV1000-1220",
+                            "subject": "Young Men's Christian Associations",
+                            "count": 265,
+                            "children": {}
+                          }
+                        }
+                      },
+                      "BV1300-1395": {
+                        "id": "BV1300-1395",
+                        "subject": "Religious societies of women",
+                        "count": 4,
+                        "children": {
+                          "BV1300-1393": {
+                            "id": "BV1300-1393",
+                            "subject": "Young Women's Christian Associations",
+                            "count": 81,
+                            "children": {}
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "BV637-637.5": {
+                    "id": "BV637-637.5",
+                    "subject": "City churches",
+                    "count": 159,
+                    "children": {}
+                  },
+                  "BV1620-1652": {
+                    "id": "BV1620-1652",
+                    "subject": "Social life, recreation, etc., in the church",
+                    "count": 107,
+                    "children": {}
+                  },
+                  "BV629-631": {
+                    "id": "BV629-631",
+                    "subject": "Church and state",
+                    "count": 332,
+                    "children": {}
+                  },
+                  "BV652.95-657": {
+                    "id": "BV652.95-657",
+                    "subject": "Mass media and telecommunication in religion",
+                    "count": 414,
+                    "children": {}
+                  },
+                  "BV895-896": {
+                    "id": "BV895-896",
+                    "subject": "Shrines.  Holy places",
+                    "count": 48,
+                    "children": {}
+                  },
+                  "BV646-651": {
+                    "id": "BV646-651",
+                    "subject": "Church polity",
+                    "count": 143,
+                    "children": {}
+                  },
+                  "BV638-638.8": {
+                    "id": "BV638-638.8",
+                    "subject": "The rural church.  The church and country life",
+                    "count": 123,
+                    "children": {}
+                  }
+                }
+              },
+              "BV4485-5099": {
+                "id": "BV4485-5099",
+                "subject": "Practical religion.  The Christian life",
+                "count": 16110,
+                "children": {
+                  "BV4800-4897": {
+                    "id": "BV4800-4897",
+                    "subject": "Works of meditation and devotion",
+                    "count": 5410,
+                    "children": {}
+                  },
+                  "BV4520-4526.2": {
+                    "id": "BV4520-4526.2",
+                    "subject": "Religious duties",
+                    "count": 914,
+                    "children": {}
+                  },
+                  "BV4625-4780": {
+                    "id": "BV4625-4780",
+                    "subject": "Moral theology",
+                    "count": 0,
+                    "children": {
+                      "BV4630-4647": {
+                        "id": "BV4630-4647",
+                        "subject": "Virtues",
+                        "count": 2645,
+                        "children": {}
+                      },
+                      "BV4625-4627": {
+                        "id": "BV4625-4627",
+                        "subject": "Sins and vices",
+                        "count": 323,
+                        "children": {}
+                      },
+                      "BV4650-4715": {
+                        "id": "BV4650-4715",
+                        "subject": "Precepts from the Bible",
+                        "count": 386,
+                        "children": {}
+                      },
+                      "BV4720-4780": {
+                        "id": "BV4720-4780",
+                        "subject": "Precepts of the Church.  Commandments of the Church",
+                        "count": 175,
+                        "children": {}
+                      }
+                    }
+                  },
+                  "BV4900-4911": {
+                    "id": "BV4900-4911",
+                    "subject": "Works of consolation and cheer",
+                    "count": 1832,
+                    "children": {}
+                  },
+                  "BV5070-5095": {
+                    "id": "BV5070-5095",
+                    "subject": "Mysticism",
+                    "count": 1770,
+                    "children": {}
+                  },
+                  "BV5015-5068": {
+                    "id": "BV5015-5068",
+                    "subject": "Asceticism",
+                    "count": 331,
+                    "children": {}
+                  },
+                  "BV4912-4950": {
+                    "id": "BV4912-4950",
+                    "subject": "Conversion literature",
+                    "count": 612,
+                    "children": {}
+                  },
+                  "BV5099": {
+                    "id": "BV5099",
+                    "subject": "Quietism",
+                    "count": 15,
+                    "children": {}
+                  }
+                }
+              },
+              "BV5-530": {
+                "id": "BV5-530",
+                "subject": "Worship (Public and private)",
+                "count": 810,
+                "children": {
+                  "BV30-135": {
+                    "id": "BV30-135",
+                    "subject": "Times and seasons.  The Church year",
+                    "count": 543,
+                    "children": {
+                      "BV80-105": {
+                        "id": "BV80-105",
+                        "subject": "Fasts",
+                        "count": 471,
+                        "children": {}
+                      },
+                      "BV107-133": {
+                        "id": "BV107-133",
+                        "subject": "Lord's Day.  Sunday.  Sabbath",
+                        "count": 202,
+                        "children": {}
+                      },
+                      "BV43-64": {
+                        "id": "BV43-64",
+                        "subject": "Feast days",
+                        "count": 615,
+                        "children": {}
+                      },
+                      "BV65-70": {
+                        "id": "BV65-70",
+                        "subject": "Saints' days",
+                        "count": 1,
+                        "children": {}
+                      }
+                    }
+                  },
+                  "BV301-530": {
+                    "id": "BV301-530",
+                    "subject": "Hymnology",
+                    "count": 476,
+                    "children": {
+                      "BV467-510": {
+                        "id": "BV467-510",
+                        "subject": "Hymns in languages other than English",
+                        "count": 554,
+                        "children": {}
+                      },
+                      "BV360-465": {
+                        "id": "BV360-465",
+                        "subject": "Denominational and special types of",
+                        "count": 274,
+                        "children": {}
+                      }
+                    }
+                  },
+                  "BV205-287": {
+                    "id": "BV205-287",
+                    "subject": "Prayer",
+                    "count": 4049,
+                    "children": {}
+                  },
+                  "BV169-199": {
+                    "id": "BV169-199",
+                    "subject": "Liturgy and ritual",
+                    "count": 1061,
+                    "children": {}
+                  },
+                  "BV150-168": {
+                    "id": "BV150-168",
+                    "subject": "Christian symbols and symbolism",
+                    "count": 357,
+                    "children": {}
+                  },
+                  "BV200": {
+                    "id": "BV200",
+                    "subject": "Family worship",
+                    "count": 6,
+                    "children": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "BJ": {
+        "id": "BJ",
+        "subject": "Ethics",
+        "count": 0,
+        "children": {
+          "BJ1801-2195": {
+            "id": "BJ1801-2195",
+            "subject": "Social usages.  Etiquette",
+            "count": 1516,
+            "children": {
+              "BJ2021-2078": {
+                "id": "BJ2021-2078",
+                "subject": "Etiquette of entertaining",
+                "count": 306,
+                "children": {}
+              },
+              "BJ2139-2156": {
+                "id": "BJ2139-2156",
+                "subject": "Etiquette of travel",
+                "count": 5,
+                "children": {}
+              },
+              "BJ2195": {
+                "id": "BJ2195",
+                "subject": "Telephone etiquette",
+                "count": 16,
+                "children": {}
+              }
+            }
+          },
+          "BJ1-1725": {
+            "id": "BJ1-1725",
+            "subject": "Ethics",
+            "count": 4817,
+            "children": {
+              "BJ1518-1697": {
+                "id": "BJ1518-1697",
+                "subject": "Individual ethics.  Character.  Virtue",
+                "count": 7643,
+                "children": {}
+              },
+              "BJ71-1185": {
+                "id": "BJ71-1185",
+                "subject": "History and general works",
+                "count": 4986,
+                "children": {}
+              },
+              "BJ1188-1295": {
+                "id": "BJ1188-1295",
+                "subject": "Religious ethics",
+                "count": 4164,
+                "children": {}
+              },
+              "BJ1298-1335": {
+                "id": "BJ1298-1335",
+                "subject": "Evolutionary and genetic ethics",
+                "count": 120,
+                "children": {}
+              },
+              "BJ1725": {
+                "id": "BJ1725",
+                "subject": "Ethics of social groups, classes, etc.  Professional ethics",
+                "count": 157,
+                "children": {}
+              },
+              "BJ1395": {
+                "id": "BJ1395",
+                "subject": "Feminist ethics",
+                "count": 50,
+                "children": {}
+              },
+              "BJ1390-1390.5": {
+                "id": "BJ1390-1390.5",
+                "subject": "Communist ethics",
+                "count": 541,
+                "children": {}
+              },
+              "BJ1388": {
+                "id": "BJ1388",
+                "subject": "Socialist ethics",
+                "count": 43,
+                "children": {}
+              },
+              "BJ1365-1385": {
+                "id": "BJ1365-1385",
+                "subject": "Positivist ethics",
+                "count": 7,
+                "children": {}
+              },
+              "BJ1392": {
+                "id": "BJ1392",
+                "subject": "Totalitarian ethics",
+                "count": 1,
+                "children": {}
+              }
+            }
+          }
+        }
+      },
+      "BX": {
+        "id": "BX",
+        "subject": "Christian Denominations",
+        "count": 0,
+        "children": {
+          "BX1-9999": {
+            "id": "BX1-9999",
+            "subject": "Christian Denominations",
+            "count": 20,
+            "children": {
+              "BX4800-9999": {
+                "id": "BX4800-9999",
+                "subject": "Protestantism",
+                "count": 21,
+                "children": {
+                  "BX6101-9999": {
+                    "id": "BX6101-9999",
+                    "subject": "Other Protestant denominations",
+                    "count": 1329,
+                    "children": {
+                      "BX9401-9640": {
+                        "id": "BX9401-9640",
+                        "subject": "Reformed or Calvinistic Churches",
+                        "count": 2583,
+                        "children": {}
+                      },
+                      "BX9901-9969": {
+                        "id": "BX9901-9969",
+                        "subject": "Unviersalism.  Universalists",
+                        "count": 204,
+                        "children": {}
+                      },
+                      "BX7301-7343": {
+                        "id": "BX7301-7343",
+                        "subject": "Disciples of Christ.  Campbellites",
+                        "count": 417,
+                        "children": {}
+                      },
+                      "BX8601-8695": {
+                        "id": "BX8601-8695",
+                        "subject": "Mormons.  Church of Jesus Christ of Latter-Day Saints",
+                        "count": 4052,
+                        "children": {}
+                      },
+                      "BX7101-7260": {
+                        "id": "BX7101-7260",
+                        "subject": "Congregationalism",
+                        "count": 1689,
+                        "children": {}
+                      },
+                      "BX6901-6997": {
+                        "id": "BX6901-6997",
+                        "subject": "Christian Science",
+                        "count": 469,
+                        "children": {}
+                      },
+                      "BX8901-9225": {
+                        "id": "BX8901-9225",
+                        "subject": "Presbyterianism.  Calvinistic Methodism",
+                        "count": 2996,
+                        "children": {}
+                      },
+                      "BX8201-8495": {
+                        "id": "BX8201-8495",
+                        "subject": "Methodism",
+                        "count": 3254,
+                        "children": {}
+                      },
+                      "BX6201-6495": {
+                        "id": "BX6201-6495",
+                        "subject": "Baptists",
+                        "count": 70,
+                        "children": {
+                          "BX6330-6331.2": {
+                            "id": "BX6330-6331.2",
+                            "subject": "Doctrine",
+                            "count": 107,
+                            "children": {}
+                          },
+                          "BX6201-6227": {
+                            "id": "BX6201-6227",
+                            "subject": "General",
+                            "count": 179,
+                            "children": {}
+                          },
+                          "BX6493-6495": {
+                            "id": "BX6493-6495",
+                            "subject": "Biography",
+                            "count": 747,
+                            "children": {}
+                          },
+                          "BX6349-6470": {
+                            "id": "BX6349-6470",
+                            "subject": "Individual branches",
+                            "count": 376,
+                            "children": {}
+                          },
+                          "BX6480-6490": {
+                            "id": "BX6480-6490",
+                            "subject": "Individual Baptist churches",
+                            "count": 498,
+                            "children": {}
+                          },
+                          "BX6231-6328": {
+                            "id": "BX6231-6328",
+                            "subject": "History.  Local divisions",
+                            "count": 499,
+                            "children": {}
+                          },
+                          "BX6333": {
+                            "id": "BX6333",
+                            "subject": "Sermons.  Tracts",
+                            "count": 506,
+                            "children": {}
+                          },
+                          "BX6335-6336": {
+                            "id": "BX6335-6336",
+                            "subject": "Creeds.  Catechisms",
+                            "count": 22,
+                            "children": {}
+                          },
+                          "BX6340-6346.3": {
+                            "id": "BX6340-6346.3",
+                            "subject": "Government.  Discipline",
+                            "count": 60,
+                            "children": {}
+                          },
+                          "BX6334": {
+                            "id": "BX6334",
+                            "subject": "Controversial works",
+                            "count": 7,
+                            "children": {}
+                          },
+                          "BX6329": {
+                            "id": "BX6329",
+                            "subject": "Baptists and other churches",
+                            "count": 7,
+                            "children": {}
+                          },
+                          "BX6337": {
+                            "id": "BX6337",
+                            "subject": "Service.  Ritual.  Liturgy",
+                            "count": 10,
+                            "children": {}
+                          },
+                          "BX6338-6339": {
+                            "id": "BX6338-6339",
+                            "subject": "Sacraments",
+                            "count": 3,
+                            "children": {}
+                          }
+                        }
+                      },
+                      "BX7801-7843": {
+                        "id": "BX7801-7843",
+                        "subject": "German Baptist Brethren.  Church of the Brethren.",
+                        "count": 181,
+                        "children": {}
+                      },
+                      "BX9801-9869": {
+                        "id": "BX9801-9869",
+                        "subject": "Unitarianism",
+                        "count": 891,
+                        "children": {}
+                      },
+                      "BX8701-8749": {
+                        "id": "BX8701-8749",
+                        "subject": "New Jerusalem Church.  New Church.",
+                        "count": 328,
+                        "children": {}
+                      },
+                      "BX9701-9743": {
+                        "id": "BX9701-9743",
+                        "subject": "Salvation Army",
+                        "count": 239,
+                        "children": {}
+                      },
+                      "BX9751-9793": {
+                        "id": "BX9751-9793",
+                        "subject": "Shakers.  United Society of Believers.  Millennial Church",
+                        "count": 596,
+                        "children": {}
+                      },
+                      "BX8001-8080": {
+                        "id": "BX8001-8080",
+                        "subject": "Lutheran churches",
+                        "count": 4005,
+                        "children": {}
+                      },
+                      "BX6101-6193": {
+                        "id": "BX6101-6193",
+                        "subject": "Adventists.  \"Millerites\"",
+                        "count": 916,
+                        "children": {}
+                      },
+                      "BX8101-8144": {
+                        "id": "BX8101-8144",
+                        "subject": "Mennonites",
+                        "count": 831,
+                        "children": {}
+                      },
+                      "BX8762-8785": {
+                        "id": "BX8762-8785",
+                        "subject": "Pentecostal churches",
+                        "count": 442,
+                        "children": {}
+                      },
+                      "BX7990": {
+                        "id": "BX7990",
+                        "subject": "Holiness churches",
+                        "count": 183,
+                        "children": {}
+                      },
+                      "BX7601-7795": {
+                        "id": "BX7601-7795",
+                        "subject": "Friends.  Society of Friends.  Quakers",
+                        "count": 1301,
+                        "children": {}
+                      },
+                      "BX9301-9359": {
+                        "id": "BX9301-9359",
+                        "subject": "Puritanism",
+                        "count": 317,
+                        "children": {}
+                      },
+                      "BX9884-9886": {
+                        "id": "BX9884-9886",
+                        "subject": "United Church of Christ",
+                        "count": 145,
+                        "children": {}
+                      },
+                      "BX6801-6843": {
+                        "id": "BX6801-6843",
+                        "subject": "Christian Reformed Church",
+                        "count": 61,
+                        "children": {}
+                      },
+                      "BX8525-8528": {
+                        "id": "BX8525-8528",
+                        "subject": "Millennial Dawnists.  Jehovah's Witnesses",
+                        "count": 286,
+                        "children": {}
+                      },
+                      "BX7020-7060": {
+                        "id": "BX7020-7060",
+                        "subject": "Church of God",
+                        "count": 112,
+                        "children": {}
+                      },
+                      "BX9999": {
+                        "id": "BX9999",
+                        "subject": "Independent churches, parishes, societies, etc.",
+                        "count": 77,
+                        "children": {}
+                      },
+                      "BX8551-8593": {
+                        "id": "BX8551-8593",
+                        "subject": "Moravian Church.  United Brethren.  Unitas",
+                        "count": 178,
+                        "children": {}
+                      },
+                      "BX9881-9882.95": {
+                        "id": "BX9881-9882.95",
+                        "subject": "United Church of Canada",
+                        "count": 74,
+                        "children": {}
+                      },
+                      "BX6195-6197": {
+                        "id": "BX6195-6197",
+                        "subject": "Arminians.  Remonstrants",
+                        "count": 60,
+                        "children": {}
+                      },
+                      "BX7580-7583": {
+                        "id": "BX7580-7583",
+                        "subject": "Free Congregations (Germany).  Freie Gemeinden",
+                        "count": 16,
+                        "children": {}
+                      },
+                      "BX6551-6593": {
+                        "id": "BX6551-6593",
+                        "subject": "Catholic Apostolic Church.  Irvingites",
+                        "count": 22,
+                        "children": {}
+                      },
+                      "BX9875-9877.1": {
+                        "id": "BX9875-9877.1",
+                        "subject": "United Brethren in Christ.  Church of the United",
+                        "count": 31,
+                        "children": {}
+                      },
+                      "BX7079-7097": {
+                        "id": "BX7079-7097",
+                        "subject": "Churches of God",
+                        "count": 72,
+                        "children": {}
+                      },
+                      "BX7901-7943": {
+                        "id": "BX7901-7943",
+                        "subject": "German Evangelical Synod of North America",
+                        "count": 12,
+                        "children": {}
+                      },
+                      "BX6751-6793": {
+                        "id": "BX6751-6793",
+                        "subject": "Christian Church",
+                        "count": 32,
+                        "children": {}
+                      },
+                      "BX9998": {
+                        "id": "BX9998",
+                        "subject": "Other beliefs and movements akin to Christianity",
+                        "count": 59,
+                        "children": {}
+                      },
+                      "BX7401-7430": {
+                        "id": "BX7401-7430",
+                        "subject": "Dowieism.  Christian Catholic Church",
+                        "count": 3,
+                        "children": {}
+                      },
+                      "BX8799-8809": {
+                        "id": "BX8799-8809",
+                        "subject": "Plymouth Brethren.  Darbyites",
+                        "count": 46,
+                        "children": {}
+                      },
+                      "BX7451-7493": {
+                        "id": "BX7451-7493",
+                        "subject": "Evangelical and Reformed Church",
+                        "count": 24,
+                        "children": {}
+                      },
+                      "BX9675": {
+                        "id": "BX9675",
+                        "subject": "River Brethren.  Brethren in Christ",
+                        "count": 20,
+                        "children": {}
+                      },
+                      "BX7556": {
+                        "id": "BX7556",
+                        "subject": "Evangelical United Brethren Church",
+                        "count": 20,
+                        "children": {}
+                      },
+                      "BX9975": {
+                        "id": "BX9975",
+                        "subject": "Volunteers of America",
+                        "count": 3,
+                        "children": {}
+                      },
+                      "BX6651-6693": {
+                        "id": "BX6651-6693",
+                        "subject": "Christadelphians.  Brothers of Christ",
+                        "count": 3,
+                        "children": {}
+                      },
+                      "BX9980": {
+                        "id": "BX9980",
+                        "subject": "Walloon Church",
+                        "count": 1,
+                        "children": {}
+                      }
+                    }
+                  },
+                  "BX5800-5995": {
+                    "id": "BX5800-5995",
+                    "subject": "Protestant Episcopal Church in the United States",
+                    "count": 1952,
+                    "children": {}
+                  },
+                  "BX5011-5207": {
+                    "id": "BX5011-5207",
+                    "subject": "Church of England",
+                    "count": 174,
+                    "children": {
+                      "BX5197-5199": {
+                        "id": "BX5197-5199",
+                        "subject": "Biography",
+                        "count": 917,
+                        "children": {}
+                      },
+                      "BX5051-5110": {
+                        "id": "BX5051-5110",
+                        "subject": "History.  Local divisions",
+                        "count": 323,
+                        "children": {}
+                      },
+                      "BX5115-5126": {
+                        "id": "BX5115-5126",
+                        "subject": "Special parties and movements",
+                        "count": 77,
+                        "children": {}
+                      },
+                      "BX5140.5-5147": {
+                        "id": "BX5140.5-5147",
+                        "subject": "Liturgy and ritual",
+                        "count": 340,
+                        "children": {}
+                      },
+                      "BX5200-5207": {
+                        "id": "BX5200-5207",
+                        "subject": "Dissent and nonconformity",
+                        "count": 192,
+                        "children": {}
+                      },
+                      "BX5127-5129.8": {
+                        "id": "BX5127-5129.8",
+                        "subject": "Church of England and other churches",
+                        "count": 74,
+                        "children": {}
+                      },
+                      "BX5135-5136": {
+                        "id": "BX5135-5136",
+                        "subject": "Controversial works",
+                        "count": 19,
+                        "children": {}
+                      },
+                      "BX5133": {
+                        "id": "BX5133",
+                        "subject": "Sermons.  Tracts.  Addresses.  Essays",
+                        "count": 234,
+                        "children": {}
+                      },
+                      "BX5194-5195": {
+                        "id": "BX5194-5195",
+                        "subject": "Cathedrals, churches, etc. in England and Wales",
+                        "count": 193,
+                        "children": {}
+                      },
+                      "BX5150-5182.5": {
+                        "id": "BX5150-5182.5",
+                        "subject": "Government.  Organization.  Discipline",
+                        "count": 259,
+                        "children": {}
+                      },
+                      "BX5183-5187": {
+                        "id": "BX5183-5187",
+                        "subject": "Religious communities.  Conventual life.",
+                        "count": 21,
+                        "children": {}
+                      },
+                      "BX5148-5149": {
+                        "id": "BX5148-5149",
+                        "subject": "Sacraments",
+                        "count": 97,
+                        "children": {}
+                      },
+                      "BX5130-5132": {
+                        "id": "BX5130-5132",
+                        "subject": "General works",
+                        "count": 132,
+                        "children": {}
+                      },
+                      "BX5137-5139": {
+                        "id": "BX5137-5139",
+                        "subject": "Creeds and catechisms, etc.",
+                        "count": 28,
+                        "children": {}
+                      }
+                    }
+                  },
+                  "BX4929-4951": {
+                    "id": "BX4929-4951",
+                    "subject": "Post-Reformation",
+                    "count": 0,
+                    "children": {
+                      "BX4929-4946": {
+                        "id": "BX4929-4946",
+                        "subject": "Anabaptists",
+                        "count": 300,
+                        "children": {}
+                      },
+                      "BX4950-4951": {
+                        "id": "BX4950-4951",
+                        "subject": "Plain People",
+                        "count": 4,
+                        "children": {}
+                      }
+                    }
+                  },
+                  "BX4800-4861": {
+                    "id": "BX4800-4861",
+                    "subject": "General",
+                    "count": 3023,
+                    "children": {}
+                  },
+                  "BX4872-4924": {
+                    "id": "BX4872-4924",
+                    "subject": "Pre-Reformation",
+                    "count": 0,
+                    "children": {
+                      "BX4872-4893": {
+                        "id": "BX4872-4893",
+                        "subject": "Waldenses and Albigenses",
+                        "count": 267,
+                        "children": {}
+                      },
+                      "BX4913-4924": {
+                        "id": "BX4913-4924",
+                        "subject": "Hussites",
+                        "count": 190,
+                        "children": {
+                          "BX4920-4924": {
+                            "id": "BX4920-4924",
+                            "subject": "Bohemian Brethren",
+                            "count": 74,
+                            "children": {}
+                          }
+                        }
+                      },
+                      "BX4900-4906": {
+                        "id": "BX4900-4906",
+                        "subject": "Lollards.  Wycliffites",
+                        "count": 62,
+                        "children": {}
+                      }
+                    }
+                  },
+                  "BX5001-5009": {
+                    "id": "BX5001-5009",
+                    "subject": "Anglican Communion (General)",
+                    "count": 168,
+                    "children": {}
+                  },
+                  "BX5410-5595": {
+                    "id": "BX5410-5595",
+                    "subject": "Church of Ireland",
+                    "count": 124,
+                    "children": {}
+                  },
+                  "BX5600-5740": {
+                    "id": "BX5600-5740",
+                    "subject": "Church of England outside of Great Britain",
+                    "count": 495,
+                    "children": {
+                      "BX5601-5620": {
+                        "id": "BX5601-5620",
+                        "subject": "Anglican Church of Canada",
+                        "count": 141,
+                        "children": {}
+                      }
+                    }
+                  },
+                  "BX5596-5598": {
+                    "id": "BX5596-5598",
+                    "subject": "Church in Wales",
+                    "count": 11,
+                    "children": {}
+                  },
+                  "BX5210-5395": {
+                    "id": "BX5210-5395",
+                    "subject": "Episcopal Church in Scotland",
+                    "count": 39,
+                    "children": {}
+                  },
+                  "BX6051-6093": {
+                    "id": "BX6051-6093",
+                    "subject": "Reformed Episcopal Church",
+                    "count": 12,
+                    "children": {}
+                  },
+                  "BX5996-6030": {
+                    "id": "BX5996-6030",
+                    "subject": "Protestant Episcopal Church outside the United States",
+                    "count": 9,
+                    "children": {}
+                  }
+                }
+              },
+              "BX800-4795": {
+                "id": "BX800-4795",
+                "subject": "Catholic Church",
+                "count": 1515,
+                "children": {
+                  "BX4650-4705": {
+                    "id": "BX4650-4705",
+                    "subject": "Biography and portraits",
+                    "count": 0,
+                    "children": {
+                      "BX4700-4705": {
+                        "id": "BX4700-4705",
+                        "subject": "Individual",
+                        "count": 10844,
+                        "children": {
+                          "BX4700": {
+                            "id": "BX4700",
+                            "subject": "Saints",
+                            "count": 4918,
+                            "children": {}
+                          }
+                        }
+                      },
+                      "BX4650-4698": {
+                        "id": "BX4650-4698",
+                        "subject": "Collective",
+                        "count": 986,
+                        "children": {}
+                      }
+                    }
+                  },
+                  "BX1958-1968": {
+                    "id": "BX1958-1968",
+                    "subject": "Creeds and catechisms",
+                    "count": 561,
+                    "children": {}
+                  },
+                  "BX940-1745": {
+                    "id": "BX940-1745",
+                    "subject": "History",
+                    "count": 15603,
+                    "children": {}
+                  },
+                  "BX2400-4563": {
+                    "id": "BX2400-4563",
+                    "subject": "Monasticism.  Religious orders",
+                    "count": 3863,
+                    "children": {
+                      "BX4200-4563": {
+                        "id": "BX4200-4563",
+                        "subject": "Religious orders of women",
+                        "count": 1881,
+                        "children": {}
+                      },
+                      "BX2890-4192": {
+                        "id": "BX2890-4192",
+                        "subject": "Religious orders of men",
+                        "count": 4059,
+                        "children": {}
+                      }
+                    }
+                  },
+                  "BX2347-2377": {
+                    "id": "BX2347-2377",
+                    "subject": "Practical religion.  Christian life",
+                    "count": 4371,
+                    "children": {}
+                  },
+                  "BX1970-2175": {
+                    "id": "BX1970-2175",
+                    "subject": "Liturgy and ritual",
+                    "count": 2286,
+                    "children": {
+                      "BX2050-2175": {
+                        "id": "BX2050-2175",
+                        "subject": "Prayers and devotions",
+                        "count": 1541,
+                        "children": {}
+                      }
+                    }
+                  },
+                  "BX1746-1755": {
+                    "id": "BX1746-1755",
+                    "subject": "Theology.  Doctrine.  Dogmatics",
+                    "count": 3927,
+                    "children": {}
+                  },
+                  "BX2200-2292": {
+                    "id": "BX2200-2292",
+                    "subject": "Sacraments",
+                    "count": 2155,
+                    "children": {}
+                  },
+                  "BX2177-2198": {
+                    "id": "BX2177-2198",
+                    "subject": "Meditations.  Devotional readings.  Spiritual exercises, etc.",
+                    "count": 1494,
+                    "children": {}
+                  },
+                  "BX1800-1920": {
+                    "id": "BX1800-1920",
+                    "subject": "Government and organization",
+                    "count": 2179,
+                    "children": {}
+                  },
+                  "BX4600-4644": {
+                    "id": "BX4600-4644",
+                    "subject": "Churches, cathedrals, abbeys (as parish churches), etc.",
+                    "count": 1595,
+                    "children": {}
+                  },
+                  "BX2315-2324": {
+                    "id": "BX2315-2324",
+                    "subject": "Relics.  Shrines.  Pilgrimages.  Processions",
+                    "count": 737,
+                    "children": {}
+                  },
+                  "BX1969": {
+                    "id": "BX1969",
+                    "subject": "Forms of worship.  Catholic practice",
+                    "count": 30,
+                    "children": {}
+                  },
+                  "BX800-839": {
+                    "id": "BX800-839",
+                    "subject": "Periodicals.  Societies, councils, congresses, etc.",
+                    "count": 1842,
+                    "children": {}
+                  },
+                  "BX4650-4698": {
+                    "id": "BX4650-4698",
+                    "subject": "Collective",
+                    "count": 0,
+                    "children": {
+                      "BX4654-4662": {
+                        "id": "BX4654-4662",
+                        "subject": "Saints and martyrs",
+                        "count": 1209,
+                        "children": {}
+                      }
+                    }
+                  },
+                  "BX895-939": {
+                    "id": "BX895-939",
+                    "subject": "Study and teaching",
+                    "count": 839,
+                    "children": {}
+                  },
+                  "BX2325-2333": {
+                    "id": "BX2325-2333",
+                    "subject": "Saints.  Hagiology",
+                    "count": 140,
+                    "children": {}
+                  },
+                  "BX880-891": {
+                    "id": "BX880-891",
+                    "subject": "General collected works",
+                    "count": 835,
+                    "children": {}
+                  },
+                  "BX1756": {
+                    "id": "BX1756",
+                    "subject": "Sermons",
+                    "count": 810,
+                    "children": {}
+                  },
+                  "BX2380-2386": {
+                    "id": "BX2380-2386",
+                    "subject": "Religious life.  Religious state",
+                    "count": 177,
+                    "children": {}
+                  },
+                  "BX841": {
+                    "id": "BX841",
+                    "subject": "Dictionaries.  Encyclopedias",
+                    "count": 98,
+                    "children": {}
+                  },
+                  "BX2295-2310": {
+                    "id": "BX2295-2310",
+                    "subject": "Sacramentals",
+                    "count": 69,
+                    "children": {}
+                  },
+                  "BX1781-1788": {
+                    "id": "BX1781-1788",
+                    "subject": "Catholic Church and other churches",
+                    "count": 134,
+                    "children": {}
+                  },
+                  "BX4710.1-4715.95": {
+                    "id": "BX4710.1-4715.95",
+                    "subject": "Eastern churches in communion with Rome.",
+                    "count": 743,
+                    "children": {}
+                  },
+                  "BX1760-1779.5": {
+                    "id": "BX1760-1779.5",
+                    "subject": "Controversial works",
+                    "count": 600,
+                    "children": {}
+                  },
+                  "BX4716.4-4795": {
+                    "id": "BX4716.4-4795",
+                    "subject": "Dissenting sects other than Protestant",
+                    "count": 9,
+                    "children": {
+                      "BX4751-4793": {
+                        "id": "BX4751-4793",
+                        "subject": "Old Catholics",
+                        "count": 57,
+                        "children": {}
+                      },
+                      "BX4718.5-4735": {
+                        "id": "BX4718.5-4735",
+                        "subject": "Jansenists",
+                        "count": 234,
+                        "children": {}
+                      },
+                      "BX4795": {
+                        "id": "BX4795",
+                        "subject": "Other",
+                        "count": 57,
+                        "children": {}
+                      },
+                      "BX4740": {
+                        "id": "BX4740",
+                        "subject": "German Catholics",
+                        "count": 2,
+                        "children": {}
+                      },
+                      "BX4793.5-4794.25": {
+                        "id": "BX4793.5-4794.25",
+                        "subject": "Independent Catholic Churches",
+                        "count": 14,
+                        "children": {}
+                      },
+                      "BX4737": {
+                        "id": "BX4737",
+                        "subject": "French schisms of the 19th century",
+                        "count": 2,
+                        "children": {}
+                      }
+                    }
+                  },
+                  "BX850-875": {
+                    "id": "BX850-875",
+                    "subject": "Documents",
+                    "count": 193,
+                    "children": {}
+                  },
+                  "BX1790-1793": {
+                    "id": "BX1790-1793",
+                    "subject": "Catholic Church and the state",
+                    "count": 371,
+                    "children": {}
+                  },
+                  "BX845": {
+                    "id": "BX845",
+                    "subject": "Directories.  Yearbooks",
+                    "count": 5,
+                    "children": {}
+                  },
+                  "BX2312": {
+                    "id": "BX2312",
+                    "subject": "Images",
+                    "count": 6,
+                    "children": {}
+                  }
+                }
+              },
+              "BX200-756": {
+                "id": "BX200-756",
+                "subject": "Orthodox Eastern Church",
+                "count": 0,
+                "children": {
+                  "BX200-395": {
+                    "id": "BX200-395",
+                    "subject": "General",
+                    "count": 2918,
+                    "children": {}
+                  },
+                  "BX400-756": {
+                    "id": "BX400-756",
+                    "subject": "Divisions of the church",
+                    "count": 13,
+                    "children": {
+                      "BX460-605": {
+                        "id": "BX460-605",
+                        "subject": "Russian Church",
+                        "count": 3153,
+                        "children": {}
+                      },
+                      "BX729.9-755": {
+                        "id": "BX729.9-755",
+                        "subject": "Orthodox Church in other regions or countries",
+                        "count": 351,
+                        "children": {}
+                      },
+                      "BX610-620": {
+                        "id": "BX610-620",
+                        "subject": "Church of Greece",
+                        "count": 262,
+                        "children": {}
+                      },
+                      "BX690-699": {
+                        "id": "BX690-699",
+                        "subject": "Romanian Church",
+                        "count": 148,
+                        "children": {}
+                      },
+                      "BX400-440": {
+                        "id": "BX400-440",
+                        "subject": "Patriarchates of the East.  Melchites",
+                        "count": 112,
+                        "children": {}
+                      },
+                      "BX650-659": {
+                        "id": "BX650-659",
+                        "subject": "Bulgarian Church",
+                        "count": 237,
+                        "children": {}
+                      },
+                      "BX729.5": {
+                        "id": "BX729.5",
+                        "subject": "Orthodox Eastern Church, Ukrainian",
+                        "count": 134,
+                        "children": {}
+                      },
+                      "BX450-450.93": {
+                        "id": "BX450-450.93",
+                        "subject": "Church of Cyprus",
+                        "count": 89,
+                        "children": {}
+                      },
+                      "BX710-719": {
+                        "id": "BX710-719",
+                        "subject": "Serbian Church.  Yugoslav Church",
+                        "count": 393,
+                        "children": {}
+                      },
+                      "BX660-669": {
+                        "id": "BX660-669",
+                        "subject": "Georgian Church",
+                        "count": 166,
+                        "children": {}
+                      },
+                      "BX720-729": {
+                        "id": "BX720-729",
+                        "subject": "Orthodox Eastern Church, Macedonian",
+                        "count": 46,
+                        "children": {}
+                      },
+                      "BX630-639": {
+                        "id": "BX630-639",
+                        "subject": "Orthodox Church in Austria and Hungary",
+                        "count": 5,
+                        "children": {}
+                      },
+                      "BX670-679": {
+                        "id": "BX670-679",
+                        "subject": "Montenegrin Church",
+                        "count": 1,
+                        "children": {}
+                      }
+                    }
+                  }
+                }
+              },
+              "BX1-9.5": {
+                "id": "BX1-9.5",
+                "subject": "Church unity.  Ecumenical movement.",
+                "count": 1264,
+                "children": {}
+              },
+              "BX100-189": {
+                "id": "BX100-189",
+                "subject": "Eastern churches.  Oriental churches",
+                "count": 3,
+                "children": {
+                  "BX120-129": {
+                    "id": "BX120-129",
+                    "subject": "Armenian Church",
+                    "count": 879,
+                    "children": {}
+                  },
+                  "BX130-139": {
+                    "id": "BX130-139",
+                    "subject": "Coptic Church",
+                    "count": 409,
+                    "children": {}
+                  },
+                  "BX100-107": {
+                    "id": "BX100-107",
+                    "subject": "General",
+                    "count": 235,
+                    "children": {}
+                  },
+                  "BX160-169": {
+                    "id": "BX160-169",
+                    "subject": "St. Thomas Christians.  Malabar Christians.",
+                    "count": 125,
+                    "children": {}
+                  },
+                  "BX170-179": {
+                    "id": "BX170-179",
+                    "subject": "Syrian or Jacobite Church",
+                    "count": 120,
+                    "children": {}
+                  },
+                  "BX150-159": {
+                    "id": "BX150-159",
+                    "subject": "Nestorian, Chaldean, or East Syrian Church",
+                    "count": 120,
+                    "children": {}
+                  },
+                  "BX140-149": {
+                    "id": "BX140-149",
+                    "subject": "Ethiopic or Abyssinian Church",
+                    "count": 155,
+                    "children": {}
+                  },
+                  "BX180-189": {
+                    "id": "BX180-189",
+                    "subject": "Maronite Church",
+                    "count": 45,
+                    "children": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "BF": {
+        "id": "BF",
+        "subject": "Psychology",
+        "count": 0,
+        "children": {
+          "BF1-990": {
+            "id": "BF1-990",
+            "subject": "Psychology",
+            "count": 10360,
+            "children": {
+              "BF638-648": {
+                "id": "BF638-648",
+                "subject": "New Thought.  Menticulture, etc.",
+                "count": 663,
+                "children": {}
+              },
+              "BF908-940": {
+                "id": "BF908-940",
+                "subject": "The hand.  Palmistry",
+                "count": 311,
+                "children": {}
+              },
+              "BF309-499": {
+                "id": "BF309-499",
+                "subject": "Consciousness.  Cognition",
+                "count": 11372,
+                "children": {}
+              },
+              "BF712-724.85": {
+                "id": "BF712-724.85",
+                "subject": "Developmental psychology",
+                "count": 7665,
+                "children": {}
+              },
+              "BF231-299": {
+                "id": "BF231-299",
+                "subject": "Sensation.  Aesthesiology",
+                "count": 1066,
+                "children": {}
+              },
+              "BF511-593": {
+                "id": "BF511-593",
+                "subject": "Affection.  Feeling.  Emotion",
+                "count": 6243,
+                "children": {}
+              },
+              "BF697-697.5": {
+                "id": "BF697-697.5",
+                "subject": "Differential psychology.  Individuality.  Self",
+                "count": 1464,
+                "children": {}
+              },
+              "BF636-637": {
+                "id": "BF636-637",
+                "subject": "Applied psychology",
+                "count": 8003,
+                "children": {}
+              },
+              "BF698-698.9": {
+                "id": "BF698-698.9",
+                "subject": "Personality",
+                "count": 2893,
+                "children": {}
+              },
+              "BF173-175.5": {
+                "id": "BF173-175.5",
+                "subject": "Psychoanalysis",
+                "count": 4771,
+                "children": {}
+              },
+              "BF699-711": {
+                "id": "BF699-711",
+                "subject": "Genetic psychology",
+                "count": 353,
+                "children": {}
+              },
+              "BF38-64": {
+                "id": "BF38-64",
+                "subject": "Philosophy.  Relation to other topics",
+                "count": 1722,
+                "children": {}
+              },
+              "BF608-635": {
+                "id": "BF608-635",
+                "subject": "Will.  Volition.  Choice.  Control",
+                "count": 620,
+                "children": {}
+              },
+              "BF660-685": {
+                "id": "BF660-685",
+                "subject": "Comparative psychology.  Animal and human psychology",
+                "count": 348,
+                "children": {}
+              },
+              "BF501-505": {
+                "id": "BF501-505",
+                "subject": "Motivation",
+                "count": 401,
+                "children": {}
+              },
+              "BF207-209": {
+                "id": "BF207-209",
+                "subject": "Psychotropic drugs and other substances",
+                "count": 139,
+                "children": {}
+              },
+              "BF180-198.7": {
+                "id": "BF180-198.7",
+                "subject": "Experimental psychology",
+                "count": 364,
+                "children": {}
+              },
+              "BF176-176.5": {
+                "id": "BF176-176.5",
+                "subject": "Psychological tests and testing",
+                "count": 289,
+                "children": {}
+              },
+              "BF692-692.5": {
+                "id": "BF692-692.5",
+                "subject": "Psychology of sex.  Sexual behavior",
+                "count": 690,
+                "children": {}
+              },
+              "BF795-839": {
+                "id": "BF795-839",
+                "subject": "Temperament.  Character",
+                "count": 307,
+                "children": {}
+              },
+              "BF839.8-885": {
+                "id": "BF839.8-885",
+                "subject": "Physiognomy.  Phrenology",
+                "count": 372,
+                "children": {}
+              },
+              "BF889-905": {
+                "id": "BF889-905",
+                "subject": "Graphology.  Study of handwriting",
+                "count": 428,
+                "children": {}
+              },
+              "BF725-727": {
+                "id": "BF725-727",
+                "subject": "Class psychology",
+                "count": 27,
+                "children": {}
+              },
+              "BF203": {
+                "id": "BF203",
+                "subject": "Gestalt psychology",
+                "count": 72,
+                "children": {}
+              }
+            }
+          },
+          "BF1001-1389": {
+            "id": "BF1001-1389",
+            "subject": "Parapsychology",
+            "count": 52,
+            "children": {
+              "BF1228-1389": {
+                "id": "BF1228-1389",
+                "subject": "Spiritualism",
+                "count": 3436,
+                "children": {}
+              },
+              "BF1111-1156": {
+                "id": "BF1111-1156",
+                "subject": "Hypnotism.  Suggestion.  Mesmerism.  Subliminal projection",
+                "count": 656,
+                "children": {}
+              },
+              "BF1001-1045": {
+                "id": "BF1001-1045",
+                "subject": "Psychic research.  Psychology of the conscious",
+                "count": 2817,
+                "children": {}
+              },
+              "BF1048-1108": {
+                "id": "BF1048-1108",
+                "subject": "Hallucinations.  Sleep.  Dreaming.  Visions",
+                "count": 1427,
+                "children": {}
+              },
+              "BF1161-1171": {
+                "id": "BF1161-1171",
+                "subject": "Telepathy.  Mind reading.  Thought transference",
+                "count": 140,
+                "children": {}
+              }
+            }
+          },
+          "BF1404-2055": {
+            "id": "BF1404-2055",
+            "subject": "Occult sciences",
+            "count": 3125,
+            "children": {
+              "BF1585-1623": {
+                "id": "BF1585-1623",
+                "subject": "Magic.  Hermetics.  Necromancy",
+                "count": 2730,
+                "children": {}
+              },
+              "BF1562.5-1584": {
+                "id": "BF1562.5-1584",
+                "subject": "Witchcraft",
+                "count": 1712,
+                "children": {}
+              },
+              "BF1444-1486": {
+                "id": "BF1444-1486",
+                "subject": "Ghosts.  Apparitions.  Hauntings",
+                "count": 1785,
+                "children": {}
+              },
+              "BF1651-1729": {
+                "id": "BF1651-1729",
+                "subject": "Astrology",
+                "count": 3779,
+                "children": {}
+              },
+              "BF2050-2055": {
+                "id": "BF2050-2055",
+                "subject": "Human-alien encounters.  Contact between humans and",
+                "count": 183,
+                "children": {}
+              },
+              "BF1745-1779": {
+                "id": "BF1745-1779",
+                "subject": "Oracles.  Sibyls.  Divinations",
+                "count": 1530,
+                "children": {}
+              },
+              "BF1845-1891": {
+                "id": "BF1845-1891",
+                "subject": "Fortune-telling",
+                "count": 1117,
+                "children": {}
+              },
+              "BF1783-1815": {
+                "id": "BF1783-1815",
+                "subject": "Seers.  Prophets.  Prophecies",
+                "count": 524,
+                "children": {}
+              },
+              "BF1501-1562": {
+                "id": "BF1501-1562",
+                "subject": "Demonology.  Satanism.  Possession",
+                "count": 769,
+                "children": {}
+              }
+            }
+          }
+        }
+      },
+      "BS": {
+        "id": "BS",
+        "subject": "The Bible",
+        "count": 0,
+        "children": {
+          "BS1-2970": {
+            "id": "BS1-2970",
+            "subject": "The Bible",
+            "count": 445,
+            "children": {
+              "BS125-355": {
+                "id": "BS125-355",
+                "subject": "Modern texts and versions",
+                "count": 0,
+                "children": {
+                  "BS315-355": {
+                    "id": "BS315-355",
+                    "subject": "Non-European languages",
+                    "count": 0,
+                    "children": {
+                      "BS345": {
+                        "id": "BS345",
+                        "subject": "American Indian languages",
+                        "count": 146,
+                        "children": {}
+                      },
+                      "BS335": {
+                        "id": "BS335",
+                        "subject": "Languages of Oceania and Australasia",
+                        "count": 246,
+                        "children": {}
+                      },
+                      "BS315": {
+                        "id": "BS315",
+                        "subject": "Asian languages",
+                        "count": 589,
+                        "children": {}
+                      },
+                      "BS325": {
+                        "id": "BS325",
+                        "subject": "African languages",
+                        "count": 159,
+                        "children": {}
+                      },
+                      "BS355": {
+                        "id": "BS355",
+                        "subject": "Artificial languages",
+                        "count": 4,
+                        "children": {}
+                      },
+                      "BS350": {
+                        "id": "BS350",
+                        "subject": "Mixed languages",
+                        "count": 5,
+                        "children": {}
+                      }
+                    }
+                  },
+                  "BS125-198": {
+                    "id": "BS125-198",
+                    "subject": "English",
+                    "count": 1426,
+                    "children": {}
+                  },
+                  "BS199-313": {
+                    "id": "BS199-313",
+                    "subject": "Other European languages",
+                    "count": 452,
+                    "children": {}
+                  }
+                }
+              },
+              "BS410-680": {
+                "id": "BS410-680",
+                "subject": "Works about the Bible",
+                "count": 8536,
+                "children": {
+                  "BS585-613": {
+                    "id": "BS585-613",
+                    "subject": "Study and teaching",
+                    "count": 1032,
+                    "children": {}
+                  },
+                  "BS569-580": {
+                    "id": "BS569-580",
+                    "subject": "Men, women, and children of the Bible",
+                    "count": 1019,
+                    "children": {
+                      "BS580": {
+                        "id": "BS580",
+                        "subject": "Individual Old Testament characters",
+                        "count": 1959,
+                        "children": {}
+                      }
+                    }
+                  },
+                  "BS546-558": {
+                    "id": "BS546-558",
+                    "subject": "Bible stories.  Paraphrases of Bible stories.",
+                    "count": 1458,
+                    "children": {}
+                  },
+                  "BS500-534.8": {
+                    "id": "BS500-534.8",
+                    "subject": "Criticism and interpretation",
+                    "count": 1782,
+                    "children": {}
+                  },
+                  "BS647-649": {
+                    "id": "BS647-649",
+                    "subject": "Prophecy",
+                    "count": 777,
+                    "children": {}
+                  },
+                  "BS650-667": {
+                    "id": "BS650-667",
+                    "subject": "Bible and science",
+                    "count": 1342,
+                    "children": {}
+                  },
+                  "BS535-537": {
+                    "id": "BS535-537",
+                    "subject": "The Bible as literature",
+                    "count": 205,
+                    "children": {}
+                  },
+                  "BS670-672": {
+                    "id": "BS670-672",
+                    "subject": "Bible and social sciences",
+                    "count": 85,
+                    "children": {}
+                  }
+                }
+              },
+              "BS701-1830": {
+                "id": "BS701-1830",
+                "subject": "Old Testament",
+                "count": 4,
+                "children": {
+                  "BS1200-1830": {
+                    "id": "BS1200-1830",
+                    "subject": "Special parts of the Old Testament",
+                    "count": 16679,
+                    "children": {}
+                  },
+                  "BS1110-1199": {
+                    "id": "BS1110-1199",
+                    "subject": "Works about the Old Testament",
+                    "count": 3305,
+                    "children": {
+                      "BS1160-1191.5": {
+                        "id": "BS1160-1191.5",
+                        "subject": "Criticism and interpretation",
+                        "count": 1375,
+                        "children": {}
+                      }
+                    }
+                  },
+                  "BS705-815": {
+                    "id": "BS705-815",
+                    "subject": "Early versions",
+                    "count": 400,
+                    "children": {}
+                  },
+                  "BS1091-1099": {
+                    "id": "BS1091-1099",
+                    "subject": "Selections.  Quotations",
+                    "count": 75,
+                    "children": {}
+                  },
+                  "BS825-1013": {
+                    "id": "BS825-1013",
+                    "subject": "Modern texts and versions",
+                    "count": 116,
+                    "children": {}
+                  }
+                }
+              },
+              "BS1901-2970": {
+                "id": "BS1901-2970",
+                "subject": "New Testament",
+                "count": 14,
+                "children": {
+                  "BS2280-2545": {
+                    "id": "BS2280-2545",
+                    "subject": "Works about the New Testament",
+                    "count": 2393,
+                    "children": {
+                      "BS2430-2520": {
+                        "id": "BS2430-2520",
+                        "subject": "Men, women, and children of the New Testament",
+                        "count": 1708,
+                        "children": {}
+                      },
+                      "BS2350-2393": {
+                        "id": "BS2350-2393",
+                        "subject": "Criticism and interpretation",
+                        "count": 852,
+                        "children": {}
+                      },
+                      "BS2415-2417": {
+                        "id": "BS2415-2417",
+                        "subject": "The teachings of Jesus",
+                        "count": 490,
+                        "children": {}
+                      },
+                      "BS2525-2544": {
+                        "id": "BS2525-2544",
+                        "subject": "Study and teaching",
+                        "count": 90,
+                        "children": {}
+                      }
+                    }
+                  },
+                  "BS2547-2970": {
+                    "id": "BS2547-2970",
+                    "subject": "Special parts of the New Testament",
+                    "count": 9258,
+                    "children": {
+                      "BS2640-2765.6": {
+                        "id": "BS2640-2765.6",
+                        "subject": "Epistles of Paul",
+                        "count": 4126,
+                        "children": {}
+                      }
+                    }
+                  },
+                  "BS1937-2020": {
+                    "id": "BS1937-2020",
+                    "subject": "Early texts and versions",
+                    "count": 225,
+                    "children": {}
+                  },
+                  "BS2025-2213": {
+                    "id": "BS2025-2213",
+                    "subject": "Modern texts and versions",
+                    "count": 549,
+                    "children": {}
+                  },
+                  "BS2260-2269": {
+                    "id": "BS2260-2269",
+                    "subject": "Selections.  Quotations",
+                    "count": 35,
+                    "children": {}
+                  }
+                }
+              },
+              "BS11-115": {
+                "id": "BS11-115",
+                "subject": "Early versions",
+                "count": 200,
+                "children": {}
+              }
+            }
+          }
+        }
+      },
+      "BT": {
+        "id": "BT",
+        "subject": "Doctrinal Theology",
+        "count": 0,
+        "children": {
+          "BT10-1480": {
+            "id": "BT10-1480",
+            "subject": "Doctrinal Theology",
+            "count": 5474,
+            "children": {
+              "BT819-891": {
+                "id": "BT819-891",
+                "subject": "Eschatology.  Last things",
+                "count": 2155,
+                "children": {}
+              },
+              "BT198-590": {
+                "id": "BT198-590",
+                "subject": "Christology",
+                "count": 4159,
+                "children": {
+                  "BT296-500": {
+                    "id": "BT296-500",
+                    "subject": "Life of Christ",
+                    "count": 6872,
+                    "children": {}
+                  },
+                  "BT587": {
+                    "id": "BT587",
+                    "subject": "Relics",
+                    "count": 179,
+                    "children": {}
+                  },
+                  "BT580": {
+                    "id": "BT580",
+                    "subject": "Miracles.  Apparitions.  Shrines, sanctuaries,",
+                    "count": 81,
+                    "children": {}
+                  }
+                }
+              },
+              "BT750-811": {
+                "id": "BT750-811",
+                "subject": "Salvation.  Soteriology",
+                "count": 3047,
+                "children": {}
+              },
+              "BT98-180": {
+                "id": "BT98-180",
+                "subject": "God",
+                "count": 2655,
+                "children": {
+                  "BT117-123": {
+                    "id": "BT117-123",
+                    "subject": "Holy Spirit.  The Paraclete",
+                    "count": 1081,
+                    "children": {}
+                  },
+                  "BT130-153": {
+                    "id": "BT130-153",
+                    "subject": "Divine attributes",
+                    "count": 885,
+                    "children": {}
+                  },
+                  "BT109-115": {
+                    "id": "BT109-115",
+                    "subject": "Doctrine of the Trinity",
+                    "count": 583,
+                    "children": {}
+                  },
+                  "BT126-127.5": {
+                    "id": "BT126-127.5",
+                    "subject": "Revelation",
+                    "count": 250,
+                    "children": {}
+                  }
+                }
+              },
+              "BT990-1010": {
+                "id": "BT990-1010",
+                "subject": "Creeds, confessions, covenants, etc.",
+                "count": 387,
+                "children": {}
+              },
+              "BT899-940": {
+                "id": "BT899-940",
+                "subject": "Future state.  Future life",
+                "count": 502,
+                "children": {}
+              },
+              "BT1095-1255": {
+                "id": "BT1095-1255",
+                "subject": "Apologetics.  Evidences of Christianity",
+                "count": 1514,
+                "children": {}
+              },
+              "BT695-749": {
+                "id": "BT695-749",
+                "subject": "Creation",
+                "count": 6637,
+                "children": {}
+              },
+              "BT595-680": {
+                "id": "BT595-680",
+                "subject": "Mary, Mother of Jesus Christ.  Mariology",
+                "count": 1257,
+                "children": {
+                  "BT650-660": {
+                    "id": "BT650-660",
+                    "subject": "Miracles.  Apparitions.  Shrines, sanctuaries,",
+                    "count": 1153,
+                    "children": {}
+                  }
+                }
+              },
+              "BT960-985": {
+                "id": "BT960-985",
+                "subject": "Invisible world (saints, demons, etc.)",
+                "count": 723,
+                "children": {}
+              },
+              "BT95-97.2": {
+                "id": "BT95-97.2",
+                "subject": "Divine law.  Moral government",
+                "count": 352,
+                "children": {}
+              },
+              "BT19-37": {
+                "id": "BT19-37",
+                "subject": "Doctrine and dogma",
+                "count": 1392,
+                "children": {}
+              },
+              "BT93-93.6": {
+                "id": "BT93-93.6",
+                "subject": "Judaism",
+                "count": 145,
+                "children": {}
+              },
+              "BT1313-1480": {
+                "id": "BT1313-1480",
+                "subject": "History of specific doctrines and movements.",
+                "count": 1123,
+                "children": {}
+              },
+              "BT1029-1040": {
+                "id": "BT1029-1040",
+                "subject": "Catechisms",
+                "count": 51,
+                "children": {}
+              }
+            }
+          }
+        }
+      },
+      "B": {
+        "id": "B",
+        "subject": "Philosophy (General)",
+        "count": 0,
+        "children": {
+          "B1-5802": {
+            "id": "B1-5802",
+            "subject": "Philosophy (General)",
+            "count": 7821,
+            "children": {
+              "B108-5802": {
+                "id": "B108-5802",
+                "subject": "By period",
+                "count": 1,
+                "children": {
+                  "B790-5802": {
+                    "id": "B790-5802",
+                    "subject": "Modern",
+                    "count": 2416,
+                    "children": {
+                      "B850-5739": {
+                        "id": "B850-5739",
+                        "subject": "By region or country",
+                        "count": 42284,
+                        "children": {}
+                      },
+                      "B808-849": {
+                        "id": "B808-849",
+                        "subject": "Special topics and schools of philosophy",
+                        "count": 8465,
+                        "children": {}
+                      },
+                      "B5800-5802": {
+                        "id": "B5800-5802",
+                        "subject": "By religion",
+                        "count": 73,
+                        "children": {}
+                      }
+                    }
+                  },
+                  "B108-708": {
+                    "id": "B108-708",
+                    "subject": "Ancient",
+                    "count": 15781,
+                    "children": {}
+                  },
+                  "B720-765": {
+                    "id": "B720-765",
+                    "subject": "Medieval",
+                    "count": 4570,
+                    "children": {}
+                  },
+                  "B770-785": {
+                    "id": "B770-785",
+                    "subject": "Renaissance",
+                    "count": 1402,
+                    "children": {}
+                  }
+                }
+              },
+              "B69-99": {
+                "id": "B69-99",
+                "subject": "General works",
+                "count": 2290,
+                "children": {}
+              }
+            }
+          }
+        }
+      },
+      "BR": {
+        "id": "BR",
+        "subject": "Christianity",
+        "count": 0,
+        "children": {
+          "BR1-1725": {
+            "id": "BR1-1725",
+            "subject": "Christianity",
+            "count": 9297,
+            "children": {
+              "BR140-1510": {
+                "id": "BR140-1510",
+                "subject": "History",
+                "count": 1241,
+                "children": {
+                  "BR160-481": {
+                    "id": "BR160-481",
+                    "subject": "By period",
+                    "count": 1,
+                    "children": {
+                      "BR290-481": {
+                        "id": "BR290-481",
+                        "subject": "Modern period",
+                        "count": 2713,
+                        "children": {
+                          "BR323.5-334.2": {
+                            "id": "BR323.5-334.2",
+                            "subject": "Luther, Martin",
+                            "count": 1309,
+                            "children": {}
+                          }
+                        }
+                      },
+                      "BR160-275": {
+                        "id": "BR160-275",
+                        "subject": "Early and medieval",
+                        "count": 1933,
+                        "children": {}
+                      },
+                      "BR280": {
+                        "id": "BR280",
+                        "subject": "Renaissance.  Renaissance and Reformation",
+                        "count": 10,
+                        "children": {}
+                      }
+                    }
+                  },
+                  "BR500-1510": {
+                    "id": "BR500-1510",
+                    "subject": "By region or country",
+                    "count": 11799,
+                    "children": {}
+                  }
+                }
+              },
+              "BR60-67": {
+                "id": "BR60-67",
+                "subject": "Early Christian literature.  Fathers of the Church, etc.",
+                "count": 3604,
+                "children": {}
+              },
+              "BR115": {
+                "id": "BR115",
+                "subject": "Christianity in relation to special subjects",
+                "count": 4883,
+                "children": {}
+              },
+              "BR1690-1725": {
+                "id": "BR1690-1725",
+                "subject": "Biography",
+                "count": 3413,
+                "children": {}
+              },
+              "BR1600-1609": {
+                "id": "BR1600-1609",
+                "subject": "Persecution.  Martyrs",
+                "count": 560,
+                "children": {}
+              },
+              "BR1610": {
+                "id": "BR1610",
+                "subject": "Tolerance and toleration",
+                "count": 130,
+                "children": {}
+              },
+              "BR130-133.5": {
+                "id": "BR130-133.5",
+                "subject": "Christian antiquities.  Archaeology.  Museums",
+                "count": 269,
+                "children": {}
+              },
+              "BR1615-1617": {
+                "id": "BR1615-1617",
+                "subject": "Liberalism",
+                "count": 92,
+                "children": {}
+              },
+              "BR1620": {
+                "id": "BR1620",
+                "subject": "Sacrilege (History)",
+                "count": 3,
+                "children": {}
+              },
+              "BR1609.5": {
+                "id": "BR1609.5",
+                "subject": "Dissent",
+                "count": 3,
+                "children": {}
+              }
+            }
+          }
+        }
+      },
+      "BL": {
+        "id": "BL",
+        "subject": "Religions.  Mythology.  Rationalism",
+        "count": 0,
+        "children": {
+          "BL1-2790": {
+            "id": "BL1-2790",
+            "subject": "Religions.  Mythology.  Rationalism",
+            "count": 304,
+            "children": {
+              "BL1-50": {
+                "id": "BL1-50",
+                "subject": "Religion (General)",
+                "count": 2662,
+                "children": {}
+              },
+              "BL500-547": {
+                "id": "BL500-547",
+                "subject": "Eschatology",
+                "count": 962,
+                "children": {}
+              },
+              "BL2700-2790": {
+                "id": "BL2700-2790",
+                "subject": "Rationalism",
+                "count": 2328,
+                "children": {}
+              },
+              "BL175-265": {
+                "id": "BL175-265",
+                "subject": "Natural theology",
+                "count": 168,
+                "children": {
+                  "BL239-265": {
+                    "id": "BL239-265",
+                    "subject": "Religion and science",
+                    "count": 2029,
+                    "children": {}
+                  },
+                  "BL205-216": {
+                    "id": "BL205-216",
+                    "subject": "Nature and attributes of Deity",
+                    "count": 121,
+                    "children": {}
+                  },
+                  "BL175-190": {
+                    "id": "BL175-190",
+                    "subject": "General",
+                    "count": 210,
+                    "children": {}
+                  },
+                  "BL200": {
+                    "id": "BL200",
+                    "subject": "Theism",
+                    "count": 102,
+                    "children": {}
+                  },
+                  "BL224-227": {
+                    "id": "BL224-227",
+                    "subject": "Creation.  Theory of the earth",
+                    "count": 138,
+                    "children": {}
+                  },
+                  "BL221": {
+                    "id": "BL221",
+                    "subject": "Monotheism",
+                    "count": 80,
+                    "children": {}
+                  },
+                  "BL220": {
+                    "id": "BL220",
+                    "subject": "Pantheism",
+                    "count": 31,
+                    "children": {}
+                  },
+                  "BL218": {
+                    "id": "BL218",
+                    "subject": "Dualism",
+                    "count": 10,
+                    "children": {}
+                  },
+                  "BL217": {
+                    "id": "BL217",
+                    "subject": "Polytheism",
+                    "count": 10,
+                    "children": {}
+                  }
+                }
+              },
+              "BL74-99": {
+                "id": "BL74-99",
+                "subject": "Religions of the world",
+                "count": 1875,
+                "children": {}
+              },
+              "BL660-2680": {
+                "id": "BL660-2680",
+                "subject": "History and principles of religions",
+                "count": 3,
+                "children": {
+                  "BL2390-2490": {
+                    "id": "BL2390-2490",
+                    "subject": "African",
+                    "count": 1121,
+                    "children": {
+                      "BL2420-2460": {
+                        "id": "BL2420-2460",
+                        "subject": "Egyptian",
+                        "count": 637,
+                        "children": {}
+                      }
+                    }
+                  },
+                  "BL2500-2592": {
+                    "id": "BL2500-2592",
+                    "subject": "American",
+                    "count": 1940,
+                    "children": {}
+                  },
+                  "BL1000-2370": {
+                    "id": "BL1000-2370",
+                    "subject": "Asian.  Oriental",
+                    "count": 423,
+                    "children": {
+                      "BL1100-1710": {
+                        "id": "BL1100-1710",
+                        "subject": "By religion",
+                        "count": 836,
+                        "children": {
+                          "BL1111-1143.2": {
+                            "id": "BL1111-1143.2",
+                            "subject": "Sacred books.  Sources",
+                            "count": 1523,
+                            "children": {
+                              "BL1140.2-1140.4": {
+                                "id": "BL1140.2-1140.4",
+                                "subject": "Purān.as",
+                                "count": 802,
+                                "children": {}
+                              },
+                              "BL1112.2-1137.5": {
+                                "id": "BL1112.2-1137.5",
+                                "subject": "Vedic texts",
+                                "count": 2420,
+                                "children": {}
+                              },
+                              "BL1141.2-1142.6": {
+                                "id": "BL1141.2-1142.6",
+                                "subject": "Tantric texts",
+                                "count": 259,
+                                "children": {}
+                              }
+                            }
+                          },
+                          "BL1100-1295": {
+                            "id": "BL1100-1295",
+                            "subject": "Hinduism",
+                            "count": 6204,
+                            "children": {}
+                          },
+                          "BL1225.2-1243.58": {
+                            "id": "BL1225.2-1243.58",
+                            "subject": "Religious life",
+                            "count": 2453,
+                            "children": {}
+                          },
+                          "BL1216-1225": {
+                            "id": "BL1216-1225",
+                            "subject": "Hindu pantheon.  Deities",
+                            "count": 2164,
+                            "children": {}
+                          },
+                          "BL1500-1590": {
+                            "id": "BL1500-1590",
+                            "subject": "Zoroastrianism (Mazdeism).  Parseeism",
+                            "count": 533,
+                            "children": {}
+                          },
+                          "BL1271.2-1295": {
+                            "id": "BL1271.2-1295",
+                            "subject": "Modifications.  Sects",
+                            "count": 0,
+                            "children": {
+                              "BL1284.5-1289.592": {
+                                "id": "BL1284.5-1289.592",
+                                "subject": "Vaishnavism",
+                                "count": 869,
+                                "children": {}
+                              }
+                            }
+                          },
+                          "BL1300-1380": {
+                            "id": "BL1300-1380",
+                            "subject": "Jainism",
+                            "count": 1032,
+                            "children": {
+                              "BL1376-1378.85": {
+                                "id": "BL1376-1378.85",
+                                "subject": "Forms of worship",
+                                "count": 327,
+                                "children": {}
+                              },
+                              "BL1310-1314.2": {
+                                "id": "BL1310-1314.2",
+                                "subject": "Sacred books.  Sources",
+                                "count": 293,
+                                "children": {}
+                              },
+                              "BL1315-1317": {
+                                "id": "BL1315-1317",
+                                "subject": "Jain literature",
+                                "count": 102,
+                                "children": {}
+                              },
+                              "BL1379-1380": {
+                                "id": "BL1379-1380",
+                                "subject": "Modifications, etc.",
+                                "count": 65,
+                                "children": {}
+                              },
+                              "BL1375.3-1375.7": {
+                                "id": "BL1375.3-1375.7",
+                                "subject": "Jaina pantheon.  Deities",
+                                "count": 8,
+                                "children": {}
+                              }
+                            }
+                          },
+                          "BL1212.32-1215": {
+                            "id": "BL1212.32-1215",
+                            "subject": "Doctrines.  Theology",
+                            "count": 971,
+                            "children": {}
+                          },
+                          "BL1600-1695": {
+                            "id": "BL1600-1695",
+                            "subject": "Semitic religions",
+                            "count": 2,
+                            "children": {
+                              "BL1640-1645": {
+                                "id": "BL1640-1645",
+                                "subject": "Syrian.  Palestinian.  Samaritan",
+                                "count": 37,
+                                "children": {}
+                              },
+                              "BL1620-1625": {
+                                "id": "BL1620-1625",
+                                "subject": "Assyro-Babylonian",
+                                "count": 99,
+                                "children": {}
+                              },
+                              "BL1695": {
+                                "id": "BL1695",
+                                "subject": "Druses",
+                                "count": 44,
+                                "children": {}
+                              },
+                              "BL1670-1672": {
+                                "id": "BL1670-1672",
+                                "subject": "Canaanite",
+                                "count": 34,
+                                "children": {}
+                              },
+                              "BL1600-1605": {
+                                "id": "BL1600-1605",
+                                "subject": "General",
+                                "count": 95,
+                                "children": {}
+                              },
+                              "BL1680-1685": {
+                                "id": "BL1680-1685",
+                                "subject": "Arabian (except Islam)",
+                                "count": 30,
+                                "children": {}
+                              },
+                              "BL1650": {
+                                "id": "BL1650",
+                                "subject": "Hebrew",
+                                "count": 4,
+                                "children": {}
+                              },
+                              "BL1615-1616": {
+                                "id": "BL1615-1616",
+                                "subject": "Sumerian",
+                                "count": 37,
+                                "children": {}
+                              },
+                              "BL1660-1665": {
+                                "id": "BL1660-1665",
+                                "subject": "Phoenician.  Carthaginian, etc.",
+                                "count": 20,
+                                "children": {}
+                              },
+                              "BL1630": {
+                                "id": "BL1630",
+                                "subject": "Chaldean",
+                                "count": 1,
+                                "children": {}
+                              },
+                              "BL1610": {
+                                "id": "BL1610",
+                                "subject": "Aramean",
+                                "count": 1,
+                                "children": {}
+                              },
+                              "BL1635": {
+                                "id": "BL1635",
+                                "subject": "Harranian.  Pseudo-Sabian",
+                                "count": 3,
+                                "children": {}
+                              }
+                            }
+                          },
+                          "BL1153.7-1168": {
+                            "id": "BL1153.7-1168",
+                            "subject": "By region or country",
+                            "count": 198,
+                            "children": {}
+                          },
+                          "BL1100-1107.5": {
+                            "id": "BL1100-1107.5",
+                            "subject": "General",
+                            "count": 106,
+                            "children": {}
+                          },
+                          "BL1595": {
+                            "id": "BL1595",
+                            "subject": "Yezidis",
+                            "count": 59,
+                            "children": {}
+                          },
+                          "BL1145-1146": {
+                            "id": "BL1145-1146",
+                            "subject": "Hindu literature",
+                            "count": 186,
+                            "children": {}
+                          },
+                          "BL1108.2-1108.7": {
+                            "id": "BL1108.2-1108.7",
+                            "subject": "Religious education",
+                            "count": 16,
+                            "children": {}
+                          },
+                          "BL1109.2-1109.7": {
+                            "id": "BL1109.2-1109.7",
+                            "subject": "Antiquities.  Archaeology.  Inscriptions",
+                            "count": 4,
+                            "children": {}
+                          }
+                        }
+                      },
+                      "BL1750-2350": {
+                        "id": "BL1750-2350",
+                        "subject": "By region or country",
+                        "count": 1140,
+                        "children": {
+                          "BL1790-1975": {
+                            "id": "BL1790-1975",
+                            "subject": "China",
+                            "count": 1382,
+                            "children": {
+                              "BL1830-1883": {
+                                "id": "BL1830-1883",
+                                "subject": "Confucianism",
+                                "count": 335,
+                                "children": {}
+                              },
+                              "BL1899-1942.85": {
+                                "id": "BL1899-1942.85",
+                                "subject": "Taoism",
+                                "count": 2042,
+                                "children": {}
+                              }
+                            }
+                          },
+                          "BL2000-2032": {
+                            "id": "BL2000-2032",
+                            "subject": "India",
+                            "count": 1253,
+                            "children": {
+                              "BL2017-2018.7": {
+                                "id": "BL2017-2018.7",
+                                "subject": "Sikhism",
+                                "count": 1756,
+                                "children": {}
+                              }
+                            }
+                          },
+                          "BL2195-2228": {
+                            "id": "BL2195-2228",
+                            "subject": "Japan",
+                            "count": 1459,
+                            "children": {
+                              "BL2216-2227.8": {
+                                "id": "BL2216-2227.8",
+                                "subject": "Shinto",
+                                "count": 1488,
+                                "children": {}
+                              }
+                            }
+                          },
+                          "BL2230-2240": {
+                            "id": "BL2230-2240",
+                            "subject": "Korea",
+                            "count": 785,
+                            "children": {}
+                          }
+                        }
+                      },
+                      "BL1000-1035": {
+                        "id": "BL1000-1035",
+                        "subject": "General",
+                        "count": 215,
+                        "children": {}
+                      },
+                      "BL1055": {
+                        "id": "BL1055",
+                        "subject": "Southern and Eastern Asia",
+                        "count": 119,
+                        "children": {}
+                      },
+                      "BL1060": {
+                        "id": "BL1060",
+                        "subject": "Southwestern Asia.  Asia Minor.  Levant",
+                        "count": 110,
+                        "children": {}
+                      },
+                      "BL1050": {
+                        "id": "BL1050",
+                        "subject": "Northern and Central Asia",
+                        "count": 19,
+                        "children": {}
+                      }
+                    }
+                  },
+                  "BL689-980": {
+                    "id": "BL689-980",
+                    "subject": "European.  Occidental",
+                    "count": 136,
+                    "children": {
+                      "BL900-980": {
+                        "id": "BL900-980",
+                        "subject": "Other European",
+                        "count": 1668,
+                        "children": {}
+                      },
+                      "BL700-820": {
+                        "id": "BL700-820",
+                        "subject": "Classical (Etruscan, Greek, Roman)",
+                        "count": 2630,
+                        "children": {}
+                      },
+                      "BL830-875": {
+                        "id": "BL830-875",
+                        "subject": "Germanic and Norse",
+                        "count": 402,
+                        "children": {}
+                      }
+                    }
+                  },
+                  "BL2600-2630": {
+                    "id": "BL2600-2630",
+                    "subject": "Pacific Ocean islands.  Oceania",
+                    "count": 241,
+                    "children": {}
+                  },
+                  "BL2670": {
+                    "id": "BL2670",
+                    "subject": "Arctic regions",
+                    "count": 9,
+                    "children": {}
+                  },
+                  "BL660": {
+                    "id": "BL660",
+                    "subject": "Indo-European.  Aryan",
+                    "count": 86,
+                    "children": {}
+                  },
+                  "BL687": {
+                    "id": "BL687",
+                    "subject": "Mediterranean region",
+                    "count": 37,
+                    "children": {}
+                  },
+                  "BL685": {
+                    "id": "BL685",
+                    "subject": "Ural-Altaic",
+                    "count": 9,
+                    "children": {}
+                  }
+                }
+              },
+              "BL425-490": {
+                "id": "BL425-490",
+                "subject": "Religious doctrines (General)",
+                "count": 48,
+                "children": {
+                  "BL435-457": {
+                    "id": "BL435-457",
+                    "subject": "Nature worship",
+                    "count": 333,
+                    "children": {}
+                  },
+                  "BL473-490": {
+                    "id": "BL473-490",
+                    "subject": "Other",
+                    "count": 829,
+                    "children": {}
+                  },
+                  "BL458": {
+                    "id": "BL458",
+                    "subject": "Women in comparative religion",
+                    "count": 241,
+                    "children": {}
+                  },
+                  "BL465-470": {
+                    "id": "BL465-470",
+                    "subject": "Worship of human beings",
+                    "count": 61,
+                    "children": {}
+                  },
+                  "BL460": {
+                    "id": "BL460",
+                    "subject": "Sex worship.  Phallicism",
+                    "count": 51,
+                    "children": {}
+                  },
+                  "BL430": {
+                    "id": "BL430",
+                    "subject": "Origins of religion",
+                    "count": 87,
+                    "children": {}
+                  }
+                }
+              },
+              "BL624-629.5": {
+                "id": "BL624-629.5",
+                "subject": "Religious life",
+                "count": 3489,
+                "children": {}
+              },
+              "BL71.5-73": {
+                "id": "BL71.5-73",
+                "subject": "Biography",
+                "count": 418,
+                "children": {}
+              },
+              "BL550-619": {
+                "id": "BL550-619",
+                "subject": "Worship.  Cultus",
+                "count": 1222,
+                "children": {}
+              },
+              "BL300-325": {
+                "id": "BL300-325",
+                "subject": "The myth.  Comparative mythology",
+                "count": 1462,
+                "children": {}
+              },
+              "BL51-65": {
+                "id": "BL51-65",
+                "subject": "Philosophy of religion.  Psychology of religion.  Religion",
+                "count": 6071,
+                "children": {}
+              },
+              "BL290": {
+                "id": "BL290",
+                "subject": "The soul",
+                "count": 49,
+                "children": {}
+              },
+              "BL350-385": {
+                "id": "BL350-385",
+                "subject": "Classification of religions",
+                "count": 14,
+                "children": {}
+              },
+              "BL410": {
+                "id": "BL410",
+                "subject": "Religions in relation to one another",
+                "count": 184,
+                "children": {}
+              },
+              "BL70-71": {
+                "id": "BL70-71",
+                "subject": "Sacred books (General)",
+                "count": 116,
+                "children": {}
+              },
+              "BL630-632.5": {
+                "id": "BL630-632.5",
+                "subject": "Religious organization",
+                "count": 45,
+                "children": {}
+              },
+              "BL270": {
+                "id": "BL270",
+                "subject": "Unity and plurality",
+                "count": 1,
+                "children": {}
+              }
+            }
+          }
+        }
+      },
+      "BP": {
+        "id": "BP",
+        "subject": "Islam.  Bahai Faith.  Theosophy, etc.",
+        "count": 0,
+        "children": {
+          "BP1-610": {
+            "id": "BP1-610",
+            "subject": "Islam.  Bahai Faith.  Theosophy, etc.",
+            "count": 7,
+            "children": {
+              "BP300-395": {
+                "id": "BP300-395",
+                "subject": "Bahai Faith",
+                "count": 1023,
+                "children": {}
+              },
+              "BP174-190": {
+                "id": "BP174-190",
+                "subject": "The practice of Islam",
+                "count": 783,
+                "children": {
+                  "BP188-190": {
+                    "id": "BP188-190",
+                    "subject": "Islamic religious life",
+                    "count": 840,
+                    "children": {
+                      "BP188.45-189.65": {
+                        "id": "BP188.45-189.65",
+                        "subject": "Sufism.  Mysticism.  Dervishes",
+                        "count": 2424,
+                        "children": {}
+                      },
+                      "BP189.68-189.7": {
+                        "id": "BP189.68-189.7",
+                        "subject": "Monasticism",
+                        "count": 592,
+                        "children": {}
+                      },
+                      "BP188.2-188.3": {
+                        "id": "BP188.2-188.3",
+                        "subject": "Devotional literature",
+                        "count": 160,
+                        "children": {}
+                      }
+                    }
+                  },
+                  "BP186-186.97": {
+                    "id": "BP186-186.97",
+                    "subject": "Special days and seasons, fasts, feasts,",
+                    "count": 237,
+                    "children": {}
+                  },
+                  "BP182": {
+                    "id": "BP182",
+                    "subject": "Jihad (Holy War)",
+                    "count": 294,
+                    "children": {}
+                  },
+                  "BP176-181": {
+                    "id": "BP176-181",
+                    "subject": "The five duties of a Moslem.  Pillars of Islam",
+                    "count": 330,
+                    "children": {}
+                  },
+                  "BP187-187.9": {
+                    "id": "BP187-187.9",
+                    "subject": "Shrines, sacred places, etc.",
+                    "count": 704,
+                    "children": {}
+                  },
+                  "BP184-184.9": {
+                    "id": "BP184-184.9",
+                    "subject": "Religious ceremonies, rites, etc.",
+                    "count": 480,
+                    "children": {}
+                  }
+                }
+              },
+              "BP600-610": {
+                "id": "BP600-610",
+                "subject": "Other beliefs and movements",
+                "count": 2863,
+                "children": {}
+              },
+              "BP1-253": {
+                "id": "BP1-253",
+                "subject": "Islam",
+                "count": 6912,
+                "children": {}
+              },
+              "BP500-585": {
+                "id": "BP500-585",
+                "subject": "Theosophy",
+                "count": 810,
+                "children": {}
+              },
+              "BP165.5": {
+                "id": "BP165.5",
+                "subject": "Dogma (ʻAqā̓id)",
+                "count": 262,
+                "children": {}
+              },
+              "BP70-80": {
+                "id": "BP70-80",
+                "subject": "Biography",
+                "count": 4157,
+                "children": {
+                  "BP75-77.75": {
+                    "id": "BP75-77.75",
+                    "subject": "Muammad, Prophet, d. 632",
+                    "count": 1524,
+                    "children": {}
+                  }
+                }
+              },
+              "BP166-166.94": {
+                "id": "BP166-166.94",
+                "subject": "ERROR, could not find",
+                "count": 2884,
+                "children": {}
+              },
+              "BP191-253": {
+                "id": "BP191-253",
+                "subject": "Branches, sects, etc.",
+                "count": 1535,
+                "children": {
+                  "BP221-223": {
+                    "id": "BP221-223",
+                    "subject": "Black Muslims",
+                    "count": 203,
+                    "children": {}
+                  },
+                  "BP192-194.9": {
+                    "id": "BP192-194.9",
+                    "subject": "Shiites",
+                    "count": 2330,
+                    "children": {}
+                  },
+                  "BP251-253": {
+                    "id": "BP251-253",
+                    "subject": "Nurculuk",
+                    "count": 87,
+                    "children": {}
+                  },
+                  "BP232": {
+                    "id": "BP232",
+                    "subject": "Moorish Science Temple of America",
+                    "count": 3,
+                    "children": {}
+                  }
+                }
+              },
+              "BP1-68": {
+                "id": "BP1-68",
+                "subject": "General",
+                "count": 5321,
+                "children": {}
+              },
+              "BP173.25-173.45": {
+                "id": "BP173.25-173.45",
+                "subject": "Islamic sociology",
+                "count": 723,
+                "children": {}
+              },
+              "BP171-173": {
+                "id": "BP171-173",
+                "subject": "Relation of Islam to other religions",
+                "count": 1344,
+                "children": {}
+              },
+              "BP100-134": {
+                "id": "BP100-134",
+                "subject": "Koran",
+                "count": 0,
+                "children": {
+                  "BP130-134": {
+                    "id": "BP130-134",
+                    "subject": "Works about the Koran",
+                    "count": 3707,
+                    "children": {}
+                  },
+                  "BP128.15-129.83": {
+                    "id": "BP128.15-129.83",
+                    "subject": "Special parts and chapters",
+                    "count": 266,
+                    "children": {}
+                  }
+                }
+              },
+              "BP595-597": {
+                "id": "BP595-597",
+                "subject": "Anthroposophy",
+                "count": 725,
+                "children": {}
+              },
+              "BP100-157": {
+                "id": "BP100-157",
+                "subject": "Sacred books",
+                "count": 24,
+                "children": {
+                  "BP100-134": {
+                    "id": "BP100-134",
+                    "subject": "Koran",
+                    "count": 427,
+                    "children": {}
+                  },
+                  "BP135-136.9": {
+                    "id": "BP135-136.9",
+                    "subject": "Hadith literature.  Traditions.  Sunna",
+                    "count": 2067,
+                    "children": {}
+                  },
+                  "BP137-137.5": {
+                    "id": "BP137-137.5",
+                    "subject": "Koranic and other Islamic legends",
+                    "count": 79,
+                    "children": {}
+                  }
+                }
+              },
+              "BP87-89": {
+                "id": "BP87-89",
+                "subject": "Islamic literature",
+                "count": 710,
+                "children": {}
+              },
+              "BP170.3-170.5": {
+                "id": "BP170.3-170.5",
+                "subject": "Missionary work of Islam",
+                "count": 124,
+                "children": {}
+              },
+              "BP167.5": {
+                "id": "BP167.5",
+                "subject": "Heresy, heresies, heretics",
+                "count": 34,
+                "children": {}
+              },
+              "BP170.2": {
+                "id": "BP170.2",
+                "subject": "Benevolent work.  Social work.  Welfare work, etc.",
+                "count": 4,
+                "children": {}
+              }
+            }
+          },
+          "BP1-68": {
+            "id": "BP1-68",
+            "subject": "General",
+            "count": 0,
+            "children": {
+              "BP42-48": {
+                "id": "BP42-48",
+                "subject": "Study and teaching",
+                "count": 647,
+                "children": {}
+              }
+            }
+          }
+        }
+      },
+      "BM": {
+        "id": "BM",
+        "subject": "Judaism",
+        "count": 0,
+        "children": {
+          "BM1-990": {
+            "id": "BM1-990",
+            "subject": "Judaism",
+            "count": 13,
+            "children": {
+              "BM650-747": {
+                "id": "BM650-747",
+                "subject": "Practical Judaism",
+                "count": 996,
+                "children": {
+                  "BM723-729": {
+                    "id": "BM723-729",
+                    "subject": "Jewish way of life.  Spiritual life.  Mysticism.  Personal",
+                    "count": 1969,
+                    "children": {}
+                  },
+                  "BM660-679": {
+                    "id": "BM660-679",
+                    "subject": "Liturgy and ritual",
+                    "count": 4858,
+                    "children": {}
+                  },
+                  "BM651-652.7": {
+                    "id": "BM651-652.7",
+                    "subject": "Priests, rabbis, etc.",
+                    "count": 81,
+                    "children": {}
+                  },
+                  "BM690-695": {
+                    "id": "BM690-695",
+                    "subject": "Festivals and fasts",
+                    "count": 3029,
+                    "children": {}
+                  },
+                  "BM700-720": {
+                    "id": "BM700-720",
+                    "subject": "Rites and customs",
+                    "count": 3057,
+                    "children": {}
+                  },
+                  "BM730-747": {
+                    "id": "BM730-747",
+                    "subject": "Preaching.  Homiletics",
+                    "count": 1402,
+                    "children": {}
+                  },
+                  "BM653-653.7": {
+                    "id": "BM653-653.7",
+                    "subject": "Congregations.  Synagogues",
+                    "count": 81,
+                    "children": {}
+                  },
+                  "BM656-657": {
+                    "id": "BM656-657",
+                    "subject": "Forms of worship",
+                    "count": 447,
+                    "children": {}
+                  },
+                  "BM654-655.6": {
+                    "id": "BM654-655.6",
+                    "subject": "The tabernacle.  The temple",
+                    "count": 177,
+                    "children": {}
+                  }
+                }
+              },
+              "BM495-532": {
+                "id": "BM495-532",
+                "subject": "Sources of Jewish religion.  Rabbinical literature",
+                "count": 1027,
+                "children": {
+                  "BM497-509": {
+                    "id": "BM497-509",
+                    "subject": "Talmudic literature",
+                    "count": 6015,
+                    "children": {
+                      "BM499-504.7": {
+                        "id": "BM499-504.7",
+                        "subject": "Babylonian Talmud",
+                        "count": 1794,
+                        "children": {}
+                      },
+                      "BM498-498.8": {
+                        "id": "BM498-498.8",
+                        "subject": "Palestinian Talmud",
+                        "count": 104,
+                        "children": {}
+                      },
+                      "BM497-497.8": {
+                        "id": "BM497-497.8",
+                        "subject": "Mishnah",
+                        "count": 164,
+                        "children": {}
+                      },
+                      "BM508-508.5": {
+                        "id": "BM508-508.5",
+                        "subject": "Tosefta",
+                        "count": 42,
+                        "children": {}
+                      },
+                      "BM507-507.5": {
+                        "id": "BM507-507.5",
+                        "subject": "Baraita",
+                        "count": 10,
+                        "children": {}
+                      }
+                    }
+                  },
+                  "BM520-523.7": {
+                    "id": "BM520-523.7",
+                    "subject": "Halacha",
+                    "count": 4228,
+                    "children": {}
+                  },
+                  "BM525-526": {
+                    "id": "BM525-526",
+                    "subject": "Cabala",
+                    "count": 1387,
+                    "children": {}
+                  },
+                  "BM529": {
+                    "id": "BM529",
+                    "subject": "Jewish tradition",
+                    "count": 42,
+                    "children": {}
+                  },
+                  "BM510-518": {
+                    "id": "BM510-518",
+                    "subject": "Midrash",
+                    "count": 737,
+                    "children": {}
+                  }
+                }
+              },
+              "BM600-645": {
+                "id": "BM600-645",
+                "subject": "Dogmatic Judaism",
+                "count": 1698,
+                "children": {}
+              },
+              "BM534-538": {
+                "id": "BM534-538",
+                "subject": "Relation of Judaism to special subject fields",
+                "count": 540,
+                "children": {
+                  "BM534-536": {
+                    "id": "BM534-536",
+                    "subject": "Religions",
+                    "count": 1020,
+                    "children": {}
+                  }
+                }
+              },
+              "BM750-755": {
+                "id": "BM750-755",
+                "subject": "Biography",
+                "count": 3197,
+                "children": {}
+              },
+              "BM1-449": {
+                "id": "BM1-449",
+                "subject": "General",
+                "count": 2144,
+                "children": {}
+              },
+              "BM545-582": {
+                "id": "BM545-582",
+                "subject": "Principles of Judaism (General)",
+                "count": 1245,
+                "children": {}
+              },
+              "BM480-488.8": {
+                "id": "BM480-488.8",
+                "subject": "Pre-Talmudic Jewish literature (non-Biblical)",
+                "count": 534,
+                "children": {}
+              },
+              "BM900-990": {
+                "id": "BM900-990",
+                "subject": "Samaritans",
+                "count": 88,
+                "children": {}
+              },
+              "BM585-585.4": {
+                "id": "BM585-585.4",
+                "subject": "Controversial works against the Jews",
+                "count": 204,
+                "children": {}
+              },
+              "BM590-591": {
+                "id": "BM590-591",
+                "subject": "Jewish works against Christianity and Islam",
+                "count": 67,
+                "children": {}
+              },
+              "BM648": {
+                "id": "BM648",
+                "subject": "Apologetics",
+                "count": 71,
+                "children": {}
+              },
+              "BM646": {
+                "id": "BM646",
+                "subject": "Heresy, heresies",
+                "count": 8,
+                "children": {}
+              }
+            }
+          },
+          "BM1-449": {
+            "id": "BM1-449",
+            "subject": "General",
+            "count": 0,
+            "children": {
+              "BM150-449": {
+                "id": "BM150-449",
+                "subject": "History",
+                "count": 2495,
+                "children": {
+                  "BM201-449": {
+                    "id": "BM201-449",
+                    "subject": "By region or country",
+                    "count": 975,
+                    "children": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "BC": {
+        "id": "BC",
+        "subject": "Logic",
+        "count": 0,
+        "children": {
+          "BC1-199": {
+            "id": "BC1-199",
+            "subject": "Logic",
+            "count": 1617,
+            "children": {
+              "BC60-99": {
+                "id": "BC60-99",
+                "subject": "General works",
+                "count": 887,
+                "children": {}
+              },
+              "BC171-199": {
+                "id": "BC171-199",
+                "subject": "Special topics",
+                "count": 1428,
+                "children": {}
+              },
+              "BC11-39": {
+                "id": "BC11-39",
+                "subject": "History",
+                "count": 94,
+                "children": {
+                  "BC25-39": {
+                    "id": "BC25-39",
+                    "subject": "By period",
+                    "count": 416,
+                    "children": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "BQ": {
+        "id": "BQ",
+        "subject": "Buddhism",
+        "count": 0,
+        "children": {
+          "BQ1-9800": {
+            "id": "BQ1-9800",
+            "subject": "Buddhism",
+            "count": 9,
+            "children": {
+              "BQ1100-3340": {
+                "id": "BQ1100-3340",
+                "subject": "Tripit.aka (Canonical literature)",
+                "count": 4022,
+                "children": {}
+              },
+              "BQ7001-9800": {
+                "id": "BQ7001-9800",
+                "subject": "Modifications, schools, etc.",
+                "count": 20,
+                "children": {
+                  "BQ8000-9800": {
+                    "id": "BQ8000-9800",
+                    "subject": "Special modifications, sects, etc.",
+                    "count": 1271,
+                    "children": {
+                      "BQ9250-9519": {
+                        "id": "BQ9250-9519",
+                        "subject": "Zen Buddhism",
+                        "count": 2234,
+                        "children": {}
+                      },
+                      "BQ8900-9099": {
+                        "id": "BQ8900-9099",
+                        "subject": "Tantric Buddhism",
+                        "count": 670,
+                        "children": {}
+                      },
+                      "BQ8500-8769": {
+                        "id": "BQ8500-8769",
+                        "subject": "Pure Land Buddhism",
+                        "count": 1192,
+                        "children": {}
+                      }
+                    }
+                  },
+                  "BQ7530-7950": {
+                    "id": "BQ7530-7950",
+                    "subject": "Tibetan Buddhism (Lamaism)",
+                    "count": 3389,
+                    "children": {}
+                  },
+                  "BQ7960-7989": {
+                    "id": "BQ7960-7989",
+                    "subject": "Bonpo (Sect)",
+                    "count": 349,
+                    "children": {}
+                  },
+                  "BQ7300-7529": {
+                    "id": "BQ7300-7529",
+                    "subject": "Mahayana Buddhism",
+                    "count": 353,
+                    "children": {}
+                  },
+                  "BQ7100-7285": {
+                    "id": "BQ7100-7285",
+                    "subject": "Theravāda (Hinayana) Buddhism",
+                    "count": 93,
+                    "children": {}
+                  }
+                }
+              },
+              "BQ4061-4570": {
+                "id": "BQ4061-4570",
+                "subject": "Doctrinal and systematic Buddhism",
+                "count": 776,
+                "children": {
+                  "BQ4180-4565": {
+                    "id": "BQ4180-4565",
+                    "subject": "Special doctrines",
+                    "count": 1045,
+                    "children": {}
+                  },
+                  "BQ4570": {
+                    "id": "BQ4570",
+                    "subject": "Special topics and relations to special subjects",
+                    "count": 829,
+                    "children": {}
+                  }
+                }
+              },
+              "BQ4000-4060": {
+                "id": "BQ4000-4060",
+                "subject": "General works",
+                "count": 776,
+                "children": {}
+              },
+              "BQ840-999": {
+                "id": "BQ840-999",
+                "subject": "Biography",
+                "count": 0,
+                "children": {
+                  "BQ860-999": {
+                    "id": "BQ860-999",
+                    "subject": "Individual",
+                    "count": 0,
+                    "children": {
+                      "BQ940-999": {
+                        "id": "BQ940-999",
+                        "subject": "Other",
+                        "count": 1799,
+                        "children": {}
+                      },
+                      "BQ860-939": {
+                        "id": "BQ860-939",
+                        "subject": "Gautama Buddha",
+                        "count": 555,
+                        "children": {}
+                      }
+                    }
+                  },
+                  "BQ840-858": {
+                    "id": "BQ840-858",
+                    "subject": "Collective",
+                    "count": 49,
+                    "children": {}
+                  }
+                }
+              },
+              "BQ4911-5720": {
+                "id": "BQ4911-5720",
+                "subject": "Practice of Buddhism.  Forms of worship",
+                "count": 47,
+                "children": {
+                  "BQ5360-5680": {
+                    "id": "BQ5360-5680",
+                    "subject": "Religious life",
+                    "count": 383,
+                    "children": {
+                      "BQ5635-5675": {
+                        "id": "BQ5635-5675",
+                        "subject": "Spiritual life.  Mysticism.  Englightenment.  Perfection",
+                        "count": 143,
+                        "children": {}
+                      },
+                      "BQ5595-5633": {
+                        "id": "BQ5595-5633",
+                        "subject": "Devotion.  Meditation.  Prayer",
+                        "count": 403,
+                        "children": {}
+                      },
+                      "BQ5535-5594": {
+                        "id": "BQ5535-5594",
+                        "subject": "Devotional literature.  Meditations.  Prayers",
+                        "count": 174,
+                        "children": {}
+                      },
+                      "BQ5485-5530": {
+                        "id": "BQ5485-5530",
+                        "subject": "Precepts for laymen",
+                        "count": 49,
+                        "children": {}
+                      }
+                    }
+                  },
+                  "BQ5070-5075": {
+                    "id": "BQ5070-5075",
+                    "subject": "Altar, liturgical objects, ornaments, memorials, etc.",
+                    "count": 67,
+                    "children": {}
+                  },
+                  "BQ5700-5720": {
+                    "id": "BQ5700-5720",
+                    "subject": "Festivals.  Days and seasons",
+                    "count": 34,
+                    "children": {}
+                  },
+                  "BQ5140-5355": {
+                    "id": "BQ5140-5355",
+                    "subject": "Buddhist ministry.  Priesthood.  Organization",
+                    "count": 46,
+                    "children": {
+                      "BQ5251-5305": {
+                        "id": "BQ5251-5305",
+                        "subject": "Education and training",
+                        "count": 8,
+                        "children": {}
+                      },
+                      "BQ5310-5350": {
+                        "id": "BQ5310-5350",
+                        "subject": "Preaching",
+                        "count": 126,
+                        "children": {}
+                      }
+                    }
+                  },
+                  "BQ4965-5030": {
+                    "id": "BQ4965-5030",
+                    "subject": "Ceremonies and rites.  Ceremonial rules",
+                    "count": 213,
+                    "children": {}
+                  },
+                  "BQ5100-5125": {
+                    "id": "BQ5100-5125",
+                    "subject": "Symbols and symbolism",
+                    "count": 152,
+                    "children": {}
+                  },
+                  "BQ5035-5065": {
+                    "id": "BQ5035-5065",
+                    "subject": "Hymns.  Chants.  Recitations",
+                    "count": 68,
+                    "children": {}
+                  },
+                  "BQ5130-5137": {
+                    "id": "BQ5130-5137",
+                    "subject": "Temple.  Temple organization",
+                    "count": 53,
+                    "children": {}
+                  },
+                  "BQ5080-5085": {
+                    "id": "BQ5080-5085",
+                    "subject": "Vestments, altar cloths, etc.",
+                    "count": 8,
+                    "children": {}
+                  }
+                }
+              },
+              "BQ251-799": {
+                "id": "BQ251-799",
+                "subject": "History",
+                "count": 2643,
+                "children": {}
+              },
+              "BQ4620-4905": {
+                "id": "BQ4620-4905",
+                "subject": "Buddhist pantheon",
+                "count": 745,
+                "children": {}
+              },
+              "BQ115-126": {
+                "id": "BQ115-126",
+                "subject": "General collections.  Collected works",
+                "count": 178,
+                "children": {}
+              },
+              "BQ1001-1045": {
+                "id": "BQ1001-1045",
+                "subject": "Buddhist literature",
+                "count": 270,
+                "children": {}
+              },
+              "BQ133": {
+                "id": "BQ133",
+                "subject": "Terminology",
+                "count": 87,
+                "children": {}
+              },
+              "BQ6300-6388": {
+                "id": "BQ6300-6388",
+                "subject": "Monasteries.  Temples.  Shrines.  Sites",
+                "count": 1839,
+                "children": {}
+              },
+              "BQ6001-6160": {
+                "id": "BQ6001-6160",
+                "subject": "Monasticism and monastic life  Sagha (Order)",
+                "count": 306,
+                "children": {}
+              },
+              "BQ5851-5899": {
+                "id": "BQ5851-5899",
+                "subject": "Benevolent work.  Social work.  Welfare work, etc.",
+                "count": 16,
+                "children": {}
+              },
+              "BQ221-249": {
+                "id": "BQ221-249",
+                "subject": "Antiquities.  Archaeology",
+                "count": 102,
+                "children": {
+                  "BQ240-244": {
+                    "id": "BQ240-244",
+                    "subject": "Literary discoveries",
+                    "count": 16,
+                    "children": {}
+                  },
+                  "BQ246-249": {
+                    "id": "BQ246-249",
+                    "subject": "Inscriptions, etc.",
+                    "count": 22,
+                    "children": {}
+                  }
+                }
+              },
+              "BQ6400-6495": {
+                "id": "BQ6400-6495",
+                "subject": "Pilgrims and pilgrimages",
+                "count": 252,
+                "children": {}
+              },
+              "BQ12-93": {
+                "id": "BQ12-93",
+                "subject": "Societies, councils, associations, clubs, etc.",
+                "count": 47,
+                "children": {}
+              },
+              "BQ5725-5845": {
+                "id": "BQ5725-5845",
+                "subject": "Folklore",
+                "count": 178,
+                "children": {}
+              },
+              "BQ130": {
+                "id": "BQ130",
+                "subject": "Dictionaries (General)",
+                "count": 129,
+                "children": {}
+              },
+              "BQ4600-4610": {
+                "id": "BQ4600-4610",
+                "subject": "Relation to other religious and philosophical systems",
+                "count": 84,
+                "children": {}
+              },
+              "BQ135": {
+                "id": "BQ135",
+                "subject": "Questions and answers.  Maxims (General)",
+                "count": 30,
+                "children": {}
+              },
+              "BQ5901-5975": {
+                "id": "BQ5901-5975",
+                "subject": "Missionary work",
+                "count": 26,
+                "children": {}
+              },
+              "BQ141-209": {
+                "id": "BQ141-209",
+                "subject": "Religious education (General)",
+                "count": 92,
+                "children": {}
+              },
+              "BQ100-102": {
+                "id": "BQ100-102",
+                "subject": "Congresses.  Conferences (General)",
+                "count": 31,
+                "children": {}
+              },
+              "BQ800-829": {
+                "id": "BQ800-829",
+                "subject": "Persecutions",
+                "count": 2,
+                "children": {}
+              },
+              "BQ104-105": {
+                "id": "BQ104-105",
+                "subject": "Directories (General)",
+                "count": 3,
+                "children": {}
+              },
+              "BQ128": {
+                "id": "BQ128",
+                "subject": "Encyclopedias (General)",
+                "count": 6,
+                "children": {}
+              },
+              "BQ1-10": {
+                "id": "BQ1-10",
+                "subject": "Periodicals.  Yearbooks (General)",
+                "count": 11,
+                "children": {}
+              },
+              "BQ210-219": {
+                "id": "BQ210-219",
+                "subject": "Research",
+                "count": 1,
+                "children": {}
+              },
+              "BQ6200-6240": {
+                "id": "BQ6200-6240",
+                "subject": "Asceticism.  Hermits.  Wayfaring life",
+                "count": 5,
+                "children": {}
+              }
+            }
+          }
+        }
+      },
+      "BD": {
+        "id": "BD",
+        "subject": "Speculative philosophy",
+        "count": 0,
+        "children": {
+          "BD10-701": {
+            "id": "BD10-701",
+            "subject": "Speculative philosophy",
+            "count": 78,
+            "children": {
+              "BD300-450": {
+                "id": "BD300-450",
+                "subject": "Ontology",
+                "count": 7744,
+                "children": {}
+              },
+              "BD143-237": {
+                "id": "BD143-237",
+                "subject": "Epistemology.  Theory of knowledge",
+                "count": 4316,
+                "children": {}
+              },
+              "BD10-41": {
+                "id": "BD10-41",
+                "subject": "General philosophical works",
+                "count": 1260,
+                "children": {}
+              },
+              "BD95-131": {
+                "id": "BD95-131",
+                "subject": "Metaphysics",
+                "count": 859,
+                "children": {}
+              },
+              "BD493-701": {
+                "id": "BD493-701",
+                "subject": "Cosmology",
+                "count": 2430,
+                "children": {}
+              },
+              "BD240-260": {
+                "id": "BD240-260",
+                "subject": "Methodology",
+                "count": 833,
+                "children": {}
+              }
+            }
+          }
+        }
+      },
+      "BH": {
+        "id": "BH",
+        "subject": "Aesthetics",
+        "count": 0,
+        "children": {
+          "BH1-301": {
+            "id": "BH1-301",
+            "subject": "Aesthetics",
+            "count": 3250,
+            "children": {
+              "BH81-208": {
+                "id": "BH81-208",
+                "subject": "History",
+                "count": 1057,
+                "children": {}
+              },
+              "BH301": {
+                "id": "BH301",
+                "subject": "Special topics",
+                "count": 1196,
+                "children": {}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

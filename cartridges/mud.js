@@ -60,8 +60,8 @@ var gameData = {
     },
     "A-AC": {
       "firstVisit": true,
-      "displayName": "Collections.  Series.  Collected works",
-      "description": "There are 2 rooms throughout this building. Visit them with the appropriate code. [A-AC-AC1-195] \u201cCollections of monographs, essays, etc. Room\u201d, [A-AC-AC1-999] \u201cCollections.  Series.  Collected works Room\u201d.",
+      "displayName": "\u201cCollections.  Series.  Collected works Building\u201d Main Lobby",
+      "description": "There are 2 rooms throughout this building in 1 floor. The rooms in this floor are:  [A-AC-AC1-195] \u201cCollections of monographs, essays, etc. Room\u201d, [A-AC-AC1-999] \u201cCollections.  Series.  Collected works Room\u201d.",
       "interactables": {},
       "items": {},
       "exits": {
@@ -79,36 +79,10 @@ var gameData = {
         }
       }
     },
-    "A-AC-AC1-195": {
-      "firstVisit": true,
-      "displayName": "Collections of monographs, essays, etc.",
-      "description": "Description for \u201cCollections of monographs, essays, etc. Room\u201d. You can exit to the building lobby.",
-      "interactables": {},
-      "items": {},
-      "exits": {
-        "exit": {
-          "displayName": "Exit",
-          "destination": "A-AC"
-        }
-      }
-    },
-    "A-AC-AC1-999": {
-      "firstVisit": true,
-      "displayName": "Collections.  Series.  Collected works",
-      "description": "Description for \u201cCollections.  Series.  Collected works Room\u201d. You can exit to the building lobby.",
-      "interactables": {},
-      "items": {},
-      "exits": {
-        "exit": {
-          "displayName": "Exit",
-          "destination": "A-AC"
-        }
-      }
-    },
     "A-AE": {
       "firstVisit": true,
-      "displayName": "Encyclopedias",
-      "description": "There is 1 room throughout this building. Visit it with the appropriate code. [A-AE-AE1-90] \u201cEncyclopedias Room\u201d.",
+      "displayName": "\u201cEncyclopedias Building\u201d Main Lobby",
+      "description": "There is 1 room throughout this building in 1 floor. The room in this floor is:  [A-AE-AE1-90] \u201cEncyclopedias Room\u201d.",
       "interactables": {},
       "items": {},
       "exits": {
@@ -122,23 +96,10 @@ var gameData = {
         }
       }
     },
-    "A-AE-AE1-90": {
-      "firstVisit": true,
-      "displayName": "Encyclopedias",
-      "description": "Description for \u201cEncyclopedias Room\u201d. You can exit to the building lobby.",
-      "interactables": {},
-      "items": {},
-      "exits": {
-        "exit": {
-          "displayName": "Exit",
-          "destination": "A-AE"
-        }
-      }
-    },
     "A-AG": {
       "firstVisit": true,
-      "displayName": "Dictionaries and other general reference works",
-      "description": "There is 1 room throughout this building. Visit it with the appropriate code. [A-AG-AG2-600] \u201cDictionaries and other general reference works Room\u201d.",
+      "displayName": "\u201cDictionaries and other general reference works Building\u201d Main Lobby",
+      "description": "There is 1 room throughout this building in 1 floor. The room in this floor is:  [A-AG-AG2-600] \u201cDictionaries and other general reference works Room\u201d.",
       "interactables": {},
       "items": {},
       "exits": {
@@ -152,23 +113,10 @@ var gameData = {
         }
       }
     },
-    "A-AG-AG2-600": {
-      "firstVisit": true,
-      "displayName": "Dictionaries and other general reference works",
-      "description": "Description for \u201cDictionaries and other general reference works Room\u201d. You can exit to the building lobby.",
-      "interactables": {},
-      "items": {},
-      "exits": {
-        "exit": {
-          "displayName": "Exit",
-          "destination": "A-AG"
-        }
-      }
-    },
     "A-AZ": {
       "firstVisit": true,
-      "displayName": "History of scholarship and learning.  The humanities",
-      "description": "There is 1 room throughout this building. Visit it with the appropriate code. [A-AZ-AZ20-999] \u201cHistory of scholarship and learning.  The humanities Room\u201d.",
+      "displayName": "\u201cHistory of scholarship and learning.  The humanities Building\u201d Main Lobby",
+      "description": "There is 1 room throughout this building in 1 floor. The room in this floor is:  [A-AZ-AZ20-999] \u201cHistory of scholarship and learning.  The humanities Room\u201d.",
       "interactables": {},
       "items": {},
       "exits": {
@@ -182,23 +130,10 @@ var gameData = {
         }
       }
     },
-    "A-AZ-AZ20-999": {
-      "firstVisit": true,
-      "displayName": "History of scholarship and learning.  The humanities",
-      "description": "Description for \u201cHistory of scholarship and learning.  The humanities Room\u201d. You can exit to the building lobby.",
-      "interactables": {},
-      "items": {},
-      "exits": {
-        "exit": {
-          "displayName": "Exit",
-          "destination": "A-AZ"
-        }
-      }
-    },
     "A-AM": {
       "firstVisit": true,
-      "displayName": "Museums.  Collectors and collecting",
-      "description": "There is 1 room throughout this building. Visit it with the appropriate code. [A-AM-AM1-501] \u201cMuseums.  Collectors and collecting Room\u201d.",
+      "displayName": "\u201cMuseums.  Collectors and collecting Building\u201d Main Lobby",
+      "description": "There is 1 room throughout this building in 1 floor. The room in this floor is:  [A-AM-AM1-501] \u201cMuseums.  Collectors and collecting Room\u201d.",
       "interactables": {},
       "items": {},
       "exits": {
@@ -212,23 +147,10 @@ var gameData = {
         }
       }
     },
-    "A-AM-AM1-501": {
-      "firstVisit": true,
-      "displayName": "Museums.  Collectors and collecting",
-      "description": "Description for \u201cMuseums.  Collectors and collecting Room\u201d. You can exit to the building lobby.",
-      "interactables": {},
-      "items": {},
-      "exits": {
-        "exit": {
-          "displayName": "Exit",
-          "destination": "A-AM"
-        }
-      }
-    },
     "A-AS": {
       "firstVisit": true,
-      "displayName": "Academies and learned societies",
-      "description": "There is 1 room throughout this building. Visit it with the appropriate code. [A-AS-AS1-945] \u201cAcademies and learned societies Room\u201d.",
+      "displayName": "\u201cAcademies and learned societies Building\u201d Main Lobby",
+      "description": "There is 1 room throughout this building in 1 floor. The room in this floor is:  [A-AS-AS1-945] \u201cAcademies and learned societies Room\u201d.",
       "interactables": {},
       "items": {},
       "exits": {
@@ -242,23 +164,10 @@ var gameData = {
         }
       }
     },
-    "A-AS-AS1-945": {
-      "firstVisit": true,
-      "displayName": "Academies and learned societies",
-      "description": "Description for \u201cAcademies and learned societies Room\u201d. You can exit to the building lobby.",
-      "interactables": {},
-      "items": {},
-      "exits": {
-        "exit": {
-          "displayName": "Exit",
-          "destination": "A-AS"
-        }
-      }
-    },
     "A-AP": {
       "firstVisit": true,
-      "displayName": "Periodicals",
-      "description": "There is 1 room throughout this building. Visit it with the appropriate code. [A-AP-AP1-271] \u201cPeriodicals Room\u201d.",
+      "displayName": "\u201cPeriodicals Building\u201d Main Lobby",
+      "description": "There is 1 room throughout this building in 1 floor. The room in this floor is:  [A-AP-AP1-271] \u201cPeriodicals Room\u201d.",
       "interactables": {},
       "items": {},
       "exits": {
@@ -272,23 +181,10 @@ var gameData = {
         }
       }
     },
-    "A-AP-AP1-271": {
-      "firstVisit": true,
-      "displayName": "Periodicals",
-      "description": "Description for \u201cPeriodicals Room\u201d. You can exit to the building lobby.",
-      "interactables": {},
-      "items": {},
-      "exits": {
-        "exit": {
-          "displayName": "Exit",
-          "destination": "A-AP"
-        }
-      }
-    },
     "A-AY": {
       "firstVisit": true,
-      "displayName": "Yearbooks.  Almanacs.  Directories",
-      "description": "There is 1 room throughout this building. Visit it with the appropriate code. [A-AY-AY10-2001] \u201cYearbooks.  Almanacs.  Directories Room\u201d.",
+      "displayName": "\u201cYearbooks.  Almanacs.  Directories Building\u201d Main Lobby",
+      "description": "There is 1 room throughout this building in 1 floor. The room in this floor is:  [A-AY-AY10-2001] \u201cYearbooks.  Almanacs.  Directories Room\u201d.",
       "interactables": {},
       "items": {},
       "exits": {
@@ -302,23 +198,10 @@ var gameData = {
         }
       }
     },
-    "A-AY-AY10-2001": {
-      "firstVisit": true,
-      "displayName": "Yearbooks.  Almanacs.  Directories",
-      "description": "Description for \u201cYearbooks.  Almanacs.  Directories Room\u201d. You can exit to the building lobby.",
-      "interactables": {},
-      "items": {},
-      "exits": {
-        "exit": {
-          "displayName": "Exit",
-          "destination": "A-AY"
-        }
-      }
-    },
     "A-AI": {
       "firstVisit": true,
-      "displayName": "Indexes",
-      "description": "There is 1 room throughout this building. Visit it with the appropriate code. [A-AI-AI1-21] \u201cIndexes Room\u201d.",
+      "displayName": "\u201cIndexes Building\u201d Main Lobby",
+      "description": "There is 1 room throughout this building in 1 floor. The room in this floor is:  [A-AI-AI1-21] \u201cIndexes Room\u201d.",
       "interactables": {},
       "items": {},
       "exits": {
@@ -332,23 +215,10 @@ var gameData = {
         }
       }
     },
-    "A-AI-AI1-21": {
-      "firstVisit": true,
-      "displayName": "Indexes",
-      "description": "Description for \u201cIndexes Room\u201d. You can exit to the building lobby.",
-      "interactables": {},
-      "items": {},
-      "exits": {
-        "exit": {
-          "displayName": "Exit",
-          "destination": "A-AI"
-        }
-      }
-    },
     "A-AN": {
       "firstVisit": true,
-      "displayName": "Newspapers",
-      "description": "There is 1 room throughout this building. Visit it with the appropriate code. [A-AN-AN] \u201cNewspapers Room\u201d.",
+      "displayName": "\u201cNewspapers Building\u201d Main Lobby",
+      "description": "There is 1 room throughout this building in 1 floor. The room in this floor is:  [A-AN-AN] \u201cNewspapers Room\u201d.",
       "interactables": {},
       "items": {},
       "exits": {
@@ -359,19 +229,6 @@ var gameData = {
         "A-AN-AN": {
           "displayName": "A-AN-AN",
           "destination": "A-AN-AN"
-        }
-      }
-    },
-    "A-AN-AN": {
-      "firstVisit": true,
-      "displayName": "Newspapers",
-      "description": "Description for \u201cNewspapers Room\u201d. You can exit to the building lobby.",
-      "interactables": {},
-      "items": {},
-      "exits": {
-        "exit": {
-          "displayName": "Exit",
-          "destination": "A-AN"
         }
       }
     }
