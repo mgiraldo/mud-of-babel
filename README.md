@@ -11,4 +11,4 @@ Based on [TextAdventure.js](https://github.com/TheBroox/TextAdventure.js)
 
 To reload the MUD cartridge while playing, you can “hot swap” it by entering the `die` command and then `load mud` again.
 
-More information on the base application available in the [TextAdventure.js repository](https://github.com/TheBroox/TextAdventure.js)
+More information on the base application available in the [TextAdventure.js repository](https://github.com/TheBroox/TextAdventure.js).
