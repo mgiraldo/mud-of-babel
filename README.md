@@ -13,8 +13,8 @@ Based on [TextAdventure.js](https://github.com/TheBroox/TextAdventure.js)
 
 To reload the MUD cartridge while playing, you can “hot swap” it by entering the `die` command and then `load mud` again.
 
+More information on TextAdventure.js commands available in the [repository](https://github.com/TheBroox/TextAdventure.js).
+
 ## Changing the game file
 
 There's an [Jupyter notebook](python/mud-of-babel.ipynb) (Python) in the `python` folder that can give you an idea. Running it will output a `mud_of_babel_data.json` file which you can use to overwrite the `gameData` variable in [`cartridges/mud.js`](cartridges/mud.js) (just copy/paste the entirety of the data file as the value for that variable).
-
-More information on the base application available in the [TextAdventure.js repository](https://github.com/TheBroox/TextAdventure.js).
