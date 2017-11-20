@@ -4,15 +4,15 @@
   "introText": "\n\nWelcome to the MUD of Babel!\n",
   "outroText": "Thanks For playing!",
   "player": {
-    "currentLocation": "Plaza",
+    "currentLocation": "Plaza-A",
     "inventory": {},
     "lightSource": false
   },
   "map": {
-    "Plaza": {
+    "Plaza-A": {
       "firstVisit": true,
       "displayName": "General Works Plaza",
-      "description": "You are in an expansive plaza surrounded by 10 buildings conforming General Works.\nThe buildings are accessible via their classification code, visible above the main door:\n[A-AC] \u201cCollections.  Series.  Collected works Building\u201d, [A-AE] \u201cEncyclopedias Building\u201d, [A-AG] \u201cDictionaries and other general reference works Building\u201d, [A-AZ] \u201cHistory of scholarship and learning.  The humanities Building\u201d, [A-AM] \u201cMuseums.  Collectors and collecting Building\u201d, [A-AS] \u201cAcademies and learned societies Building\u201d, [A-AP] \u201cPeriodicals Building\u201d, [A-AY] \u201cYearbooks.  Almanacs.  Directories Building\u201d, [A-AI] \u201cIndexes Building\u201d, [A-AN] \u201cNewspapers Building\u201d.",
+      "description": "You are in an expansive plaza surrounded by 10 buildings conforming General Works.\nThe buildings are accessible via their classification code, visible above the main door:\n[ A-AC ] \u201cCollections.  Series.  Collected works Building\u201d\n[ A-AE ] \u201cEncyclopedias Building\u201d\n[ A-AG ] \u201cDictionaries and other general reference works Building\u201d\n[ A-AZ ] \u201cHistory of scholarship and learning.  The humanities Building\u201d\n[ A-AM ] \u201cMuseums.  Collectors and collecting Building\u201d\n[ A-AS ] \u201cAcademies and learned societies Building\u201d\n[ A-AP ] \u201cPeriodicals Building\u201d\n[ A-AY ] \u201cYearbooks.  Almanacs.  Directories Building\u201d\n[ A-AI ] \u201cIndexes Building\u201d\n[ A-AN ] \u201cNewspapers Building\u201d.",
       "interactables": {},
       "items": {},
       "exits": {
@@ -87,20 +87,20 @@
     "A-AC": {
       "firstVisit": true,
       "displayName": "\u201cCollections.  Series.  Collected works Building\u201d Main Lobby",
-      "description": "There are 2 rooms throughout this building in 1 floor. The rooms in this floor are:\n[A-AC-AC1-195] \u201cCollections of monographs, essays, etc. Room\u201d, [A-AC-AC1-999] \u201cCollections.  Series.  Collected works Room\u201d.",
+      "description": "There are 2 rooms throughout this building. The building is square-shaped with walls facing South, North, East, West. The rooms in this floor are:\n[  South  ] \u201cCollections of monographs, essays, etc. Room\u201d\n[  North  ] \u201cCollections.  Series.  Collected works Room\u201d.",
       "interactables": {},
       "items": {},
       "exits": {
         "A-AC": {
           "displayName": "Exit",
-          "destination": "Plaza"
+          "destination": "Plaza-A"
         },
         "A-AC-AC1-195": {
-          "displayName": "A-AC-AC1-195",
+          "displayName": "South",
           "destination": "A-AC-AC1-195"
         },
         "A-AC-AC1-999": {
-          "displayName": "A-AC-AC1-999",
+          "displayName": "North",
           "destination": "A-AC-AC1-999"
         }
       }
@@ -121,16 +121,16 @@
     "A-AE": {
       "firstVisit": true,
       "displayName": "\u201cEncyclopedias Building\u201d Main Lobby",
-      "description": "There is 1 room throughout this building in 1 floor. The room in this floor is:\n[A-AE-AE1-90] \u201cEncyclopedias Room\u201d.",
+      "description": "There is 1 room throughout this building. The building is square-shaped with walls facing South, North, East, West. The room in this floor is:\n[  South  ] \u201cEncyclopedias Room\u201d.",
       "interactables": {},
       "items": {},
       "exits": {
         "A-AE": {
           "displayName": "Exit",
-          "destination": "Plaza"
+          "destination": "Plaza-A"
         },
         "A-AE-AE1-90": {
-          "displayName": "A-AE-AE1-90",
+          "displayName": "South",
           "destination": "A-AE-AE1-90"
         }
       }
@@ -151,16 +151,16 @@
     "A-AG": {
       "firstVisit": true,
       "displayName": "\u201cDictionaries and other general reference works Building\u201d Main Lobby",
-      "description": "There is 1 room throughout this building in 1 floor. The room in this floor is:\n[A-AG-AG2-600] \u201cDictionaries and other general reference works Room\u201d.",
+      "description": "There is 1 room throughout this building. The building is square-shaped with walls facing South, North, East, West. The room in this floor is:\n[  South  ] \u201cDictionaries and other general reference works Room\u201d.",
       "interactables": {},
       "items": {},
       "exits": {
         "A-AG": {
           "displayName": "Exit",
-          "destination": "Plaza"
+          "destination": "Plaza-A"
         },
         "A-AG-AG2-600": {
-          "displayName": "A-AG-AG2-600",
+          "displayName": "South",
           "destination": "A-AG-AG2-600"
         }
       }
@@ -181,16 +181,16 @@
     "A-AZ": {
       "firstVisit": true,
       "displayName": "\u201cHistory of scholarship and learning.  The humanities Building\u201d Main Lobby",
-      "description": "There is 1 room throughout this building in 1 floor. The room in this floor is:\n[A-AZ-AZ20-999] \u201cHistory of scholarship and learning.  The humanities Room\u201d.",
+      "description": "There is 1 room throughout this building. The building is square-shaped with walls facing South, North, East, West. The room in this floor is:\n[  South  ] \u201cHistory of scholarship and learning.  The humanities Room\u201d.",
       "interactables": {},
       "items": {},
       "exits": {
         "A-AZ": {
           "displayName": "Exit",
-          "destination": "Plaza"
+          "destination": "Plaza-A"
         },
         "A-AZ-AZ20-999": {
-          "displayName": "A-AZ-AZ20-999",
+          "displayName": "South",
           "destination": "A-AZ-AZ20-999"
         }
       }
@@ -211,16 +211,16 @@
     "A-AM": {
       "firstVisit": true,
       "displayName": "\u201cMuseums.  Collectors and collecting Building\u201d Main Lobby",
-      "description": "There is 1 room throughout this building in 1 floor. The room in this floor is:\n[A-AM-AM1-501] \u201cMuseums.  Collectors and collecting Room\u201d.",
+      "description": "There is 1 room throughout this building. The building is square-shaped with walls facing South, North, East, West. The room in this floor is:\n[  South  ] \u201cMuseums.  Collectors and collecting Room\u201d.",
       "interactables": {},
       "items": {},
       "exits": {
         "A-AM": {
           "displayName": "Exit",
-          "destination": "Plaza"
+          "destination": "Plaza-A"
         },
         "A-AM-AM1-501": {
-          "displayName": "A-AM-AM1-501",
+          "displayName": "South",
           "destination": "A-AM-AM1-501"
         }
       }
@@ -241,16 +241,16 @@
     "A-AS": {
       "firstVisit": true,
       "displayName": "\u201cAcademies and learned societies Building\u201d Main Lobby",
-      "description": "There is 1 room throughout this building in 1 floor. The room in this floor is:\n[A-AS-AS1-945] \u201cAcademies and learned societies Room\u201d.",
+      "description": "There is 1 room throughout this building. The building is square-shaped with walls facing South, North, East, West. The room in this floor is:\n[  South  ] \u201cAcademies and learned societies Room\u201d.",
       "interactables": {},
       "items": {},
       "exits": {
         "A-AS": {
           "displayName": "Exit",
-          "destination": "Plaza"
+          "destination": "Plaza-A"
         },
         "A-AS-AS1-945": {
-          "displayName": "A-AS-AS1-945",
+          "displayName": "South",
           "destination": "A-AS-AS1-945"
         }
       }
@@ -271,16 +271,16 @@
     "A-AP": {
       "firstVisit": true,
       "displayName": "\u201cPeriodicals Building\u201d Main Lobby",
-      "description": "There is 1 room throughout this building in 1 floor. The room in this floor is:\n[A-AP-AP1-271] \u201cPeriodicals Room\u201d.",
+      "description": "There is 1 room throughout this building. The building is square-shaped with walls facing South, North, East, West. The room in this floor is:\n[  South  ] \u201cPeriodicals Room\u201d.",
       "interactables": {},
       "items": {},
       "exits": {
         "A-AP": {
           "displayName": "Exit",
-          "destination": "Plaza"
+          "destination": "Plaza-A"
         },
         "A-AP-AP1-271": {
-          "displayName": "A-AP-AP1-271",
+          "displayName": "South",
           "destination": "A-AP-AP1-271"
         }
       }
@@ -301,16 +301,16 @@
     "A-AY": {
       "firstVisit": true,
       "displayName": "\u201cYearbooks.  Almanacs.  Directories Building\u201d Main Lobby",
-      "description": "There is 1 room throughout this building in 1 floor. The room in this floor is:\n[A-AY-AY10-2001] \u201cYearbooks.  Almanacs.  Directories Room\u201d.",
+      "description": "There is 1 room throughout this building. The building is square-shaped with walls facing South, North, East, West. The room in this floor is:\n[  South  ] \u201cYearbooks.  Almanacs.  Directories Room\u201d.",
       "interactables": {},
       "items": {},
       "exits": {
         "A-AY": {
           "displayName": "Exit",
-          "destination": "Plaza"
+          "destination": "Plaza-A"
         },
         "A-AY-AY10-2001": {
-          "displayName": "A-AY-AY10-2001",
+          "displayName": "South",
           "destination": "A-AY-AY10-2001"
         }
       }
@@ -331,16 +331,16 @@
     "A-AI": {
       "firstVisit": true,
       "displayName": "\u201cIndexes Building\u201d Main Lobby",
-      "description": "There is 1 room throughout this building in 1 floor. The room in this floor is:\n[A-AI-AI1-21] \u201cIndexes Room\u201d.",
+      "description": "There is 1 room throughout this building. The building is square-shaped with walls facing South, North, East, West. The room in this floor is:\n[  South  ] \u201cIndexes Room\u201d.",
       "interactables": {},
       "items": {},
       "exits": {
         "A-AI": {
           "displayName": "Exit",
-          "destination": "Plaza"
+          "destination": "Plaza-A"
         },
         "A-AI-AI1-21": {
-          "displayName": "A-AI-AI1-21",
+          "displayName": "South",
           "destination": "A-AI-AI1-21"
         }
       }
@@ -361,16 +361,16 @@
     "A-AN": {
       "firstVisit": true,
       "displayName": "\u201cNewspapers Building\u201d Main Lobby",
-      "description": "There is 1 room throughout this building in 1 floor. The room in this floor is:\n[A-AN-AN] \u201cNewspapers Room\u201d.",
+      "description": "There is 1 room throughout this building. The building is square-shaped with walls facing South, North, East, West. The room in this floor is:\n[  South  ] \u201cNewspapers Room\u201d.",
       "interactables": {},
       "items": {},
       "exits": {
         "A-AN": {
           "displayName": "Exit",
-          "destination": "Plaza"
+          "destination": "Plaza-A"
         },
         "A-AN-AN": {
-          "displayName": "A-AN-AN",
+          "displayName": "South",
           "destination": "A-AN-AN"
         }
       }
