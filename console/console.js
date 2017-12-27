@@ -2,7 +2,6 @@
 var debugMode = false;
 
 // === Import Necessary Functionality ===
-var fileSystem = require("fs");
 var parser = require("./parser.js");
 
 // === Creat Necessary Variables ===
@@ -29,7 +28,6 @@ exports.input = function(input, gameID){
   var command = parser.parse(input);
   var game = games[gameID];
   if(game){
-    var gameActions = game.gameActions;
     game = game.gameData;
     var returnString;
     try {
