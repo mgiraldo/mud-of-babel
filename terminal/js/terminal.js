@@ -1,7 +1,7 @@
 $(function() {
   // ===== Onload Functions ===========================================================
   displayResize();
-  messageServer("look");
+  messageServer("ping");
   initSocket();
 
   // ===== Event Handlers =============================================================
