@@ -7,19 +7,31 @@ var parser = require('./parser.js');
 
 // === Creat Necessary Variables ===
 var games = {};
+var baseData;
 
 // ----------------------------\
 // === Main Function ==================================================================================================
 // ----------------------------/
+
+// === Set From Server with Redis ===
+exports.loadDefaultGameData = function(data) {
+	try {		
+		// each user session has different game id based on the cookie
+		baseData = data;
+		return "Loaded base data";
+	} catch (error) {
+		return "Could not load base game";
+	}
+};
+
+// === Main Input Parser ===
 exports.input = function(input, gameID){
 	var command = parser.parse(input);
 	var game = games[gameID];
 	if(game){
 		var gameActions = game.gameActions;
 		game = game.gameData;
-		++game.commandCounter;
 		var returnString;
-		console.log(gameID + ': ' + game.commandCounter);
 		try {
 			try {
 				debug('---Attempting to run cartridge command "'+command.action+'"');
@@ -53,12 +65,16 @@ exports.input = function(input, gameID){
 		}
 		return checkForGameEnd(game, returnString);
 	} else {
-		console.log(gameID + ': no game');
-		if(command.action === 'load'){
-			return loadCartridge(gameID, command.subject);
-		} else {
-			return listCartridges();
-		}
+		// load the base game
+		games[gameID] = {gameData: baseData.gameData, gameActions: baseData.gameActions};
+		games[gameID].gameData.gameID = gameID;
+		return games[gameID].gameData.introText + '\n' + getLocationDescription(games[gameID].gameData);
+		// console.log(gameID + ': no game');
+		// if(command.action === 'load'){
+		// 	return loadCartridge(gameID, command.subject);
+		// } else {
+		// 	return listCartridges();
+		// }
 	}
 };
 

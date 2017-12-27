@@ -1,7 +1,8 @@
-$(function(){
+$(function() {
 	// ===== Onload Functions ===========================================================
 	displayResize();
-	messageServer('get games');
+	messageServer('look');
+	initSocket();
 
 	// ===== Event Handlers =============================================================
 	// ----- Input Submit ---------------------------------------------------------------
@@ -11,27 +12,27 @@ $(function(){
 		inputString = inputString.trim();
 		$('#input').val('');
 		toScreen(inputString,'user');
-		if(inputString !== ''){
+		if(inputString !== '') {
 			messageServer(inputString);
-			if(inputString !== inputBuffer[inputBuffer.length-1]){
+			if(inputString !== inputBuffer[inputBuffer.length-1]) {
 				inputBuffer.push(inputString);
 			}
 		}
 		inputBufferIndex = inputBuffer.length;
 	});
-	// ----- Input Buffer ---------------------------------------------------------------
+	// ----- Input Buffer ----------------------------------------------------------------
 	var inputBuffer = [];
 	var inputBufferIndex = 0;
 	$(document).keydown(function(event) {
 		switch(event.which) {
 			case 38: // up
-				if(inputBufferIndex>0){
+				if(inputBufferIndex>0) {
 					--inputBufferIndex;
 				}
 				$('#input').val(inputBuffer[inputBufferIndex]);
 				break;
 			case 40: // down
-				if(inputBufferIndex<inputBuffer.length){
+				if(inputBufferIndex<inputBuffer.length) {
 					++inputBufferIndex;
 				}
 				$('#input').val(inputBuffer[inputBufferIndex]);
@@ -40,29 +41,33 @@ $(function(){
 		}
 		event.preventDefault();
 	});
-	// ----- Window Resize Listener -----------------------------------------------------
-	$(window).resize(function(){
+	// ----- Window Resize Listener ------------------------------------------------------
+	$(window).resize(function() {
 		displayResize();
 	});
 });
 
 // ===== Functions ======================================================================
+// ----- Connect to socket server -------------------------------------------------------
+function initSocket() {
+	var socket = io.connect('http://localhost:3001');
+}
 // ----- Send Message to Server ---------------------------------------------------------
-function messageServer(message){
+function messageServer(message) {
 	$.post(window.location.href+'console', {"input": message}, function(data) {
 		toScreen(data.response,'console');
-	}).fail(function(){
+	}).fail(function() {
 		toScreen('Unable to reach server.','terminal');
 	});
 }
 // ----- Insure Terminal Appearance -----------------------------------------------------
-function displayResize(){
+function displayResize() {
 	$('#display').height($(window).height()-30);
 	$('#display').scrollTop($('#display')[0].scrollHeight);
 }
 // ----- Write to Screen ----------------------------------------------------------------
-function toScreen(message, actor){
-	if(actor == 'user'){
+function toScreen(message, actor) {
+	if(actor == 'user') {
 		message = '> ' + message;
 	}
 	var displayString = $('#display').val() + message + '\n';
