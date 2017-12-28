@@ -5,6 +5,8 @@ function init() {
   // ===== Onload Functions ===========================================================
   initSocket();
   messageServer("ping");
+  document.getElementById("input").value = "";
+  document.getElementById("display").value = "";
 
   // ===== Event Handlers =============================================================
   // ----- Input Submit ---------------------------------------------------------------
@@ -55,7 +57,6 @@ function initSocket() {
 }
 // ----- Send Message to Server ---------------------------------------------------------
 function messageServer(message) {
-  console.log("message", message);
   socket.emit("console", message);
 }
 // ----- Write to Screen ----------------------------------------------------------------
