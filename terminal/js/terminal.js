@@ -1,16 +1,18 @@
-$(function() {
+window.onload = init;
+var socket;
+
+function init() {
   // ===== Onload Functions ===========================================================
   initSocket();
-  displayResize();
   messageServer("ping");
 
   // ===== Event Handlers =============================================================
   // ----- Input Submit ---------------------------------------------------------------
-  $("#console").submit(function(event) {
+  document.getElementById("console").onsubmit = function(event) {
     event.preventDefault();
-    var inputString = $("#input").val();
+    var inputString = document.getElementById("input").value;
     inputString = inputString.trim();
-    $("#input").val("");
+    document.getElementById("input").value = "";
     toScreen(inputString,"user");
     if(inputString !== "") {
       messageServer(inputString);
@@ -19,58 +21,49 @@ $(function() {
       }
     }
     inputBufferIndex = inputBuffer.length;
-  });
+  };
   // ----- Input Buffer ----------------------------------------------------------------
   var inputBuffer = [];
   var inputBufferIndex = 0;
-  $(document).keydown(function(event) {
+  document.onkeydown = function(event) {
     switch(event.which) {
     case 38: // up
       if(inputBufferIndex>0) {
         --inputBufferIndex;
       }
-      $("#input").val(inputBuffer[inputBufferIndex]);
+      document.getElementById("input").value = inputBuffer[inputBufferIndex];
       break;
     case 40: // down
       if(inputBufferIndex<inputBuffer.length) {
         ++inputBufferIndex;
       }
-      $("#input").val(inputBuffer[inputBufferIndex]);
+      document.getElementById("input").value = inputBuffer[inputBufferIndex];
       break;
     default: return;
     }
     event.preventDefault();
-  });
-  // ----- Window Resize Listener ------------------------------------------------------
-  $(window).resize(function() {
-    displayResize();
-  });
-});
+  };
+}
 
 // ===== Functions ======================================================================
 // ----- Connect to socket server -------------------------------------------------------
 function initSocket() {
-  var socket = io();
+  socket = io();
+  socket.on("message", function(data) {
+    toScreen(data.response, "console");
+  });
 }
 // ----- Send Message to Server ---------------------------------------------------------
 function messageServer(message) {
-  $.post(window.location.href+"console", {"input": message}, function(data) {
-    toScreen(data.response,"console");
-  }).fail(function() {
-    toScreen("Unable to reach server.","terminal");
-  });
-}
-// ----- Insure Terminal Appearance -----------------------------------------------------
-function displayResize() {
-  $("#display").height($(window).height()-30);
-  $("#display").scrollTop($("#display")[0].scrollHeight);
+  console.log("message", message);
+  socket.emit("console", message);
 }
 // ----- Write to Screen ----------------------------------------------------------------
 function toScreen(message, actor) {
   if(actor == "user") {
     message = "\n> " + message;
   }
-  var displayString = $("#display").val() + message + "\n";
-  $("#display").val(displayString);
-  $("#display").scrollTop($("#display")[0].scrollHeight);
+  var displayString = document.getElementById("display").value + message + "\n";
+  document.getElementById("display").value = displayString;
+  document.getElementById("display").scrollTop = document.getElementById("display").scrollHeight;
 }

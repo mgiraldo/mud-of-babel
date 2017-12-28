@@ -10,10 +10,16 @@ var debugMode = true;
 
 // === Game Variables ===
 var players = 0;
+var defaultLocation = "MAIN";
 
 // === Initilize Express ===
 var app = express();
 var server = require("http").Server(app);
+var sessionMiddleware = session({
+  store: new sessionStore({ client: store }), secret: process.env.SECRET, resave: false, saveUninitialized: true, cookie: {
+    maxAge: new Date(Date.now() + (60000 * 60 * 24 * 365))
+  }
+});
 
 // === Initialize Redis ===
 var redis = require("redis");
@@ -36,13 +42,20 @@ sub.on("error", function (err) {
 });
 sub.subscribe("mud");
 
+// === The UI
+app.use(express.static(__dirname + "/terminal"));
+
 // === Import Necessary Functionality ==
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(__dirname + "/terminal"));
-app.use(session({
-  store: new sessionStore({ client: store }), secret: process.env.SECRET, resave: false, saveUninitialized: true, cookie: {
-    maxAge: new Date(Date.now() + (60000 * 60 * 24 * 365)) } }));
+app.use(sessionMiddleware);
+app.use((req, res, next) => {
+  if (!req.session) {
+    return next(new Error("oh no")); // handle error
+  }
+  debug("session:" + req.session);
+  next(); // otherwise continue
+});
 
 // === Start Server ===
 var server_port = process.env.PORT || 3001;
@@ -50,18 +63,40 @@ server.listen(server_port, function () {
   debug("Listening on server_port " + server_port);
 });
 
+// === Create Console ===
+var mudconsole = require("./console/console.js");
+var status = mudconsole.loadDefaultGameData(getBaseGameData());
+debug(status);
+
 // === Initialize Socket.io
 var io = require("socket.io")(server);
+io.use(function (socket, next) {
+  sessionMiddleware(socket.request, socket.request.res, next);
+});
+
 io.on("connection", function (client) {
   // new player arrived
   debug("player connected!");
+  client.join(defaultLocation);
+  // io.in(defaultLocation).emit("Librarian entered the grounds", client);
+  
   store.incr("players", function (err, reply) {
     players = reply;
     debug("players: " + players);
   });
+
   client.on("event", function (data) {
     debug("event:" + data);
   });
+
+  client.on("create", (room) => {
+    client.join(room);
+  });
+
+  client.on("message", (message) => {
+    debug("message: " + message);
+  });
+
   client.on("disconnect", function () {
     debug("player left");
     store.decr("players", function (err, reply) {
@@ -69,63 +104,58 @@ io.on("connection", function (client) {
       debug("players: " + players);
     });
   });
-});
 
-// === Create Console ===
-var mudconsole = require("./console/console.js");
-var status = mudconsole.loadDefaultGameData(getBaseGameData());
-debug(status);
-// === Respond to AJAX calls ===
-app.post("/console", (req, res) => {
-  var sessionID = req.session.id;
-  debug(req.body.input + " -- from: " + sessionID);
-  var response;
-  var location;
-  if (req.body.input.toLowerCase() === "ping") {
-    // first connect
-    debug("first connect -- from : " + sessionID);
-    // get last location from redis
-    var currentLocation = "MAIN"; // the default location
-    store.getAsync(sessionID + ".currentLocation").then((reply) => {
-      if (reply === null) {
-        // no last know location
-        debug("    no location existed");
-        saveLocation(sessionID, currentLocation);
-      } else {
-        // get last know location (in db)
-        debug("    location found: " + reply);
-        currentLocation = reply;
-        mudconsole.setLocation(sessionID, currentLocation);
+  // === Respond to AJAX calls ===
+  client.on("console", (message) => {
+    var sessionID = client.request.session.id;
+    debug(message + " -- from: " + sessionID);
+    var response;
+    var location;
+    if (message.toLowerCase() === "ping") {
+      // first connect
+      debug("first connect -- from : " + sessionID);
+      // get last location from redis
+      var currentLocation = defaultLocation; // the default location
+      store.getAsync(sessionID + ".currentLocation").then((reply) => {
+        if (reply === null) {
+          // no last know location
+          debug("    no location existed");
+          saveLocation(sessionID, currentLocation);
+        } else {
+          // get last know location (in db)
+          debug("    location found: " + reply);
+          currentLocation = reply;
+          mudconsole.setLocation(sessionID, currentLocation);
+        }
+        debug("  performing: " + message);
+        debug("         for: " + sessionID);
+        response = performCommand("look", sessionID);
+        client.emit("message", response);
+      });
+    } else if (message.toLowerCase() === "players") {
+      // getting player list does not need to go to the console
+      debug("  requesting player count");
+      store.getAsync("players").then((reply) => {
+        message = message + " " + reply;
+        response = performCommand(message, sessionID);
+        client.emit("message", response);
+      });
+    } else if (message.toLowerCase().indexOf("yell ") === 0) {
+      // getting player list does not need to go to the console
+      store.getAsync("players").then((reply) => {
+        message = message + " " + reply;
+        response = performCommand(message, sessionID);
+        client.emit("message", response);
+      });
+    } else {
+      response = performCommand(message, sessionID);
+      if (message.toLowerCase().indexOf("go ") === 0 && response.response.indexOf("You can't go there.") === -1) {
+        location = mudconsole.getLocation(sessionID);
+        saveLocation(sessionID, location);
       }
-      req.session.currentLocation = currentLocation;
-      debug("  performing: " + req.body.input);
-      debug("         for: " + sessionID);
-      response = performCommand("look", sessionID);
-      res.json(response);
-    });
-  } else if (req.body.input.toLowerCase() === "players") {
-    // getting player list does not need to go to the console
-    debug("  requesting player count");
-    store.getAsync("players").then((reply) => {
-      req.body.input = req.body.input + " " + reply;
-      response = performCommand(req.body.input, sessionID);
-      res.json(response);
-    });
-  } else if (req.body.input.toLowerCase().indexOf("yell ") === 0) {
-    // getting player list does not need to go to the console
-    store.getAsync("players").then((reply) => {
-      req.body.input = req.body.input + " " + reply;
-      response = performCommand(req.body.input, sessionID);
-      res.json(response);
-    });
-  } else {
-    response = performCommand(req.body.input, sessionID);
-    if (req.body.input.toLowerCase().indexOf("go ") === 0 && response.response.indexOf("You can't go there.") === -1) {
-      location = mudconsole.getLocation(sessionID);
-      saveLocation(sessionID, location);
+      client.emit("message", response);
     }
-    res.json(response);
-  }
+  });
 });
 
 function performCommand(command, sessionID) {
@@ -135,6 +165,8 @@ function performCommand(command, sessionID) {
 
 function saveLocation(sessionID, location) {
   store.set(sessionID + ".currentLocation", location);
+  // create the room
+  io.emit("create", location);
 }
 
 // === Helper Functions ===
