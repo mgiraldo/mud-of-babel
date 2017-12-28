@@ -21,10 +21,10 @@ var bluebird = require("bluebird");
 bluebird.promisifyAll(redis.RedisClient.prototype);
 bluebird.promisifyAll(redis.Multi.prototype);
 
-var store = redis.createClient();
+var store = redis.createClient(process.env.REDIS_URL);
 store.set("players", players); // start with 0 players
-var pub = redis.createClient();
-var sub = redis.createClient();
+var pub = redis.createClient(process.env.REDIS_URL);
+var sub = redis.createClient(process.env.REDIS_URL);
 store.on("error", function (err) {
   debug("Store error: " + err);
 });
