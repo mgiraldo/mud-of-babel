@@ -36,8 +36,22 @@ sub.on("error", function (err) {
 });
 sub.subscribe("mud");
 
+// === Import Necessary Functionality ==
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static(__dirname + "/terminal"));
+app.use(session({
+  store: new sessionStore({ client: store }), secret: process.env.SECRET, resave: false, saveUninitialized: true, cookie: {
+    maxAge: new Date(Date.now() + (60000 * 60 * 24 * 365)) } }));
+
+// === Start Server ===
+var server_port = process.env.PORT || 3001;
+server.listen(server_port, function () {
+  debug("Listening on server_port " + server_port);
+});
+
 // === Initialize Socket.io
-var io = require("socket.io")(server);
+var io = require("socket.io").listen(server);
 io.on("connection", function (client) {
   // new player arrived
   debug("player connected!");
@@ -55,20 +69,6 @@ io.on("connection", function (client) {
       debug("players: " + players);
     });
   });
-});
-
-// === Import Necessary Functionality ==
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(__dirname + "/terminal"));
-app.use(session({
-  store: new sessionStore({ client: store }), secret: process.env.SECRET, resave: false, saveUninitialized: true, cookie: {
-    maxAge: new Date(Date.now() + (60000 * 60 * 24 * 365)) } }));
-
-// === Start Server ===
-var server_port = process.env.PORT || 3001;
-server.listen(server_port, function () {
-  debug("Listening on server_port " + server_port);
 });
 
 // === Create Console ===
