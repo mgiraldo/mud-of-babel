@@ -81,7 +81,7 @@ app.post("/console", (req, res) => {
   debug(req.body.input + " -- from: " + sessionID);
   var response;
   var location;
-  if (req.body.input === "ping") {
+  if (req.body.input.toLowerCase() === "ping") {
     // first connect
     debug("first connect -- from : " + sessionID);
     // get last location from redis
@@ -103,7 +103,7 @@ app.post("/console", (req, res) => {
       response = performCommand("look", sessionID);
       res.json(response);
     });
-  } else if (req.body.input === "players") {
+  } else if (req.body.input.toLowerCase() === "players") {
     // getting player list does not need to go to the console
     debug("  requesting player count");
     var message = "";
