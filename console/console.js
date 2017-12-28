@@ -173,6 +173,15 @@ var actions = {
     return { message: playersMessage, success: true };
   },
 
+  yell: function (game, command) {
+    var playersMessage = "Shhh! This is a library. You cannot just scream.";
+    if (!command.subject) {
+      return { message: playersMessage, success: true };
+    }
+    playersMessage = "Everyone in the library has received your message.";
+    return { message: playersMessage, success: true };
+  },
+
   look: function (game, command) {
     if (!command.subject) {
       return { message: getLocationDescription(game, true), success: true };

@@ -111,9 +111,16 @@ app.post("/console", (req, res) => {
       response = performCommand(req.body.input, sessionID);
       res.json(response);
     });
+  } else if (req.body.input.toLowerCase().indexOf("yell ") === 0) {
+    // getting player list does not need to go to the console
+    store.getAsync("players").then((reply) => {
+      req.body.input = req.body.input + " " + reply;
+      response = performCommand(req.body.input, sessionID);
+      res.json(response);
+    });
   } else {
     response = performCommand(req.body.input, sessionID);
-    if (req.body.input.indexOf("go ") === 0 && response.response.indexOf("You can't go there.") === -1) {
+    if (req.body.input.toLowerCase().indexOf("go ") === 0 && response.response.indexOf("You can't go there.") === -1) {
       location = mudconsole.getLocation(sessionID);
       saveLocation(sessionID, location);
     }
