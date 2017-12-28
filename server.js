@@ -103,7 +103,18 @@ app.post("/console", (req, res) => {
       response = performCommand("look", sessionID);
       res.json(response);
     });
-  } else {
+  }
+  if (req.body.input === "players") {
+    // getting player list does not need to go to the console
+    debug("  requesting player count");
+    var message = "";
+    store.getAsync("players").then((reply) => {
+      message = Number(reply) !== 1 ? reply + " players online." : "Just you online.";
+      response = { response: "\n" + message };
+      res.json(response);
+    });
+  }
+  if (req.body.input !== "players" && req.body.input !== "ping") {
     response = performCommand(req.body.input, sessionID);
     if (req.body.input.indexOf("go ") === 0 && response.response.indexOf("You can't go there.") === -1) {
       location = mudconsole.getLocation(sessionID);

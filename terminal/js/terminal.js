@@ -68,7 +68,7 @@ function displayResize() {
 // ----- Write to Screen ----------------------------------------------------------------
 function toScreen(message, actor) {
   if(actor == "user") {
-    message = "> " + message;
+    message = "\n> " + message;
   }
   var displayString = $("#display").val() + message + "\n";
   $("#display").val(displayString);
