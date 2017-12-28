@@ -50,7 +50,7 @@ $(function() {
 // ===== Functions ======================================================================
 // ----- Connect to socket server -------------------------------------------------------
 function initSocket() {
-  var socket = io.connect("http://localhost:3001");
+  var socket = io();
 }
 // ----- Send Message to Server ---------------------------------------------------------
 function messageServer(message) {

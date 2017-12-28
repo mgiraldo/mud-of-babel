@@ -51,7 +51,7 @@ server.listen(server_port, function () {
 });
 
 // === Initialize Socket.io
-var io = require("socket.io").listen(server);
+var io = require("socket.io")(server);
 io.on("connection", function (client) {
   // new player arrived
   debug("player connected!");
