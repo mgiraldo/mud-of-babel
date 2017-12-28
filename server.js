@@ -106,10 +106,9 @@ app.post("/console", (req, res) => {
   } else if (req.body.input.toLowerCase() === "players") {
     // getting player list does not need to go to the console
     debug("  requesting player count");
-    var message = "";
     store.getAsync("players").then((reply) => {
-      message = Number(reply) !== 1 ? reply + " players online." : "Just you online.";
-      response = { response: "\n" + message };
+      req.body.input = req.body.input + " " + reply;
+      response = performCommand(req.body.input, sessionID);
       res.json(response);
     });
   } else {

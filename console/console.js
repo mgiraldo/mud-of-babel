@@ -168,6 +168,11 @@ var actions = {
     }
   },
 
+  players: function (game, command) {
+    var playersMessage = Number(command.subject) !== 1 ? command.subject + " players online." : "Just you online.";
+    return { message: playersMessage, success: true };
+  },
+
   look: function (game, command) {
     if (!command.subject) {
       return { message: getLocationDescription(game, true), success: true };
