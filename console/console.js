@@ -15,21 +15,19 @@ var baseData;
 // === Server Data Interaction ===
 exports.setLocation = function (gameID, location) {
   var game = games[gameID];
-  if (game) {
-    game.player.currentLocation = location;
-    return true;
-  } else {
-    return false;
+  if (!game) {
+    game = loadBaseGameForID(gameID);
   }
+  game.gameData.player.currentLocation = location;
 };
 
 exports.getLocation = function (gameID) {
   var game = games[gameID];
-  if (game) {
-    return game.player.currentLocationrue;
-  } else {
-    return null;
+  if (!game) {
+    // no location, create new game
+    game = loadBaseGameForID(gameID);
   }
+  return game.gameData.player.currentLocation;
 };
 
 exports.loadDefaultGameData = function (data) {
@@ -83,9 +81,8 @@ exports.input = function (input, gameID) {
     return checkForGameEnd(game, returnString);
   } else {
     // load the base game
-    games[gameID] = { gameData: baseData.gameData, gameActions: baseData.gameActions };
-    games[gameID].gameData.gameID = gameID;
-    return games[gameID].gameData.introText + "\n" + getLocationDescription(games[gameID].gameData);
+    game = loadBaseGameForID(gameID);
+    return game.gameData.introText + "\n" + getLocationDescription(game.gameData);
     // console.log(gameID + ': no game');
     // if(command.action === 'load'){
     // 	return loadCartridge(gameID, command.subject);
@@ -223,6 +220,12 @@ var actions = {
 // ----------------------------\
 // === Helper Functions ===============================================================================================
 // ----------------------------/
+function loadBaseGameForID(gameID) {
+  games[gameID] = { gameData: baseData.gameData, gameActions: baseData.gameActions };
+  games[gameID].gameData.gameID = gameID;
+  return games[gameID];
+}
+
 function checkForGameEnd(game, returnString) {
   if (game.gameOver) {
     returnString = returnString + "\n" + game.outroText;

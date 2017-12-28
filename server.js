@@ -1,7 +1,6 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var session = require("express-session");
-var redis = require("redis");
 var sessionStore = require("connect-redis")(session);
 var dotenv = require("dotenv");
 dotenv.config();
@@ -17,6 +16,11 @@ var app = express();
 var server = require("http").Server(app);
 
 // === Initialize Redis ===
+var redis = require("redis");
+var bluebird = require("bluebird");
+bluebird.promisifyAll(redis.RedisClient.prototype);
+bluebird.promisifyAll(redis.Multi.prototype);
+
 var store = redis.createClient();
 store.set("players", players); // start with 0 players
 var pub = redis.createClient();
@@ -57,7 +61,9 @@ io.on("connection", function (client) {
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/terminal"));
-app.use(session({ store: new sessionStore({ client: store }), secret: process.env.SECRET, resave: false, saveUninitialized: true }));
+app.use(session({
+  store: new sessionStore({ client: store }), secret: process.env.SECRET, resave: false, saveUninitialized: true, cookie: {
+    maxAge: new Date(Date.now() + (60000 * 60 * 24 * 365)) } }));
 
 // === Start Server ===
 var server_port = process.env.PORT || 3001;
@@ -73,30 +79,44 @@ debug(status);
 app.post("/console", (req, res) => {
   var sessionID = req.session.id;
   debug(req.body.input + " -- from: " + sessionID);
+  var response;
+  var location;
   if (req.body.input === "ping") {
     // first connect
     debug("first connect -- from : " + sessionID);
     // get last location from redis
     var currentLocation = "MAIN"; // the default location
-    store.get(sessionID + ".currentLocation", async (error, reply) => {
+    store.getAsync(sessionID + ".currentLocation").then((reply) => {
       if (reply === null) {
         // no last know location
+        debug("    no location existed");
         saveLocation(sessionID, currentLocation);
       } else {
+        // get last know location (in db)
+        debug("    location found: " + reply);
         currentLocation = reply;
         mudconsole.setLocation(sessionID, currentLocation);
       }
       req.session.currentLocation = currentLocation;
+      debug("  performing: " + req.body.input);
+      debug("         for: " + sessionID);
+      response = performCommand("look", sessionID);
+      res.json(response);
     });
-    req.body.input = "look";
+  } else {
+    response = performCommand(req.body.input, sessionID);
+    if (req.body.input.indexOf("go ") === 0 && response.response.indexOf("You can't go there.") === -1) {
+      location = mudconsole.getLocation(sessionID);
+      saveLocation(sessionID, location);
+    }
+    res.json(response);
   }
-  var response = { response: mudconsole.input(req.body.input, sessionID) };
-  if (req.body.input.indexOf("go ") === 0 && response.response.indexOf("You can't go there.") === -1) {
-    var location = mudconsole.getLocation(sessionID);
-    saveLocation(sessionID, location);
-  }
-  res.json(response);
 });
+
+function performCommand(command, sessionID) {
+  debug("  command: " + command + "\n   session: " + sessionID);
+  return { response: mudconsole.input(command, sessionID) };
+}
 
 function saveLocation(sessionID, location) {
   store.set(sessionID + ".currentLocation", location);
