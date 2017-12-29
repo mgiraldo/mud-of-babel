@@ -2,7 +2,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var session = require("express-session");
 var sessionStore = require("connect-redis")(session);
-var cookieParser = require('cookie-parser')
+var cookieParser = require("cookie-parser");
 var dotenv = require("dotenv");
 dotenv.config();
 
