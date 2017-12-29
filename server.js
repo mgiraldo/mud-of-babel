@@ -102,6 +102,7 @@ io.on("connection", function (client) {
 
   client.on("disconnect", function () {
     debug("player left");
+    client.broadcast.to(client.handshake.session.currentLocation).emit("message", { response: "\n" + client.handshake.session.name + " disconnected." });
     store.decr("players", function (err, reply) {
       players = reply;
       debug("players: " + players);
@@ -167,10 +168,8 @@ io.on("connection", function (client) {
       if (response.response.indexOf("You can't go there.") === -1) {
         location = mudconsole.getLocation(sessionID);
         saveLocation(client.handshake.session, location, client);
-        client.leave(oldLocation);
-        client.join(location);
-        client.broadcast.to(location).emit("message", { response: "\n" + name + " entered the room." });
-        client.broadcast.to(oldLocation).emit("message", { response: "\n" + name + " left the room." });
+        leaveRoom(client, name, oldLocation);
+        enterRoom(client, name, location);
       }
       client.emit("message", response);
     } else {
@@ -194,9 +193,9 @@ function initPlayer(session, socket) {
       store.set(sessionID + ".name", name);
       session.save();
     }
+    initLocation(session, socket);
   });
 
-  initLocation(session, socket);
 }
 
 function initLocation(session, socket, callback) {
@@ -215,11 +214,26 @@ function initLocation(session, socket, callback) {
       mudconsole.setLocation(sessionID, currentLocation);
     }
 
-    socket.join(currentLocation);
+    if (!callback) {
+      // only happens when first instantiate
+      socket.join(currentLocation);
+      socket.broadcast.to(currentLocation).emit("message", { response: "\n" + session.name + " connected." });
+    } else {
+      callback();
+    }
     session.currentLocation = currentLocation;
     session.save();
-    if (callback) callback();
   });
+}
+
+function enterRoom(client, name, location) {
+  client.join(location);
+  client.broadcast.to(location).emit("message", { response: "\n" + name + " entered the room." });
+}
+
+function leaveRoom(client, name, location) {
+  client.leave(location);
+  client.broadcast.to(location).emit("message", { response: "\n" + name + " left the room." });
 }
 
 function performCommand(command, sessionID) {

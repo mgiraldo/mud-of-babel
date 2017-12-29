@@ -65,6 +65,6 @@ function toScreen(message, actor) {
     message = "\n> " + message;
   }
   var displayString = document.getElementById("display").value + message + "\n";
-  document.getElementById("display").value = displayString;
+  document.getElementById("display").innerHTML += displayString.replace(/\n/g, "<br />");
   document.getElementById("display").scrollTop = document.getElementById("display").scrollHeight;
 }

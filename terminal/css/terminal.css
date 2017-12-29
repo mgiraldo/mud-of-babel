@@ -10,7 +10,9 @@
 html, body, #input, #display {
 	font-family: "Input Mono", "Courier New", Courier, monospace;
 	font-size: 16px;
-	width: 100%;
+}
+body {
+	position: relative;
 	height: 100%;
 }
 #input {
@@ -19,19 +21,20 @@ html, body, #input, #display {
 	bottom: 0;
 	border-top: 0.05rem solid #00D100;
 	padding: 0.5rem;
+	width: 100%;
 	z-index: 2;
 }
 #display {
 	line-height: 1.5em;
 	padding: 0.7rem;
+	box-sizing: border-box;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	resize: none;
 	top: 0;
 	left: 0;
-	bottom: 0;
+	bottom: 2rem;
 	right: 0;
-	height: 100%;
 	position: absolute;
 	z-index: 1;
 }
