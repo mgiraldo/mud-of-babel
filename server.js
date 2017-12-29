@@ -1,6 +1,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var session = require("express-session");
+var cookieParser = require("cookie-parser");
 var sessionStore = require("connect-redis")(session);
 var dotenv = require("dotenv");
 dotenv.config();
@@ -48,8 +49,9 @@ sub.subscribe("mud");
 app.use(express.static(__dirname + "/terminal"));
 
 // === Import Necessary Functionality ==
-app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use(cookieParser());
 app.use(sessionMiddleware);
 
 // === Start Server ===
