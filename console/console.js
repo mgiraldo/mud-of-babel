@@ -178,6 +178,14 @@ var actions = {
     return { message: playersMessage, success: true };
   },
 
+  say: function (game, command) {
+    var playersMessage = "What do you want to say?";
+    if (!command.subject) {
+      return { message: playersMessage, success: true };
+    }
+    return { message: playersMessage, success: true };
+  },
+
   look: function (game, command) {
     if (!command.subject) {
       return { message: getLocationDescription(game, true), success: true };

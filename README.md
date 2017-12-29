@@ -4,6 +4,8 @@ Based on [TextAdventure.js](https://github.com/TheBroox/TextAdventure.js)
 
 ## Installing and running
 
+This MUD uses [Redis](https://redis.io) for session and state management.
+
 1. Install [Yarn](https://yarnpkg.com) (`brew install yarn` if you have Homebrew)
 2. Clone/download this repository
 3. Run `yarn` to install necessary packages.

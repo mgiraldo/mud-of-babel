@@ -21,9 +21,10 @@ bluebird.promisifyAll(redis.RedisClient.prototype);
 bluebird.promisifyAll(redis.Multi.prototype);
 
 var store = redis.createClient(process.env.REDIS_URL);
-store.set("players", players); // start with 0 players
 var pub = redis.createClient(process.env.REDIS_URL);
 var sub = redis.createClient(process.env.REDIS_URL);
+
+store.set("players", players); // start with 0 players
 store.on("error", function (err) {
   debug("Store error: " + err);
 });
@@ -38,18 +39,18 @@ sub.subscribe("mud");
 // === Initilize Express ===
 var app = express();
 var server = require("http").Server(app);
+
+// === Session Management
 var sessionMiddleware = session({
-  store: new sessionStore({ client: store }), secret: process.env.SECRET, resave: false, saveUninitialized: true, cookie: {
+  store: new sessionStore({ client: store }), secret: process.env.SECRET, resave: true, saveUninitialized: true, cookie: {
     maxAge: new Date(Date.now() + (60000 * 60 * 24 * 365))
   }  
 });  
 
-// === The UI
-app.use(express.static(__dirname + "/terminal"));
-
-// === Import Necessary Functionality ==
-app.use(bodyParser.urlencoded({ extended: true }));
+// === App Stuff ==
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static(__dirname + "/terminal"));
 app.use(sessionMiddleware);
 
 // === Start Server ===
@@ -58,23 +59,23 @@ server.listen(server_port, function () {
   debug("Listening on server_port " + server_port);
 });
 
-// === Create Console ===
-var mudconsole = require("./console/console.js");
-var status = mudconsole.loadDefaultGameData(getBaseGameData());
-debug(status);
-
 // === Initialize Socket.io
 var io = require("socket.io")(server);
 io.use(function (socket, next) {
   sessionMiddleware(socket.request, socket.request.res, next);
 });
 
+// === Create Console ===
+var mudconsole = require("./console/console.js");
+var status = mudconsole.loadDefaultGameData(getBaseGameData());
+debug(status);
+
 io.on("connection", function (client) {
   // new player arrived
   debug("player connected! " + client.request.session.id);
   client.join(defaultLocation);
   // io.in(defaultLocation).emit("Librarian entered the room", client);
-  initPlayer(client.request.session);
+  initPlayer(client.request.session, client);
 
   store.incr("players", function (err, reply) {
     players = reply;
@@ -104,12 +105,13 @@ io.on("connection", function (client) {
   // === Respond to AJAX calls ===
   client.on("console", (message) => {
     var sessionID = client.request.session.id;
+    var name = client.request.session.name;
     debug(message + " -- from: " + sessionID);
     var response;
     var location;
     if (message.toLowerCase() === "look") {
       // get last location from redis
-      initLocation(sessionID, () =>{
+      initLocation(client.request.session, client, () =>{
         response = performCommand(message, sessionID);
         client.emit("message", response);
       });
@@ -137,23 +139,36 @@ io.on("connection", function (client) {
         store.set(sessionID + ".lastYell", Date.now());
         response = performCommand(message, sessionID);
         var yellMessage = message.substring(5);
-        var yellUser = client.request.session.name;
-        var yellEmit = "\n* " + yellUser + " (yelling): " + yellMessage + " *";
-        io.emit("message", {response: yellEmit});
+        var yellEmit = "\n* " + name + " (yelling): " + yellMessage + " *";
+        io.emit("message", { response: yellEmit });
         client.emit("message", response);
       });
+    } else if (message.toLowerCase().indexOf("say ") === 0) {
+      store.getAsync(sessionID + ".currentLocation").then((value) => {
+        var location = value;
+        response = performCommand(message, sessionID);
+        var sayMessage = message.substring(4);
+        var sayEmit = "\n+ " + name + " says: " + sayMessage + " +";
+        io.in(location).emit("message", { response: sayEmit });
+      });
+    } else if (message.toLowerCase().indexOf("go ") === 0) {
+      var oldLocation = client.request.session.currentLocation;
+      response = performCommand(message, sessionID);
+      if (response.response.indexOf("You can't go there.") === -1) {
+        location = mudconsole.getLocation(sessionID);
+        saveLocation(client.request.session, location, client);
+        client.join(location);
+        io.in(location).emit("message", { response: "\n" + name + " entered the room." });
+      }
+      client.emit("message", response);
     } else {
       response = performCommand(message, sessionID);
-      if (message.toLowerCase().indexOf("go ") === 0 && response.response.indexOf("You can't go there.") === -1) {
-        location = mudconsole.getLocation(sessionID);
-        saveLocation(sessionID, location);
-      }
       client.emit("message", response);
     }
   });
 });
 
-function initPlayer(session) {
+function initPlayer(session, socket) {
   // set player name if not set already
   var sessionID = session.id;
   store.getAsync(sessionID + ".name").then((value) => {
@@ -165,20 +180,22 @@ function initPlayer(session) {
       var name = adjective + " " + tree;
       session.name = name;
       store.set(sessionID + ".name", name);
+      session.save();
     }
   });
 
-  initLocation(sessionID);
+  initLocation(session, socket);
 }
 
-function initLocation(sessionID, callback) {
+function initLocation(session, socket, callback) {
+  var sessionID = session.id;
   // get last location from redis
   var currentLocation = defaultLocation; // the default location
   store.getAsync(sessionID + ".currentLocation").then((value) => {
     if (value === null) {
       // no last know location
       debug("    no location existed");
-      saveLocation(sessionID, currentLocation);
+      saveLocation(session, currentLocation, socket);
     } else {
       // get last know location (in db)
       debug("    location found: " + value);
@@ -186,6 +203,9 @@ function initLocation(sessionID, callback) {
       mudconsole.setLocation(sessionID, currentLocation);
     }
 
+    socket.join(currentLocation);
+    session.currentLocation = currentLocation;
+    session.save();
     if (callback) callback();
   });
 }
@@ -195,8 +215,11 @@ function performCommand(command, sessionID) {
   return { response: mudconsole.input(command, sessionID) };
 }
 
-function saveLocation(sessionID, location) {
+function saveLocation(session, location) {
+  var sessionID = session.id;
   store.set(sessionID + ".currentLocation", location);
+  session.currentLocation = location;
+  session.save();
   // create the room
   io.emit("create", location);
 }
