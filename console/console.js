@@ -45,7 +45,6 @@ exports.input = function (input, gameID) {
   var game = games[gameID];
   if (game) {
     game = game.gameData;
-    console.log("location: ", game.player.currentLocation, " id: ", gameID);
   } else {
     // load the base game
     game = loadBaseGameForID(gameID).gameData;

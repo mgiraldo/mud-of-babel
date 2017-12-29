@@ -155,7 +155,9 @@ io.on("connection", function (client) {
         response = performCommand(message, sessionID);
         var sayMessage = message.substring(4);
         var sayEmit = "\n+ " + name + " says: " + sayMessage + " +";
-        io.in(location).emit("message", { response: sayEmit });
+        var sayMyself = "\n+ You say: " + sayMessage + " +";
+        client.broadcast.to(location).emit("message", { response: sayEmit });
+        client.emit("message", { response: sayMyself });
       });
     } else if (message.toLowerCase().indexOf("go ") === 0) {
       var oldLocation = client.handshake.session.currentLocation;
@@ -163,9 +165,10 @@ io.on("connection", function (client) {
       if (response.response.indexOf("You can't go there.") === -1) {
         location = mudconsole.getLocation(sessionID);
         saveLocation(client.handshake.session, location, client);
+        client.leave(oldLocation);
         client.join(location);
-        io.in(location).emit("message", { response: "\n" + name + " entered the room." });
-        debug("old location: " + oldLocation + "\nnew location: " + location);
+        client.broadcast.to(location).emit("message", { response: "\n" + name + " entered the room." });
+        client.broadcast.to(oldLocation).emit("message", { response: "\n" + name + " left the room." });
       }
       client.emit("message", response);
     } else {
