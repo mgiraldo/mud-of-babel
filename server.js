@@ -1,9 +1,17 @@
-var express = require("express");
-var bodyParser = require("body-parser");
-var session = require("express-session");
-var sessionStore = require("connect-redis")(session);
 var dotenv = require("dotenv");
 dotenv.config();
+
+var express = require("express");
+var bodyParser = require("body-parser");
+var expressSession = require("express-session");
+var redis = require("redis");
+var bluebird = require("bluebird");
+var http = require("http");
+var connectRedis = require("connect-redis");
+var socketIO = require("socket.io");
+var sharedSession = require("express-socket.io-session");
+var cookieParser = require("cookie-parser")(process.env.SECRET);
+
 
 // === Server Flags ===
 var debugMode = true;
@@ -14,13 +22,13 @@ var defaultLocation = "MAIN";
 var adjectives = ["Agreeable", "Alert", "Alluring", "Ambitious", "Amused", "Boundless", "Brave", "Bright", "Calm", "Capable", "Charming", "Cheerful", "Coherent", "Comfortable", "Confident", "Cooperative", "Courageous", "Credible", "Cultured", "Dashing", "Dazzling", "Debonair", "Decisive", "Decorous", "Delightful", "Detailed", "Determined", "Diligent", "Discreet", "Dynamic", "Eager", "Efficient", "Elated", "Eminent", "Enchanting", "Encouraging", "Endurable", "Energetic", "Entertaining", "Enthusiastic", "Excellent", "Excited", "Exclusive", "Exuberant", "Fabulous", "Fair", "Faithful", "Fantastic", "Fearless", "Fine", "Frank", "Friendly", "Funny", "Generous", "Gentle", "Glorious", "Good", "Happy", "Harmonious", "Helpful", "Hilarious", "Honorable", "Impartial", "Industrious", "Instinctive", "Jolly", "Joyous", "Kind", "Kind-hearted", "Knowledgeable", "Level", "Likeable", "Lively", "Lovely", "Loving", "Lucky", "Mature", "Modern", "Nice", "Obedient", "Painstaking", "Peaceful", "Perfect", "Placid", "Plausible", "Pleasant", "Plucky", "Productive", "Protective", "Proud", "Punctual", "Quiet", "Receptive", "Reflective", "Relieved", "Resolute", "Responsible", "Rhetorical", "Righteous", "Romantic", "Sedate", "Seemly", "Selective", "Self-assured", "Sensitive", "Shrewd", "Silly", "Sincere", "Skillful", "Smiling", "Splendid", "Steadfast", "Stimulating", "Successful", "Succinct", "Talented", "Thoughtful", "Thrifty", "Tough", "Trustworthy", "Unbiased", "Unusual", "Upbeat", "Vigorous", "Vivacious", "Warm", "Willing", "Wise", "Witty", "Wonderful"];
 var treeNames = ["Alder", "Apple", "Pear", "Ash", "Aspen", "Cottonwood", "Poplar", "Basswood", "Birch", "Buckeye", "Buckthorn", "California-laurel", "Catalpa", "Cedar", "Cherry", "Plum", "Chestnut", "Chinkapin", "Cottonwood", "Poplar", "Aspen", "Cypress", "Dogwood", "Douglas-fir", "Elm", "Fir", "Filbert", "Hazel", "Giant Sequoia", "Hawthorn", "Hazel", "Filbert", "Hemlock", "Honeylocust", "Holly", "Horsechestnut", "Incense-cedar", "Juniper", "Larch", "Locust", "Madrone", "Maple", "Mountain-ash", "Mountain-mahogany", "Oak", "Oregon-myrtle", "Pear", "Apple", "Pine", "Plum", "Cherry", "Poplar", "Aspen", "Cottonwood", "Redcedar", "Redwood", "Russian-olive", "Spruce", "Sweetgum", "Sycamore", "Tanoak", "True Cedar", "True Fir", "Walnut", "White-cedar", "Willow", "Yellow-poplar", "Yew"];
 
-// === Initilize Express ===
+// === Initialize Servers ===
 var app = express();
-var server = require("http").Server(app);
+var server = http.createServer(app);
+var io = socketIO(server);
+var sessionStore = connectRedis(expressSession);
 
 // === Initialize Redis ===
-var redis = require("redis");
-var bluebird = require("bluebird");
 bluebird.promisifyAll(redis.RedisClient.prototype);
 bluebird.promisifyAll(redis.Multi.prototype);
 
@@ -28,6 +36,14 @@ var store = redis.createClient(process.env.REDIS_URL);
 var pub = redis.createClient(process.env.REDIS_URL);
 var sub = redis.createClient(process.env.REDIS_URL);
 
+// === Session Stuff
+var session = expressSession({
+  store: new sessionStore({ client: store }), secret: process.env.SECRET, resave: true, saveUninitialized: true, cookie: {
+    maxAge: new Date(Date.now() + (60000 * 60 * 24 * 365))
+  }
+});
+
+// === Base Redis Listeners
 store.set("players", players); // start with 0 players
 store.on("error", function (err) {
   debug("Store error: " + err);
@@ -40,24 +56,15 @@ sub.on("error", function (err) {
 });
 sub.subscribe("mud");
 
-// === Session Management
-var sessionMiddleware = session({
-  store: new sessionStore({ client: store }), secret: process.env.SECRET, resave: true, saveUninitialized: true, cookie: {
-    maxAge: new Date(Date.now() + (60000 * 60 * 24 * 365))
-  }
-});
-
-// === Initialize Socket.io
-var io = require("socket.io")(server);
-io.use(function (socket, next) {
-  sessionMiddleware(socket.request, socket.request.res, next);
-});
-
 // === App Stuff ==
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cookieParser);
+app.use(session);
+io.use(sharedSession(session, {
+  autoSave: true
+}));
 app.use(express.static(__dirname + "/terminal"));
-app.use(sessionMiddleware);
 
 // === Start Server ===
 var server_port = process.env.PORT || 3001;
@@ -72,10 +79,9 @@ debug(status);
 
 io.on("connection", function (client) {
   // new player arrived
-  debug("player connected! " + client.request.session.id);
+  debug("player connected! " + client.handshake.session.id);
   client.join(defaultLocation);
-  // io.in(defaultLocation).emit("Librarian entered the room", client);
-  initPlayer(client.request.session, client);
+  initPlayer(client.handshake.session, client);
 
   store.incr("players", function (err, reply) {
     players = reply;
@@ -104,14 +110,14 @@ io.on("connection", function (client) {
 
   // === Respond to AJAX calls ===
   client.on("console", (message) => {
-    var sessionID = client.request.session.id;
-    var name = client.request.session.name;
+    var sessionID = client.handshake.session.id;
+    var name = client.handshake.session.name;
     debug(message + " -- from: " + sessionID);
     var response;
     var location;
     if (message.toLowerCase() === "look") {
       // get last location from redis
-      initLocation(client.request.session, client, () =>{
+      initLocation(client.handshake.session, client, () =>{
         response = performCommand(message, sessionID);
         client.emit("message", response);
       });
@@ -152,13 +158,14 @@ io.on("connection", function (client) {
         io.in(location).emit("message", { response: sayEmit });
       });
     } else if (message.toLowerCase().indexOf("go ") === 0) {
-      var oldLocation = client.request.session.currentLocation;
+      var oldLocation = client.handshake.session.currentLocation;
       response = performCommand(message, sessionID);
       if (response.response.indexOf("You can't go there.") === -1) {
         location = mudconsole.getLocation(sessionID);
-        saveLocation(client.request.session, location, client);
+        saveLocation(client.handshake.session, location, client);
         client.join(location);
         io.in(location).emit("message", { response: "\n" + name + " entered the room." });
+        debug("old location: " + oldLocation + "\nnew location: " + location);
       }
       client.emit("message", response);
     } else {
