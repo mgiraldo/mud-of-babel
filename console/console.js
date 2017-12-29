@@ -14,11 +14,10 @@ var baseData;
 
 // === Server Data Interaction ===
 exports.setLocation = function (gameID, location) {
-  var game = games[gameID];
-  if (!game) {
-    game = loadBaseGameForID(gameID);
+  if (!games[gameID]) {
+    games[gameID] = loadBaseGameForID(gameID);
   }
-  game.gameData.player.currentLocation = location;
+  games[gameID].gameData.player.currentLocation = location;
 };
 
 exports.getLocation = function (gameID) {
@@ -46,50 +45,44 @@ exports.input = function (input, gameID) {
   var game = games[gameID];
   if (game) {
     game = game.gameData;
-    var returnString;
-    try {
-      try {
-        debug("---Attempting to run cartridge command \"" + command.action + "\"");
-        returnString = eval("gameActions." + command.action + "(game,command,consoleInterface)");
-      } catch (cartridgeCommandError) {
-        debug("-----" + cartridgeCommandError);
-        debug("---Attempting to run cartridge command \"" + command.action + "\"");
-        returnString = eval("actions." + command.action + "(game,command)").message;
-      }
-    } catch (consoleCommandError) {
-      try {
-        debug("-----" + consoleCommandError);
-        debug("---Attempting to perform " + command.action + " interaction");
-        returnString = interact(game, command.action, command.subject);
-      } catch (interactionError) {
-        debug("-----" + interactionError);
-      }
-    }
-    if (returnString === undefined) {
-      returnString = "I don't know how to do that.";
-    } else {
-      try {
-        var updateLocationString = getCurrentLocation(game).updateLocation(command);
-      } catch (updateLocationError) {
-        debug("---Failed to Perform updateLocation()");
-        debug("-----" + updateLocationError);
-      }
-    }
-    if (updateLocationString !== undefined) {
-      returnString = updateLocationString;
-    }
-    return checkForGameEnd(game, returnString);
+    console.log("location: ", game.player.currentLocation, " id: ", gameID);
   } else {
     // load the base game
-    game = loadBaseGameForID(gameID);
-    return game.gameData.introText + "\n" + getLocationDescription(game.gameData);
-    // console.log(gameID + ': no game');
-    // if(command.action === 'load'){
-    // 	return loadCartridge(gameID, command.subject);
-    // } else {
-    // 	return listCartridges();
-    // }
+    game = loadBaseGameForID(gameID).gameData;
   }
+  var returnString;
+  try {
+    try {
+      debug("---Attempting to run cartridge command \"" + command.action + "\"");
+      returnString = eval("gameActions." + command.action + "(game,command,consoleInterface)");
+    } catch (cartridgeCommandError) {
+      debug("-----" + cartridgeCommandError);
+      debug("---Attempting to run cartridge command \"" + command.action + "\"");
+      returnString = eval("actions." + command.action + "(game,command)").message;
+    }
+  } catch (consoleCommandError) {
+    try {
+      debug("-----" + consoleCommandError);
+      debug("---Attempting to perform " + command.action + " interaction");
+      returnString = interact(game, command.action, command.subject);
+    } catch (interactionError) {
+      debug("-----" + interactionError);
+    }
+  }
+  if (returnString === undefined) {
+    returnString = "I don't know how to do that.";
+  } else {
+    try {
+      var updateLocationString = getCurrentLocation(game).updateLocation(command);
+    } catch (updateLocationError) {
+      debug("---Failed to Perform updateLocation()");
+      debug("-----" + updateLocationError);
+    }
+  }
+  if (updateLocationString !== undefined) {
+    returnString = updateLocationString;
+  }
+  return checkForGameEnd(game, returnString);
 };
 
 // ----------------------------\
@@ -177,8 +170,11 @@ var actions = {
     var playersMessage = "Shhh! This is a library. You cannot just scream.";
     if (!command.subject) {
       return { message: playersMessage, success: true };
+    } else if (command.subject === "denied") {
+      playersMessage = "You can only yell once per minute.";
+    } else {
+      playersMessage = "Everyone in the library has received your message.";
     }
-    playersMessage = "Everyone in the library has received your message.";
     return { message: playersMessage, success: true };
   },
 

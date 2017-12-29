@@ -11,6 +11,8 @@ var debugMode = true;
 // === Game Variables ===
 var players = 0;
 var defaultLocation = "MAIN";
+var adjectives = ["Agreeable", "Alert", "Alluring", "Ambitious", "Amused", "Boundless", "Brave", "Bright", "Calm", "Capable", "Charming", "Cheerful", "Coherent", "Comfortable", "Confident", "Cooperative", "Courageous", "Credible", "Cultured", "Dashing", "Dazzling", "Debonair", "Decisive", "Decorous", "Delightful", "Detailed", "Determined", "Diligent", "Discreet", "Dynamic", "Eager", "Efficient", "Elated", "Eminent", "Enchanting", "Encouraging", "Endurable", "Energetic", "Entertaining", "Enthusiastic", "Excellent", "Excited", "Exclusive", "Exuberant", "Fabulous", "Fair", "Faithful", "Fantastic", "Fearless", "Fine", "Frank", "Friendly", "Funny", "Generous", "Gentle", "Glorious", "Good", "Happy", "Harmonious", "Helpful", "Hilarious", "Honorable", "Impartial", "Industrious", "Instinctive", "Jolly", "Joyous", "Kind", "Kind-hearted", "Knowledgeable", "Level", "Likeable", "Lively", "Lovely", "Loving", "Lucky", "Mature", "Modern", "Nice", "Obedient", "Painstaking", "Peaceful", "Perfect", "Placid", "Plausible", "Pleasant", "Plucky", "Productive", "Protective", "Proud", "Punctual", "Quiet", "Receptive", "Reflective", "Relieved", "Resolute", "Responsible", "Rhetorical", "Righteous", "Romantic", "Sedate", "Seemly", "Selective", "Self-assured", "Sensitive", "Shrewd", "Silly", "Sincere", "Skillful", "Smiling", "Splendid", "Steadfast", "Stimulating", "Successful", "Succinct", "Talented", "Thoughtful", "Thrifty", "Tough", "Trustworthy", "Unbiased", "Unusual", "Upbeat", "Vigorous", "Vivacious", "Warm", "Willing", "Wise", "Witty", "Wonderful"];
+var treeNames = ["Alder", "Apple", "Pear", "Ash", "Aspen", "Cottonwood", "Poplar", "Basswood", "Birch", "Buckeye", "Buckthorn", "California-laurel", "Catalpa", "Cedar", "Cherry", "Plum", "Chestnut", "Chinkapin", "Cottonwood", "Poplar", "Aspen", "Cypress", "Dogwood", "Douglas-fir", "Elm", "Fir", "Filbert", "Hazel", "Giant Sequoia", "Hawthorn", "Hazel", "Filbert", "Hemlock", "Honeylocust", "Holly", "Horsechestnut", "Incense-cedar", "Juniper", "Larch", "Locust", "Madrone", "Maple", "Mountain-ash", "Mountain-mahogany", "Oak", "Oregon-myrtle", "Pear", "Apple", "Pine", "Plum", "Cherry", "Poplar", "Aspen", "Cottonwood", "Redcedar", "Redwood", "Russian-olive", "Spruce", "Sweetgum", "Sycamore", "Tanoak", "True Cedar", "True Fir", "Walnut", "White-cedar", "Willow", "Yellow-poplar", "Yew"];
 
 // === Initilize Express ===
 var app = express();
@@ -76,10 +78,11 @@ io.use(function (socket, next) {
 
 io.on("connection", function (client) {
   // new player arrived
-  debug("player connected!");
+  debug("player connected! " + client.request.session.id);
   client.join(defaultLocation);
-  // io.in(defaultLocation).emit("Librarian entered the grounds", client);
-  
+  // io.in(defaultLocation).emit("Librarian entered the room", client);
+  initPlayer(client.request.session);
+
   store.incr("players", function (err, reply) {
     players = reply;
     debug("players: " + players);
@@ -111,40 +114,39 @@ io.on("connection", function (client) {
     debug(message + " -- from: " + sessionID);
     var response;
     var location;
-    if (message.toLowerCase() === "ping") {
-      // first connect
-      debug("first connect -- from : " + sessionID);
+    if (message.toLowerCase() === "look") {
       // get last location from redis
-      var currentLocation = defaultLocation; // the default location
-      store.getAsync(sessionID + ".currentLocation").then((reply) => {
-        if (reply === null) {
-          // no last know location
-          debug("    no location existed");
-          saveLocation(sessionID, currentLocation);
-        } else {
-          // get last know location (in db)
-          debug("    location found: " + reply);
-          currentLocation = reply;
-          mudconsole.setLocation(sessionID, currentLocation);
-        }
-        debug("  performing: " + message);
-        debug("         for: " + sessionID);
-        response = performCommand("look", sessionID);
+      initLocation(sessionID, () =>{
+        response = performCommand(message, sessionID);
         client.emit("message", response);
       });
     } else if (message.toLowerCase() === "players") {
       // getting player list does not need to go to the console
       debug("  requesting player count");
-      store.getAsync("players").then((reply) => {
-        message = message + " " + reply;
+      store.getAsync("players").then((value) => {
+        message = message + " " + value;
         response = performCommand(message, sessionID);
         client.emit("message", response);
       });
     } else if (message.toLowerCase().indexOf("yell ") === 0) {
-      // getting player list does not need to go to the console
-      store.getAsync("players").then((reply) => {
-        message = message + " " + reply;
+      // yelling can only be done once a minute
+      store.getAsync(sessionID + ".lastYell").then((value) => {
+        if (value) {
+          var yell = Number(value);
+          var canYell = Date.now() - yell > 60000;
+          if (!canYell) {
+            message = "yell denied";
+            response = performCommand(message, sessionID);
+            client.emit("message", response);
+            return;
+          }
+        }
+        store.set(sessionID + ".lastYell", Date.now());
         response = performCommand(message, sessionID);
+        var yellMessage = message.substring(5);
+        var yellUser = client.request.session.name;
+        var yellEmit = "\n* " + yellUser + " (yelling): " + yellMessage + " *";
+        io.emit("message", {response: yellEmit});
         client.emit("message", response);
       });
     } else {
@@ -157,6 +159,43 @@ io.on("connection", function (client) {
     }
   });
 });
+
+function initPlayer(session) {
+  // set player name if not set already
+  var sessionID = session.id;
+  store.getAsync(sessionID + ".name").then((value) => {
+    if (value) {
+      session.name = value;
+    } else {
+      var adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
+      var tree = treeNames[Math.floor(Math.random() * treeNames.length)];
+      var name = adjective + " " + tree;
+      session.name = name;
+      store.set(sessionID + ".name", name);
+    }
+  });
+
+  initLocation(sessionID);
+}
+
+function initLocation(sessionID, callback) {
+  // get last location from redis
+  var currentLocation = defaultLocation; // the default location
+  store.getAsync(sessionID + ".currentLocation").then((value) => {
+    if (value === null) {
+      // no last know location
+      debug("    no location existed");
+      saveLocation(sessionID, currentLocation);
+    } else {
+      // get last know location (in db)
+      debug("    location found: " + value);
+      currentLocation = value;
+      mudconsole.setLocation(sessionID, currentLocation);
+    }
+
+    if (callback) callback();
+  });
+}
 
 function performCommand(command, sessionID) {
   debug("  ||command: " + command + "\n  ||session: " + sessionID);

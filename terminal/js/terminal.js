@@ -4,7 +4,7 @@ var socket;
 function init() {
   // ===== Onload Functions ===========================================================
   initSocket();
-  messageServer("ping");
+  messageServer("look");
   document.getElementById("input").value = "";
   document.getElementById("display").value = "";
 
