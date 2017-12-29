@@ -24,6 +24,15 @@ var sessionMiddleware = session({
   }
 });
 
+// === The UI
+app.use(express.static(__dirname + "/terminal"));
+
+// === Import Necessary Functionality ==
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use(cookieParser());
+app.use(sessionMiddleware);
+
 // === Initialize Redis ===
 var redis = require("redis");
 var bluebird = require("bluebird");
@@ -44,15 +53,6 @@ sub.on("error", function (err) {
   debug("Sub error: " + err);
 });
 sub.subscribe("mud");
-
-// === The UI
-app.use(express.static(__dirname + "/terminal"));
-
-// === Import Necessary Functionality ==
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-app.use(cookieParser());
-app.use(sessionMiddleware);
 
 // === Start Server ===
 var server_port = process.env.PORT || 3001;
