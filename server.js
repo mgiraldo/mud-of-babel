@@ -146,7 +146,9 @@ io.on("connection", function (client) {
         response = performCommand(message, sessionID);
         var yellMessage = message.substring(5);
         var yellEmit = "\n* " + name + " (yelling): " + yellMessage + " *";
-        io.emit("message", { response: yellEmit });
+        var yellMyself = "\n* You (yelling): " + yellMessage + " *";
+        client.emit("message", { response: yellMyself });
+        client.broadcast.emit("message", { response: yellEmit });
         client.emit("message", response);
       });
     } else if (message.toLowerCase().indexOf("say ") === 0) {
