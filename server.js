@@ -1,6 +1,8 @@
 var dotenv = require("dotenv");
 dotenv.config();
 
+var ansiHTML = require("ansi-html");
+var chalk = require("chalk");
 var express = require("express");
 var bodyParser = require("body-parser");
 var expressSession = require("express-session");
@@ -92,17 +94,13 @@ io.on("connection", function (client) {
     debug("event:" + data);
   });
 
-  client.on("create", (room) => {
-    client.join(room);
-  });
-
   client.on("message", (message) => {
     debug("message: " + message);
   });
 
   client.on("disconnect", function () {
     debug("player left");
-    client.broadcast.to(client.handshake.session.currentLocation).emit("message", { response: "\n" + client.handshake.session.name + " disconnected." });
+    client.broadcast.to(client.handshake.session.currentLocation).emit("message", { response: cleanString("\n" + client.handshake.session.name + " disconnected.") });
     store.decr("players", function (err, reply) {
       players = reply;
       debug("players: " + players);
@@ -148,8 +146,8 @@ io.on("connection", function (client) {
         var yellMessage = message.substring(5);
         var yellEmit = "\n* " + name + " (yelling): " + yellMessage + " *";
         var yellMyself = "\n* You (yelling): " + yellMessage + " *";
-        client.emit("message", { response: yellMyself });
-        client.broadcast.emit("message", { response: yellEmit });
+        client.emit("message", { response: cleanString(yellMyself) });
+        client.broadcast.emit("message", { response: cleanString(yellEmit) });
         client.emit("message", response);
       });
     } else if (message.toLowerCase().indexOf("say ") === 0) {
@@ -159,11 +157,13 @@ io.on("connection", function (client) {
         var sayMessage = message.substring(4);
         var sayEmit = "\n+ " + name + " says: " + sayMessage + " +";
         var sayMyself = "\n+ You say: " + sayMessage + " +";
-        client.broadcast.to(location).emit("message", { response: sayEmit });
-        client.emit("message", { response: sayMyself });
+        client.broadcast.to(location).emit("message", { response: cleanString(sayEmit) });
+        client.emit("message", { response: cleanString(sayMyself) });
       });
     } else if (message.toLowerCase().indexOf("go ") === 0) {
       var oldLocation = client.handshake.session.currentLocation;
+      // make sure location is correct in console
+      mudconsole.setLocation(sessionID, oldLocation);
       response = performCommand(message, sessionID);
       if (response.response.indexOf("You can't go there.") === -1) {
         location = mudconsole.getLocation(sessionID);
@@ -217,7 +217,7 @@ function initLocation(session, socket, callback) {
     if (!callback) {
       // only happens when first instantiate
       socket.join(currentLocation);
-      socket.broadcast.to(currentLocation).emit("message", { response: "\n" + session.name + " connected." });
+      socket.broadcast.to(currentLocation).emit("message", { response: cleanString("\n" + session.name + " connected.") });
     } else {
       callback();
     }
@@ -228,17 +228,66 @@ function initLocation(session, socket, callback) {
 
 function enterRoom(client, name, location) {
   client.join(location);
-  client.broadcast.to(location).emit("message", { response: "\n" + name + " entered the room." });
+  client.broadcast.to(location).emit("message", { response: cleanString("\n" + name + " entered the room.") });
 }
 
 function leaveRoom(client, name, location) {
   client.leave(location);
-  client.broadcast.to(location).emit("message", { response: "\n" + name + " left the room." });
+  client.broadcast.to(location).emit("message", { response: cleanString("\n" + name + " left the room.") });
 }
 
 function performCommand(command, sessionID) {
   debug("  ||command: " + command + "\n  ||session: " + sessionID);
-  return { response: mudconsole.input(command, sessionID) };
+  return { response: cleanString(mudconsole.input(command, sessionID)) };
+}
+
+function cleanString(string) {
+  if (string.indexOf("---") !== -1) {
+    // check to see if it is “normal” room description
+    var lines = string.split("\n");
+    string = lines.map((line, index) => {
+      if (index === 1) {
+        // get title
+        return chalk.yellow(line);
+      } else if (line.indexOf("---") !== -1) {
+        // get underline
+        return chalk.gray(line);
+      } else if (line.indexOf("[") !== -1) {
+        // check to see if it has exit texts
+        var exitStart = line.indexOf("|");
+        var exitEnd = line.lastIndexOf("|");
+        var exit = line.substring(exitStart, exitEnd);
+        var roomStart = line.indexOf("]") + 1;
+        var room = line.substring(roomStart);
+        line = line.substring(0, exitStart) + chalk.cyan(exit) + line.substring(exitEnd, roomStart) + chalk.yellow(room);
+        return line;
+      } else if (line.indexOf("Exits are:") !== -1 || line.indexOf("Exit is:") !== -1) {
+        var intro = line.substring(0,line.indexOf(":")+1);
+        var exits = line.substring(line.indexOf(":")+1).split(",");
+        line = intro + exits.map(exit => {
+          if (exit.indexOf(" and ") !== -1) {
+            var twoExits = exit.split(" and ");
+            exit = twoExits.map(e => {
+              return chalk.cyan(e.replace(".", ""));
+            }).join(" and ");
+            return exit;
+          } else {
+            return chalk.cyan(exit.replace(".",""));
+          }
+        }).join(",") + ".";
+        return line;
+      } else {
+        return line;
+      }
+    }).join("\n");
+  } else if (string.indexOf("+ ") !== -1) {
+    string = chalk.green(string);
+  } else if (string.indexOf("* ") !== -1) {
+    string = chalk.red(string);
+  }
+  // convert colors to html
+  string = ansiHTML(string);
+  return string.replace(/\n/g, "<br />").replace(/\|/g, "&nbsp;");
 }
 
 function saveLocation(session, location) {
@@ -246,8 +295,6 @@ function saveLocation(session, location) {
   store.set(sessionID + ".currentLocation", location);
   session.currentLocation = location;
   session.save();
-  // create the room
-  io.emit("create", location);
 }
 
 // === Helper Functions ===

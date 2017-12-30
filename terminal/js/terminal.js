@@ -62,9 +62,9 @@ function messageServer(message) {
 // ----- Write to Screen ----------------------------------------------------------------
 function toScreen(message, actor) {
   if(actor == "user") {
-    message = "\n> " + message;
+    message = "<br />&gt; " + message;
   }
-  var displayString = document.getElementById("display").value + message + "\n";
-  document.getElementById("display").innerHTML += displayString.replace(/\n/g, "<br />").replace(/\|/g, "&nbsp;");
+  var displayString = document.getElementById("display").value + message + "<br />";
+  document.getElementById("display").innerHTML += displayString;
   document.getElementById("display").scrollTop = document.getElementById("display").scrollHeight;
 }

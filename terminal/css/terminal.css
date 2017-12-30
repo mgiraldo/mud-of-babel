@@ -1,6 +1,6 @@
 * {
 	background: #000000;
-	color: #00D100;
+	color: #ddd;
 	margin: 0;
 	border: none;
 }
@@ -19,7 +19,7 @@ body {
 	height: 2.2rem;
 	position: absolute;
 	bottom: 0;
-	border-top: 0.05rem solid #00D100;
+	border-top: 0.05rem solid #ddd;
 	padding: 0.5rem;
 	width: 100%;
 	z-index: 2;
