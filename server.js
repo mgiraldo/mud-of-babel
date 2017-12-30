@@ -286,8 +286,11 @@ function cleanString(string) {
     string = chalk.red(string);
   }
   // convert colors to html
+  string = string.replace(/\n/g, "<br />").replace(/\|/g, "&nbsp;");
+  debug(string);
   string = ansiHTML(string);
-  return string.replace(/\n/g, "<br />").replace(/\|/g, "&nbsp;");
+  debug(string);
+  return string;
 }
 
 function saveLocation(session, location) {
