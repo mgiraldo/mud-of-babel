@@ -18,6 +18,7 @@ body {
 #input {
 	height: 2.2rem;
 	position: absolute;
+	background-color: #333;
 	bottom: 0;
 	border-top: 0.05rem solid #ddd;
 	padding: 0.5rem;
@@ -43,7 +44,7 @@ body {
 	width: 1rem;
 }
 #display::-webkit-scrollbar-thumb {
-	background-color: #00D100;
+	background-color: #209805;
 	border: 0.33rem solid #000000;
 }
 #display::-webkit-scrollbar-track {
