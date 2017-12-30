@@ -286,10 +286,8 @@ function cleanString(string) {
     string = chalk.red(string);
   }
   // convert colors to html
-  string = string.replace(/\n/g, "<br />").replace(/\|/g, "&nbsp;");
-  debug(string);
   string = ansiHTML(string);
-  debug(string);
+  string = string.replace(/\n/g, "<br />").replace(/\|/g, "&nbsp;");
   return string;
 }
 
