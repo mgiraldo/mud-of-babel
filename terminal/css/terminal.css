@@ -16,7 +16,7 @@ body {
 	height: 100%;
 }
 #input {
-	height: 2rem;
+	height: 2.2rem;
 	position: absolute;
 	bottom: 0;
 	border-top: 0.05rem solid #00D100;
@@ -30,10 +30,9 @@ body {
 	box-sizing: border-box;
 	overflow-y: scroll;
 	overflow-x: hidden;
-	resize: none;
 	top: 0;
 	left: 0;
-	bottom: 2rem;
+	bottom: 2.2rem;
 	right: 0;
 	position: absolute;
 	z-index: 1;

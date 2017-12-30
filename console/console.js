@@ -140,7 +140,7 @@ var actions = {
       game.map[playerDestination].setup();
     }
     game.player.currentLocation = playerDestination;
-    return { message: getLocationDescription(game), success: true };
+    return { message: getLocationDescription(game, true), success: true };
   },
 
   inventory: function (game) {
