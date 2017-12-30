@@ -35,6 +35,8 @@ body {
 	bottom: 2.2rem;
 	right: 0;
 	position: absolute;
+	overflow-wrap: break-word;
+  word-wrap: break-word;
 	z-index: 1;
 }
 #display::-webkit-scrollbar {
