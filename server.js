@@ -238,6 +238,8 @@ function leaveRoom(client, name, location) {
 
 function performCommand(command, sessionID) {
   debug("  ||command: " + command + "\n  ||session: " + sessionID);
+  // limit chars
+  if (command.length > 256) command = command.substr(0, 256);
   return { response: cleanString(mudconsole.input(command, sessionID)) };
 }
 
