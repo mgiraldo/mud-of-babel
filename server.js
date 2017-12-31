@@ -295,23 +295,18 @@ function performConsoleCommand(command, sessionID) {
 }
 
 function cleanString(string) {
-  debug("cleanString");
+  debug("cleanString:" + chalk + ":" + chalk.cyan);
   if (string.indexOf("---") !== -1 && string.indexOf("[") !== -1 && string.indexOf("Exit") !== -1) {
-    debug("1");
     // check to see if it is “normal” room description
     var lines = string.split("\n");
     string = lines.map((line, index) => {
-      debug(line + ":" + chalk.yellow(line));
       if (index === 1) {
         // get title
-        debug("1.1");
         return chalk.yellow(line);
       } else if (line.indexOf("---") === 0) {
         // get underline
-        debug("1.2");
         return chalk.gray(line);
       } else if (line.indexOf("[") === 0) {
-        debug("1.3");
         // check to see if it has exit texts
         var exitStart = line.indexOf("|");
         var exitEnd = line.lastIndexOf("|");
@@ -321,7 +316,6 @@ function cleanString(string) {
         line = line.substring(0, exitStart) + chalk.cyan(exit) + line.substring(exitEnd, roomStart) + chalk.yellow(room);
         return line;
       } else if (line.indexOf("Exits are:") === 0 || line.indexOf("Exit is:") === 0) {
-        debug("1.4");
         var intro = line.substring(0,line.indexOf(":")+1);
         var exits = line.substring(line.indexOf(":")+1).split(",");
         line = intro + exits.map(exit => {
@@ -341,10 +335,8 @@ function cleanString(string) {
       }
     }).join("\n");
   } else if (string.indexOf("+ ") !== -1 && string.indexOf("say") !== -1) {
-    debug("2");
     string = chalk.green(string);
   } else if (string.indexOf("* ") !== -1 && string.indexOf("yell") !== -1) {
-    debug("3");
     string = chalk.red(string);
   }
   // convert colors to html
