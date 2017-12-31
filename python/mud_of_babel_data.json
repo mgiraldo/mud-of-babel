@@ -104,7 +104,7 @@
     },
     "A": {
       "firstVisit": true,
-      "displayName": "\u201cGeneral Works Building\u201d Front Porch",
+      "displayName": "General Works Building Front Porch",
       "description": "This is a small, one story tall, octagonal-shaped, marble and brick building. The entrance has a marble relief above it with the words \u201cGeneral Works\u201d engraved.\n\n[|Main||] Main Library Grounds\n[|Enter|] Enter Building",
       "interactables": {},
       "items": {},
@@ -321,7 +321,7 @@
     },
     "B": {
       "firstVisit": true,
-      "displayName": "\u201cPhilosophy, Psychology, Religion Building\u201d Front Porch",
+      "displayName": "Philosophy, Psychology, Religion Building Front Porch",
       "description": "This is a small, one story tall, octagonal-shaped, marble and brick building. The entrance has a marble relief above it with the words \u201cPhilosophy, Psychology, Religion\u201d engraved.\n\n[|Main||] Main Library Grounds\n[|Enter|] Enter Building",
       "interactables": {},
       "items": {},
@@ -623,7 +623,7 @@
     },
     "C": {
       "firstVisit": true,
-      "displayName": "\u201cAuxiliary Sciences of History (General) Building\u201d Front Porch",
+      "displayName": "Auxiliary Sciences of History (General) Building Front Porch",
       "description": "This is a small, one story tall, octagonal-shaped, marble and brick building. The entrance has a marble relief above it with the words \u201cAuxiliary Sciences of History (General)\u201d engraved.\n\n[|Main||] Main Library Grounds\n[|Enter|] Enter Building",
       "interactables": {},
       "items": {},
@@ -840,7 +840,7 @@
     },
     "D": {
       "firstVisit": true,
-      "displayName": "\u201cWorld History (except American History) Building\u201d Front Porch",
+      "displayName": "World History (except American History) Building Front Porch",
       "description": "This is a small, one story tall, octagonal-shaped, marble and brick building. The entrance has a marble relief above it with the words \u201cWorld History (except American History)\u201d engraved.\n\n[|Main||] Main Library Grounds\n[|Enter|] Enter Building",
       "interactables": {},
       "items": {},
@@ -1261,7 +1261,7 @@
     },
     "E": {
       "firstVisit": true,
-      "displayName": "\u201cAmerican History Building\u201d Front Porch",
+      "displayName": "American History Building Front Porch",
       "description": "This is a small, one story tall, square-shaped, marble and brick building. The entrance has a marble relief above it with the words \u201cAmerican History\u201d engraved.\n\n[|Main||] Main Library Grounds\n[|Enter|] Enter Building",
       "interactables": {},
       "items": {},
@@ -1308,7 +1308,7 @@
     },
     "F": {
       "firstVisit": true,
-      "displayName": "\u201cLocal History of the United States and British, Dutch, French, and Latin America Building\u201d Front Porch",
+      "displayName": "Local History of the United States and British, Dutch, French, and Latin America Building Front Porch",
       "description": "This is a small, one story tall, square-shaped, marble and brick building. The entrance has a marble relief above it with the words \u201cLocal History of the United States and British, Dutch, French, and Latin America\u201d engraved.\n\n[|Main||] Main Library Grounds\n[|Enter|] Enter Building",
       "interactables": {},
       "items": {},
@@ -1355,7 +1355,7 @@
     },
     "G": {
       "firstVisit": true,
-      "displayName": "\u201cGeography, Anthropology, Recreation Building\u201d Front Porch",
+      "displayName": "Geography, Anthropology, Recreation Building Front Porch",
       "description": "This is a small, one story tall, octagonal-shaped, marble and brick building. The entrance has a marble relief above it with the words \u201cGeography, Anthropology, Recreation\u201d engraved.\n\n[|Main||] Main Library Grounds\n[|Enter|] Enter Building",
       "interactables": {},
       "items": {},
@@ -1572,7 +1572,7 @@
     },
     "H": {
       "firstVisit": true,
-      "displayName": "\u201cSocial Sciences Building\u201d Front Porch",
+      "displayName": "Social Sciences Building Front Porch",
       "description": "This is a small, one story tall, octagonal-shaped, marble and brick building. The entrance has a marble relief above it with the words \u201cSocial Sciences\u201d engraved.\n\n[|Main||] Main Library Grounds\n[|Enter|] Enter Building",
       "interactables": {},
       "items": {},
@@ -1891,7 +1891,7 @@
     },
     "J": {
       "firstVisit": true,
-      "displayName": "\u201cPolitical Science Building\u201d Front Porch",
+      "displayName": "Political Science Building Front Porch",
       "description": "This is a small, one story tall, octagonal-shaped, marble and brick building. The entrance has a marble relief above it with the words \u201cPolitical Science\u201d engraved.\n\n[|Main||] Main Library Grounds\n[|Enter|] Enter Building",
       "interactables": {},
       "items": {},
@@ -2159,7 +2159,7 @@
     },
     "K": {
       "firstVisit": true,
-      "displayName": "\u201cLaw Building\u201d Front Porch",
+      "displayName": "Law Building Front Porch",
       "description": "This is a small, one story tall, octagonal-shaped, marble and brick building. The entrance has a marble relief above it with the words \u201cLaw\u201d engraved.\n\n[|Main||] Main Library Grounds\n[|Enter|] Enter Building",
       "interactables": {},
       "items": {},
@@ -7442,7 +7442,7 @@
     },
     "L": {
       "firstVisit": true,
-      "displayName": "\u201cEducation Building\u201d Front Porch",
+      "displayName": "Education Building Front Porch",
       "description": "This is a small, one story tall, octagonal-shaped, marble and brick building. The entrance has a marble relief above it with the words \u201cEducation\u201d engraved.\n\n[|Main||] Main Library Grounds\n[|Enter|] Enter Building",
       "interactables": {},
       "items": {},
@@ -7676,7 +7676,7 @@
     },
     "M": {
       "firstVisit": true,
-      "displayName": "\u201cMusic Building\u201d Front Porch",
+      "displayName": "Music Building Front Porch",
       "description": "This is a small, one story tall, square-shaped, marble and brick building. The entrance has a marble relief above it with the words \u201cMusic\u201d engraved.\n\n[|Main||] Main Library Grounds\n[|Enter|] Enter Building",
       "interactables": {},
       "items": {},
@@ -7757,7 +7757,7 @@
     },
     "N": {
       "firstVisit": true,
-      "displayName": "\u201cFine Arts Building\u201d Front Porch",
+      "displayName": "Fine Arts Building Front Porch",
       "description": "This is a small, one story tall, octagonal-shaped, marble and brick building. The entrance has a marble relief above it with the words \u201cFine Arts\u201d engraved.\n\n[|Main||] Main Library Grounds\n[|Enter|] Enter Building",
       "interactables": {},
       "items": {},
@@ -7923,7 +7923,7 @@
     },
     "P": {
       "firstVisit": true,
-      "displayName": "\u201cLanguage and Literature Building\u201d Front Porch",
+      "displayName": "Language and Literature Building Front Porch",
       "description": "This is a small, one story tall, octagonal-shaped, marble and brick building. The entrance has a marble relief above it with the words \u201cLanguage and Literature\u201d engraved.\n\n[|Main||] Main Library Grounds\n[|Enter|] Enter Building",
       "interactables": {},
       "items": {},
@@ -8310,7 +8310,7 @@
     },
     "Q": {
       "firstVisit": true,
-      "displayName": "\u201cScience Building\u201d Front Porch",
+      "displayName": "Science Building Front Porch",
       "description": "This is a small, one story tall, octagonal-shaped, marble and brick building. The entrance has a marble relief above it with the words \u201cScience\u201d engraved.\n\n[|Main||] Main Library Grounds\n[|Enter|] Enter Building",
       "interactables": {},
       "items": {},
@@ -8561,7 +8561,7 @@
     },
     "R": {
       "firstVisit": true,
-      "displayName": "\u201cMedicine Building\u201d Front Porch",
+      "displayName": "Medicine Building Front Porch",
       "description": "This is a small, one story tall, octagonal-shaped, marble and brick building. The entrance has a marble relief above it with the words \u201cMedicine\u201d engraved.\n\n[|Main||] Main Library Grounds\n[|Enter|] Enter Building",
       "interactables": {},
       "items": {},
@@ -8914,7 +8914,7 @@
     },
     "S": {
       "firstVisit": true,
-      "displayName": "\u201cAgriculture Building\u201d Front Porch",
+      "displayName": "Agriculture Building Front Porch",
       "description": "This is a small, one story tall, octagonal-shaped, marble and brick building. The entrance has a marble relief above it with the words \u201cAgriculture\u201d engraved.\n\n[|Main||] Main Library Grounds\n[|Enter|] Enter Building",
       "interactables": {},
       "items": {},
@@ -9046,7 +9046,7 @@
     },
     "T": {
       "firstVisit": true,
-      "displayName": "\u201cTechnology Building\u201d Front Porch",
+      "displayName": "Technology Building Front Porch",
       "description": "This is a small, one story tall, octagonal-shaped, marble and brick building. The entrance has a marble relief above it with the words \u201cTechnology\u201d engraved.\n\n[|Main||] Main Library Grounds\n[|Enter|] Enter Building",
       "interactables": {},
       "items": {},
@@ -9399,7 +9399,7 @@
     },
     "U": {
       "firstVisit": true,
-      "displayName": "\u201cMilitary Science Building\u201d Front Porch",
+      "displayName": "Military Science Building Front Porch",
       "description": "This is a small, one story tall, octagonal-shaped, marble and brick building. The entrance has a marble relief above it with the words \u201cMilitary Science\u201d engraved.\n\n[|Main||] Main Library Grounds\n[|Enter|] Enter Building",
       "interactables": {},
       "items": {},
@@ -9599,7 +9599,7 @@
     },
     "V": {
       "firstVisit": true,
-      "displayName": "\u201cNaval Science Building\u201d Front Porch",
+      "displayName": "Naval Science Building Front Porch",
       "description": "This is a small, one story tall, octagonal-shaped, marble and brick building. The entrance has a marble relief above it with the words \u201cNaval Science\u201d engraved.\n\n[|Main||] Main Library Grounds\n[|Enter|] Enter Building",
       "interactables": {},
       "items": {},
@@ -9816,7 +9816,7 @@
     },
     "Z": {
       "firstVisit": true,
-      "displayName": "\u201cBibliography, Library Science Building\u201d Front Porch",
+      "displayName": "Bibliography, Library Science Building Front Porch",
       "description": "This is a small, one story tall, square-shaped, marble and brick building. The entrance has a marble relief above it with the words \u201cBibliography, Library Science\u201d engraved.\n\n[|Main||] Main Library Grounds\n[|Enter|] Enter Building",
       "interactables": {},
       "items": {},

@@ -13,22 +13,26 @@ var baseData;
 // ----------------------------/
 
 // === Server Data Interaction ===
-exports.setLocation = function (gameID, location) {
+exports.getGameData = () => {
+  return baseData.gameData;
+}
+
+exports.setLocation = (gameID, location) => {
   var game = initGame(gameID);
   game.gameData.player.currentLocation = location;
 };
 
-exports.getLocation = function (gameID) {
+exports.getLocation = (gameID) => {
   var game = initGame(gameID);
   return game.gameData.player.currentLocation;
 };
 
-exports.setName = function (gameID, name) {
+exports.setName = (gameID, name) => {
   var game = initGame(gameID);
   game.gameData.player.name = name;
 };
 
-exports.loadDefaultGameData = function (data) {
+exports.loadDefaultGameData = (data) => {
   try {
     // each user session has different game id based on the cookie
     baseData = data;
@@ -39,7 +43,7 @@ exports.loadDefaultGameData = function (data) {
 };
 
 // === Main Input Parser ===
-exports.input = function (input, gameID) {
+exports.input = (input, gameID) => {
   var command = parser.parse(input);
   var game = games[gameID];
   if (game) {

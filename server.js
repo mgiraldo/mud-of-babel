@@ -173,8 +173,8 @@ io.on("connection", async (client) => {
       response = performConsoleCommand(message, sessionID);
       if (response.response.indexOf("You can't go there.") === -1) {
         location = mudconsole.getLocation(sessionID);
-        leaveRoom(client, name, oldLocation);
-        enterRoom(client, name, location);
+        leaveRoom(client, name, oldLocation, mudconsole.getGameData().map[location].displayName);
+        enterRoom(client, name, location, mudconsole.getGameData().map[oldLocation].displayName);
         saveLocation(client, location);
         others = getOthers(client, location);
         response.response += othersToDescription(others);
@@ -190,9 +190,9 @@ io.on("connection", async (client) => {
 function othersToDescription(others) {
   var description = "";
   if (others.length > 0) {
-    description += "\n\nAlso in this room: " + others.map(player => {
-      return chalk.magenta(player);
-    }).join(", ") + ".";
+    description += "\n\n" + others.map(player => {
+      return chalk.magenta(player) + " is here.";
+    }).join("\n");
   }
   return description;
 }
@@ -280,12 +280,12 @@ function changeLocation(client, location) {
   client.join(location);
 }
 
-function enterRoom(client, name, location) {
-  client.broadcast.to(location).emit("message", { response: cleanString("\n" + name + " entered the room.") });
+function enterRoom(client, name, location, direction) {
+  client.broadcast.to(location).emit("message", { response: cleanString("\n" + name + " enters from " + direction + ".") });
 }
 
-function leaveRoom(client, name, location) {
-  client.broadcast.to(location).emit("message", { response: cleanString("\n" + name + " left the room.") });
+function leaveRoom(client, name, location, direction) {
+  client.broadcast.to(location).emit("message", { response: cleanString("\n" + name + " leaves towards " + direction + ".") });
 }
 
 function performConsoleCommand(command, sessionID) {
