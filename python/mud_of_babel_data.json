@@ -301,7 +301,7 @@
     "2_building_A": {
       "firstVisit": true,
       "displayName": "General Works Building, 2nd Floor",
-      "description": "You are in the 2nd floor. There are two rooms:\n\n[|South|||||] \u201cIndexes Room\u201d\n[|North|||||] \u201cNewspapers Room\u201d\n[|Down||||||] 1st floor",
+      "description": "You are in the 2nd floor. There are two rooms:\n\n[|South|||||] Indexes Room\n[|North|||||] Newspapers Room\n[|Down||||||] 1st floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -583,7 +583,7 @@
     "2_building_B": {
       "firstVisit": true,
       "displayName": "Philosophy, Psychology, Religion Building, 2nd Floor",
-      "description": "You are in the 2nd floor. There are seven rooms:\n\n[|South|||||] \u201cReligions.  Mythology.  Rationalism Room\u201d\n[|North|||||] \u201cIslam.  Bahai Faith.  Theosophy, etc. Room\u201d\n[|East||||||] \u201cJudaism Room\u201d\n[|West||||||] \u201cLogic Room\u201d\n[|SouthEast|] \u201cBuddhism Room\u201d\n[|NorthWest|] \u201cSpeculative philosophy Room\u201d\n[|SouthWest|] \u201cAesthetics Room\u201d\n[|Down||||||] 1st floor",
+      "description": "You are in the 2nd floor. There are seven rooms:\n\n[|South|||||] Religions.  Mythology.  Rationalism Room\n[|North|||||] Islam.  Bahai Faith.  Theosophy, etc. Room\n[|East||||||] Judaism Room\n[|West||||||] Logic Room\n[|SouthEast|] Buddhism Room\n[|NorthWest|] Speculative philosophy Room\n[|SouthWest|] Aesthetics Room\n[|Down||||||] 1st floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -820,7 +820,7 @@
     "2_building_C": {
       "firstVisit": true,
       "displayName": "Auxiliary Sciences of History (General) Building, 2nd Floor",
-      "description": "You are in the 2nd floor. There are two rooms:\n\n[|South|||||] \u201cTechnical chronology.  Calendar Room\u201d\n[|North|||||] \u201cAuxiliary Sciences of History (General) Room\u201d\n[|Down||||||] 1st floor",
+      "description": "You are in the 2nd floor. There are two rooms:\n\n[|South|||||] Technical chronology.  Calendar Room\n[|North|||||] Auxiliary Sciences of History (General) Room\n[|Down||||||] 1st floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -1115,7 +1115,7 @@
     "2_building_D": {
       "firstVisit": true,
       "displayName": "World History (except American History) Building, 2nd Floor",
-      "description": "You are in the 2nd floor. There are eight rooms:\n\n[|South|||||] \u201cHistory of Oceania (South Seas) Room\u201d\n[|North|||||] \u201cHistory of Russia.  Soviet Union.  Former Soviet Republics Room\u201d\n[|East||||||] \u201cHistory of the Greco-Roman world Room\u201d\n[|West||||||] \u201cHistory of Balkan Peninsula Room\u201d\n[|SouthEast|] \u201cHistory of Spain Room\u201d\n[|NorthWest|] \u201cHistory of Greece Room\u201d\n[|SouthWest|] \u201cHistory of Eastern Europe (General) Room\u201d\n[|NorthEast|] \u201cHistory of Austria.  Liechtenstein.  Hungary.  Czechoslovakia Room\u201d\n[|Down||||||] 1st floor\n[|Up||||||||] 3rd floor",
+      "description": "You are in the 2nd floor. There are eight rooms:\n\n[|South|||||] History of Oceania (South Seas) Room\n[|North|||||] History of Russia.  Soviet Union.  Former Soviet Republics Room\n[|East||||||] History of the Greco-Roman world Room\n[|West||||||] History of Balkan Peninsula Room\n[|SouthEast|] History of Spain Room\n[|NorthWest|] History of Greece Room\n[|SouthWest|] History of Eastern Europe (General) Room\n[|NorthEast|] History of Austria.  Liechtenstein.  Hungary.  Czechoslovakia Room\n[|Down||||||] 1st floor\n[|Up||||||||] 3rd floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -1229,7 +1229,7 @@
     "3_building_D": {
       "firstVisit": true,
       "displayName": "World History (except American History) Building, 3rd Floor",
-      "description": "You are in the 3rd floor. There are five rooms:\n\n[|South|||||] \u201cHistory of Northern Europe.  Scandinavia Room\u201d\n[|North|||||] \u201cHistory of Switzerland Room\u201d\n[|East||||||] \u201cHistory of Central Europe Room\u201d\n[|West||||||] \u201cHistory of Netherlands (Holland) Room\u201d\n[|SouthEast|] \u201cHistory of Romanies Room\u201d\n[|Down||||||] 2nd floor",
+      "description": "You are in the 3rd floor. There are five rooms:\n\n[|South|||||] History of Northern Europe.  Scandinavia Room\n[|North|||||] History of Switzerland Room\n[|East||||||] History of Central Europe Room\n[|West||||||] History of Netherlands (Holland) Room\n[|SouthEast|] History of Romanies Room\n[|Down||||||] 2nd floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -1552,7 +1552,7 @@
     "2_building_G": {
       "firstVisit": true,
       "displayName": "Geography, Anthropology, Recreation Building, 2nd Floor",
-      "description": "You are in the 2nd floor. There are two rooms:\n\n[|South|||||] \u201cEnvironmental sciences Room\u201d\n[|North|||||] \u201cHuman ecology.  Anthropogeography Room\u201d\n[|Down||||||] 1st floor",
+      "description": "You are in the 2nd floor. There are two rooms:\n\n[|South|||||] Environmental sciences Room\n[|North|||||] Human ecology.  Anthropogeography Room\n[|Down||||||] 1st floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -1847,7 +1847,7 @@
     "2_building_H": {
       "firstVisit": true,
       "displayName": "Social Sciences Building, 2nd Floor",
-      "description": "You are in the 2nd floor. There are eight rooms:\n\n[|South|||||] \u201cSociology Room\u201d\n[|North|||||] \u201cPublic finance Room\u201d\n[|East||||||] \u201cSocial history and conditions.  Social problems. Room\u201d\n[|West||||||] \u201cSocieties: secret, benevolent, etc. Room\u201d\n[|SouthEast|] \u201cSocial pathology.  Social and public welfare. Room\u201d\n[|NorthWest|] \u201cEconomic history and conditions Room\u201d\n[|SouthWest|] \u201cStatistics Room\u201d\n[|NorthEast|] \u201cCommunities.  Classes.  Races Room\u201d\n[|Down||||||] 1st floor",
+      "description": "You are in the 2nd floor. There are eight rooms:\n\n[|South|||||] Sociology Room\n[|North|||||] Public finance Room\n[|East||||||] Social history and conditions.  Social problems. Room\n[|West||||||] Societies: secret, benevolent, etc. Room\n[|SouthEast|] Social pathology.  Social and public welfare. Room\n[|NorthWest|] Economic history and conditions Room\n[|SouthWest|] Statistics Room\n[|NorthEast|] Communities.  Classes.  Races Room\n[|Down||||||] 1st floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -2127,7 +2127,7 @@
     "2_building_J": {
       "firstVisit": true,
       "displayName": "Political Science Building, 2nd Floor",
-      "description": "You are in the 2nd floor. There are five rooms:\n\n[|South|||||] \u201cInternational relations Room\u201d\n[|North|||||] \u201cPolitical institutions and public administration Room\u201d\n[|East||||||] \u201cGeneral legislative and executive papers Room\u201d\n[|West||||||] \u201cPolitical institutions and public administration (Asia, Room\u201d\n[|SouthEast|] \u201cPolitical institutions and public administration Room\u201d\n[|Down||||||] 1st floor",
+      "description": "You are in the 2nd floor. There are five rooms:\n\n[|South|||||] International relations Room\n[|North|||||] Political institutions and public administration Room\n[|East||||||] General legislative and executive papers Room\n[|West||||||] Political institutions and public administration (Asia, Room\n[|SouthEast|] Political institutions and public administration Room\n[|Down||||||] 1st floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -2434,7 +2434,7 @@
     "2_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 2nd Floor",
-      "description": "You are in the 2nd floor. There are eight rooms:\n\n[|South|||||] \u201cLaw of Idaho Room\u201d\n[|North|||||] \u201cLaw of Nebraska Room\u201d\n[|East||||||] \u201cLaw of California Room\u201d\n[|West||||||] \u201cLaw of Ohio Room\u201d\n[|SouthEast|] \u201cLaw of Louisiana Room\u201d\n[|NorthWest|] \u201cLaw of Alabama Room\u201d\n[|SouthWest|] \u201cRussia, Soviet Union Room\u201d\n[|NorthEast|] \u201cLaw of Spain Room\u201d\n[|Down||||||] 1st floor\n[|Up||||||||] 3rd floor",
+      "description": "You are in the 2nd floor. There are eight rooms:\n\n[|South|||||] Law of Idaho Room\n[|North|||||] Law of Nebraska Room\n[|East||||||] Law of California Room\n[|West||||||] Law of Ohio Room\n[|SouthEast|] Law of Louisiana Room\n[|NorthWest|] Law of Alabama Room\n[|SouthWest|] Russia, Soviet Union Room\n[|NorthEast|] Law of Spain Room\n[|Down||||||] 1st floor\n[|Up||||||||] 3rd floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -2587,7 +2587,7 @@
     "3_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 3rd Floor",
-      "description": "You are in the 3rd floor. There are eight rooms:\n\n[|South|||||] \u201cSaudi Arabia Room\u201d\n[|North|||||] \u201cLaw of Croatia Room\u201d\n[|East||||||] \u201cIslamic law.  Shar\u012b\u02bbah.  Fiqh Room\u201d\n[|West||||||] \u201cHistory of canon law Room\u201d\n[|SouthEast|] \u201cLaw of the sea Room\u201d\n[|NorthWest|] \u201cChina (People\u2019s Republic, 1949-    ) Room\u201d\n[|SouthWest|] \u201cRegional organization and integration (Europe) Room\u201d\n[|NorthEast|] \u201cLaw of Vermont Room\u201d\n[|Down||||||] 2nd floor\n[|Up||||||||] 4th floor",
+      "description": "You are in the 3rd floor. There are eight rooms:\n\n[|South|||||] Saudi Arabia Room\n[|North|||||] Law of Croatia Room\n[|East||||||] Islamic law.  Shar\u012b\u02bbah.  Fiqh Room\n[|West||||||] History of canon law Room\n[|SouthEast|] Law of the sea Room\n[|NorthWest|] China (People\u2019s Republic, 1949-    ) Room\n[|SouthWest|] Regional organization and integration (Europe) Room\n[|NorthEast|] Law of Vermont Room\n[|Down||||||] 2nd floor\n[|Up||||||||] 4th floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -2740,7 +2740,7 @@
     "4_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 4th Floor",
-      "description": "You are in the 4th floor. There are eight rooms:\n\n[|South|||||] \u201cLaw of China Room\u201d\n[|North|||||] \u201cWest Bank Room\u201d\n[|East||||||] \u201cRegional comparative and uniform law (Europe) Room\u201d\n[|West||||||] \u201cIsrael Room\u201d\n[|SouthEast|] \u201cSouth Africa, Republic of Room\u201d\n[|NorthWest|] \u201cRegional comparative and uniform law Room\u201d\n[|SouthWest|] \u201cLaw of New Brunswick Room\u201d\n[|NorthEast|] \u201cEthiopia Room\u201d\n[|Down||||||] 3rd floor\n[|Up||||||||] 5th floor",
+      "description": "You are in the 4th floor. There are eight rooms:\n\n[|South|||||] Law of China Room\n[|North|||||] West Bank Room\n[|East||||||] Regional comparative and uniform law (Europe) Room\n[|West||||||] Israel Room\n[|SouthEast|] South Africa, Republic of Room\n[|NorthWest|] Regional comparative and uniform law Room\n[|SouthWest|] Law of New Brunswick Room\n[|NorthEast|] Ethiopia Room\n[|Down||||||] 3rd floor\n[|Up||||||||] 5th floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -2893,7 +2893,7 @@
     "5_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 5th Floor",
-      "description": "You are in the 5th floor. There are eight rooms:\n\n[|South|||||] \u201cRoman Law Room\u201d\n[|North|||||] \u201cLaw of France Room\u201d\n[|East||||||] \u201cLaw of the Roman Catholic Church. The Holy See Room\u201d\n[|West||||||] \u201cRussia (Federation, 1992-    ) Room\u201d\n[|SouthEast|] \u201cLaw of Germany Room\u201d\n[|NorthWest|] \u201cLaw of Georgia Room\u201d\n[|SouthWest|] \u201cArgentina Room\u201d\n[|NorthEast|] \u201cUzbekistan Room\u201d\n[|Down||||||] 4th floor\n[|Up||||||||] 6th floor",
+      "description": "You are in the 5th floor. There are eight rooms:\n\n[|South|||||] Roman Law Room\n[|North|||||] Law of France Room\n[|East||||||] Law of the Roman Catholic Church. The Holy See Room\n[|West||||||] Russia (Federation, 1992-    ) Room\n[|SouthEast|] Law of Germany Room\n[|NorthWest|] Law of Georgia Room\n[|SouthWest|] Argentina Room\n[|NorthEast|] Uzbekistan Room\n[|Down||||||] 4th floor\n[|Up||||||||] 6th floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -3046,7 +3046,7 @@
     "6_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 6th Floor",
-      "description": "You are in the 6th floor. There are eight rooms:\n\n[|South|||||] \u201cIndonesia Room\u201d\n[|North|||||] \u201cRegional comparative and uniform law Room\u201d\n[|East||||||] \u201cAmerica.  North America Room\u201d\n[|West||||||] \u201cLaw of Kansas Room\u201d\n[|SouthEast|] \u201cLaw of Scotland Room\u201d\n[|NorthWest|] \u201cHong Kong Room\u201d\n[|SouthWest|] \u201cLaw of Florida Room\u201d\n[|NorthEast|] \u201cJewish law.  Halakah Room\u201d\n[|Down||||||] 5th floor\n[|Up||||||||] 7th floor",
+      "description": "You are in the 6th floor. There are eight rooms:\n\n[|South|||||] Indonesia Room\n[|North|||||] Regional comparative and uniform law Room\n[|East||||||] America.  North America Room\n[|West||||||] Law of Kansas Room\n[|SouthEast|] Law of Scotland Room\n[|NorthWest|] Hong Kong Room\n[|SouthWest|] Law of Florida Room\n[|NorthEast|] Jewish law.  Halakah Room\n[|Down||||||] 5th floor\n[|Up||||||||] 7th floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -3199,7 +3199,7 @@
     "7_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 7th Floor",
-      "description": "You are in the 7th floor. There are eight rooms:\n\n[|South|||||] \u201cHistory of Law (Europe) Room\u201d\n[|North|||||] \u201cHistory of law.  The ancient orient Room\u201d\n[|East||||||] \u201cLaw of Canada Room\u201d\n[|West||||||] \u201cLaw of Delaware Room\u201d\n[|SouthEast|] \u201cLaw of Ireland (Eire) Room\u201d\n[|NorthWest|] \u201cTanzania Room\u201d\n[|SouthWest|] \u201cConstitutional law Room\u201d\n[|NorthEast|] \u201cZambia Room\u201d\n[|Down||||||] 6th floor\n[|Up||||||||] 8th floor",
+      "description": "You are in the 7th floor. There are eight rooms:\n\n[|South|||||] History of Law (Europe) Room\n[|North|||||] History of law.  The ancient orient Room\n[|East||||||] Law of Canada Room\n[|West||||||] Law of Delaware Room\n[|SouthEast|] Law of Ireland (Eire) Room\n[|NorthWest|] Tanzania Room\n[|SouthWest|] Constitutional law Room\n[|NorthEast|] Zambia Room\n[|Down||||||] 6th floor\n[|Up||||||||] 8th floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -3352,7 +3352,7 @@
     "8_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 8th Floor",
-      "description": "You are in the 8th floor. There are eight rooms:\n\n[|South|||||] \u201cLaw of South Carolina Room\u201d\n[|North|||||] \u201cRegional comparative and uniform law Room\u201d\n[|East||||||] \u201cLaw of Hawaii Room\u201d\n[|West||||||] \u201cLaws of the cities Room\u201d\n[|SouthEast|] \u201cLaw of Finland Room\u201d\n[|NorthWest|] \u201cCameroon Room\u201d\n[|SouthWest|] \u201cReligious law in general.  Comparative religious law. Room\u201d\n[|NorthEast|] \u201cBritish West Indies (General) Room\u201d\n[|Down||||||] 7th floor\n[|Up||||||||] 9th floor",
+      "description": "You are in the 8th floor. There are eight rooms:\n\n[|South|||||] Law of South Carolina Room\n[|North|||||] Regional comparative and uniform law Room\n[|East||||||] Law of Hawaii Room\n[|West||||||] Laws of the cities Room\n[|SouthEast|] Law of Finland Room\n[|NorthWest|] Cameroon Room\n[|SouthWest|] Religious law in general.  Comparative religious law. Room\n[|NorthEast|] British West Indies (General) Room\n[|Down||||||] 7th floor\n[|Up||||||||] 9th floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -3505,7 +3505,7 @@
     "9_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 9th Floor",
-      "description": "You are in the 9th floor. There are eight rooms:\n\n[|South|||||] \u201cMexico Room\u201d\n[|North|||||] \u201cPakistan Room\u201d\n[|East||||||] \u201cHistory of law Room\u201d\n[|West||||||] \u201cLaw of Rhode Island Room\u201d\n[|SouthEast|] \u201cPuerto Rico Room\u201d\n[|NorthWest|] \u201cLaw of Switzerland Room\u201d\n[|SouthWest|] \u201cLaw of Greece Room\u201d\n[|NorthEast|] \u201cLaw of Ukraine Room\u201d\n[|Down||||||] 8th floor\n[|Up||||||||] 10th floor",
+      "description": "You are in the 9th floor. There are eight rooms:\n\n[|South|||||] Mexico Room\n[|North|||||] Pakistan Room\n[|East||||||] History of law Room\n[|West||||||] Law of Rhode Island Room\n[|SouthEast|] Puerto Rico Room\n[|NorthWest|] Law of Switzerland Room\n[|SouthWest|] Law of Greece Room\n[|NorthEast|] Law of Ukraine Room\n[|Down||||||] 8th floor\n[|Up||||||||] 10th floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -3658,7 +3658,7 @@
     "10_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 10th Floor",
-      "description": "You are in the 10th floor. There are eight rooms:\n\n[|South|||||] \u201cLaw of Poland Room\u201d\n[|North|||||] \u201cLaw of Netherlands Room\u201d\n[|East||||||] \u201cLaw of Malta Room\u201d\n[|West||||||] \u201cLaw of Bosnia and Hercegovina Room\u201d\n[|SouthEast|] \u201cLaw of Kosovo Room\u201d\n[|NorthWest|] \u201cLaw of Lithuania Room\u201d\n[|SouthWest|] \u201cGuatemala Room\u201d\n[|NorthEast|] \u201cPeru Room\u201d\n[|Down||||||] 9th floor\n[|Up||||||||] 11th floor",
+      "description": "You are in the 10th floor. There are eight rooms:\n\n[|South|||||] Law of Poland Room\n[|North|||||] Law of Netherlands Room\n[|East||||||] Law of Malta Room\n[|West||||||] Law of Bosnia and Hercegovina Room\n[|SouthEast|] Law of Kosovo Room\n[|NorthWest|] Law of Lithuania Room\n[|SouthWest|] Guatemala Room\n[|NorthEast|] Peru Room\n[|Down||||||] 9th floor\n[|Up||||||||] 11th floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -3811,7 +3811,7 @@
     "11_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 11th Floor",
-      "description": "You are in the 11th floor. There are eight rooms:\n\n[|South|||||] \u201cMali Room\u201d\n[|North|||||] \u201cNigeria Room\u201d\n[|East||||||] \u201cHaiti Room\u201d\n[|West||||||] \u201cColombia Room\u201d\n[|SouthEast|] \u201cLatin America (General) Room\u201d\n[|NorthWest|] \u201cEcuador Room\u201d\n[|SouthWest|] \u201cBolivia Room\u201d\n[|NorthEast|] \u201cChina (Republic, 1949-    ).  Taiwan Room\u201d\n[|Down||||||] 10th floor\n[|Up||||||||] 12th floor",
+      "description": "You are in the 11th floor. There are eight rooms:\n\n[|South|||||] Mali Room\n[|North|||||] Nigeria Room\n[|East||||||] Haiti Room\n[|West||||||] Colombia Room\n[|SouthEast|] Latin America (General) Room\n[|NorthWest|] Ecuador Room\n[|SouthWest|] Bolivia Room\n[|NorthEast|] China (Republic, 1949-    ).  Taiwan Room\n[|Down||||||] 10th floor\n[|Up||||||||] 12th floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -3964,7 +3964,7 @@
     "12_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 12th Floor",
-      "description": "You are in the 12th floor. There are eight rooms:\n\n[|South|||||] \u201cKhorezmskai\uf04da Sovetskai\uf04da Sot\uf04dsialisticheskai\uf04da Room\u201d\n[|North|||||] \u201cZimbabwe Room\u201d\n[|East||||||] \u201cCanon law of Eastern Churches Room\u201d\n[|West||||||] \u201cKorea.  South Korea Room\u201d\n[|SouthEast|] \u201cNew Zealand Room\u201d\n[|NorthWest|] \u201cFiji Room\u201d\n[|SouthWest|] \u201cNew Caledonia Room\u201d\n[|NorthEast|] \u201cLaw of Utah Room\u201d\n[|Down||||||] 11th floor\n[|Up||||||||] 13th floor",
+      "description": "You are in the 12th floor. There are eight rooms:\n\n[|South|||||] Khorezmskai\uf04da Sovetskai\uf04da Sot\uf04dsialisticheskai\uf04da Room\n[|North|||||] Zimbabwe Room\n[|East||||||] Canon law of Eastern Churches Room\n[|West||||||] Korea.  South Korea Room\n[|SouthEast|] New Zealand Room\n[|NorthWest|] Fiji Room\n[|SouthWest|] New Caledonia Room\n[|NorthEast|] Law of Utah Room\n[|Down||||||] 11th floor\n[|Up||||||||] 13th floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -4117,7 +4117,7 @@
     "13_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 13th Floor",
-      "description": "You are in the 13th floor. There are eight rooms:\n\n[|South|||||] \u201cLaw of Denmark Room\u201d\n[|North|||||] \u201cLaw of Portugal Room\u201d\n[|East||||||] \u201cLaw of Estonia Room\u201d\n[|West||||||] \u201cLaw of Yugoslavia Room\u201d\n[|SouthEast|] \u201cLaw of Czech Republic (1993-        ) Room\u201d\n[|NorthWest|] \u201cCosta Rica Room\u201d\n[|SouthWest|] \u201cVenezuela Room\u201d\n[|NorthEast|] \u201cHonduras Room\u201d\n[|Down||||||] 12th floor\n[|Up||||||||] 14th floor",
+      "description": "You are in the 13th floor. There are eight rooms:\n\n[|South|||||] Law of Denmark Room\n[|North|||||] Law of Portugal Room\n[|East||||||] Law of Estonia Room\n[|West||||||] Law of Yugoslavia Room\n[|SouthEast|] Law of Czech Republic (1993-        ) Room\n[|NorthWest|] Costa Rica Room\n[|SouthWest|] Venezuela Room\n[|NorthEast|] Honduras Room\n[|Down||||||] 12th floor\n[|Up||||||||] 14th floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -4270,7 +4270,7 @@
     "14_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 14th Floor",
-      "description": "You are in the 14th floor. There are eight rooms:\n\n[|South|||||] \u201cNicaragua Room\u201d\n[|North|||||] \u201cChile Room\u201d\n[|East||||||] \u201cParaguay Room\u201d\n[|West||||||] \u201cLaw of East Germany Room\u201d\n[|SouthEast|] \u201cLaw of Sweden Room\u201d\n[|NorthWest|] \u201cMorocco Room\u201d\n[|SouthWest|] \u201cGeneral Room\u201d\n[|NorthEast|] \u201cBelarus (Republic) Room\u201d\n[|Down||||||] 13th floor\n[|Up||||||||] 15th floor",
+      "description": "You are in the 14th floor. There are eight rooms:\n\n[|South|||||] Nicaragua Room\n[|North|||||] Chile Room\n[|East||||||] Paraguay Room\n[|West||||||] Law of East Germany Room\n[|SouthEast|] Law of Sweden Room\n[|NorthWest|] Morocco Room\n[|SouthWest|] General Room\n[|NorthEast|] Belarus (Republic) Room\n[|Down||||||] 13th floor\n[|Up||||||||] 15th floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -4423,7 +4423,7 @@
     "15_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 15th Floor",
-      "description": "You are in the 15th floor. There are eight rooms:\n\n[|South|||||] \u201cGeneral Room\u201d\n[|North|||||] \u201cThailand Room\u201d\n[|East||||||] \u201cPhilippines Room\u201d\n[|West||||||] \u201cVietnam Room\u201d\n[|SouthEast|] \u201cSingapore Room\u201d\n[|NorthWest|] \u201cIran Room\u201d\n[|SouthWest|] \u201cMayotte Room\u201d\n[|NorthEast|] \u201cNamibia Room\u201d\n[|Down||||||] 14th floor\n[|Up||||||||] 16th floor",
+      "description": "You are in the 15th floor. There are eight rooms:\n\n[|South|||||] General Room\n[|North|||||] Thailand Room\n[|East||||||] Philippines Room\n[|West||||||] Vietnam Room\n[|SouthEast|] Singapore Room\n[|NorthWest|] Iran Room\n[|SouthWest|] Mayotte Room\n[|NorthEast|] Namibia Room\n[|Down||||||] 14th floor\n[|Up||||||||] 16th floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -4576,7 +4576,7 @@
     "16_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 16th Floor",
-      "description": "You are in the 16th floor. There are eight rooms:\n\n[|South|||||] \u201cBotswana Room\u201d\n[|North|||||] \u201cAngola Room\u201d\n[|East||||||] \u201cMozambique Room\u201d\n[|West||||||] \u201cKenya Room\u201d\n[|SouthEast|] \u201cGabon Room\u201d\n[|NorthWest|] \u201cLesotho Room\u201d\n[|SouthWest|] \u201cGhana Room\u201d\n[|NorthEast|] \u201cMalawi Room\u201d\n[|Down||||||] 15th floor\n[|Up||||||||] 17th floor",
+      "description": "You are in the 16th floor. There are eight rooms:\n\n[|South|||||] Botswana Room\n[|North|||||] Angola Room\n[|East||||||] Mozambique Room\n[|West||||||] Kenya Room\n[|SouthEast|] Gabon Room\n[|NorthWest|] Lesotho Room\n[|SouthWest|] Ghana Room\n[|NorthEast|] Malawi Room\n[|Down||||||] 15th floor\n[|Up||||||||] 17th floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -4729,7 +4729,7 @@
     "17_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 17th Floor",
-      "description": "You are in the 17th floor. There are eight rooms:\n\n[|South|||||] \u201cUganda Room\u201d\n[|North|||||] \u201cRwanda Room\u201d\n[|East||||||] \u201cCongo (Democratic Republic) Room\u201d\n[|West||||||] \u201cFrench West Africa Room\u201d\n[|SouthEast|] \u201cSenegal Room\u201d\n[|NorthWest|] \u201cLaw of Turkey Room\u201d\n[|SouthWest|] \u201cAzerbaijan Room\u201d\n[|NorthEast|] \u201cEgypt Room\u201d\n[|Down||||||] 16th floor\n[|Up||||||||] 18th floor",
+      "description": "You are in the 17th floor. There are eight rooms:\n\n[|South|||||] Uganda Room\n[|North|||||] Rwanda Room\n[|East||||||] Congo (Democratic Republic) Room\n[|West||||||] French West Africa Room\n[|SouthEast|] Senegal Room\n[|NorthWest|] Law of Turkey Room\n[|SouthWest|] Azerbaijan Room\n[|NorthEast|] Egypt Room\n[|Down||||||] 16th floor\n[|Up||||||||] 18th floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -4882,7 +4882,7 @@
     "18_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 18th Floor",
-      "description": "You are in the 18th floor. There are eight rooms:\n\n[|South|||||] \u201cKuwait Room\u201d\n[|North|||||] \u201cYemen Room\u201d\n[|East||||||] \u201cSudan Room\u201d\n[|West||||||] \u201cAlgeria Room\u201d\n[|SouthEast|] \u201cUnited Arab Emirates Room\u201d\n[|NorthWest|] \u201cBrazil Room\u201d\n[|SouthWest|] \u201cGuyana Room\u201d\n[|NorthEast|] \u201cUruguay Room\u201d\n[|Down||||||] 17th floor\n[|Up||||||||] 19th floor",
+      "description": "You are in the 18th floor. There are eight rooms:\n\n[|South|||||] Kuwait Room\n[|North|||||] Yemen Room\n[|East||||||] Sudan Room\n[|West||||||] Algeria Room\n[|SouthEast|] United Arab Emirates Room\n[|NorthWest|] Brazil Room\n[|SouthWest|] Guyana Room\n[|NorthEast|] Uruguay Room\n[|Down||||||] 17th floor\n[|Up||||||||] 19th floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -5035,7 +5035,7 @@
     "19_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 19th Floor",
-      "description": "You are in the 19th floor. There are eight rooms:\n\n[|South|||||] \u201cKyrgyzstan Room\u201d\n[|North|||||] \u201cGuinea Room\u201d\n[|East||||||] \u201cMacao Room\u201d\n[|West||||||] \u201cArmenian SSR (to 1991) Room\u201d\n[|SouthEast|] \u201cTunisia Room\u201d\n[|NorthWest|] \u201cLebanon Room\u201d\n[|SouthWest|] \u201cBahrain Room\u201d\n[|NorthEast|] \u201cLaw of Slovenia Room\u201d\n[|Down||||||] 18th floor\n[|Up||||||||] 20th floor",
+      "description": "You are in the 19th floor. There are eight rooms:\n\n[|South|||||] Kyrgyzstan Room\n[|North|||||] Guinea Room\n[|East||||||] Macao Room\n[|West||||||] Armenian SSR (to 1991) Room\n[|SouthEast|] Tunisia Room\n[|NorthWest|] Lebanon Room\n[|SouthWest|] Bahrain Room\n[|NorthEast|] Law of Slovenia Room\n[|Down||||||] 18th floor\n[|Up||||||||] 20th floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -5188,7 +5188,7 @@
     "20_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 20th Floor",
-      "description": "You are in the 20th floor. There are eight rooms:\n\n[|South|||||] \u201cFrench regions, provinces, cities, etc. Room\u201d\n[|North|||||] \u201cLaw of Austria Room\u201d\n[|East||||||] \u201cSpace law.  Law of outer space Room\u201d\n[|West||||||] \u201cWestern Samoa Room\u201d\n[|SouthEast|] \u201cFrench Polynesia Room\u201d\n[|NorthWest|] \u201cLaw of Ontario Room\u201d\n[|SouthWest|] \u201cLaw of Alberta Room\u201d\n[|NorthEast|] \u201cLaw of British Columbia Room\u201d\n[|Down||||||] 19th floor\n[|Up||||||||] 21st floor",
+      "description": "You are in the 20th floor. There are eight rooms:\n\n[|South|||||] French regions, provinces, cities, etc. Room\n[|North|||||] Law of Austria Room\n[|East||||||] Space law.  Law of outer space Room\n[|West||||||] Western Samoa Room\n[|SouthEast|] French Polynesia Room\n[|NorthWest|] Law of Ontario Room\n[|SouthWest|] Law of Alberta Room\n[|NorthEast|] Law of British Columbia Room\n[|Down||||||] 19th floor\n[|Up||||||||] 21st floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -5341,7 +5341,7 @@
     "21_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 21st Floor",
-      "description": "You are in the 21st floor. There are eight rooms:\n\n[|South|||||] \u201cLaw of Qu\u00e9bec Room\u201d\n[|North|||||] \u201cPapua New Guinea Room\u201d\n[|East||||||] \u201cMidway Islands Room\u201d\n[|West||||||] \u201cPalau Room\u201d\n[|SouthEast|] \u201cGuam Room\u201d\n[|NorthWest|] \u201cLaw of Cyprus Room\u201d\n[|SouthWest|] \u201cLaw of Hungary Room\u201d\n[|NorthEast|] \u201cFrench Guiana Room\u201d\n[|Down||||||] 20th floor\n[|Up||||||||] 22nd floor",
+      "description": "You are in the 21st floor. There are eight rooms:\n\n[|South|||||] Law of Qu\u00e9bec Room\n[|North|||||] Papua New Guinea Room\n[|East||||||] Midway Islands Room\n[|West||||||] Palau Room\n[|SouthEast|] Guam Room\n[|NorthWest|] Law of Cyprus Room\n[|SouthWest|] Law of Hungary Room\n[|NorthEast|] French Guiana Room\n[|Down||||||] 20th floor\n[|Up||||||||] 22nd floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -5494,7 +5494,7 @@
     "22_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 22nd Floor",
-      "description": "You are in the 22nd floor. There are eight rooms:\n\n[|South|||||] \u201cLaw of Norway Room\u201d\n[|North|||||] \u201cCentral African Republic Room\u201d\n[|East||||||] \u201cTogo Room\u201d\n[|West||||||] \u201cBurkina Faso Room\u201d\n[|SouthEast|] \u201cC\u00f4te d\u2019Ivoire Room\u201d\n[|NorthWest|] \u201cJerusalem Room\u201d\n[|SouthWest|] \u201cIraq Room\u201d\n[|NorthEast|] \u201cLibya Room\u201d\n[|Down||||||] 21st floor\n[|Up||||||||] 23rd floor",
+      "description": "You are in the 22nd floor. There are eight rooms:\n\n[|South|||||] Law of Norway Room\n[|North|||||] Central African Republic Room\n[|East||||||] Togo Room\n[|West||||||] Burkina Faso Room\n[|SouthEast|] C\u00f4te d\u2019Ivoire Room\n[|NorthWest|] Jerusalem Room\n[|SouthWest|] Iraq Room\n[|NorthEast|] Libya Room\n[|Down||||||] 21st floor\n[|Up||||||||] 23rd floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -5647,7 +5647,7 @@
     "23_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 23rd Floor",
-      "description": "You are in the 23rd floor. There are eight rooms:\n\n[|South|||||] \u201cPanama Room\u201d\n[|North|||||] \u201cDominican Republic Room\u201d\n[|East||||||] \u201cCuba Room\u201d\n[|West||||||] \u201cEl Salvador Room\u201d\n[|SouthEast|] \u201cLiberia Room\u201d\n[|NorthWest|] \u201cNiger Room\u201d\n[|SouthWest|] \u201cDemocratic People\u2019s Republic of Korea.  North Korea Room\u201d\n[|NorthEast|] \u201cLaw of indigenous peoples Room\u201d\n[|Down||||||] 22nd floor\n[|Up||||||||] 24th floor",
+      "description": "You are in the 23rd floor. There are eight rooms:\n\n[|South|||||] Panama Room\n[|North|||||] Dominican Republic Room\n[|East||||||] Cuba Room\n[|West||||||] El Salvador Room\n[|SouthEast|] Liberia Room\n[|NorthWest|] Niger Room\n[|SouthWest|] Democratic People\u2019s Republic of Korea.  North Korea Room\n[|NorthEast|] Law of indigenous peoples Room\n[|Down||||||] 22nd floor\n[|Up||||||||] 24th floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -5800,7 +5800,7 @@
     "24_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 24th Floor",
-      "description": "You are in the 24th floor. There are eight rooms:\n\n[|South|||||] \u201cNorthern Mariana Islands Room\u201d\n[|North|||||] \u201cCambodia Room\u201d\n[|East||||||] \u201cCanon law of Eastern Rite Churches in Communion with the Room\u201d\n[|West||||||] \u201cLaw of Albania Room\u201d\n[|SouthEast|] \u201cTrinidad and Tobago Room\u201d\n[|NorthWest|] \u201cLaw of Romania Room\u201d\n[|SouthWest|] \u201cLaw of Slovakia (1993-        ) Room\u201d\n[|NorthEast|] \u201cMoldova Room\u201d\n[|Down||||||] 23rd floor\n[|Up||||||||] 25th floor",
+      "description": "You are in the 24th floor. There are eight rooms:\n\n[|South|||||] Northern Mariana Islands Room\n[|North|||||] Cambodia Room\n[|East||||||] Canon law of Eastern Rite Churches in Communion with the Room\n[|West||||||] Law of Albania Room\n[|SouthEast|] Trinidad and Tobago Room\n[|NorthWest|] Law of Romania Room\n[|SouthWest|] Law of Slovakia (1993-        ) Room\n[|NorthEast|] Moldova Room\n[|Down||||||] 23rd floor\n[|Up||||||||] 25th floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -5953,7 +5953,7 @@
     "25_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 25th Floor",
-      "description": "You are in the 25th floor. There are eight rooms:\n\n[|South|||||] \u201cLaw of Northern Ireland Room\u201d\n[|North|||||] \u201cLaw of Saskatchewan Room\u201d\n[|East||||||] \u201cBrunei Room\u201d\n[|West||||||] \u201cLaos Room\u201d\n[|SouthEast|] \u201cSri Lanka Room\u201d\n[|NorthWest|] \u201cNepal Room\u201d\n[|SouthWest|] \u201cBurma Room\u201d\n[|NorthEast|] \u201cBangladesh Room\u201d\n[|Down||||||] 24th floor\n[|Up||||||||] 26th floor",
+      "description": "You are in the 25th floor. There are eight rooms:\n\n[|South|||||] Law of Northern Ireland Room\n[|North|||||] Law of Saskatchewan Room\n[|East||||||] Brunei Room\n[|West||||||] Laos Room\n[|SouthEast|] Sri Lanka Room\n[|NorthWest|] Nepal Room\n[|SouthWest|] Burma Room\n[|NorthEast|] Bangladesh Room\n[|Down||||||] 24th floor\n[|Up||||||||] 26th floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -6106,7 +6106,7 @@
     "26_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 26th Floor",
-      "description": "You are in the 26th floor. There are eight rooms:\n\n[|South|||||] \u201cEquatorial Guinea Room\u201d\n[|North|||||] \u201cTajikistan Room\u201d\n[|East||||||] \u201cTurkmenistan Room\u201d\n[|West||||||] \u201cComoros Room\u201d\n[|SouthEast|] \u201cSeychelles Room\u201d\n[|NorthWest|] \u201cMadagascar Room\u201d\n[|SouthWest|] \u201cRegional organization and integration Room\u201d\n[|NorthEast|] \u201cEritrea Room\u201d\n[|Down||||||] 25th floor\n[|Up||||||||] 27th floor",
+      "description": "You are in the 26th floor. There are eight rooms:\n\n[|South|||||] Equatorial Guinea Room\n[|North|||||] Tajikistan Room\n[|East||||||] Turkmenistan Room\n[|West||||||] Comoros Room\n[|SouthEast|] Seychelles Room\n[|NorthWest|] Madagascar Room\n[|SouthWest|] Regional organization and integration Room\n[|NorthEast|] Eritrea Room\n[|Down||||||] 25th floor\n[|Up||||||||] 27th floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -6259,7 +6259,7 @@
     "27_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 27th Floor",
-      "description": "You are in the 27th floor. There are eight rooms:\n\n[|South|||||] \u201cLaw of Iceland Room\u201d\n[|North|||||] \u201cGeorgia (Republic) Room\u201d\n[|East||||||] \u201cBelize Room\u201d\n[|West||||||] \u201cLaw of Latvia Room\u201d\n[|SouthEast|] \u201cSao Tome and Principe Room\u201d\n[|NorthWest|] \u201cLaw of Andorra Room\u201d\n[|SouthWest|] \u201cSolomon Islands Room\u201d\n[|NorthEast|] \u201cSaint Lucia Room\u201d\n[|Down||||||] 26th floor\n[|Up||||||||] 28th floor",
+      "description": "You are in the 27th floor. There are eight rooms:\n\n[|South|||||] Law of Iceland Room\n[|North|||||] Georgia (Republic) Room\n[|East||||||] Belize Room\n[|West||||||] Law of Latvia Room\n[|SouthEast|] Sao Tome and Principe Room\n[|NorthWest|] Law of Andorra Room\n[|SouthWest|] Solomon Islands Room\n[|NorthEast|] Saint Lucia Room\n[|Down||||||] 26th floor\n[|Up||||||||] 28th floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -6412,7 +6412,7 @@
     "28_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 28th Floor",
-      "description": "You are in the 28th floor. There are eight rooms:\n\n[|South|||||] \u201cVirgin Islands of the United States Room\u201d\n[|North|||||] \u201cGrenada Room\u201d\n[|East||||||] \u201cGambia Room\u201d\n[|West||||||] \u201cLaws of the territories.  Laws of the Confederate States of Room\u201d\n[|SouthEast|] \u201cLaw of Isle of Man.  Channel Islands Room\u201d\n[|NorthWest|] \u201cGeneral Room\u201d\n[|SouthWest|] \u201cRussian S.F.S.R. (to 1991) Room\u201d\n[|NorthEast|] \u201cPalestine (to 1948) Room\u201d\n[|Down||||||] 27th floor\n[|Up||||||||] 29th floor",
+      "description": "You are in the 28th floor. There are eight rooms:\n\n[|South|||||] Virgin Islands of the United States Room\n[|North|||||] Grenada Room\n[|East||||||] Gambia Room\n[|West||||||] Laws of the territories.  Laws of the Confederate States of Room\n[|SouthEast|] Law of Isle of Man.  Channel Islands Room\n[|NorthWest|] General Room\n[|SouthWest|] Russian S.F.S.R. (to 1991) Room\n[|NorthEast|] Palestine (to 1948) Room\n[|Down||||||] 27th floor\n[|Up||||||||] 29th floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -6565,7 +6565,7 @@
     "29_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 29th Floor",
-      "description": "You are in the 29th floor. There are eight rooms:\n\n[|South|||||] \u201cLaw of Yukon Room\u201d\n[|North|||||] \u201cFrench Indochina.  Indochina (Federation) Room\u201d\n[|East||||||] \u201cYeman (People\u2019s Democratic Republic) (to 1990) Room\u201d\n[|West||||||] \u201cSurinam Room\u201d\n[|SouthEast|] \u201cSyria Room\u201d\n[|NorthWest|] \u201cLaw of Montenegro Room\u201d\n[|SouthWest|] \u201cItalian Somaliland Room\u201d\n[|NorthEast|] \u201cLaw of Law of cities, towns, etc. Room\u201d\n[|Down||||||] 28th floor\n[|Up||||||||] 30th floor",
+      "description": "You are in the 29th floor. There are eight rooms:\n\n[|South|||||] Law of Yukon Room\n[|North|||||] French Indochina.  Indochina (Federation) Room\n[|East||||||] Yeman (People\u2019s Democratic Republic) (to 1990) Room\n[|West||||||] Surinam Room\n[|SouthEast|] Syria Room\n[|NorthWest|] Law of Montenegro Room\n[|SouthWest|] Italian Somaliland Room\n[|NorthEast|] Law of Law of cities, towns, etc. Room\n[|Down||||||] 28th floor\n[|Up||||||||] 30th floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -6718,7 +6718,7 @@
     "30_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 30th Floor",
-      "description": "You are in the 30th floor. There are eight rooms:\n\n[|South|||||] \u201cLaw of Manitoba Room\u201d\n[|North|||||] \u201cSomalia Room\u201d\n[|East||||||] \u201cJamaica Room\u201d\n[|West||||||] \u201cTurks and Caicos Islands Room\u201d\n[|SouthEast|] \u201cLaw of Law of Prince Edward Island Room\u201d\n[|NorthWest|] \u201cBurundi Room\u201d\n[|SouthWest|] \u201cPacific Islands (Trust Territory) Room\u201d\n[|NorthEast|] \u201cVietnam (Republic).  South Vietnam Room\u201d\n[|Down||||||] 29th floor\n[|Up||||||||] 31st floor",
+      "description": "You are in the 30th floor. There are eight rooms:\n\n[|South|||||] Law of Manitoba Room\n[|North|||||] Somalia Room\n[|East||||||] Jamaica Room\n[|West||||||] Turks and Caicos Islands Room\n[|SouthEast|] Law of Law of Prince Edward Island Room\n[|NorthWest|] Burundi Room\n[|SouthWest|] Pacific Islands (Trust Territory) Room\n[|NorthEast|] Vietnam (Republic).  South Vietnam Room\n[|Down||||||] 29th floor\n[|Up||||||||] 31st floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -6871,7 +6871,7 @@
     "31_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 31st Floor",
-      "description": "You are in the 31st floor. There are eight rooms:\n\n[|South|||||] \u201cAntarctica Room\u201d\n[|North|||||] \u201cBritish New Guinea (Territory of Papua) Room\u201d\n[|East||||||] \u201cVanuatu Room\u201d\n[|West||||||] \u201cNiue Room\u201d\n[|SouthEast|] \u201cAfghanistan Room\u201d\n[|NorthWest|] \u201cGibraltar Room\u201d\n[|SouthWest|] \u201cChad Room\u201d\n[|NorthEast|] \u201cSierra Leone Room\u201d\n[|Down||||||] 30th floor\n[|Up||||||||] 32nd floor",
+      "description": "You are in the 31st floor. There are eight rooms:\n\n[|South|||||] Antarctica Room\n[|North|||||] British New Guinea (Territory of Papua) Room\n[|East||||||] Vanuatu Room\n[|West||||||] Niue Room\n[|SouthEast|] Afghanistan Room\n[|NorthWest|] Gibraltar Room\n[|SouthWest|] Chad Room\n[|NorthEast|] Sierra Leone Room\n[|Down||||||] 30th floor\n[|Up||||||||] 32nd floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -7024,7 +7024,7 @@
     "32_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 32nd Floor",
-      "description": "You are in the 32nd floor. There are eight rooms:\n\n[|South|||||] \u201cSwaziland Room\u201d\n[|North|||||] \u201cR\u00e9union Room\u201d\n[|East||||||] \u201cDjibouti Room\u201d\n[|West||||||] \u201cCayman Islands Room\u201d\n[|SouthEast|] \u201cDominica Room\u201d\n[|NorthWest|] \u201cCongo (Brazzaville) Room\u201d\n[|SouthWest|] \u201cNauru Room\u201d\n[|NorthEast|] \u201cBenin Room\u201d\n[|Down||||||] 31st floor\n[|Up||||||||] 33rd floor",
+      "description": "You are in the 32nd floor. There are eight rooms:\n\n[|South|||||] Swaziland Room\n[|North|||||] R\u00e9union Room\n[|East||||||] Djibouti Room\n[|West||||||] Cayman Islands Room\n[|SouthEast|] Dominica Room\n[|NorthWest|] Congo (Brazzaville) Room\n[|SouthWest|] Nauru Room\n[|NorthEast|] Benin Room\n[|Down||||||] 31st floor\n[|Up||||||||] 33rd floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -7177,7 +7177,7 @@
     "33_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 33rd Floor",
-      "description": "You are in the 33rd floor. There are eight rooms:\n\n[|South|||||] \u201cRegional organization and integration Room\u201d\n[|North|||||] \u201cQatar Room\u201d\n[|East||||||] \u201cBritish Central Africa Protectorate Room\u201d\n[|West||||||] \u201cCities, etc. Room\u201d\n[|SouthEast|] \u201cUkraine Room\u201d\n[|NorthWest|] \u201cCape Verde Room\u201d\n[|SouthWest|] \u201cAruba Room\u201d\n[|NorthEast|] \u201cMaldives Room\u201d\n[|Down||||||] 32nd floor\n[|Up||||||||] 34th floor",
+      "description": "You are in the 33rd floor. There are eight rooms:\n\n[|South|||||] Regional organization and integration Room\n[|North|||||] Qatar Room\n[|East||||||] British Central Africa Protectorate Room\n[|West||||||] Cities, etc. Room\n[|SouthEast|] Ukraine Room\n[|NorthWest|] Cape Verde Room\n[|SouthWest|] Aruba Room\n[|NorthEast|] Maldives Room\n[|Down||||||] 32nd floor\n[|Up||||||||] 34th floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -7330,7 +7330,7 @@
     "34_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 34th Floor",
-      "description": "You are in the 34th floor. There are eight rooms:\n\n[|South|||||] \u201cMauritania Room\u201d\n[|North|||||] \u201cGuinea-Bissau Room\u201d\n[|East||||||] \u201cCook Islands Room\u201d\n[|West||||||] \u201cTonga Room\u201d\n[|SouthEast|] \u201cBhutan Room\u201d\n[|NorthWest|] \u201cGaza Room\u201d\n[|SouthWest|] \u201cFalkland Islands Room\u201d\n[|NorthEast|] \u201cTuvalu Room\u201d\n[|Down||||||] 33rd floor\n[|Up||||||||] 35th floor",
+      "description": "You are in the 34th floor. There are eight rooms:\n\n[|South|||||] Mauritania Room\n[|North|||||] Guinea-Bissau Room\n[|East||||||] Cook Islands Room\n[|West||||||] Tonga Room\n[|SouthEast|] Bhutan Room\n[|NorthWest|] Gaza Room\n[|SouthWest|] Falkland Islands Room\n[|NorthEast|] Tuvalu Room\n[|Down||||||] 33rd floor\n[|Up||||||||] 35th floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -7418,7 +7418,7 @@
     "35_building_K": {
       "firstVisit": true,
       "displayName": "Law Building, 35th Floor",
-      "description": "You are in the 35th floor. There are three rooms:\n\n[|South|||||] \u201cFrench Equatorial Africa Room\u201d\n[|North|||||] \u201cKiribati Room\u201d\n[|East||||||] \u201cLaw of Australian peoples.  Aborigines Room\u201d\n[|Down||||||] 34th floor",
+      "description": "You are in the 35th floor. There are three rooms:\n\n[|South|||||] French Equatorial Africa Room\n[|North|||||] Kiribati Room\n[|East||||||] Law of Australian peoples.  Aborigines Room\n[|Down||||||] 34th floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -7652,7 +7652,7 @@
     "2_building_L": {
       "firstVisit": true,
       "displayName": "Education Building, 2nd Floor",
-      "description": "You are in the 2nd floor. There are three rooms:\n\n[|South|||||] \u201cStudent fraternities and societies, United States Room\u201d\n[|North|||||] \u201cAmerica (except United States) Room\u201d\n[|East||||||] \u201cCollege and school magazines and papers Room\u201d\n[|Down||||||] 1st floor",
+      "description": "You are in the 2nd floor. There are three rooms:\n\n[|South|||||] Student fraternities and societies, United States Room\n[|North|||||] America (except United States) Room\n[|East||||||] College and school magazines and papers Room\n[|Down||||||] 1st floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -8198,7 +8198,7 @@
     "2_building_P": {
       "firstVisit": true,
       "displayName": "Language and Literature Building, 2nd Floor",
-      "description": "You are in the 2nd floor. There are eight rooms:\n\n[|South|||||] \u201cRomance Room\u201d\n[|North|||||] \u201cIndo-Iranian philology and literature Room\u201d\n[|East||||||] \u201cPhilology.    Linguistics Room\u201d\n[|West||||||] \u201cWest Germanic Room\u201d\n[|SouthEast|] \u201cOriental philology and literature Room\u201d\n[|NorthWest|] \u201cGermanic Room\u201d\n[|SouthWest|] \u201cSlavic.    Baltic.    Albanian Room\u201d\n[|NorthEast|] \u201cUralic.    Basque Room\u201d\n[|Down||||||] 1st floor\n[|Up||||||||] 3rd floor",
+      "description": "You are in the 2nd floor. There are eight rooms:\n\n[|South|||||] Romance Room\n[|North|||||] Indo-Iranian philology and literature Room\n[|East||||||] Philology.    Linguistics Room\n[|West||||||] West Germanic Room\n[|SouthEast|] Oriental philology and literature Room\n[|NorthWest|] Germanic Room\n[|SouthWest|] Slavic.    Baltic.    Albanian Room\n[|NorthEast|] Uralic.    Basque Room\n[|Down||||||] 1st floor\n[|Up||||||||] 3rd floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -8286,7 +8286,7 @@
     "3_building_P": {
       "firstVisit": true,
       "displayName": "Language and Literature Building, 3rd Floor",
-      "description": "You are in the 3rd floor. There are three rooms:\n\n[|South|||||] \u201cLanguages of Eastern Asia, Africa, Oceania Room\u201d\n[|North|||||] \u201cModern languages.    Celtic languages Room\u201d\n[|East||||||] \u201cHyperborean, Indian, and artificial languages Room\u201d\n[|Down||||||] 2nd floor",
+      "description": "You are in the 3rd floor. There are three rooms:\n\n[|South|||||] Languages of Eastern Asia, Africa, Oceania Room\n[|North|||||] Modern languages.    Celtic languages Room\n[|East||||||] Hyperborean, Indian, and artificial languages Room\n[|Down||||||] 2nd floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -8533,7 +8533,7 @@
     "2_building_Q": {
       "firstVisit": true,
       "displayName": "Science Building, 2nd Floor",
-      "description": "You are in the 2nd floor. There are four rooms:\n\n[|South|||||] \u201cChemistry Room\u201d\n[|North|||||] \u201cGeology Room\u201d\n[|East||||||] \u201cPhysics Room\u201d\n[|West||||||] \u201cHuman anatomy Room\u201d\n[|Down||||||] 1st floor",
+      "description": "You are in the 2nd floor. There are four rooms:\n\n[|South|||||] Chemistry Room\n[|North|||||] Geology Room\n[|East||||||] Physics Room\n[|West||||||] Human anatomy Room\n[|Down||||||] 1st floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -8836,7 +8836,7 @@
     "2_building_R": {
       "firstVisit": true,
       "displayName": "Medicine Building, 2nd Floor",
-      "description": "You are in the 2nd floor. There are eight rooms:\n\n[|South|||||] \u201cDermatology Room\u201d\n[|North|||||] \u201cPharmacy and materia medica Room\u201d\n[|East||||||] \u201cTherapeutics.    Pharmacology Room\u201d\n[|West||||||] \u201cMedicine (General) Room\u201d\n[|SouthEast|] \u201cPathology Room\u201d\n[|NorthWest|] \u201cOtorhinolaryngology Room\u201d\n[|SouthWest|] \u201cOther systems of medicine Room\u201d\n[|NorthEast|] \u201cNursing Room\u201d\n[|Down||||||] 1st floor\n[|Up||||||||] 3rd floor",
+      "description": "You are in the 2nd floor. There are eight rooms:\n\n[|South|||||] Dermatology Room\n[|North|||||] Pharmacy and materia medica Room\n[|East||||||] Therapeutics.    Pharmacology Room\n[|West||||||] Medicine (General) Room\n[|SouthEast|] Pathology Room\n[|NorthWest|] Otorhinolaryngology Room\n[|SouthWest|] Other systems of medicine Room\n[|NorthEast|] Nursing Room\n[|Down||||||] 1st floor\n[|Up||||||||] 3rd floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -8898,7 +8898,7 @@
     "3_building_R": {
       "firstVisit": true,
       "displayName": "Medicine Building, 3rd Floor",
-      "description": "You are in the 3rd floor. There is one room:\n\n[|South|||||] \u201cBotanic, Thomsonian, and eclectic medicine Room\u201d\n[|Down||||||] 2nd floor",
+      "description": "You are in the 3rd floor. There is one room:\n\n[|South|||||] Botanic, Thomsonian, and eclectic medicine Room\n[|Down||||||] 2nd floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -9321,7 +9321,7 @@
     "2_building_T": {
       "firstVisit": true,
       "displayName": "Technology Building, 2nd Floor",
-      "description": "You are in the 2nd floor. There are eight rooms:\n\n[|South|||||] \u201cManufactures Room\u201d\n[|North|||||] \u201cMechanical engineering and machinery Room\u201d\n[|East||||||] \u201cHandicrafts.    Arts and crafts Room\u201d\n[|West||||||] \u201cTechnology (General) Room\u201d\n[|SouthEast|] \u201cBuilding construction Room\u201d\n[|NorthWest|] \u201cRailroad engineering and operation Room\u201d\n[|SouthWest|] \u201cMotor vehicles.    Aeronautics.    Astronautics Room\u201d\n[|NorthEast|] \u201cBridge engineering Room\u201d\n[|Down||||||] 1st floor\n[|Up||||||||] 3rd floor",
+      "description": "You are in the 2nd floor. There are eight rooms:\n\n[|South|||||] Manufactures Room\n[|North|||||] Mechanical engineering and machinery Room\n[|East||||||] Handicrafts.    Arts and crafts Room\n[|West||||||] Technology (General) Room\n[|SouthEast|] Building construction Room\n[|NorthWest|] Railroad engineering and operation Room\n[|SouthWest|] Motor vehicles.    Aeronautics.    Astronautics Room\n[|NorthEast|] Bridge engineering Room\n[|Down||||||] 1st floor\n[|Up||||||||] 3rd floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -9383,7 +9383,7 @@
     "3_building_T": {
       "firstVisit": true,
       "displayName": "Technology Building, 3rd Floor",
-      "description": "You are in the 3rd floor. There is one room:\n\n[|South|||||] \u201cHighway engineering.    Roads and pavements Room\u201d\n[|Down||||||] 2nd floor",
+      "description": "You are in the 3rd floor. There is one room:\n\n[|South|||||] Highway engineering.    Roads and pavements Room\n[|Down||||||] 2nd floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -9583,7 +9583,7 @@
     "2_building_U": {
       "firstVisit": true,
       "displayName": "Military Science Building, 2nd Floor",
-      "description": "You are in the 2nd floor. There is one room:\n\n[|South|||||] \u201cCavalry.    Armor Room\u201d\n[|Down||||||] 1st floor",
+      "description": "You are in the 2nd floor. There is one room:\n\n[|South|||||] Cavalry.    Armor Room\n[|Down||||||] 1st floor",
       "interactables": {},
       "items": {},
       "exits": {
@@ -9796,7 +9796,7 @@
     "2_building_V": {
       "firstVisit": true,
       "displayName": "Naval Science Building, 2nd Floor",
-      "description": "You are in the 2nd floor. There are two rooms:\n\n[|South|||||] \u201cNaval maintenance Room\u201d\n[|North|||||] \u201cNaval personnel Room\u201d\n[|Down||||||] 1st floor",
+      "description": "You are in the 2nd floor. There are two rooms:\n\n[|South|||||] Naval maintenance Room\n[|North|||||] Naval personnel Room\n[|Down||||||] 1st floor",
       "interactables": {},
       "items": {},
       "exits": {
