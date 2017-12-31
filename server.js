@@ -301,6 +301,7 @@ function cleanString(string) {
     // check to see if it is “normal” room description
     var lines = string.split("\n");
     string = lines.map((line, index) => {
+      debug(line + ":" + chalk.yellow(line));
       if (index === 1) {
         // get title
         debug("1.1");
