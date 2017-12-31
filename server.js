@@ -295,7 +295,7 @@ function performConsoleCommand(command, sessionID) {
 }
 
 function cleanString(string) {
-  debug("cleanString:" + chalk + ":" + chalk.cyan);
+  debug("cleanString:" + chalk.cyan("hello"));
   if (string.indexOf("---") !== -1 && string.indexOf("[") !== -1 && string.indexOf("Exit") !== -1) {
     // check to see if it is “normal” room description
     var lines = string.split("\n");
