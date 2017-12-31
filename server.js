@@ -2,7 +2,7 @@ var dotenv = require("dotenv");
 dotenv.config();
 
 var ansiHTML = require("ansi-html");
-var chalk = require("chalk")
+var chalk = require("chalk");
 chalk.enabled = true;
 var express = require("express");
 var bodyParser = require("body-parser");
@@ -296,7 +296,6 @@ function performConsoleCommand(command, sessionID) {
 }
 
 function cleanString(string) {
-  debug("cleanString:" + ansiHTML(chalk.cyan("hello")));
   if (string.indexOf("---") !== -1 && string.indexOf("[") !== -1 && string.indexOf("Exit") !== -1) {
     // check to see if it is “normal” room description
     var lines = string.split("\n");
