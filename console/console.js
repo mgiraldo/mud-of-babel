@@ -174,7 +174,7 @@ var actions = {
   },
 
   name: function (game) {
-    var message = "Your name is: " + game.player.name + ". Type “newname” to generate a new name.";
+    var message = "Your name is: " + game.player.name + ".";
     return { message: message, success: true };
   },
 
