@@ -92,10 +92,15 @@ exports.input = (input, gameID) => {
 // ----------------------------/
 var actions = {
 
-  die: function (game) {
-    delete games[game.gameID];
-    return { message: "You are dead", success: true };
+  help: function () {
+    var message = "Try these commands: " + Object.keys(actions).join(", ") + ".";
+    return { message: message, success: true };
   },
+
+  // die: function (game) {
+  //   delete games[game.gameID];
+  //   return { message: "You are dead", success: true };
+  // },
 
   drop: function (game, command) {
     if (!command.subject) {

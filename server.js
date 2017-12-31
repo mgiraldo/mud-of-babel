@@ -338,6 +338,12 @@ function cleanString(string) {
     string = chalk.green(string);
   } else if (string.indexOf("* ") !== -1 && string.indexOf("yell") !== -1) {
     string = chalk.red(string);
+  } else if (string.indexOf("Try these commands") === 0) {
+    var intro = string.substring(0, string.indexOf(":") + 1);
+    var commands = string.substring(string.indexOf(":") + 1).split(",");
+    string = intro + commands.map(command => {
+      return chalk.green(command.replace(".",""));
+    }).join(",") + ".";
   }
   // convert colors to html
   string = ansiHTML(string);
