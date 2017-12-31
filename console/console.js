@@ -14,19 +14,18 @@ var baseData;
 
 // === Server Data Interaction ===
 exports.setLocation = function (gameID, location) {
-  if (!games[gameID]) {
-    games[gameID] = loadBaseGameForID(gameID);
-  }
-  games[gameID].gameData.player.currentLocation = location;
+  var game = initGame(gameID);
+  game.gameData.player.currentLocation = location;
 };
 
 exports.getLocation = function (gameID) {
-  var game = games[gameID];
-  if (!game) {
-    // no location, create new game
-    game = loadBaseGameForID(gameID);
-  }
+  var game = initGame(gameID);
   return game.gameData.player.currentLocation;
+};
+
+exports.setName = function (gameID, name) {
+  var game = initGame(gameID);
+  game.gameData.player.name = name;
 };
 
 exports.loadDefaultGameData = function (data) {
@@ -165,6 +164,16 @@ var actions = {
     return { message: playersMessage, success: true };
   },
 
+  name: function (game) {
+    var message = "Your name is: " + game.player.name + ". Type “newname” to generate a new name.";
+    return { message: message, success: true };
+  },
+
+  newname: function (game) {
+    var message = "Your new name is: " + game.player.name + ".";
+    return { message: message, success: true };
+  },
+
   yell: function (game, command) {
     var playersMessage = "Shhh! This is a library. You cannot just scream.";
     if (!command.subject) {
@@ -237,6 +246,13 @@ var actions = {
 // ----------------------------\
 // === Helper Functions ===============================================================================================
 // ----------------------------/
+function initGame(gameID) {
+  if (!games[gameID]) {
+    games[gameID] = loadBaseGameForID(gameID);
+  }
+  return games[gameID];
+}
+
 function loadBaseGameForID(gameID) {
   games[gameID] = { gameData: baseData.gameData, gameActions: baseData.gameActions };
   games[gameID].gameData.gameID = gameID;

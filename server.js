@@ -79,19 +79,16 @@ var mudconsole = require("./console/console.js");
 var status = mudconsole.loadDefaultGameData(getBaseGameData());
 debug(status);
 
-io.on("connection", function (client) {
+io.on("connection", async (client) => {
   // new player arrived
   debug("player connected! " + client.handshake.session.id);
-  client.join(defaultLocation);
-  initPlayer(client.handshake.session, client);
+  client.handshake.session.lastLocation = defaultLocation;
+  var playerInfo = await initPlayer(client.handshake.session, client);
+  client.broadcast.to(playerInfo.location).emit("message", { response: cleanString("\n" + playerInfo.name + " connected.") });
 
   store.incr("players", function (err, reply) {
     players = reply;
     debug("players: " + players);
-  });
-
-  client.on("event", function (data) {
-    debug("event:" + data);
   });
 
   client.on("message", (message) => {
@@ -108,153 +105,207 @@ io.on("connection", function (client) {
   });
 
   // === Respond to AJAX calls ===
-  client.on("console", (message) => {
+  client.on("console", async (message) => {
     var sessionID = client.handshake.session.id;
     var name = client.handshake.session.name;
+    var location = client.handshake.session.currentLocation;
     debug(message + " -- from: " + sessionID);
+    debug(" -- at: " + location);
     var response;
-    var location;
+    var others;
+    var value;
+    // make sure location is correct in console
+    mudconsole.setLocation(sessionID, location);
     if (message.toLowerCase() === "look") {
       // get last location from redis
-      initLocation(client.handshake.session, client, () =>{
-        response = performCommand(message, sessionID);
-        client.emit("message", response);
-      });
+      response = performConsoleCommand(message, sessionID);
+      others = getOthers(client, location);
+      response.response += othersToDescription(others);
+      debug(location);
+      client.emit("message", { response: cleanString(response.response) } );
     } else if (message.toLowerCase() === "players") {
       // getting player list does not need to go to the console
       debug("  requesting player count");
-      store.getAsync("players").then((value) => {
-        message = message + " " + value;
-        response = performCommand(message, sessionID);
-        client.emit("message", response);
-      });
+      value = await store.getAsync("players");
+      message = message + " " + value;
+      response = performConsoleCommand(message, sessionID);
+      client.emit("message", { response: cleanString(response.response) });
+    } else if (message.toLowerCase() === "newname") {
+      // getting player list does not need to go to the console
+      var newName = changeName(client.handshake.session);
+      message = message + " " + newName;
+      response = performConsoleCommand(message, sessionID);
+      client.emit("message", { response: cleanString(response.response) });
     } else if (message.toLowerCase().indexOf("yell ") === 0) {
       // yelling can only be done once a minute
-      store.getAsync(sessionID + ".lastYell").then((value) => {
-        if (value) {
-          var yell = Number(value);
-          var canYell = Date.now() - yell > 60000;
-          if (!canYell) {
-            message = "yell denied";
-            response = performCommand(message, sessionID);
-            client.emit("message", response);
-            return;
-          }
+      value = await store.getAsync(sessionID + ".lastYell");
+      if (value) {
+        var yell = Number(value);
+        var canYell = Date.now() - yell > 60000;
+        if (!canYell) {
+          message = "yell denied";
+          response = performConsoleCommand(message, sessionID);
+          client.emit("message", { response: cleanString(response.response) });
+          return;
         }
-        store.set(sessionID + ".lastYell", Date.now());
-        response = performCommand(message, sessionID);
-        var yellMessage = message.substring(5);
-        var yellEmit = "\n* " + name + " (yelling): " + yellMessage + " *";
-        var yellMyself = "\n* You (yelling): " + yellMessage + " *";
-        client.emit("message", { response: cleanString(yellMyself) });
-        client.broadcast.emit("message", { response: cleanString(yellEmit) });
-        client.emit("message", response);
-      });
+      }
+      store.set(sessionID + ".lastYell", Date.now());
+      response = performConsoleCommand(message, sessionID);
+      var yellMessage = message.substring(5);
+      var yellEmit = "\n* " + name + " (yelling): " + yellMessage + " *";
+      var yellMyself = "\n* You (yelling): " + yellMessage + " *";
+      client.emit("message", { response: cleanString(yellMyself) });
+      client.broadcast.emit("message", { response: cleanString(yellEmit) });
+      client.emit("message", { response: cleanString(response.response) });
     } else if (message.toLowerCase().indexOf("say ") === 0) {
-      store.getAsync(sessionID + ".currentLocation").then((value) => {
-        var location = value;
-        response = performCommand(message, sessionID);
-        var sayMessage = message.substring(4);
-        var sayEmit = "\n+ " + name + " says: " + sayMessage + " +";
-        var sayMyself = "\n+ You say: " + sayMessage + " +";
-        client.broadcast.to(location).emit("message", { response: cleanString(sayEmit) });
-        client.emit("message", { response: cleanString(sayMyself) });
-      });
+      value = await store.getAsync(sessionID + ".currentLocation");
+      location = value;
+      response = performConsoleCommand(message, sessionID);
+      var sayMessage = message.substring(4);
+      var sayEmit = "\n+ " + name + " says: " + sayMessage + " +";
+      var sayMyself = "\n+ You say: " + sayMessage + " +";
+      client.broadcast.to(location).emit("message", { response: cleanString(sayEmit) });
+      client.emit("message", { response: cleanString(sayMyself) });
+    // } else if (message.toLowerCase() === "name" || message.toLowerCase() === "whoami") {
     } else if (message.toLowerCase().indexOf("go ") === 0) {
-      var oldLocation = client.handshake.session.currentLocation;
-      // make sure location is correct in console
-      mudconsole.setLocation(sessionID, oldLocation);
-      response = performCommand(message, sessionID);
+      var oldLocation = location;
+      response = performConsoleCommand(message, sessionID);
       if (response.response.indexOf("You can't go there.") === -1) {
         location = mudconsole.getLocation(sessionID);
-        saveLocation(client.handshake.session, location, client);
         leaveRoom(client, name, oldLocation);
         enterRoom(client, name, location);
+        saveLocation(client, location);
+        others = getOthers(client, location);
+        response.response += othersToDescription(others);
       }
-      client.emit("message", response);
+      client.emit("message", { response: cleanString(response.response) });
     } else {
-      response = performCommand(message, sessionID);
-      client.emit("message", response);
+      response = performConsoleCommand(message, sessionID);
+      client.emit("message", { response: cleanString(response.response) });
     }
   });
 });
 
-function initPlayer(session, socket) {
-  // set player name if not set already
-  var sessionID = session.id;
-  store.getAsync(sessionID + ".name").then((value) => {
-    if (value) {
-      session.name = value;
-    } else {
-      var adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
-      var tree = treeNames[Math.floor(Math.random() * treeNames.length)];
-      var name = adjective + " " + tree;
-      session.name = name;
-      store.set(sessionID + ".name", name);
-      session.save();
-    }
-    initLocation(session, socket);
-  });
-
+function othersToDescription(others) {
+  var description = "";
+  if (others.length > 0) {
+    description += "\n\nAlso in this room: " + others.map(player => {
+      return chalk.magenta(player);
+    }).join(", ") + ".";
+  }
+  return description;
 }
 
-function initLocation(session, socket, callback) {
+function getOthers(client, location) {
+  // add the people in the room
+  /* ***
+    * NOTE:
+    * i think it might be necessary to integrate the room descriptions to the server
+    * or have some setters/getters in the console to allow for injection of additional info
+    * ***/
+  var room = io.sockets.adapter.rooms[location];
+  var others = [];
+  if (!room) return others;
+  var socketsInRoom = room.sockets;
+  Object.keys(socketsInRoom).forEach(key => {
+    if (client !== io.sockets.connected[key]) {
+      var other = io.sockets.connected[key];
+      others.push(other.handshake.session.name);
+    }
+  });
+  return others;
+}
+
+async function initPlayer(session, socket) {
+  // set player name if not set already
+  var name, location;
+  name = await initName(session);
+  location = await initLocation(session, socket);
+  return {name: name, location: location};
+}
+
+function createName() {
+  var adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
+  var tree = treeNames[Math.floor(Math.random() * treeNames.length)];
+  return adjective + " " + tree;
+}
+
+async function initName(session) {
+  var sessionID = session.id;
+  var name = await store.getAsync(sessionID + ".name");
+  if (name) {
+    session.name = name;
+    session.save();
+  } else {
+    name = changeName(session);
+  }
+  mudconsole.setName(sessionID, name);
+  return name;
+}
+
+function changeName(session) {
+  var sessionID = session.id;
+  var name = createName();
+  store.set(sessionID + ".name", name);
+  session.name = name;
+  session.save();
+  mudconsole.setName(sessionID, name);
+  return name;
+}
+
+async function initLocation(session, socket) {
   var sessionID = session.id;
   // get last location from redis
   var currentLocation = defaultLocation; // the default location
-  store.getAsync(sessionID + ".currentLocation").then((value) => {
-    if (value === null) {
-      // no last know location
-      debug("    no location existed");
-      saveLocation(session, currentLocation, socket);
-    } else {
-      // get last know location (in db)
-      debug("    location found: " + value);
-      currentLocation = value;
-      mudconsole.setLocation(sessionID, currentLocation);
-    }
+  var value = await store.getAsync(sessionID + ".currentLocation");
+  if (value !== null) {
+    // get last know location (in db)
+    debug("    location found: " + value);
+    currentLocation = value;
+  }
+  
+  changeLocation(socket, currentLocation);
+  return currentLocation;
+}
 
-    if (!callback) {
-      // only happens when first instantiate
-      socket.join(currentLocation);
-      socket.broadcast.to(currentLocation).emit("message", { response: cleanString("\n" + session.name + " connected.") });
-    } else {
-      callback();
-    }
-    session.currentLocation = currentLocation;
-    session.save();
+function changeLocation(client, location) {
+  mudconsole.setLocation(client.handshake.session.id, location);
+  Object.keys(client.rooms).forEach(room => {
+    client.leave(room);
   });
+  client.handshake.session.lastLocation = client.handshake.session.currentLocation;
+  client.handshake.session.currentLocation = location;
+  client.handshake.session.save();
+  client.join(location);
 }
 
 function enterRoom(client, name, location) {
-  client.join(location);
   client.broadcast.to(location).emit("message", { response: cleanString("\n" + name + " entered the room.") });
 }
 
 function leaveRoom(client, name, location) {
-  client.leave(location);
   client.broadcast.to(location).emit("message", { response: cleanString("\n" + name + " left the room.") });
 }
 
-function performCommand(command, sessionID) {
+function performConsoleCommand(command, sessionID) {
   debug("  ||command: " + command + "\n  ||session: " + sessionID);
   // limit chars
   if (command.length > 140) command = command.substr(0, 140);
-  return { response: cleanString(mudconsole.input(command, sessionID)) };
+  return { response: mudconsole.input(command, sessionID) };
 }
 
 function cleanString(string) {
-  if (string.indexOf("---") !== -1) {
+  if (string.indexOf("---") !== -1 && string.indexOf("[") !== -1 && string.indexOf("Exit") !== -1) {
     // check to see if it is “normal” room description
     var lines = string.split("\n");
     string = lines.map((line, index) => {
       if (index === 1) {
         // get title
         return chalk.yellow(line);
-      } else if (line.indexOf("---") !== -1) {
+      } else if (line.indexOf("---") === 0) {
         // get underline
         return chalk.gray(line);
-      } else if (line.indexOf("[") !== -1) {
+      } else if (line.indexOf("[") === 0) {
         // check to see if it has exit texts
         var exitStart = line.indexOf("|");
         var exitEnd = line.lastIndexOf("|");
@@ -263,7 +314,7 @@ function cleanString(string) {
         var room = line.substring(roomStart);
         line = line.substring(0, exitStart) + chalk.cyan(exit) + line.substring(exitEnd, roomStart) + chalk.yellow(room);
         return line;
-      } else if (line.indexOf("Exits are:") !== -1 || line.indexOf("Exit is:") !== -1) {
+      } else if (line.indexOf("Exits are:") === 0 || line.indexOf("Exit is:") === 0) {
         var intro = line.substring(0,line.indexOf(":")+1);
         var exits = line.substring(line.indexOf(":")+1).split(",");
         line = intro + exits.map(exit => {
@@ -282,9 +333,9 @@ function cleanString(string) {
         return line;
       }
     }).join("\n");
-  } else if (string.indexOf("+ ") !== -1) {
+  } else if (string.indexOf("+ ") !== -1 && string.indexOf("say") !== -1) {
     string = chalk.green(string);
-  } else if (string.indexOf("* ") !== -1) {
+  } else if (string.indexOf("* ") !== -1 && string.indexOf("yell") !== -1) {
     string = chalk.red(string);
   }
   // convert colors to html
@@ -293,11 +344,10 @@ function cleanString(string) {
   return string;
 }
 
-function saveLocation(session, location) {
-  var sessionID = session.id;
-  store.set(sessionID + ".currentLocation", location);
-  session.currentLocation = location;
-  session.save();
+async function saveLocation(client, location) {
+  var sessionID = client.handshake.session.id;
+  await store.setAsync(sessionID + ".currentLocation", location);
+  changeLocation(client, location);
 }
 
 // === Helper Functions ===

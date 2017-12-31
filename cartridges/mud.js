@@ -5,6 +5,7 @@ var gameData = {
   "player": {
     "currentLocation": "MAIN",
     "inventory": {},
+    "name": "",
     "lightSource": false
   },
   "map": {
