@@ -1,7 +1,8 @@
 var dotenv = require("dotenv");
 dotenv.config();
 
-var ansiHTML = require("ansi-html");
+var Convert = require("ansi-to-html");
+var ansiHTML = new Convert();
 var chalk = require("chalk");
 var express = require("express");
 var bodyParser = require("body-parser");
@@ -339,7 +340,7 @@ function cleanString(string) {
     string = chalk.red(string);
   }
   // convert colors to html
-  string = ansiHTML(string);
+  string = ansiHTML.toHtml(string);
   string = string.replace(/\n/g, "<br />").replace(/\|/g, "&nbsp;");
   return string;
 }

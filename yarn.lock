@@ -20,10 +20,6 @@ after@0.8.2:
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/after/-/after-0.8.2.tgz#fedb394f9f0e02aa9768e702bda23b505fae7e1f"
 
-ansi-html@^0.0.7:
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/ansi-html/-/ansi-html-0.0.7.tgz#813584021962a9e9e6fd039f940d12f56ca7859e"
-
 ansi-regex@^2.0.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-2.1.1.tgz#c3b33ab5ee360d86e0e628f0468ae7ef27d654df"
@@ -31,6 +27,12 @@ ansi-regex@^2.0.0:
 ansi-styles@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-2.2.1.tgz#b432dd3358b634cf75e1e4664368240533c1ddbe"
+
+ansi-to-html@^0.6.3:
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/ansi-to-html/-/ansi-to-html-0.6.3.tgz#167ebfa5a125dc96bb39ba3ae0660fd5f43d2cb0"
+  dependencies:
+    entities "^1.1.1"
 
 array-flatten@1.1.1:
   version "1.1.1"
@@ -238,6 +240,10 @@ engine.io@~3.1.0:
     ws "~3.3.1"
   optionalDependencies:
     uws "~0.14.4"
+
+entities@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/entities/-/entities-1.1.1.tgz#6e5c2d0a5621b5dadaecef80b90edfb5cd7772f0"
 
 escape-html@~1.0.3:
   version "1.0.3"
