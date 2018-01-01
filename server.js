@@ -122,21 +122,18 @@ io.on("connection", async (client) => {
       message = "go " + message;
     }
     if (message.toLowerCase() === "look") {
-      // get last location from redis
       response = performConsoleCommand(message, sessionID);
       others = getOthers(client, location);
       response.response += othersToDescription(others);
       debug(location);
       client.emit("message", { response: cleanString(response.response) } );
     } else if (message.toLowerCase() === "players") {
-      // getting player list does not need to go to the console
       debug("  requesting player count");
       value = await store.getAsync("players");
       message = message + " " + value;
       response = performConsoleCommand(message, sessionID);
       client.emit("message", { response: cleanString(response.response) });
     } else if (message.toLowerCase() === "newname") {
-      // getting player list does not need to go to the console
       var newName = changeName(client.handshake.session);
       message = message + " " + newName;
       response = performConsoleCommand(message, sessionID);
@@ -171,7 +168,14 @@ io.on("connection", async (client) => {
       var sayMyself = "\n+ You say: " + sayMessage + " +";
       client.broadcast.to(location).emit("message", { response: cleanString(sayEmit) });
       client.emit("message", { response: cleanString(sayMyself) });
-    // } else if (message.toLowerCase() === "name" || message.toLowerCase() === "whoami") {
+    } else if (message.toLowerCase() === "wave") {
+      value = await store.getAsync(sessionID + ".currentLocation");
+      location = value;
+      response = performConsoleCommand(message, sessionID);
+      var waveEmit = "\n+ " + name + " waves. +";
+      var waveMyself = "\n+ You wave +";
+      client.broadcast.to(location).emit("message", { response: cleanString(waveEmit) });
+      client.emit("message", { response: cleanString(waveMyself) });
     } else if (message.toLowerCase().indexOf("go ") === 0) {
       var oldLocation = location;
       response = performConsoleCommand(message, sessionID);
@@ -339,7 +343,7 @@ function cleanString(string) {
         return line;
       }
     }).join("\n");
-  } else if (string.indexOf("+ ") !== -1 && string.indexOf("say") !== -1) {
+  } else if (string.indexOf("+ ") !== -1 && (string.indexOf("say") !== -1 || string.indexOf("wave") !== -1)) {
     string = chalk.green(string);
   } else if (string.indexOf("* ") !== -1 && string.indexOf("yell") !== -1) {
     string = chalk.red(string);

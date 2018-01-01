@@ -203,6 +203,11 @@ var actions = {
     return { message: playersMessage, success: true };
   },
 
+  wave: function (game) {
+    var playersMessage = "You wave.";
+    return { message: playersMessage, success: true };
+  },
+
   look: function (game, command) {
     if (!command.subject) {
       return { message: getLocationDescription(game, true), success: true };
