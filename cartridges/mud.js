@@ -122,12 +122,12 @@ var gameData = {
     "building_A-AC-AC1-195": {
       "firstVisit": true,
       "displayName": "Collections of monographs, essays, etc. shelf",
-      "description": "Description for shelf Collections of monographs, essays, etc. in Collections.  Series.  Collected works Room.\n\n[|Main||||||] Collections.  Series.  Collected works Room entrance\n[|Next||||||] Collections.  Series.  Collected works shelf",
+      "description": "Description for shelf Collections of monographs, essays, etc. in Collections.  Series.  Collected works Room.\n\n[|Entrance||] Collections.  Series.  Collected works Room entrance\n[|Next||||||] Collections.  Series.  Collected works shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "building_A-AC": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_A-AC"
         },
         "building_A-AC-AC1-999": {
@@ -169,12 +169,12 @@ var gameData = {
     "building_A-AE-AE1-90": {
       "firstVisit": true,
       "displayName": "Encyclopedias shelf",
-      "description": "Description for shelf Encyclopedias in Encyclopedias Room.\n\n[|Main||||||] Encyclopedias Room entrance",
+      "description": "Description for shelf Encyclopedias in Encyclopedias Room.\n\n[|Entrance||] Encyclopedias Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_A-AE": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_A-AE"
         }
       }
@@ -199,12 +199,12 @@ var gameData = {
     "building_A-AG-AG2-600": {
       "firstVisit": true,
       "displayName": "Dictionaries and other general reference works shelf",
-      "description": "Description for shelf Dictionaries and other general reference works in Dictionaries and other general reference works Room.\n\n[|Main||||||] Dictionaries and other general reference works Room entrance",
+      "description": "Description for shelf Dictionaries and other general reference works in Dictionaries and other general reference works Room.\n\n[|Entrance||] Dictionaries and other general reference works Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_A-AG": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_A-AG"
         }
       }
@@ -229,12 +229,12 @@ var gameData = {
     "building_A-AZ-AZ20-999": {
       "firstVisit": true,
       "displayName": "History of scholarship and learning.  The humanities shelf",
-      "description": "Description for shelf History of scholarship and learning.  The humanities in History of scholarship and learning.  The humanities Room.\n\n[|Main||||||] History of scholarship and learning.  The humanities Room entrance",
+      "description": "Description for shelf History of scholarship and learning.  The humanities in History of scholarship and learning.  The humanities Room.\n\n[|Entrance||] History of scholarship and learning.  The humanities Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_A-AZ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_A-AZ"
         }
       }
@@ -259,12 +259,12 @@ var gameData = {
     "building_A-AM-AM1-501": {
       "firstVisit": true,
       "displayName": "Museums.  Collectors and collecting shelf",
-      "description": "Description for shelf Museums.  Collectors and collecting in Museums.  Collectors and collecting Room.\n\n[|Main||||||] Museums.  Collectors and collecting Room entrance",
+      "description": "Description for shelf Museums.  Collectors and collecting in Museums.  Collectors and collecting Room.\n\n[|Entrance||] Museums.  Collectors and collecting Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_A-AM": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_A-AM"
         }
       }
@@ -289,12 +289,12 @@ var gameData = {
     "building_A-AS-AS1-945": {
       "firstVisit": true,
       "displayName": "Academies and learned societies shelf",
-      "description": "Description for shelf Academies and learned societies in Academies and learned societies Room.\n\n[|Main||||||] Academies and learned societies Room entrance",
+      "description": "Description for shelf Academies and learned societies in Academies and learned societies Room.\n\n[|Entrance||] Academies and learned societies Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_A-AS": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_A-AS"
         }
       }
@@ -360,12 +360,12 @@ var gameData = {
     "2_building_A-AP-AP1-271": {
       "firstVisit": true,
       "displayName": "Periodicals shelf",
-      "description": "Description for shelf Periodicals in Periodicals Room.\n\n[|Main||||||] Periodicals Room entrance",
+      "description": "Description for shelf Periodicals in Periodicals Room.\n\n[|Entrance||] Periodicals Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_A-AP": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_A-AP"
         }
       }
@@ -390,12 +390,12 @@ var gameData = {
     "2_building_A-AY-AY10-2001": {
       "firstVisit": true,
       "displayName": "Yearbooks.  Almanacs.  Directories shelf",
-      "description": "Description for shelf Yearbooks.  Almanacs.  Directories in Yearbooks.  Almanacs.  Directories Room.\n\n[|Main||||||] Yearbooks.  Almanacs.  Directories Room entrance",
+      "description": "Description for shelf Yearbooks.  Almanacs.  Directories in Yearbooks.  Almanacs.  Directories Room.\n\n[|Entrance||] Yearbooks.  Almanacs.  Directories Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_A-AY": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_A-AY"
         }
       }
@@ -420,12 +420,12 @@ var gameData = {
     "2_building_A-AI-AI1-21": {
       "firstVisit": true,
       "displayName": "Indexes shelf",
-      "description": "Description for shelf Indexes in Indexes Room.\n\n[|Main||||||] Indexes Room entrance",
+      "description": "Description for shelf Indexes in Indexes Room.\n\n[|Entrance||] Indexes Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_A-AI": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_A-AI"
         }
       }
@@ -450,12 +450,12 @@ var gameData = {
     "2_building_A-AN-AN": {
       "firstVisit": true,
       "displayName": "Newspapers shelf",
-      "description": "Description for shelf Newspapers in Newspapers Room.\n\n[|Main||||||] Newspapers Room entrance",
+      "description": "Description for shelf Newspapers in Newspapers Room.\n\n[|Entrance||] Newspapers Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_A-AN": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_A-AN"
         }
       }
@@ -526,12 +526,12 @@ var gameData = {
     "building_B-BV-BV1-5099": {
       "firstVisit": true,
       "displayName": "Practical Theology shelf",
-      "description": "Description for shelf Practical Theology in Practical Theology Room.\n\n[|Main||||||] Practical Theology Room entrance",
+      "description": "Description for shelf Practical Theology in Practical Theology Room.\n\n[|Entrance||] Practical Theology Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_B-BV": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_B-BV"
         }
       }
@@ -556,12 +556,12 @@ var gameData = {
     "building_B-BJ-BJ1801-2195": {
       "firstVisit": true,
       "displayName": "Social usages.  Etiquette shelf",
-      "description": "Description for shelf Social usages.  Etiquette in Ethics Room.\n\n[|Main||||||] Ethics Room entrance\n[|Next||||||] Ethics shelf",
+      "description": "Description for shelf Social usages.  Etiquette in Ethics Room.\n\n[|Entrance||] Ethics Room entrance\n[|Next||||||] Ethics shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "building_B-BJ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_B-BJ"
         },
         "building_B-BJ-BJ1-1725": {
@@ -603,12 +603,12 @@ var gameData = {
     "building_B-BX-BX1-9999": {
       "firstVisit": true,
       "displayName": "Christian Denominations shelf",
-      "description": "Description for shelf Christian Denominations in Christian Denominations Room.\n\n[|Main||||||] Christian Denominations Room entrance",
+      "description": "Description for shelf Christian Denominations in Christian Denominations Room.\n\n[|Entrance||] Christian Denominations Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_B-BX": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_B-BX"
         }
       }
@@ -633,12 +633,12 @@ var gameData = {
     "building_B-BF-BF1-990": {
       "firstVisit": true,
       "displayName": "Psychology shelf",
-      "description": "Description for shelf Psychology in Psychology Room.\n\n[|Main||||||] Psychology Room entrance\n[|Next||||||] Parapsychology shelf",
+      "description": "Description for shelf Psychology in Psychology Room.\n\n[|Entrance||] Psychology Room entrance\n[|Next||||||] Parapsychology shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "building_B-BF": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_B-BF"
         },
         "building_B-BF-BF1001-1389": {
@@ -697,12 +697,12 @@ var gameData = {
     "building_B-BS-BS1-2970": {
       "firstVisit": true,
       "displayName": "The Bible shelf",
-      "description": "Description for shelf The Bible in The Bible Room.\n\n[|Main||||||] The Bible Room entrance",
+      "description": "Description for shelf The Bible in The Bible Room.\n\n[|Entrance||] The Bible Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_B-BS": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_B-BS"
         }
       }
@@ -727,12 +727,12 @@ var gameData = {
     "building_B-BT-BT10-1480": {
       "firstVisit": true,
       "displayName": "Doctrinal Theology shelf",
-      "description": "Description for shelf Doctrinal Theology in Doctrinal Theology Room.\n\n[|Main||||||] Doctrinal Theology Room entrance",
+      "description": "Description for shelf Doctrinal Theology in Doctrinal Theology Room.\n\n[|Entrance||] Doctrinal Theology Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_B-BT": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_B-BT"
         }
       }
@@ -798,12 +798,12 @@ var gameData = {
     "2_building_B-B-B1-5802": {
       "firstVisit": true,
       "displayName": "Philosophy (General) shelf",
-      "description": "Description for shelf Philosophy (General) in Philosophy (General) Room.\n\n[|Main||||||] Philosophy (General) Room entrance",
+      "description": "Description for shelf Philosophy (General) in Philosophy (General) Room.\n\n[|Entrance||] Philosophy (General) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_B-B": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_B-B"
         }
       }
@@ -828,12 +828,12 @@ var gameData = {
     "2_building_B-BR-BR1-1725": {
       "firstVisit": true,
       "displayName": "Christianity shelf",
-      "description": "Description for shelf Christianity in Christianity Room.\n\n[|Main||||||] Christianity Room entrance",
+      "description": "Description for shelf Christianity in Christianity Room.\n\n[|Entrance||] Christianity Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_B-BR": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_B-BR"
         }
       }
@@ -858,12 +858,12 @@ var gameData = {
     "2_building_B-BL-BL1-2790": {
       "firstVisit": true,
       "displayName": "Religions.  Mythology.  Rationalism shelf",
-      "description": "Description for shelf Religions.  Mythology.  Rationalism in Religions.  Mythology.  Rationalism Room.\n\n[|Main||||||] Religions.  Mythology.  Rationalism Room entrance",
+      "description": "Description for shelf Religions.  Mythology.  Rationalism in Religions.  Mythology.  Rationalism Room.\n\n[|Entrance||] Religions.  Mythology.  Rationalism Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_B-BL": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_B-BL"
         }
       }
@@ -888,12 +888,12 @@ var gameData = {
     "2_building_B-BP-BP1-610": {
       "firstVisit": true,
       "displayName": "Islam.  Bahai Faith.  Theosophy, etc. shelf",
-      "description": "Description for shelf Islam.  Bahai Faith.  Theosophy, etc. in Islam.  Bahai Faith.  Theosophy, etc. Room.\n\n[|Main||||||] Islam.  Bahai Faith.  Theosophy, etc. Room entrance\n[|Next||||||] General shelf",
+      "description": "Description for shelf Islam.  Bahai Faith.  Theosophy, etc. in Islam.  Bahai Faith.  Theosophy, etc. Room.\n\n[|Entrance||] Islam.  Bahai Faith.  Theosophy, etc. Room entrance\n[|Next||||||] General shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_B-BP": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_B-BP"
         },
         "2_building_B-BP-BP1-68": {
@@ -935,12 +935,12 @@ var gameData = {
     "2_building_B-BM-BM1-990": {
       "firstVisit": true,
       "displayName": "Judaism shelf",
-      "description": "Description for shelf Judaism in Judaism Room.\n\n[|Main||||||] Judaism Room entrance\n[|Next||||||] General shelf",
+      "description": "Description for shelf Judaism in Judaism Room.\n\n[|Entrance||] Judaism Room entrance\n[|Next||||||] General shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_B-BM": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_B-BM"
         },
         "2_building_B-BM-BM1-449": {
@@ -982,12 +982,12 @@ var gameData = {
     "2_building_B-BC-BC1-199": {
       "firstVisit": true,
       "displayName": "Logic shelf",
-      "description": "Description for shelf Logic in Logic Room.\n\n[|Main||||||] Logic Room entrance",
+      "description": "Description for shelf Logic in Logic Room.\n\n[|Entrance||] Logic Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_B-BC": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_B-BC"
         }
       }
@@ -1053,12 +1053,12 @@ var gameData = {
     "3_building_B-BQ-BQ1-9800": {
       "firstVisit": true,
       "displayName": "Buddhism shelf",
-      "description": "Description for shelf Buddhism in Buddhism Room.\n\n[|Main||||||] Buddhism Room entrance",
+      "description": "Description for shelf Buddhism in Buddhism Room.\n\n[|Entrance||] Buddhism Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_B-BQ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_B-BQ"
         }
       }
@@ -1083,12 +1083,12 @@ var gameData = {
     "3_building_B-BD-BD10-701": {
       "firstVisit": true,
       "displayName": "Speculative philosophy shelf",
-      "description": "Description for shelf Speculative philosophy in Speculative philosophy Room.\n\n[|Main||||||] Speculative philosophy Room entrance",
+      "description": "Description for shelf Speculative philosophy in Speculative philosophy Room.\n\n[|Entrance||] Speculative philosophy Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_B-BD": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_B-BD"
         }
       }
@@ -1113,12 +1113,12 @@ var gameData = {
     "3_building_B-BH-BH1-301": {
       "firstVisit": true,
       "displayName": "Aesthetics shelf",
-      "description": "Description for shelf Aesthetics in Aesthetics Room.\n\n[|Main||||||] Aesthetics Room entrance",
+      "description": "Description for shelf Aesthetics in Aesthetics Room.\n\n[|Entrance||] Aesthetics Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_B-BH": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_B-BH"
         }
       }
@@ -1185,12 +1185,12 @@ var gameData = {
     "building_C-CT-CT21-9999": {
       "firstVisit": true,
       "displayName": "Biography shelf",
-      "description": "Description for shelf Biography in Biography Room.\n\n[|Main||||||] Biography Room entrance",
+      "description": "Description for shelf Biography in Biography Room.\n\n[|Entrance||] Biography Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_C-CT": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_C-CT"
         }
       }
@@ -1215,12 +1215,12 @@ var gameData = {
     "building_C-CS-CS1-3090": {
       "firstVisit": true,
       "displayName": "Genealogy shelf",
-      "description": "Description for shelf Genealogy in Genealogy Room.\n\n[|Main||||||] Genealogy Room entrance",
+      "description": "Description for shelf Genealogy in Genealogy Room.\n\n[|Entrance||] Genealogy Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_C-CS": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_C-CS"
         }
       }
@@ -1245,12 +1245,12 @@ var gameData = {
     "building_C-CR-CR1-6305": {
       "firstVisit": true,
       "displayName": "Heraldry shelf",
-      "description": "Description for shelf Heraldry in Heraldry Room.\n\n[|Main||||||] Heraldry Room entrance",
+      "description": "Description for shelf Heraldry in Heraldry Room.\n\n[|Entrance||] Heraldry Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_C-CR": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_C-CR"
         }
       }
@@ -1275,12 +1275,12 @@ var gameData = {
     "building_C-CB-CB3-482": {
       "firstVisit": true,
       "displayName": "History of Civilization shelf",
-      "description": "Description for shelf History of Civilization in History of Civilization Room.\n\n[|Main||||||] History of Civilization Room entrance",
+      "description": "Description for shelf History of Civilization in History of Civilization Room.\n\n[|Entrance||] History of Civilization Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_C-CB": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_C-CB"
         }
       }
@@ -1305,12 +1305,12 @@ var gameData = {
     "building_C-CJ-CJ1-6661": {
       "firstVisit": true,
       "displayName": "Numismatics shelf",
-      "description": "Description for shelf Numismatics in Numismatics Room.\n\n[|Main||||||] Numismatics Room entrance",
+      "description": "Description for shelf Numismatics in Numismatics Room.\n\n[|Entrance||] Numismatics Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_C-CJ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_C-CJ"
         }
       }
@@ -1335,12 +1335,12 @@ var gameData = {
     "building_C-CC-CC1-960": {
       "firstVisit": true,
       "displayName": "Archaeology shelf",
-      "description": "Description for shelf Archaeology in Archaeology Room.\n\n[|Main||||||] Archaeology Room entrance",
+      "description": "Description for shelf Archaeology in Archaeology Room.\n\n[|Entrance||] Archaeology Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_C-CC": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_C-CC"
         }
       }
@@ -1406,12 +1406,12 @@ var gameData = {
     "2_building_C-CN-CN1-1355": {
       "firstVisit": true,
       "displayName": "Inscriptions.  Epigraphy shelf",
-      "description": "Description for shelf Inscriptions.  Epigraphy in Inscriptions.  Epigraphy Room.\n\n[|Main||||||] Inscriptions.  Epigraphy Room entrance",
+      "description": "Description for shelf Inscriptions.  Epigraphy in Inscriptions.  Epigraphy Room.\n\n[|Entrance||] Inscriptions.  Epigraphy Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_C-CN": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_C-CN"
         }
       }
@@ -1436,12 +1436,12 @@ var gameData = {
     "2_building_C-CD-CD1-6471": {
       "firstVisit": true,
       "displayName": "Diplomatics.  Archives.  Seals shelf",
-      "description": "Description for shelf Diplomatics.  Archives.  Seals in Diplomatics.  Archives.  Seals Room.\n\n[|Main||||||] Diplomatics.  Archives.  Seals Room entrance",
+      "description": "Description for shelf Diplomatics.  Archives.  Seals in Diplomatics.  Archives.  Seals Room.\n\n[|Entrance||] Diplomatics.  Archives.  Seals Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_C-CD": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_C-CD"
         }
       }
@@ -1466,12 +1466,12 @@ var gameData = {
     "2_building_C-CE-CE1-97": {
       "firstVisit": true,
       "displayName": "Technical chronology.  Calendar shelf",
-      "description": "Description for shelf Technical chronology.  Calendar in Technical chronology.  Calendar Room.\n\n[|Main||||||] Technical chronology.  Calendar Room entrance",
+      "description": "Description for shelf Technical chronology.  Calendar in Technical chronology.  Calendar Room.\n\n[|Entrance||] Technical chronology.  Calendar Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_C-CE": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_C-CE"
         }
       }
@@ -1496,12 +1496,12 @@ var gameData = {
     "2_building_C-C-C1-51": {
       "firstVisit": true,
       "displayName": "Auxiliary Sciences of History (General) shelf",
-      "description": "Description for shelf Auxiliary Sciences of History (General) in Auxiliary Sciences of History (General) Room.\n\n[|Main||||||] Auxiliary Sciences of History (General) Room entrance",
+      "description": "Description for shelf Auxiliary Sciences of History (General) in Auxiliary Sciences of History (General) Room.\n\n[|Entrance||] Auxiliary Sciences of History (General) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_C-C": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_C-C"
         }
       }
@@ -1572,12 +1572,12 @@ var gameData = {
     "building_D-DS-DS1-937": {
       "firstVisit": true,
       "displayName": "History of Asia shelf",
-      "description": "Description for shelf History of Asia in History of Asia Room.\n\n[|Main||||||] History of Asia Room entrance",
+      "description": "Description for shelf History of Asia in History of Asia Room.\n\n[|Entrance||] History of Asia Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_D-DS": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_D-DS"
         }
       }
@@ -1602,12 +1602,12 @@ var gameData = {
     "building_D-D-D1-2027": {
       "firstVisit": true,
       "displayName": "History (General) shelf",
-      "description": "Description for shelf History (General) in History (General) Room.\n\n[|Main||||||] History (General) Room entrance",
+      "description": "Description for shelf History (General) in History (General) Room.\n\n[|Entrance||] History (General) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_D-D": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_D-D"
         }
       }
@@ -1632,12 +1632,12 @@ var gameData = {
     "building_D-DA-DA1-995": {
       "firstVisit": true,
       "displayName": "History of Great Britain shelf",
-      "description": "Description for shelf History of Great Britain in History of Great Britain Room.\n\n[|Main||||||] History of Great Britain Room entrance",
+      "description": "Description for shelf History of Great Britain in History of Great Britain Room.\n\n[|Entrance||] History of Great Britain Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_D-DA": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_D-DA"
         }
       }
@@ -1662,12 +1662,12 @@ var gameData = {
     "building_D-DT-DT1-3415": {
       "firstVisit": true,
       "displayName": "History of Africa shelf",
-      "description": "Description for shelf History of Africa in History of Africa Room.\n\n[|Main||||||] History of Africa Room entrance",
+      "description": "Description for shelf History of Africa in History of Africa Room.\n\n[|Entrance||] History of Africa Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_D-DT": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_D-DT"
         }
       }
@@ -1692,12 +1692,12 @@ var gameData = {
     "building_D-DG-DG11-999": {
       "firstVisit": true,
       "displayName": "History of Italy shelf",
-      "description": "Description for shelf History of Italy in History of Italy Room.\n\n[|Main||||||] History of Italy Room entrance\n[|Next||||||] Ancient Italy.  Rome to 476 shelf",
+      "description": "Description for shelf History of Italy in History of Italy Room.\n\n[|Entrance||] History of Italy Room entrance\n[|Next||||||] Ancient Italy.  Rome to 476 shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "building_D-DG": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_D-DG"
         },
         "building_D-DG-DG11-365": {
@@ -1739,12 +1739,12 @@ var gameData = {
     "building_D-DC-DC1-947": {
       "firstVisit": true,
       "displayName": "History of France shelf",
-      "description": "Description for shelf History of France in History of France Room.\n\n[|Main||||||] History of France Room entrance",
+      "description": "Description for shelf History of France in History of France Room.\n\n[|Entrance||] History of France Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_D-DC": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_D-DC"
         }
       }
@@ -1810,12 +1810,12 @@ var gameData = {
     "2_building_D-DD-DD1-905": {
       "firstVisit": true,
       "displayName": "History of Germany shelf",
-      "description": "Description for shelf History of Germany in History of Germany Room.\n\n[|Main||||||] History of Germany Room entrance",
+      "description": "Description for shelf History of Germany in History of Germany Room.\n\n[|Entrance||] History of Germany Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_D-DD": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_D-DD"
         }
       }
@@ -1840,12 +1840,12 @@ var gameData = {
     "2_building_D-DH-DH1-925": {
       "firstVisit": true,
       "displayName": "History of Low Countries.  Benelux Countries shelf",
-      "description": "Description for shelf History of Low Countries.  Benelux Countries in History of Low Countries.  Benelux Countries Room.\n\n[|Main||||||] History of Low Countries.  Benelux Countries Room entrance",
+      "description": "Description for shelf History of Low Countries.  Benelux Countries in History of Low Countries.  Benelux Countries Room.\n\n[|Entrance||] History of Low Countries.  Benelux Countries Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_D-DH": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_D-DH"
         }
       }
@@ -1870,12 +1870,12 @@ var gameData = {
     "2_building_D-DU-DU1-950": {
       "firstVisit": true,
       "displayName": "History of Oceania (South Seas) shelf",
-      "description": "Description for shelf History of Oceania (South Seas) in History of Oceania (South Seas) Room.\n\n[|Main||||||] History of Oceania (South Seas) Room entrance",
+      "description": "Description for shelf History of Oceania (South Seas) in History of Oceania (South Seas) Room.\n\n[|Entrance||] History of Oceania (South Seas) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_D-DU": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_D-DU"
         }
       }
@@ -1900,12 +1900,12 @@ var gameData = {
     "2_building_D-DK-DK1-949.5": {
       "firstVisit": true,
       "displayName": "History of Russia.  Soviet Union.  Former Soviet Republics shelf",
-      "description": "Description for shelf History of Russia.  Soviet Union.  Former Soviet Republics in History of Russia.  Soviet Union.  Former Soviet Republics Room.\n\n[|Main||||||] History of Russia.  Soviet Union.  Former Soviet Republics Room entrance\n[|Next||||||] History of Poland shelf",
+      "description": "Description for shelf History of Russia.  Soviet Union.  Former Soviet Republics in History of Russia.  Soviet Union.  Former Soviet Republics Room.\n\n[|Entrance||] History of Russia.  Soviet Union.  Former Soviet Republics Room entrance\n[|Next||||||] History of Poland shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_D-DK": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_D-DK"
         },
         "2_building_D-DK-DK4010-4800": {
@@ -1947,12 +1947,12 @@ var gameData = {
     "2_building_D-DE-DE1-100": {
       "firstVisit": true,
       "displayName": "History of the Greco-Roman world shelf",
-      "description": "Description for shelf History of the Greco-Roman world in History of the Greco-Roman world Room.\n\n[|Main||||||] History of the Greco-Roman world Room entrance",
+      "description": "Description for shelf History of the Greco-Roman world in History of the Greco-Roman world Room.\n\n[|Entrance||] History of the Greco-Roman world Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_D-DE": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_D-DE"
         }
       }
@@ -1977,12 +1977,12 @@ var gameData = {
     "2_building_D-DR-DR1-2285": {
       "firstVisit": true,
       "displayName": "History of Balkan Peninsula shelf",
-      "description": "Description for shelf History of Balkan Peninsula in History of Balkan Peninsula Room.\n\n[|Main||||||] History of Balkan Peninsula Room entrance",
+      "description": "Description for shelf History of Balkan Peninsula in History of Balkan Peninsula Room.\n\n[|Entrance||] History of Balkan Peninsula Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_D-DR": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_D-DR"
         }
       }
@@ -2048,12 +2048,12 @@ var gameData = {
     "3_building_D-DP-DP1-402": {
       "firstVisit": true,
       "displayName": "History of Spain shelf",
-      "description": "Description for shelf History of Spain in History of Spain Room.\n\n[|Main||||||] History of Spain Room entrance\n[|Next||||||] History of Portugal shelf",
+      "description": "Description for shelf History of Spain in History of Spain Room.\n\n[|Entrance||] History of Spain Room entrance\n[|Next||||||] History of Portugal shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_D-DP": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_D-DP"
         },
         "3_building_D-DP-DP501-900.22": {
@@ -2095,12 +2095,12 @@ var gameData = {
     "3_building_D-DF-DF10-951": {
       "firstVisit": true,
       "displayName": "History of Greece shelf",
-      "description": "Description for shelf History of Greece in History of Greece Room.\n\n[|Main||||||] History of Greece Room entrance",
+      "description": "Description for shelf History of Greece in History of Greece Room.\n\n[|Entrance||] History of Greece Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_D-DF": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_D-DF"
         }
       }
@@ -2125,12 +2125,12 @@ var gameData = {
     "3_building_D-DJK-DJK1-77": {
       "firstVisit": true,
       "displayName": "History of Eastern Europe (General) shelf",
-      "description": "Description for shelf History of Eastern Europe (General) in History of Eastern Europe (General) Room.\n\n[|Main||||||] History of Eastern Europe (General) Room entrance",
+      "description": "Description for shelf History of Eastern Europe (General) in History of Eastern Europe (General) Room.\n\n[|Entrance||] History of Eastern Europe (General) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_D-DJK": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_D-DJK"
         }
       }
@@ -2155,12 +2155,12 @@ var gameData = {
     "3_building_D-DB-DB1-3150": {
       "firstVisit": true,
       "displayName": "History of Austria.  Liechtenstein.  Hungary.  Czechoslovakia shelf",
-      "description": "Description for shelf History of Austria.  Liechtenstein.  Hungary.  Czechoslovakia in History of Austria.  Liechtenstein.  Hungary.  Czechoslovakia Room.\n\n[|Main||||||] History of Austria.  Liechtenstein.  Hungary.  Czechoslovakia Room entrance",
+      "description": "Description for shelf History of Austria.  Liechtenstein.  Hungary.  Czechoslovakia in History of Austria.  Liechtenstein.  Hungary.  Czechoslovakia Room.\n\n[|Entrance||] History of Austria.  Liechtenstein.  Hungary.  Czechoslovakia Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_D-DB": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_D-DB"
         }
       }
@@ -2185,12 +2185,12 @@ var gameData = {
     "3_building_D-DL-DL1-1180": {
       "firstVisit": true,
       "displayName": "History of Northern Europe.  Scandinavia shelf",
-      "description": "Description for shelf History of Northern Europe.  Scandinavia in History of Northern Europe.  Scandinavia Room.\n\n[|Main||||||] History of Northern Europe.  Scandinavia Room entrance",
+      "description": "Description for shelf History of Northern Europe.  Scandinavia in History of Northern Europe.  Scandinavia Room.\n\n[|Entrance||] History of Northern Europe.  Scandinavia Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_D-DL": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_D-DL"
         }
       }
@@ -2215,12 +2215,12 @@ var gameData = {
     "3_building_D-DQ-DQ1-851": {
       "firstVisit": true,
       "displayName": "History of Switzerland shelf",
-      "description": "Description for shelf History of Switzerland in History of Switzerland Room.\n\n[|Main||||||] History of Switzerland Room entrance",
+      "description": "Description for shelf History of Switzerland in History of Switzerland Room.\n\n[|Entrance||] History of Switzerland Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_D-DQ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_D-DQ"
         }
       }
@@ -2286,12 +2286,12 @@ var gameData = {
     "4_building_D-DAW-DAW1001-1051": {
       "firstVisit": true,
       "displayName": "History of Central Europe shelf",
-      "description": "Description for shelf History of Central Europe in History of Central Europe Room.\n\n[|Main||||||] History of Central Europe Room entrance",
+      "description": "Description for shelf History of Central Europe in History of Central Europe Room.\n\n[|Entrance||] History of Central Europe Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "4_building_D-DAW": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "4_building_D-DAW"
         }
       }
@@ -2316,12 +2316,12 @@ var gameData = {
     "4_building_D-DJ-DJ1-500": {
       "firstVisit": true,
       "displayName": "History of Netherlands (Holland) shelf",
-      "description": "Description for shelf History of Netherlands (Holland) in History of Netherlands (Holland) Room.\n\n[|Main||||||] History of Netherlands (Holland) Room entrance",
+      "description": "Description for shelf History of Netherlands (Holland) in History of Netherlands (Holland) Room.\n\n[|Entrance||] History of Netherlands (Holland) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "4_building_D-DJ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "4_building_D-DJ"
         }
       }
@@ -2346,12 +2346,12 @@ var gameData = {
     "4_building_D-DX-DX101-301": {
       "firstVisit": true,
       "displayName": "History of Romanies shelf",
-      "description": "Description for shelf History of Romanies in History of Romanies Room.\n\n[|Main||||||] History of Romanies Room entrance",
+      "description": "Description for shelf History of Romanies in History of Romanies Room.\n\n[|Entrance||] History of Romanies Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "4_building_D-DX": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "4_building_D-DX"
         }
       }
@@ -2418,12 +2418,12 @@ var gameData = {
     "building_E-E-E151-889": {
       "firstVisit": true,
       "displayName": "United States shelf",
-      "description": "Description for shelf United States in United States Room.\n\n[|Main||||||] United States Room entrance\n[|Next||||||] America shelf",
+      "description": "Description for shelf United States in United States Room.\n\n[|Entrance||] United States Room entrance\n[|Next||||||] America shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "building_E-E": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_E-E"
         },
         "building_E-E-E11-143": {
@@ -2550,12 +2550,12 @@ var gameData = {
     "building_F-F-F1-975": {
       "firstVisit": true,
       "displayName": "United States local history shelf",
-      "description": "Description for shelf United States local history in Latin America.  Spanish America Room.\n\n[|Main||||||] Latin America.  Spanish America Room entrance\n[|Next||||||] Latin America.  Spanish America shelf",
+      "description": "Description for shelf United States local history in Latin America.  Spanish America Room.\n\n[|Entrance||] Latin America.  Spanish America Room entrance\n[|Next||||||] Latin America.  Spanish America shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "building_F-F": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_F-F"
         },
         "building_F-F-F1201-3799": {
@@ -2682,12 +2682,12 @@ var gameData = {
     "building_G-G-G1-922": {
       "firstVisit": true,
       "displayName": "Geography (General) shelf",
-      "description": "Description for shelf Geography (General) in Maps Room.\n\n[|Main||||||] Maps Room entrance\n[|Next||||||] Atlases shelf",
+      "description": "Description for shelf Geography (General) in Maps Room.\n\n[|Entrance||] Maps Room entrance\n[|Next||||||] Atlases shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "building_G-G": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_G-G"
         },
         "building_G-G-G1000-3122": {
@@ -2763,12 +2763,12 @@ var gameData = {
     "building_G-GV-GV1-1860": {
       "firstVisit": true,
       "displayName": "Recreation.  Leisure shelf",
-      "description": "Description for shelf Recreation.  Leisure in Recreation.  Leisure Room.\n\n[|Main||||||] Recreation.  Leisure Room entrance",
+      "description": "Description for shelf Recreation.  Leisure in Recreation.  Leisure Room.\n\n[|Entrance||] Recreation.  Leisure Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_G-GV": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_G-GV"
         }
       }
@@ -2793,12 +2793,12 @@ var gameData = {
     "building_G-GA-GA1-1776": {
       "firstVisit": true,
       "displayName": "Mathematical geography.  Cartography shelf",
-      "description": "Description for shelf Mathematical geography.  Cartography in Mathematical geography.  Cartography Room.\n\n[|Main||||||] Mathematical geography.  Cartography Room entrance",
+      "description": "Description for shelf Mathematical geography.  Cartography in Mathematical geography.  Cartography Room.\n\n[|Entrance||] Mathematical geography.  Cartography Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_G-GA": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_G-GA"
         }
       }
@@ -2823,12 +2823,12 @@ var gameData = {
     "building_G-GN-GN1-890": {
       "firstVisit": true,
       "displayName": "Anthropology shelf",
-      "description": "Description for shelf Anthropology in Anthropology Room.\n\n[|Main||||||] Anthropology Room entrance",
+      "description": "Description for shelf Anthropology in Anthropology Room.\n\n[|Entrance||] Anthropology Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_G-GN": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_G-GN"
         }
       }
@@ -2853,12 +2853,12 @@ var gameData = {
     "building_G-GR-GR1-950": {
       "firstVisit": true,
       "displayName": "Folklore shelf",
-      "description": "Description for shelf Folklore in Folklore Room.\n\n[|Main||||||] Folklore Room entrance",
+      "description": "Description for shelf Folklore in Folklore Room.\n\n[|Entrance||] Folklore Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_G-GR": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_G-GR"
         }
       }
@@ -2883,12 +2883,12 @@ var gameData = {
     "building_G-GT-GT1-7070": {
       "firstVisit": true,
       "displayName": "Manners and customs (General) shelf",
-      "description": "Description for shelf Manners and customs (General) in Manners and customs (General) Room.\n\n[|Main||||||] Manners and customs (General) Room entrance",
+      "description": "Description for shelf Manners and customs (General) in Manners and customs (General) Room.\n\n[|Entrance||] Manners and customs (General) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_G-GT": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_G-GT"
         }
       }
@@ -2954,12 +2954,12 @@ var gameData = {
     "2_building_G-GC-GC1-1581": {
       "firstVisit": true,
       "displayName": "Oceanography shelf",
-      "description": "Description for shelf Oceanography in Oceanography Room.\n\n[|Main||||||] Oceanography Room entrance",
+      "description": "Description for shelf Oceanography in Oceanography Room.\n\n[|Entrance||] Oceanography Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_G-GC": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_G-GC"
         }
       }
@@ -2984,12 +2984,12 @@ var gameData = {
     "2_building_G-GB-GB3-5030": {
       "firstVisit": true,
       "displayName": "Physical geography shelf",
-      "description": "Description for shelf Physical geography in Physical geography Room.\n\n[|Main||||||] Physical geography Room entrance",
+      "description": "Description for shelf Physical geography in Physical geography Room.\n\n[|Entrance||] Physical geography Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_G-GB": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_G-GB"
         }
       }
@@ -3014,12 +3014,12 @@ var gameData = {
     "2_building_G-GE-GE1-350": {
       "firstVisit": true,
       "displayName": "Environmental sciences shelf",
-      "description": "Description for shelf Environmental sciences in Environmental sciences Room.\n\n[|Main||||||] Environmental sciences Room entrance",
+      "description": "Description for shelf Environmental sciences in Environmental sciences Room.\n\n[|Entrance||] Environmental sciences Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_G-GE": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_G-GE"
         }
       }
@@ -3044,12 +3044,12 @@ var gameData = {
     "2_building_G-GF-GF1-900": {
       "firstVisit": true,
       "displayName": "Human ecology.  Anthropogeography shelf",
-      "description": "Description for shelf Human ecology.  Anthropogeography in Human ecology.  Anthropogeography Room.\n\n[|Main||||||] Human ecology.  Anthropogeography Room entrance",
+      "description": "Description for shelf Human ecology.  Anthropogeography in Human ecology.  Anthropogeography Room.\n\n[|Entrance||] Human ecology.  Anthropogeography Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_G-GF": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_G-GF"
         }
       }
@@ -3120,12 +3120,12 @@ var gameData = {
     "building_H-HF-HF1-6182": {
       "firstVisit": true,
       "displayName": "Commerce shelf",
-      "description": "Description for shelf Commerce in Commerce Room.\n\n[|Main||||||] Commerce Room entrance",
+      "description": "Description for shelf Commerce in Commerce Room.\n\n[|Entrance||] Commerce Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_H-HF": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_H-HF"
         }
       }
@@ -3150,12 +3150,12 @@ var gameData = {
     "building_H-HX-HX1-970.7": {
       "firstVisit": true,
       "displayName": "Socialism.  Communism.  Anarchism shelf",
-      "description": "Description for shelf Socialism.  Communism.  Anarchism in Socialism.  Communism.  Anarchism Room.\n\n[|Main||||||] Socialism.  Communism.  Anarchism Room entrance",
+      "description": "Description for shelf Socialism.  Communism.  Anarchism in Socialism.  Communism.  Anarchism Room.\n\n[|Entrance||] Socialism.  Communism.  Anarchism Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_H-HX": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_H-HX"
         }
       }
@@ -3180,12 +3180,12 @@ var gameData = {
     "building_H-HD-HD28-9999": {
       "firstVisit": true,
       "displayName": "Industries.  Land use.  Labor shelf",
-      "description": "Description for shelf Industries.  Land use.  Labor in Industries.  Land use.  Labor Room.\n\n[|Main||||||] Industries.  Land use.  Labor Room entrance",
+      "description": "Description for shelf Industries.  Land use.  Labor in Industries.  Land use.  Labor Room.\n\n[|Entrance||] Industries.  Land use.  Labor Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_H-HD": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_H-HD"
         }
       }
@@ -3210,12 +3210,12 @@ var gameData = {
     "building_H-HG-HG1-9999": {
       "firstVisit": true,
       "displayName": "Finance shelf",
-      "description": "Description for shelf Finance in Finance Room.\n\n[|Main||||||] Finance Room entrance",
+      "description": "Description for shelf Finance in Finance Room.\n\n[|Entrance||] Finance Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_H-HG": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_H-HG"
         }
       }
@@ -3240,12 +3240,12 @@ var gameData = {
     "building_H-HB-HB1-3840": {
       "firstVisit": true,
       "displayName": "Economic theory.  Demography shelf",
-      "description": "Description for shelf Economic theory.  Demography in Economic theory.  Demography Room.\n\n[|Main||||||] Economic theory.  Demography Room entrance",
+      "description": "Description for shelf Economic theory.  Demography in Economic theory.  Demography Room.\n\n[|Entrance||] Economic theory.  Demography Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_H-HB": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_H-HB"
         }
       }
@@ -3270,12 +3270,12 @@ var gameData = {
     "building_H-HQ-HQ1-2044": {
       "firstVisit": true,
       "displayName": "The Family.  Marriage.  Women shelf",
-      "description": "Description for shelf The Family.  Marriage.  Women in The Family.  Marriage.  Women Room.\n\n[|Main||||||] The Family.  Marriage.  Women Room entrance",
+      "description": "Description for shelf The Family.  Marriage.  Women in The Family.  Marriage.  Women Room.\n\n[|Entrance||] The Family.  Marriage.  Women Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_H-HQ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_H-HQ"
         }
       }
@@ -3341,12 +3341,12 @@ var gameData = {
     "2_building_H-H-H1-99": {
       "firstVisit": true,
       "displayName": "Social sciences (General) shelf",
-      "description": "Description for shelf Social sciences (General) in Social sciences (General) Room.\n\n[|Main||||||] Social sciences (General) Room entrance",
+      "description": "Description for shelf Social sciences (General) in Social sciences (General) Room.\n\n[|Entrance||] Social sciences (General) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_H-H": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_H-H"
         }
       }
@@ -3371,12 +3371,12 @@ var gameData = {
     "2_building_H-HE-HE1-9990": {
       "firstVisit": true,
       "displayName": "Transportation and communications shelf",
-      "description": "Description for shelf Transportation and communications in Transportation and communications Room.\n\n[|Main||||||] Transportation and communications Room entrance",
+      "description": "Description for shelf Transportation and communications in Transportation and communications Room.\n\n[|Entrance||] Transportation and communications Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_H-HE": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_H-HE"
         }
       }
@@ -3401,12 +3401,12 @@ var gameData = {
     "2_building_H-HM-HM1-1281": {
       "firstVisit": true,
       "displayName": "Sociology shelf",
-      "description": "Description for shelf Sociology in Sociology Room.\n\n[|Main||||||] Sociology Room entrance",
+      "description": "Description for shelf Sociology in Sociology Room.\n\n[|Entrance||] Sociology Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_H-HM": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_H-HM"
         }
       }
@@ -3431,12 +3431,12 @@ var gameData = {
     "2_building_H-HJ-HJ9-9940": {
       "firstVisit": true,
       "displayName": "Public finance shelf",
-      "description": "Description for shelf Public finance in Public finance Room.\n\n[|Main||||||] Public finance Room entrance",
+      "description": "Description for shelf Public finance in Public finance Room.\n\n[|Entrance||] Public finance Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_H-HJ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_H-HJ"
         }
       }
@@ -3461,12 +3461,12 @@ var gameData = {
     "2_building_H-HN-HN1-995": {
       "firstVisit": true,
       "displayName": "Social history and conditions.  Social problems. shelf",
-      "description": "Description for shelf Social history and conditions.  Social problems. in Social history and conditions.  Social problems. Room.\n\n[|Main||||||] Social history and conditions.  Social problems. Room entrance",
+      "description": "Description for shelf Social history and conditions.  Social problems. in Social history and conditions.  Social problems. Room.\n\n[|Entrance||] Social history and conditions.  Social problems. Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_H-HN": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_H-HN"
         }
       }
@@ -3491,12 +3491,12 @@ var gameData = {
     "2_building_H-HS-HS1-3371": {
       "firstVisit": true,
       "displayName": "Societies: secret, benevolent, etc. shelf",
-      "description": "Description for shelf Societies: secret, benevolent, etc. in Societies: secret, benevolent, etc. Room.\n\n[|Main||||||] Societies: secret, benevolent, etc. Room entrance",
+      "description": "Description for shelf Societies: secret, benevolent, etc. in Societies: secret, benevolent, etc. Room.\n\n[|Entrance||] Societies: secret, benevolent, etc. Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_H-HS": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_H-HS"
         }
       }
@@ -3562,12 +3562,12 @@ var gameData = {
     "3_building_H-HV-HV1-9960": {
       "firstVisit": true,
       "displayName": "Social pathology.  Social and public welfare. shelf",
-      "description": "Description for shelf Social pathology.  Social and public welfare. in Social pathology.  Social and public welfare. Room.\n\n[|Main||||||] Social pathology.  Social and public welfare. Room entrance",
+      "description": "Description for shelf Social pathology.  Social and public welfare. in Social pathology.  Social and public welfare. Room.\n\n[|Entrance||] Social pathology.  Social and public welfare. Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_H-HV": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_H-HV"
         }
       }
@@ -3592,12 +3592,12 @@ var gameData = {
     "3_building_H-HC-HC10-1085": {
       "firstVisit": true,
       "displayName": "Economic history and conditions shelf",
-      "description": "Description for shelf Economic history and conditions in Economic history and conditions Room.\n\n[|Main||||||] Economic history and conditions Room entrance",
+      "description": "Description for shelf Economic history and conditions in Economic history and conditions Room.\n\n[|Entrance||] Economic history and conditions Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_H-HC": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_H-HC"
         }
       }
@@ -3622,12 +3622,12 @@ var gameData = {
     "3_building_H-HA-HA1-4737": {
       "firstVisit": true,
       "displayName": "Statistics shelf",
-      "description": "Description for shelf Statistics in Statistics Room.\n\n[|Main||||||] Statistics Room entrance",
+      "description": "Description for shelf Statistics in Statistics Room.\n\n[|Entrance||] Statistics Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_H-HA": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_H-HA"
         }
       }
@@ -3652,12 +3652,12 @@ var gameData = {
     "3_building_H-HT-HT51-1595": {
       "firstVisit": true,
       "displayName": "Communities.  Classes.  Races shelf",
-      "description": "Description for shelf Communities.  Classes.  Races in Communities.  Classes.  Races Room.\n\n[|Main||||||] Communities.  Classes.  Races Room entrance",
+      "description": "Description for shelf Communities.  Classes.  Races in Communities.  Classes.  Races Room.\n\n[|Entrance||] Communities.  Classes.  Races Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_H-HT": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_H-HT"
         }
       }
@@ -3728,12 +3728,12 @@ var gameData = {
     "building_J-JF-JF20-1177": {
       "firstVisit": true,
       "displayName": "General.  Comparative government shelf",
-      "description": "Description for shelf General.  Comparative government in Political institutions and public administration Room.\n\n[|Main||||||] Political institutions and public administration Room entrance\n[|Next||||||] Political institutions and public administration shelf",
+      "description": "Description for shelf General.  Comparative government in Political institutions and public administration Room.\n\n[|Entrance||] Political institutions and public administration Room entrance\n[|Next||||||] Political institutions and public administration shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "building_J-JF": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_J-JF"
         },
         "building_J-JF-JF20-2112": {
@@ -3775,12 +3775,12 @@ var gameData = {
     "building_J-JC-JC11-605": {
       "firstVisit": true,
       "displayName": "Political theory.  The state.  Theories of the state shelf",
-      "description": "Description for shelf Political theory.  The state.  Theories of the state in Political theory.  The state.  Theories of the state Room.\n\n[|Main||||||] Political theory.  The state.  Theories of the state Room entrance",
+      "description": "Description for shelf Political theory.  The state.  Theories of the state in Political theory.  The state.  Theories of the state Room.\n\n[|Entrance||] Political theory.  The state.  Theories of the state Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_J-JC": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_J-JC"
         }
       }
@@ -3805,12 +3805,12 @@ var gameData = {
     "building_J-JK-JK1-9993": {
       "firstVisit": true,
       "displayName": "Political institutions and public administration shelf",
-      "description": "Description for shelf Political institutions and public administration in Political institutions and public administration Room.\n\n[|Main||||||] Political institutions and public administration Room entrance\n[|Next||||||] United States shelf",
+      "description": "Description for shelf Political institutions and public administration in Political institutions and public administration Room.\n\n[|Entrance||] Political institutions and public administration Room entrance\n[|Next||||||] United States shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "building_J-JK": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_J-JK"
         },
         "building_J-JK-JK1-9593": {
@@ -3852,12 +3852,12 @@ var gameData = {
     "building_J-JS-JS39-8500": {
       "firstVisit": true,
       "displayName": "Local government.  Municipal government shelf",
-      "description": "Description for shelf Local government.  Municipal government in Local government.  Municipal government Room.\n\n[|Main||||||] Local government.  Municipal government Room entrance",
+      "description": "Description for shelf Local government.  Municipal government in Local government.  Municipal government Room.\n\n[|Entrance||] Local government.  Municipal government Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_J-JS": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_J-JS"
         }
       }
@@ -3882,12 +3882,12 @@ var gameData = {
     "building_J-JV-JV1-9480": {
       "firstVisit": true,
       "displayName": "Colonies and colonization.  Emigration and shelf",
-      "description": "Description for shelf Colonies and colonization.  Emigration and in Colonies and colonization.  Emigration and Room.\n\n[|Main||||||] Colonies and colonization.  Emigration and Room entrance",
+      "description": "Description for shelf Colonies and colonization.  Emigration and in Colonies and colonization.  Emigration and Room.\n\n[|Entrance||] Colonies and colonization.  Emigration and Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_J-JV": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_J-JV"
         }
       }
@@ -3912,12 +3912,12 @@ var gameData = {
     "building_J-JA-JA1-92": {
       "firstVisit": true,
       "displayName": "Political science (General) shelf",
-      "description": "Description for shelf Political science (General) in Political science (General) Room.\n\n[|Main||||||] Political science (General) Room entrance",
+      "description": "Description for shelf Political science (General) in Political science (General) Room.\n\n[|Entrance||] Political science (General) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_J-JA": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_J-JA"
         }
       }
@@ -3983,12 +3983,12 @@ var gameData = {
     "2_building_J-JX-JX1-6650": {
       "firstVisit": true,
       "displayName": "International law, see JZ and KZ shelf",
-      "description": "Description for shelf International law, see JZ and KZ in International law, see JZ and KZ Room.\n\n[|Main||||||] International law, see JZ and KZ Room entrance",
+      "description": "Description for shelf International law, see JZ and KZ in International law, see JZ and KZ Room.\n\n[|Entrance||] International law, see JZ and KZ Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_J-JX": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_J-JX"
         }
       }
@@ -4013,12 +4013,12 @@ var gameData = {
     "2_building_J-JN-JN1-9689": {
       "firstVisit": true,
       "displayName": "Political institutions and public administration (Europe) shelf",
-      "description": "Description for shelf Political institutions and public administration (Europe) in Political institutions and public administration (Europe) Room.\n\n[|Main||||||] Political institutions and public administration (Europe) Room entrance",
+      "description": "Description for shelf Political institutions and public administration (Europe) in Political institutions and public administration (Europe) Room.\n\n[|Entrance||] Political institutions and public administration (Europe) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_J-JN": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_J-JN"
         }
       }
@@ -4043,12 +4043,12 @@ var gameData = {
     "2_building_J-JZ-JZ5-6530": {
       "firstVisit": true,
       "displayName": "International relations shelf",
-      "description": "Description for shelf International relations in International relations Room.\n\n[|Main||||||] International relations Room entrance",
+      "description": "Description for shelf International relations in International relations Room.\n\n[|Entrance||] International relations Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_J-JZ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_J-JZ"
         }
       }
@@ -4073,12 +4073,12 @@ var gameData = {
     "2_building_J-JL-JL1-3899": {
       "firstVisit": true,
       "displayName": "Political institutions and public administration shelf",
-      "description": "Description for shelf Political institutions and public administration in Political institutions and public administration Room.\n\n[|Main||||||] Political institutions and public administration Room entrance",
+      "description": "Description for shelf Political institutions and public administration in Political institutions and public administration Room.\n\n[|Entrance||] Political institutions and public administration Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_J-JL": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_J-JL"
         }
       }
@@ -4103,12 +4103,12 @@ var gameData = {
     "2_building_J-J-J1-981": {
       "firstVisit": true,
       "displayName": "General legislative and executive papers shelf",
-      "description": "Description for shelf General legislative and executive papers in General legislative and executive papers Room.\n\n[|Main||||||] General legislative and executive papers Room entrance",
+      "description": "Description for shelf General legislative and executive papers in General legislative and executive papers Room.\n\n[|Entrance||] General legislative and executive papers Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_J-J": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_J-J"
         }
       }
@@ -4133,12 +4133,12 @@ var gameData = {
     "2_building_J-JQ-JQ21-6651": {
       "firstVisit": true,
       "displayName": "Political institutions and public administration (Asia, shelf",
-      "description": "Description for shelf Political institutions and public administration (Asia, in Political institutions and public administration (Asia, Room.\n\n[|Main||||||] Political institutions and public administration (Asia, Room entrance",
+      "description": "Description for shelf Political institutions and public administration (Asia, in Political institutions and public administration (Asia, Room.\n\n[|Entrance||] Political institutions and public administration (Asia, Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_J-JQ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_J-JQ"
         }
       }
@@ -4204,12 +4204,12 @@ var gameData = {
     "3_building_J-JJ-JJ1000-1019": {
       "firstVisit": true,
       "displayName": "Political institutions and public administration shelf",
-      "description": "Description for shelf Political institutions and public administration in Political institutions and public administration Room.\n\n[|Main||||||] Political institutions and public administration Room entrance",
+      "description": "Description for shelf Political institutions and public administration in Political institutions and public administration Room.\n\n[|Entrance||] Political institutions and public administration Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_J-JJ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_J-JJ"
         }
       }
@@ -4268,12 +4268,12 @@ var gameData = {
     "building_K-KF-KF1-9827": {
       "firstVisit": true,
       "displayName": "Law of the United States (Federal) shelf",
-      "description": "Description for shelf Law of the United States (Federal) in Law of the United States (Federal) Room.\n\n[|Main||||||] Law of the United States (Federal) Room entrance",
+      "description": "Description for shelf Law of the United States (Federal) in Law of the United States (Federal) Room.\n\n[|Entrance||] Law of the United States (Federal) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_K-KF": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_K-KF"
         }
       }
@@ -4298,12 +4298,12 @@ var gameData = {
     "building_K-KFW-KFW": {
       "firstVisit": true,
       "displayName": "Law of Washington shelf",
-      "description": "Description for shelf Law of Washington in Law of Washington Room.\n\n[|Main||||||] Law of Washington Room entrance",
+      "description": "Description for shelf Law of Washington in Law of Washington Room.\n\n[|Entrance||] Law of Washington Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_K-KFW": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_K-KFW"
         }
       }
@@ -4328,12 +4328,12 @@ var gameData = {
     "building_K-KFM-KFM": {
       "firstVisit": true,
       "displayName": "Law of Maine shelf",
-      "description": "Description for shelf Law of Maine in Law of Maine Room.\n\n[|Main||||||] Law of Maine Room entrance",
+      "description": "Description for shelf Law of Maine in Law of Maine Room.\n\n[|Entrance||] Law of Maine Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_K-KFM": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_K-KFM"
         }
       }
@@ -4358,12 +4358,12 @@ var gameData = {
     "building_K-KFT-KFT": {
       "firstVisit": true,
       "displayName": "Law of Tennessee shelf",
-      "description": "Description for shelf Law of Tennessee in Law of Tennessee Room.\n\n[|Main||||||] Law of Tennessee Room entrance",
+      "description": "Description for shelf Law of Tennessee in Law of Tennessee Room.\n\n[|Entrance||] Law of Tennessee Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_K-KFT": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_K-KFT"
         }
       }
@@ -4388,12 +4388,12 @@ var gameData = {
     "building_K-K-K520-5582": {
       "firstVisit": true,
       "displayName": "Comparative law.  International uniform law shelf",
-      "description": "Description for shelf Comparative law.  International uniform law in Comparative law.  International uniform law Room.\n\n[|Main||||||] Comparative law.  International uniform law Room entrance\n[|Next||||||] Jurisprudence.  Philosophy and theory of law shelf",
+      "description": "Description for shelf Comparative law.  International uniform law in Comparative law.  International uniform law Room.\n\n[|Entrance||] Comparative law.  International uniform law Room entrance\n[|Next||||||] Jurisprudence.  Philosophy and theory of law shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "building_K-K": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_K-K"
         },
         "building_K-K-K201-487": {
@@ -4792,12 +4792,12 @@ var gameData = {
     "building_K-KZ-KZ1-6795": {
       "firstVisit": true,
       "displayName": "Law of nations shelf",
-      "description": "Description for shelf Law of nations in Law of nations Room.\n\n[|Main||||||] Law of nations Room entrance\n[|Next||||||] Law of nations shelf",
+      "description": "Description for shelf Law of nations in Law of nations Room.\n\n[|Entrance||] Law of nations Room entrance\n[|Next||||||] Law of nations shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "building_K-KZ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_K-KZ"
         },
         "building_K-KZ-KZ1-7500": {
@@ -4880,12 +4880,12 @@ var gameData = {
     "2_building_K-KD-KD51-9500": {
       "firstVisit": true,
       "displayName": "Law of England and Wales shelf",
-      "description": "Description for shelf Law of England and Wales in Law of England and Wales Room.\n\n[|Main||||||] Law of England and Wales Room entrance",
+      "description": "Description for shelf Law of England and Wales in Law of England and Wales Room.\n\n[|Entrance||] Law of England and Wales Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_K-KD": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_K-KD"
         }
       }
@@ -4910,12 +4910,12 @@ var gameData = {
     "2_building_K-KFP-KFP": {
       "firstVisit": true,
       "displayName": "Law of Pennsylvania shelf",
-      "description": "Description for shelf Law of Pennsylvania in Law of Pennsylvania Room.\n\n[|Main||||||] Law of Pennsylvania Room entrance",
+      "description": "Description for shelf Law of Pennsylvania in Law of Pennsylvania Room.\n\n[|Entrance||] Law of Pennsylvania Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_K-KFP": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_K-KFP"
         }
       }
@@ -4940,12 +4940,12 @@ var gameData = {
     "2_building_K-KFI-KFI": {
       "firstVisit": true,
       "displayName": "Law of Idaho shelf",
-      "description": "Description for shelf Law of Idaho in Law of Idaho Room.\n\n[|Main||||||] Law of Idaho Room entrance",
+      "description": "Description for shelf Law of Idaho in Law of Idaho Room.\n\n[|Entrance||] Law of Idaho Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_K-KFI": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_K-KFI"
         }
       }
@@ -4970,12 +4970,12 @@ var gameData = {
     "2_building_K-KFN-KFN": {
       "firstVisit": true,
       "displayName": "Law of Nebraska shelf",
-      "description": "Description for shelf Law of Nebraska in Law of Nebraska Room.\n\n[|Main||||||] Law of Nebraska Room entrance",
+      "description": "Description for shelf Law of Nebraska in Law of Nebraska Room.\n\n[|Entrance||] Law of Nebraska Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_K-KFN": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_K-KFN"
         }
       }
@@ -5000,12 +5000,12 @@ var gameData = {
     "2_building_K-KFC-KFC": {
       "firstVisit": true,
       "displayName": "Law of California shelf",
-      "description": "Description for shelf Law of California in Law of California Room.\n\n[|Main||||||] Law of California Room entrance",
+      "description": "Description for shelf Law of California in Law of California Room.\n\n[|Entrance||] Law of California Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_K-KFC": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_K-KFC"
         }
       }
@@ -5030,12 +5030,12 @@ var gameData = {
     "2_building_K-KFO-KFO": {
       "firstVisit": true,
       "displayName": "Law of Ohio shelf",
-      "description": "Description for shelf Law of Ohio in Law of Ohio Room.\n\n[|Main||||||] Law of Ohio Room entrance",
+      "description": "Description for shelf Law of Ohio in Law of Ohio Room.\n\n[|Entrance||] Law of Ohio Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_K-KFO": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_K-KFO"
         }
       }
@@ -5101,12 +5101,12 @@ var gameData = {
     "3_building_K-KFL-KFL": {
       "firstVisit": true,
       "displayName": "Law of Louisiana shelf",
-      "description": "Description for shelf Law of Louisiana in Law of Louisiana Room.\n\n[|Main||||||] Law of Louisiana Room entrance",
+      "description": "Description for shelf Law of Louisiana in Law of Louisiana Room.\n\n[|Entrance||] Law of Louisiana Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_K-KFL": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_K-KFL"
         }
       }
@@ -5131,12 +5131,12 @@ var gameData = {
     "3_building_K-KFA-KFA": {
       "firstVisit": true,
       "displayName": "Law of Alabama shelf",
-      "description": "Description for shelf Law of Alabama in Law of Alabama Room.\n\n[|Main||||||] Law of Alabama Room entrance",
+      "description": "Description for shelf Law of Alabama in Law of Alabama Room.\n\n[|Entrance||] Law of Alabama Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_K-KFA": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_K-KFA"
         }
       }
@@ -5161,12 +5161,12 @@ var gameData = {
     "3_building_K-KLA-KLA1-9999": {
       "firstVisit": true,
       "displayName": "Russia, Soviet Union shelf",
-      "description": "Description for shelf Russia, Soviet Union in Russia, Soviet Union Room.\n\n[|Main||||||] Russia, Soviet Union Room entrance",
+      "description": "Description for shelf Russia, Soviet Union in Russia, Soviet Union Room.\n\n[|Entrance||] Russia, Soviet Union Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_K-KLA": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_K-KLA"
         }
       }
@@ -5191,12 +5191,12 @@ var gameData = {
     "3_building_K-KKT-KKT": {
       "firstVisit": true,
       "displayName": "Law of Spain shelf",
-      "description": "Description for shelf Law of Spain in Law of Spain Room.\n\n[|Main||||||] Law of Spain Room entrance",
+      "description": "Description for shelf Law of Spain in Law of Spain Room.\n\n[|Entrance||] Law of Spain Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_K-KKT": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_K-KKT"
         }
       }
@@ -5221,12 +5221,12 @@ var gameData = {
     "3_building_K-KMT-KMT1-4990": {
       "firstVisit": true,
       "displayName": "Saudi Arabia shelf",
-      "description": "Description for shelf Saudi Arabia in Saudi Arabia Room.\n\n[|Main||||||] Saudi Arabia Room entrance",
+      "description": "Description for shelf Saudi Arabia in Saudi Arabia Room.\n\n[|Entrance||] Saudi Arabia Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_K-KMT": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_K-KMT"
         }
       }
@@ -5251,12 +5251,12 @@ var gameData = {
     "3_building_K-KJM-KJM": {
       "firstVisit": true,
       "displayName": "Law of Croatia shelf",
-      "description": "Description for shelf Law of Croatia in Law of Croatia Room.\n\n[|Main||||||] Law of Croatia Room entrance",
+      "description": "Description for shelf Law of Croatia in Law of Croatia Room.\n\n[|Entrance||] Law of Croatia Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_K-KJM": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_K-KJM"
         }
       }
@@ -5322,12 +5322,12 @@ var gameData = {
     "4_building_K-KBP-KBP1-4860": {
       "firstVisit": true,
       "displayName": "Islamic law.  Shar\u012b\u02bbah.  Fiqh shelf",
-      "description": "Description for shelf Islamic law.  Shar\u012b\u02bbah.  Fiqh in Islamic law.  Shar\u012b\u02bbah.  Fiqh Room.\n\n[|Main||||||] Islamic law.  Shar\u012b\u02bbah.  Fiqh Room entrance",
+      "description": "Description for shelf Islamic law.  Shar\u012b\u02bbah.  Fiqh in Islamic law.  Shar\u012b\u02bbah.  Fiqh Room.\n\n[|Entrance||] Islamic law.  Shar\u012b\u02bbah.  Fiqh Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "4_building_K-KBP": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "4_building_K-KBP"
         }
       }
@@ -5352,12 +5352,12 @@ var gameData = {
     "4_building_K-KBR-KBR2-4090": {
       "firstVisit": true,
       "displayName": "History of canon law shelf",
-      "description": "Description for shelf History of canon law in History of canon law Room.\n\n[|Main||||||] History of canon law Room entrance",
+      "description": "Description for shelf History of canon law in History of canon law Room.\n\n[|Entrance||] History of canon law Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "4_building_K-KBR": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "4_building_K-KBR"
         }
       }
@@ -5382,12 +5382,12 @@ var gameData = {
     "4_building_K-KZA-KZA1002-4205": {
       "firstVisit": true,
       "displayName": "Law of the sea shelf",
-      "description": "Description for shelf Law of the sea in Law of the sea Room.\n\n[|Main||||||] Law of the sea Room entrance",
+      "description": "Description for shelf Law of the sea in Law of the sea Room.\n\n[|Entrance||] Law of the sea Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "4_building_K-KZA": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "4_building_K-KZA"
         }
       }
@@ -5412,12 +5412,12 @@ var gameData = {
     "4_building_K-KNQ-KNQ1-9665": {
       "firstVisit": true,
       "displayName": "China (People\u2019s Republic, 1949-    ) shelf",
-      "description": "Description for shelf China (People\u2019s Republic, 1949-    ) in China (People\u2019s Republic, 1949-    ) Room.\n\n[|Main||||||] China (People\u2019s Republic, 1949-    ) Room entrance",
+      "description": "Description for shelf China (People\u2019s Republic, 1949-    ) in China (People\u2019s Republic, 1949-    ) Room.\n\n[|Entrance||] China (People\u2019s Republic, 1949-    ) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "4_building_K-KNQ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "4_building_K-KNQ"
         }
       }
@@ -5442,12 +5442,12 @@ var gameData = {
     "4_building_K-KJE-KJE5-9570": {
       "firstVisit": true,
       "displayName": "Regional organization and integration (Europe) shelf",
-      "description": "Description for shelf Regional organization and integration (Europe) in Regional organization and integration (Europe) Room.\n\n[|Main||||||] Regional organization and integration (Europe) Room entrance",
+      "description": "Description for shelf Regional organization and integration (Europe) in Regional organization and integration (Europe) Room.\n\n[|Entrance||] Regional organization and integration (Europe) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "4_building_K-KJE": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "4_building_K-KJE"
         }
       }
@@ -5472,12 +5472,12 @@ var gameData = {
     "4_building_K-KFV-KFV": {
       "firstVisit": true,
       "displayName": "Law of Vermont shelf",
-      "description": "Description for shelf Law of Vermont in Law of Vermont Room.\n\n[|Main||||||] Law of Vermont Room entrance",
+      "description": "Description for shelf Law of Vermont in Law of Vermont Room.\n\n[|Entrance||] Law of Vermont Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "4_building_K-KFV": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "4_building_K-KFV"
         }
       }
@@ -5543,12 +5543,12 @@ var gameData = {
     "5_building_K-KNN-KNN": {
       "firstVisit": true,
       "displayName": "Law of China shelf",
-      "description": "Description for shelf Law of China in Law of China Room.\n\n[|Main||||||] Law of China Room entrance",
+      "description": "Description for shelf Law of China in Law of China Room.\n\n[|Entrance||] Law of China Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "5_building_K-KNN": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "5_building_K-KNN"
         }
       }
@@ -5573,12 +5573,12 @@ var gameData = {
     "5_building_K-KMM-KMM501-994": {
       "firstVisit": true,
       "displayName": "West Bank shelf",
-      "description": "Description for shelf West Bank in West Bank Room.\n\n[|Main||||||] West Bank Room entrance\n[|Next||||||] Jordan shelf",
+      "description": "Description for shelf West Bank in West Bank Room.\n\n[|Entrance||] West Bank Room entrance\n[|Next||||||] Jordan shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "5_building_K-KMM": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "5_building_K-KMM"
         },
         "5_building_K-KMM-KMM1-490": {
@@ -5620,12 +5620,12 @@ var gameData = {
     "5_building_K-KJC-KJC2-9799": {
       "firstVisit": true,
       "displayName": "Regional comparative and uniform law (Europe) shelf",
-      "description": "Description for shelf Regional comparative and uniform law (Europe) in Regional comparative and uniform law (Europe) Room.\n\n[|Main||||||] Regional comparative and uniform law (Europe) Room entrance",
+      "description": "Description for shelf Regional comparative and uniform law (Europe) in Regional comparative and uniform law (Europe) Room.\n\n[|Entrance||] Regional comparative and uniform law (Europe) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "5_building_K-KJC": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "5_building_K-KJC"
         }
       }
@@ -5650,12 +5650,12 @@ var gameData = {
     "5_building_K-KMK-KMK1-4990": {
       "firstVisit": true,
       "displayName": "Israel shelf",
-      "description": "Description for shelf Israel in Israel Room.\n\n[|Main||||||] Israel Room entrance",
+      "description": "Description for shelf Israel in Israel Room.\n\n[|Entrance||] Israel Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "5_building_K-KMK": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "5_building_K-KMK"
         }
       }
@@ -5680,12 +5680,12 @@ var gameData = {
     "5_building_K-KTL-KTL1-9560": {
       "firstVisit": true,
       "displayName": "South Africa, Republic of shelf",
-      "description": "Description for shelf South Africa, Republic of in South Africa, Republic of Room.\n\n[|Main||||||] South Africa, Republic of Room entrance",
+      "description": "Description for shelf South Africa, Republic of in South Africa, Republic of Room.\n\n[|Entrance||] South Africa, Republic of Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "5_building_K-KTL": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "5_building_K-KTL"
         }
       }
@@ -5710,12 +5710,12 @@ var gameData = {
     "5_building_K-KMC-KMC1-849": {
       "firstVisit": true,
       "displayName": "Regional comparative and uniform law shelf",
-      "description": "Description for shelf Regional comparative and uniform law in Regional comparative and uniform law Room.\n\n[|Main||||||] Regional comparative and uniform law Room entrance",
+      "description": "Description for shelf Regional comparative and uniform law in Regional comparative and uniform law Room.\n\n[|Entrance||] Regional comparative and uniform law Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "5_building_K-KMC": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "5_building_K-KMC"
         }
       }
@@ -5781,12 +5781,12 @@ var gameData = {
     "6_building_K-KEN-KEN1-599": {
       "firstVisit": true,
       "displayName": "Law of New Brunswick shelf",
-      "description": "Description for shelf Law of New Brunswick in Law of New Brunswick Room.\n\n[|Main||||||] Law of New Brunswick Room entrance\n[|Next||||||] Law of Newfoundland and Labrador shelf",
+      "description": "Description for shelf Law of New Brunswick in Law of New Brunswick Room.\n\n[|Entrance||] Law of New Brunswick Room entrance\n[|Next||||||] Law of Newfoundland and Labrador shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "6_building_K-KEN": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "6_building_K-KEN"
         },
         "6_building_K-KEN-KEN1201-1799": {
@@ -5879,12 +5879,12 @@ var gameData = {
     "6_building_K-KRP-KRP1-4990": {
       "firstVisit": true,
       "displayName": "Ethiopia shelf",
-      "description": "Description for shelf Ethiopia in Ethiopia Room.\n\n[|Main||||||] Ethiopia Room entrance",
+      "description": "Description for shelf Ethiopia in Ethiopia Room.\n\n[|Entrance||] Ethiopia Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "6_building_K-KRP": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "6_building_K-KRP"
         }
       }
@@ -5909,12 +5909,12 @@ var gameData = {
     "6_building_K-KJA-KJA2-3660": {
       "firstVisit": true,
       "displayName": "Roman Law shelf",
-      "description": "Description for shelf Roman Law in Roman Law Room.\n\n[|Main||||||] Roman Law Room entrance",
+      "description": "Description for shelf Roman Law in Roman Law Room.\n\n[|Entrance||] Roman Law Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "6_building_K-KJA": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "6_building_K-KJA"
         }
       }
@@ -5939,12 +5939,12 @@ var gameData = {
     "6_building_K-KJV-KJV2-9158": {
       "firstVisit": true,
       "displayName": "Law of France shelf",
-      "description": "Description for shelf Law of France in Law of France Room.\n\n[|Main||||||] Law of France Room entrance",
+      "description": "Description for shelf Law of France in Law of France Room.\n\n[|Entrance||] Law of France Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "6_building_K-KJV": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "6_building_K-KJV"
         }
       }
@@ -5969,12 +5969,12 @@ var gameData = {
     "6_building_K-KBU-KBU2-4820": {
       "firstVisit": true,
       "displayName": "Law of the Roman Catholic Church. The Holy See shelf",
-      "description": "Description for shelf Law of the Roman Catholic Church. The Holy See in Law of the Roman Catholic Church. The Holy See Room.\n\n[|Main||||||] Law of the Roman Catholic Church. The Holy See Room entrance",
+      "description": "Description for shelf Law of the Roman Catholic Church. The Holy See in Law of the Roman Catholic Church. The Holy See Room.\n\n[|Entrance||] Law of the Roman Catholic Church. The Holy See Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "6_building_K-KBU": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "6_building_K-KBU"
         }
       }
@@ -5999,12 +5999,12 @@ var gameData = {
     "6_building_K-KLB-KLB1-5780": {
       "firstVisit": true,
       "displayName": "Russia (Federation, 1992-    ) shelf",
-      "description": "Description for shelf Russia (Federation, 1992-    ) in Russia (Federation, 1992-    ) Room.\n\n[|Main||||||] Russia (Federation, 1992-    ) Room entrance",
+      "description": "Description for shelf Russia (Federation, 1992-    ) in Russia (Federation, 1992-    ) Room.\n\n[|Entrance||] Russia (Federation, 1992-    ) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "6_building_K-KLB": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "6_building_K-KLB"
         }
       }
@@ -6070,12 +6070,12 @@ var gameData = {
     "7_building_K-KK-KK2-9799.3": {
       "firstVisit": true,
       "displayName": "Law of Germany shelf",
-      "description": "Description for shelf Law of Germany in Law of Germany Room.\n\n[|Main||||||] Law of Germany Room entrance",
+      "description": "Description for shelf Law of Germany in Law of Germany Room.\n\n[|Entrance||] Law of Germany Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "7_building_K-KK": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "7_building_K-KK"
         }
       }
@@ -6100,12 +6100,12 @@ var gameData = {
     "7_building_K-KFG-KFG": {
       "firstVisit": true,
       "displayName": "Law of Georgia shelf",
-      "description": "Description for shelf Law of Georgia in Law of Georgia Room.\n\n[|Main||||||] Law of Georgia Room entrance",
+      "description": "Description for shelf Law of Georgia in Law of Georgia Room.\n\n[|Entrance||] Law of Georgia Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "7_building_K-KFG": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "7_building_K-KFG"
         }
       }
@@ -6130,12 +6130,12 @@ var gameData = {
     "7_building_K-KHA-KHA1-9800": {
       "firstVisit": true,
       "displayName": "Argentina shelf",
-      "description": "Description for shelf Argentina in Argentina Room.\n\n[|Main||||||] Argentina Room entrance",
+      "description": "Description for shelf Argentina in Argentina Room.\n\n[|Entrance||] Argentina Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "7_building_K-KHA": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "7_building_K-KHA"
         }
       }
@@ -6160,12 +6160,12 @@ var gameData = {
     "7_building_K-KLW-KLW1-490": {
       "firstVisit": true,
       "displayName": "Uzbekistan shelf",
-      "description": "Description for shelf Uzbekistan in Uzbekistan Room.\n\n[|Main||||||] Uzbekistan Room entrance",
+      "description": "Description for shelf Uzbekistan in Uzbekistan Room.\n\n[|Entrance||] Uzbekistan Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "7_building_K-KLW": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "7_building_K-KLW"
         }
       }
@@ -6190,12 +6190,12 @@ var gameData = {
     "7_building_K-KNW-KNW1-4990": {
       "firstVisit": true,
       "displayName": "Indonesia shelf",
-      "description": "Description for shelf Indonesia in Indonesia Room.\n\n[|Main||||||] Indonesia Room entrance",
+      "description": "Description for shelf Indonesia in Indonesia Room.\n\n[|Entrance||] Indonesia Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "7_building_K-KNW": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "7_building_K-KNW"
         }
       }
@@ -6220,12 +6220,12 @@ var gameData = {
     "7_building_K-KQC-KQC1-999": {
       "firstVisit": true,
       "displayName": "Regional comparative and uniform law shelf",
-      "description": "Description for shelf Regional comparative and uniform law in Regional comparative and uniform law Room.\n\n[|Main||||||] Regional comparative and uniform law Room entrance",
+      "description": "Description for shelf Regional comparative and uniform law in Regional comparative and uniform law Room.\n\n[|Entrance||] Regional comparative and uniform law Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "7_building_K-KQC": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "7_building_K-KQC"
         }
       }
@@ -6291,12 +6291,12 @@ var gameData = {
     "8_building_K-KDZ-KDZ1-4499": {
       "firstVisit": true,
       "displayName": "America.  North America shelf",
-      "description": "Description for shelf America.  North America in America.  North America Room.\n\n[|Main||||||] America.  North America Room entrance",
+      "description": "Description for shelf America.  North America in America.  North America Room.\n\n[|Entrance||] America.  North America Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "8_building_K-KDZ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "8_building_K-KDZ"
         }
       }
@@ -6321,12 +6321,12 @@ var gameData = {
     "8_building_K-KFK-KFK": {
       "firstVisit": true,
       "displayName": "Law of Kansas shelf",
-      "description": "Description for shelf Law of Kansas in Law of Kansas Room.\n\n[|Main||||||] Law of Kansas Room entrance",
+      "description": "Description for shelf Law of Kansas in Law of Kansas Room.\n\n[|Entrance||] Law of Kansas Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "8_building_K-KFK": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "8_building_K-KFK"
         }
       }
@@ -6351,12 +6351,12 @@ var gameData = {
     "8_building_K-KDC-KDC51-990": {
       "firstVisit": true,
       "displayName": "Law of Scotland shelf",
-      "description": "Description for shelf Law of Scotland in Law of Scotland Room.\n\n[|Main||||||] Law of Scotland Room entrance",
+      "description": "Description for shelf Law of Scotland in Law of Scotland Room.\n\n[|Entrance||] Law of Scotland Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "8_building_K-KDC": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "8_building_K-KDC"
         }
       }
@@ -6381,12 +6381,12 @@ var gameData = {
     "8_building_K-KNR-KNR1-489": {
       "firstVisit": true,
       "displayName": "Hong Kong shelf",
-      "description": "Description for shelf Hong Kong in Hong Kong Room.\n\n[|Main||||||] Hong Kong Room entrance",
+      "description": "Description for shelf Hong Kong in Hong Kong Room.\n\n[|Entrance||] Hong Kong Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "8_building_K-KNR": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "8_building_K-KNR"
         }
       }
@@ -6411,12 +6411,12 @@ var gameData = {
     "8_building_K-KFF-KFF": {
       "firstVisit": true,
       "displayName": "Law of Florida shelf",
-      "description": "Description for shelf Law of Florida in Law of Florida Room.\n\n[|Main||||||] Law of Florida Room entrance",
+      "description": "Description for shelf Law of Florida in Law of Florida Room.\n\n[|Entrance||] Law of Florida Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "8_building_K-KFF": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "8_building_K-KFF"
         }
       }
@@ -6441,12 +6441,12 @@ var gameData = {
     "8_building_K-KBM-KBM1-4855": {
       "firstVisit": true,
       "displayName": "Jewish law.  Halakah shelf",
-      "description": "Description for shelf Jewish law.  Halakah in Jewish law.  Halakah Room.\n\n[|Main||||||] Jewish law.  Halakah Room entrance",
+      "description": "Description for shelf Jewish law.  Halakah in Jewish law.  Halakah Room.\n\n[|Entrance||] Jewish law.  Halakah Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "8_building_K-KBM": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "8_building_K-KBM"
         }
       }
@@ -6512,12 +6512,12 @@ var gameData = {
     "9_building_K-KJ-KJ2-2000": {
       "firstVisit": true,
       "displayName": "History of Law (Europe) shelf",
-      "description": "Description for shelf History of Law (Europe) in History of Law (Europe) Room.\n\n[|Main||||||] History of Law (Europe) Room entrance",
+      "description": "Description for shelf History of Law (Europe) in History of Law (Europe) Room.\n\n[|Entrance||] History of Law (Europe) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "9_building_K-KJ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "9_building_K-KJ"
         }
       }
@@ -6542,12 +6542,12 @@ var gameData = {
     "9_building_K-KL-KL2-9299": {
       "firstVisit": true,
       "displayName": "History of law.  The ancient orient shelf",
-      "description": "Description for shelf History of law.  The ancient orient in History of law.  The ancient orient Room.\n\n[|Main||||||] History of law.  The ancient orient Room entrance",
+      "description": "Description for shelf History of law.  The ancient orient in History of law.  The ancient orient Room.\n\n[|Entrance||] History of law.  The ancient orient Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "9_building_K-KL": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "9_building_K-KL"
         }
       }
@@ -6572,12 +6572,12 @@ var gameData = {
     "9_building_K-KE-KE1-9450": {
       "firstVisit": true,
       "displayName": "Law of Canada shelf",
-      "description": "Description for shelf Law of Canada in Law of Canada Room.\n\n[|Main||||||] Law of Canada Room entrance",
+      "description": "Description for shelf Law of Canada in Law of Canada Room.\n\n[|Entrance||] Law of Canada Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "9_building_K-KE": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "9_building_K-KE"
         }
       }
@@ -6602,12 +6602,12 @@ var gameData = {
     "9_building_K-KFD-KFD": {
       "firstVisit": true,
       "displayName": "Law of Delaware shelf",
-      "description": "Description for shelf Law of Delaware in Law of Delaware Room.\n\n[|Main||||||] Law of Delaware Room entrance",
+      "description": "Description for shelf Law of Delaware in Law of Delaware Room.\n\n[|Entrance||] Law of Delaware Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "9_building_K-KFD": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "9_building_K-KFD"
         }
       }
@@ -6632,12 +6632,12 @@ var gameData = {
     "9_building_K-KDK-KDK21-1950": {
       "firstVisit": true,
       "displayName": "Law of Ireland (Eire) shelf",
-      "description": "Description for shelf Law of Ireland (Eire) in Law of Ireland (Eire) Room.\n\n[|Main||||||] Law of Ireland (Eire) Room entrance",
+      "description": "Description for shelf Law of Ireland (Eire) in Law of Ireland (Eire) Room.\n\n[|Entrance||] Law of Ireland (Eire) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "9_building_K-KDK": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "9_building_K-KDK"
         }
       }
@@ -6662,12 +6662,12 @@ var gameData = {
     "9_building_K-KTT-KTT1-9910": {
       "firstVisit": true,
       "displayName": "Tanzania shelf",
-      "description": "Description for shelf Tanzania in Tanzania Room.\n\n[|Main||||||] Tanzania Room entrance",
+      "description": "Description for shelf Tanzania in Tanzania Room.\n\n[|Entrance||] Tanzania Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "9_building_K-KTT": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "9_building_K-KTT"
         }
       }
@@ -6733,12 +6733,12 @@ var gameData = {
     "10_building_K-KNX-KNX2050-2535": {
       "firstVisit": true,
       "displayName": "Constitutional law shelf",
-      "description": "Description for shelf Constitutional law in Constitutional law Room.\n\n[|Main||||||] Constitutional law Room entrance\n[|Next||||||] Administrative and political divisions shelf",
+      "description": "Description for shelf Constitutional law in Constitutional law Room.\n\n[|Entrance||] Constitutional law Room entrance\n[|Next||||||] Administrative and political divisions shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "10_building_K-KNX": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "10_building_K-KNX"
         },
         "10_building_K-KNX-KNX2920-2935": {
@@ -6831,12 +6831,12 @@ var gameData = {
     "10_building_K-KTY-KTY1-490": {
       "firstVisit": true,
       "displayName": "Zambia shelf",
-      "description": "Description for shelf Zambia in Zambia Room.\n\n[|Main||||||] Zambia Room entrance\n[|Next||||||] Zanzibar (to 1964) shelf",
+      "description": "Description for shelf Zambia in Zambia Room.\n\n[|Entrance||] Zambia Room entrance\n[|Next||||||] Zanzibar (to 1964) shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "10_building_K-KTY": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "10_building_K-KTY"
         },
         "10_building_K-KTY-KTY1501-1599": {
@@ -6878,12 +6878,12 @@ var gameData = {
     "10_building_K-KFS-KFS": {
       "firstVisit": true,
       "displayName": "Law of South Carolina shelf",
-      "description": "Description for shelf Law of South Carolina in Law of South Carolina Room.\n\n[|Main||||||] Law of South Carolina Room entrance",
+      "description": "Description for shelf Law of South Carolina in Law of South Carolina Room.\n\n[|Entrance||] Law of South Carolina Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "10_building_K-KFS": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "10_building_K-KFS"
         }
       }
@@ -6908,12 +6908,12 @@ var gameData = {
     "10_building_K-KNC-KNC1-999": {
       "firstVisit": true,
       "displayName": "Regional comparative and uniform law shelf",
-      "description": "Description for shelf Regional comparative and uniform law in Regional comparative and uniform law Room.\n\n[|Main||||||] Regional comparative and uniform law Room entrance",
+      "description": "Description for shelf Regional comparative and uniform law in Regional comparative and uniform law Room.\n\n[|Entrance||] Regional comparative and uniform law Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "10_building_K-KNC": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "10_building_K-KNC"
         }
       }
@@ -6938,12 +6938,12 @@ var gameData = {
     "10_building_K-KFH-KFH": {
       "firstVisit": true,
       "displayName": "Law of Hawaii shelf",
-      "description": "Description for shelf Law of Hawaii in Law of Hawaii Room.\n\n[|Main||||||] Law of Hawaii Room entrance",
+      "description": "Description for shelf Law of Hawaii in Law of Hawaii Room.\n\n[|Entrance||] Law of Hawaii Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "10_building_K-KFH": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "10_building_K-KFH"
         }
       }
@@ -6968,12 +6968,12 @@ var gameData = {
     "10_building_K-KFX-KFX": {
       "firstVisit": true,
       "displayName": "Laws of the cities shelf",
-      "description": "Description for shelf Laws of the cities in Laws of the cities Room.\n\n[|Main||||||] Laws of the cities Room entrance",
+      "description": "Description for shelf Laws of the cities in Laws of the cities Room.\n\n[|Entrance||] Laws of the cities Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "10_building_K-KFX": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "10_building_K-KFX"
         }
       }
@@ -7039,12 +7039,12 @@ var gameData = {
     "11_building_K-KJT-KJT": {
       "firstVisit": true,
       "displayName": "Law of Finland shelf",
-      "description": "Description for shelf Law of Finland in Law of Finland Room.\n\n[|Main||||||] Law of Finland Room entrance",
+      "description": "Description for shelf Law of Finland in Law of Finland Room.\n\n[|Entrance||] Law of Finland Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "11_building_K-KJT": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "11_building_K-KJT"
         }
       }
@@ -7069,12 +7069,12 @@ var gameData = {
     "11_building_K-KQW-KQW1-8020": {
       "firstVisit": true,
       "displayName": "Cameroon shelf",
-      "description": "Description for shelf Cameroon in Cameroon Room.\n\n[|Main||||||] Cameroon Room entrance",
+      "description": "Description for shelf Cameroon in Cameroon Room.\n\n[|Entrance||] Cameroon Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "11_building_K-KQW": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "11_building_K-KQW"
         }
       }
@@ -7099,12 +7099,12 @@ var gameData = {
     "11_building_K-KB-KB1-4855": {
       "firstVisit": true,
       "displayName": "Religious law in general.  Comparative religious law. shelf",
-      "description": "Description for shelf Religious law in general.  Comparative religious law. in Religious law in general.  Comparative religious law. Room.\n\n[|Main||||||] Religious law in general.  Comparative religious law. Room entrance",
+      "description": "Description for shelf Religious law in general.  Comparative religious law. in Religious law in general.  Comparative religious law. Room.\n\n[|Entrance||] Religious law in general.  Comparative religious law. Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "11_building_K-KB": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "11_building_K-KB"
         }
       }
@@ -7129,12 +7129,12 @@ var gameData = {
     "11_building_K-KGL-KGL4001-4499": {
       "firstVisit": true,
       "displayName": "British Virgin Islands (General) shelf",
-      "description": "Description for shelf British Virgin Islands (General) in British West Indies (General) Room.\n\n[|Main||||||] British West Indies (General) Room entrance\n[|Next||||||] British West Indies (General) shelf",
+      "description": "Description for shelf British Virgin Islands (General) in British West Indies (General) Room.\n\n[|Entrance||] British West Indies (General) Room entrance\n[|Next||||||] British West Indies (General) shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "11_building_K-KGL": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "11_building_K-KGL"
         },
         "11_building_K-KGL-KGL5001-5999": {
@@ -7210,12 +7210,12 @@ var gameData = {
     "11_building_K-KGF-KGF1-9900": {
       "firstVisit": true,
       "displayName": "Mexico shelf",
-      "description": "Description for shelf Mexico in Mexico Room.\n\n[|Main||||||] Mexico Room entrance",
+      "description": "Description for shelf Mexico in Mexico Room.\n\n[|Entrance||] Mexico Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "11_building_K-KGF": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "11_building_K-KGF"
         }
       }
@@ -7240,12 +7240,12 @@ var gameData = {
     "11_building_K-KPL-KPL1-4990": {
       "firstVisit": true,
       "displayName": "Pakistan shelf",
-      "description": "Description for shelf Pakistan in Pakistan Room.\n\n[|Main||||||] Pakistan Room entrance",
+      "description": "Description for shelf Pakistan in Pakistan Room.\n\n[|Entrance||] Pakistan Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "11_building_K-KPL": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "11_building_K-KPL"
         }
       }
@@ -7311,12 +7311,12 @@ var gameData = {
     "12_building_K-KNS-KNS1734-1800": {
       "firstVisit": true,
       "displayName": "Constitutional law shelf",
-      "description": "Description for shelf Constitutional law in History of law Room.\n\n[|Main||||||] History of law Room entrance\n[|Next||||||] History of law shelf",
+      "description": "Description for shelf Constitutional law in History of law Room.\n\n[|Entrance||] History of law Room entrance\n[|Next||||||] History of law shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "12_building_K-KNS": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "12_building_K-KNS"
         },
         "12_building_K-KNS-KNS85-292": {
@@ -7426,12 +7426,12 @@ var gameData = {
     "12_building_K-KFR-KFR": {
       "firstVisit": true,
       "displayName": "Law of Rhode Island shelf",
-      "description": "Description for shelf Law of Rhode Island in Law of Rhode Island Room.\n\n[|Main||||||] Law of Rhode Island Room entrance",
+      "description": "Description for shelf Law of Rhode Island in Law of Rhode Island Room.\n\n[|Entrance||] Law of Rhode Island Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "12_building_K-KFR": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "12_building_K-KFR"
         }
       }
@@ -7456,12 +7456,12 @@ var gameData = {
     "12_building_K-KGV-KGV1-8200": {
       "firstVisit": true,
       "displayName": "Puerto Rico shelf",
-      "description": "Description for shelf Puerto Rico in Puerto Rico Room.\n\n[|Main||||||] Puerto Rico Room entrance",
+      "description": "Description for shelf Puerto Rico in Puerto Rico Room.\n\n[|Entrance||] Puerto Rico Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "12_building_K-KGV": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "12_building_K-KGV"
         }
       }
@@ -7486,12 +7486,12 @@ var gameData = {
     "12_building_K-KKW-KKW": {
       "firstVisit": true,
       "displayName": "Law of Switzerland shelf",
-      "description": "Description for shelf Law of Switzerland in Law of Switzerland Room.\n\n[|Main||||||] Law of Switzerland Room entrance",
+      "description": "Description for shelf Law of Switzerland in Law of Switzerland Room.\n\n[|Entrance||] Law of Switzerland Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "12_building_K-KKW": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "12_building_K-KKW"
         }
       }
@@ -7516,12 +7516,12 @@ var gameData = {
     "12_building_K-KKE-KKE": {
       "firstVisit": true,
       "displayName": "Law of Greece shelf",
-      "description": "Description for shelf Law of Greece in Law of Greece Room.\n\n[|Main||||||] Law of Greece Room entrance",
+      "description": "Description for shelf Law of Greece in Law of Greece Room.\n\n[|Entrance||] Law of Greece Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "12_building_K-KKE": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "12_building_K-KKE"
         }
       }
@@ -7546,12 +7546,12 @@ var gameData = {
     "12_building_K-KKY-KKY": {
       "firstVisit": true,
       "displayName": "Law of Ukraine shelf",
-      "description": "Description for shelf Law of Ukraine in Law of Ukraine Room.\n\n[|Main||||||] Law of Ukraine Room entrance",
+      "description": "Description for shelf Law of Ukraine in Law of Ukraine Room.\n\n[|Entrance||] Law of Ukraine Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "12_building_K-KKY": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "12_building_K-KKY"
         }
       }
@@ -7617,12 +7617,12 @@ var gameData = {
     "13_building_K-KKP-KKP": {
       "firstVisit": true,
       "displayName": "Law of Poland shelf",
-      "description": "Description for shelf Law of Poland in Law of Poland Room.\n\n[|Main||||||] Law of Poland Room entrance",
+      "description": "Description for shelf Law of Poland in Law of Poland Room.\n\n[|Entrance||] Law of Poland Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "13_building_K-KKP": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "13_building_K-KKP"
         }
       }
@@ -7647,12 +7647,12 @@ var gameData = {
     "13_building_K-KKM-KKM": {
       "firstVisit": true,
       "displayName": "Law of Netherlands shelf",
-      "description": "Description for shelf Law of Netherlands in Law of Netherlands Room.\n\n[|Main||||||] Law of Netherlands Room entrance",
+      "description": "Description for shelf Law of Netherlands in Law of Netherlands Room.\n\n[|Entrance||] Law of Netherlands Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "13_building_K-KKM": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "13_building_K-KKM"
         }
       }
@@ -7677,12 +7677,12 @@ var gameData = {
     "13_building_K-KKK-KKK": {
       "firstVisit": true,
       "displayName": "Law of Malta shelf",
-      "description": "Description for shelf Law of Malta in Law of Malta Room.\n\n[|Main||||||] Law of Malta Room entrance",
+      "description": "Description for shelf Law of Malta in Law of Malta Room.\n\n[|Entrance||] Law of Malta Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "13_building_K-KKK": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "13_building_K-KKK"
         }
       }
@@ -7707,12 +7707,12 @@ var gameData = {
     "13_building_K-KJK-KJK": {
       "firstVisit": true,
       "displayName": "Law of Bosnia and Hercegovina shelf",
-      "description": "Description for shelf Law of Bosnia and Hercegovina in Law of Bosnia and Hercegovina Room.\n\n[|Main||||||] Law of Bosnia and Hercegovina Room entrance",
+      "description": "Description for shelf Law of Bosnia and Hercegovina in Law of Bosnia and Hercegovina Room.\n\n[|Entrance||] Law of Bosnia and Hercegovina Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "13_building_K-KJK": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "13_building_K-KJK"
         }
       }
@@ -7737,12 +7737,12 @@ var gameData = {
     "13_building_K-KKH-KKH": {
       "firstVisit": true,
       "displayName": "Law of Kosovo shelf",
-      "description": "Description for shelf Law of Kosovo in Law of Kosovo Room.\n\n[|Main||||||] Law of Kosovo Room entrance",
+      "description": "Description for shelf Law of Kosovo in Law of Kosovo Room.\n\n[|Entrance||] Law of Kosovo Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "13_building_K-KKH": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "13_building_K-KKH"
         }
       }
@@ -7767,12 +7767,12 @@ var gameData = {
     "13_building_K-KKJ-KKJ": {
       "firstVisit": true,
       "displayName": "Law of Lithuania shelf",
-      "description": "Description for shelf Law of Lithuania in Law of Lithuania Room.\n\n[|Main||||||] Law of Lithuania Room entrance",
+      "description": "Description for shelf Law of Lithuania in Law of Lithuania Room.\n\n[|Entrance||] Law of Lithuania Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "13_building_K-KKJ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "13_building_K-KKJ"
         }
       }
@@ -7838,12 +7838,12 @@ var gameData = {
     "14_building_K-KGD-KGD1-9990": {
       "firstVisit": true,
       "displayName": "Guatemala shelf",
-      "description": "Description for shelf Guatemala in Guatemala Room.\n\n[|Main||||||] Guatemala Room entrance",
+      "description": "Description for shelf Guatemala in Guatemala Room.\n\n[|Entrance||] Guatemala Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "14_building_K-KGD": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "14_building_K-KGD"
         }
       }
@@ -7868,12 +7868,12 @@ var gameData = {
     "14_building_K-KHQ-KHQ1-9800": {
       "firstVisit": true,
       "displayName": "Peru shelf",
-      "description": "Description for shelf Peru in Peru Room.\n\n[|Main||||||] Peru Room entrance",
+      "description": "Description for shelf Peru in Peru Room.\n\n[|Entrance||] Peru Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "14_building_K-KHQ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "14_building_K-KHQ"
         }
       }
@@ -7898,12 +7898,12 @@ var gameData = {
     "14_building_K-KST-KST1-490": {
       "firstVisit": true,
       "displayName": "Mali shelf",
-      "description": "Description for shelf Mali in Mali Room.\n\n[|Main||||||] Mali Room entrance",
+      "description": "Description for shelf Mali in Mali Room.\n\n[|Entrance||] Mali Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "14_building_K-KST": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "14_building_K-KST"
         }
       }
@@ -7928,12 +7928,12 @@ var gameData = {
     "14_building_K-KTA-KTA1-9150": {
       "firstVisit": true,
       "displayName": "Nigeria shelf",
-      "description": "Description for shelf Nigeria in Nigeria Room.\n\n[|Main||||||] Nigeria Room entrance",
+      "description": "Description for shelf Nigeria in Nigeria Room.\n\n[|Entrance||] Nigeria Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "14_building_K-KTA": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "14_building_K-KTA"
         }
       }
@@ -7958,12 +7958,12 @@ var gameData = {
     "14_building_K-KGS-KGS1-9000": {
       "firstVisit": true,
       "displayName": "Haiti shelf",
-      "description": "Description for shelf Haiti in Haiti Room.\n\n[|Main||||||] Haiti Room entrance",
+      "description": "Description for shelf Haiti in Haiti Room.\n\n[|Entrance||] Haiti Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "14_building_K-KGS": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "14_building_K-KGS"
         }
       }
@@ -7988,12 +7988,12 @@ var gameData = {
     "14_building_K-KHH-KHH1-9900": {
       "firstVisit": true,
       "displayName": "Colombia shelf",
-      "description": "Description for shelf Colombia in Colombia Room.\n\n[|Main||||||] Colombia Room entrance",
+      "description": "Description for shelf Colombia in Colombia Room.\n\n[|Entrance||] Colombia Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "14_building_K-KHH": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "14_building_K-KHH"
         }
       }
@@ -8059,12 +8059,12 @@ var gameData = {
     "15_building_K-KG-KG1-999": {
       "firstVisit": true,
       "displayName": "Latin America (General) shelf",
-      "description": "Description for shelf Latin America (General) in Latin America (General) Room.\n\n[|Main||||||] Latin America (General) Room entrance\n[|Next||||||] General shelf",
+      "description": "Description for shelf Latin America (General) in Latin America (General) Room.\n\n[|Entrance||] Latin America (General) Room entrance\n[|Next||||||] General shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "15_building_K-KG": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "15_building_K-KG"
         },
         "15_building_K-KG-KG3001-3999": {
@@ -8106,12 +8106,12 @@ var gameData = {
     "15_building_K-KHK-KHK1-9990": {
       "firstVisit": true,
       "displayName": "Ecuador shelf",
-      "description": "Description for shelf Ecuador in Ecuador Room.\n\n[|Main||||||] Ecuador Room entrance",
+      "description": "Description for shelf Ecuador in Ecuador Room.\n\n[|Entrance||] Ecuador Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "15_building_K-KHK": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "15_building_K-KHK"
         }
       }
@@ -8136,12 +8136,12 @@ var gameData = {
     "15_building_K-KHC-KHC1-8200": {
       "firstVisit": true,
       "displayName": "Bolivia shelf",
-      "description": "Description for shelf Bolivia in Bolivia Room.\n\n[|Main||||||] Bolivia Room entrance",
+      "description": "Description for shelf Bolivia in Bolivia Room.\n\n[|Entrance||] Bolivia Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "15_building_K-KHC": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "15_building_K-KHC"
         }
       }
@@ -8166,12 +8166,12 @@ var gameData = {
     "15_building_K-KNP-KNP1-599": {
       "firstVisit": true,
       "displayName": "China (Republic, 1949-    ).  Taiwan shelf",
-      "description": "Description for shelf China (Republic, 1949-    ).  Taiwan in China (Republic, 1949-    ).  Taiwan Room.\n\n[|Main||||||] China (Republic, 1949-    ).  Taiwan Room entrance",
+      "description": "Description for shelf China (Republic, 1949-    ).  Taiwan in China (Republic, 1949-    ).  Taiwan Room.\n\n[|Entrance||] China (Republic, 1949-    ).  Taiwan Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "15_building_K-KNP": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "15_building_K-KNP"
         }
       }
@@ -8196,12 +8196,12 @@ var gameData = {
     "15_building_K-KLR-KLR1-490": {
       "firstVisit": true,
       "displayName": "Kazakhstan shelf",
-      "description": "Description for shelf Kazakhstan in Khorezmskai\uf04da Sovetskai\uf04da Sot\uf04dsialisticheskai\uf04da Room.\n\n[|Main||||||] Khorezmskai\uf04da Sovetskai\uf04da Sot\uf04dsialisticheskai\uf04da Room entrance\n[|Next||||||] Khorezmskai\uf04da Sovetskai\uf04da Sot\uf04dsialisticheskai\uf04da shelf",
+      "description": "Description for shelf Kazakhstan in Khorezmskai\uf04da Sovetskai\uf04da Sot\uf04dsialisticheskai\uf04da Room.\n\n[|Entrance||] Khorezmskai\uf04da Sovetskai\uf04da Sot\uf04dsialisticheskai\uf04da Room entrance\n[|Next||||||] Khorezmskai\uf04da Sovetskai\uf04da Sot\uf04dsialisticheskai\uf04da shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "15_building_K-KLR": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "15_building_K-KLR"
         },
         "15_building_K-KLR-KLR1001-1499": {
@@ -8243,12 +8243,12 @@ var gameData = {
     "15_building_K-KTZ-KTZ1-490": {
       "firstVisit": true,
       "displayName": "Zimbabwe shelf",
-      "description": "Description for shelf Zimbabwe in Zimbabwe Room.\n\n[|Main||||||] Zimbabwe Room entrance",
+      "description": "Description for shelf Zimbabwe in Zimbabwe Room.\n\n[|Entrance||] Zimbabwe Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "15_building_K-KTZ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "15_building_K-KTZ"
         }
       }
@@ -8314,12 +8314,12 @@ var gameData = {
     "16_building_K-KBS-KBS3-4010": {
       "firstVisit": true,
       "displayName": "Canon law of Eastern Churches shelf",
-      "description": "Description for shelf Canon law of Eastern Churches in Canon law of Eastern Churches Room.\n\n[|Main||||||] Canon law of Eastern Churches Room entrance",
+      "description": "Description for shelf Canon law of Eastern Churches in Canon law of Eastern Churches Room.\n\n[|Entrance||] Canon law of Eastern Churches Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "16_building_K-KBS": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "16_building_K-KBS"
         }
       }
@@ -8344,12 +8344,12 @@ var gameData = {
     "16_building_K-KPA-KPA1-4990": {
       "firstVisit": true,
       "displayName": "Korea.  South Korea shelf",
-      "description": "Description for shelf Korea.  South Korea in Korea.  South Korea Room.\n\n[|Main||||||] Korea.  South Korea Room entrance",
+      "description": "Description for shelf Korea.  South Korea in Korea.  South Korea Room.\n\n[|Entrance||] Korea.  South Korea Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "16_building_K-KPA": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "16_building_K-KPA"
         }
       }
@@ -8374,12 +8374,12 @@ var gameData = {
     "16_building_K-KUQ-KUQ1-4990": {
       "firstVisit": true,
       "displayName": "New Zealand shelf",
-      "description": "Description for shelf New Zealand in New Zealand Room.\n\n[|Main||||||] New Zealand Room entrance",
+      "description": "Description for shelf New Zealand in New Zealand Room.\n\n[|Entrance||] New Zealand Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "16_building_K-KUQ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "16_building_K-KUQ"
         }
       }
@@ -8404,12 +8404,12 @@ var gameData = {
     "16_building_K-KVN-KVN1-490": {
       "firstVisit": true,
       "displayName": "Fiji shelf",
-      "description": "Description for shelf Fiji in Fiji Room.\n\n[|Main||||||] Fiji Room entrance",
+      "description": "Description for shelf Fiji in Fiji Room.\n\n[|Entrance||] Fiji Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "16_building_K-KVN": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "16_building_K-KVN"
         }
       }
@@ -8434,12 +8434,12 @@ var gameData = {
     "16_building_K-KVW-KVW1-490": {
       "firstVisit": true,
       "displayName": "New Caledonia shelf",
-      "description": "Description for shelf New Caledonia in New Caledonia Room.\n\n[|Main||||||] New Caledonia Room entrance",
+      "description": "Description for shelf New Caledonia in New Caledonia Room.\n\n[|Entrance||] New Caledonia Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "16_building_K-KVW": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "16_building_K-KVW"
         }
       }
@@ -8464,12 +8464,12 @@ var gameData = {
     "16_building_K-KFU-KFU": {
       "firstVisit": true,
       "displayName": "Law of Utah shelf",
-      "description": "Description for shelf Law of Utah in Law of Utah Room.\n\n[|Main||||||] Law of Utah Room entrance",
+      "description": "Description for shelf Law of Utah in Law of Utah Room.\n\n[|Entrance||] Law of Utah Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "16_building_K-KFU": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "16_building_K-KFU"
         }
       }
@@ -8535,12 +8535,12 @@ var gameData = {
     "17_building_K-KJR-KJR": {
       "firstVisit": true,
       "displayName": "Law of Denmark shelf",
-      "description": "Description for shelf Law of Denmark in Law of Denmark Room.\n\n[|Main||||||] Law of Denmark Room entrance",
+      "description": "Description for shelf Law of Denmark in Law of Denmark Room.\n\n[|Entrance||] Law of Denmark Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "17_building_K-KJR": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "17_building_K-KJR"
         }
       }
@@ -8565,12 +8565,12 @@ var gameData = {
     "17_building_K-KKQ-KKQ": {
       "firstVisit": true,
       "displayName": "Law of Portugal shelf",
-      "description": "Description for shelf Law of Portugal in Law of Portugal Room.\n\n[|Main||||||] Law of Portugal Room entrance",
+      "description": "Description for shelf Law of Portugal in Law of Portugal Room.\n\n[|Entrance||] Law of Portugal Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "17_building_K-KKQ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "17_building_K-KKQ"
         }
       }
@@ -8595,12 +8595,12 @@ var gameData = {
     "17_building_K-KJS-KJS": {
       "firstVisit": true,
       "displayName": "Law of Estonia shelf",
-      "description": "Description for shelf Law of Estonia in Law of Estonia Room.\n\n[|Main||||||] Law of Estonia Room entrance",
+      "description": "Description for shelf Law of Estonia in Law of Estonia Room.\n\n[|Entrance||] Law of Estonia Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "17_building_K-KJS": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "17_building_K-KJS"
         }
       }
@@ -8625,12 +8625,12 @@ var gameData = {
     "17_building_K-KKZ-KKZ": {
       "firstVisit": true,
       "displayName": "Law of Yugoslavia shelf",
-      "description": "Description for shelf Law of Yugoslavia in Law of Yugoslavia Room.\n\n[|Main||||||] Law of Yugoslavia Room entrance",
+      "description": "Description for shelf Law of Yugoslavia in Law of Yugoslavia Room.\n\n[|Entrance||] Law of Yugoslavia Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "17_building_K-KKZ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "17_building_K-KKZ"
         }
       }
@@ -8655,12 +8655,12 @@ var gameData = {
     "17_building_K-KJP-KJP": {
       "firstVisit": true,
       "displayName": "Law of Czech Republic (1993-        ) shelf",
-      "description": "Description for shelf Law of Czech Republic (1993-        ) in Law of Czech Republic (1993-        ) Room.\n\n[|Main||||||] Law of Czech Republic (1993-        ) Room entrance",
+      "description": "Description for shelf Law of Czech Republic (1993-        ) in Law of Czech Republic (1993-        ) Room.\n\n[|Entrance||] Law of Czech Republic (1993-        ) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "17_building_K-KJP": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "17_building_K-KJP"
         }
       }
@@ -8685,12 +8685,12 @@ var gameData = {
     "17_building_K-KGB-KGB1-9000": {
       "firstVisit": true,
       "displayName": "Costa Rica shelf",
-      "description": "Description for shelf Costa Rica in Costa Rica Room.\n\n[|Main||||||] Costa Rica Room entrance",
+      "description": "Description for shelf Costa Rica in Costa Rica Room.\n\n[|Entrance||] Costa Rica Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "17_building_K-KGB": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "17_building_K-KGB"
         }
       }
@@ -8756,12 +8756,12 @@ var gameData = {
     "18_building_K-KHW-KHW1-9900": {
       "firstVisit": true,
       "displayName": "Venezuela shelf",
-      "description": "Description for shelf Venezuela in Venezuela Room.\n\n[|Main||||||] Venezuela Room entrance",
+      "description": "Description for shelf Venezuela in Venezuela Room.\n\n[|Entrance||] Venezuela Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "18_building_K-KHW": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "18_building_K-KHW"
         }
       }
@@ -8786,12 +8786,12 @@ var gameData = {
     "18_building_K-KGE-KGE1-9990": {
       "firstVisit": true,
       "displayName": "Honduras shelf",
-      "description": "Description for shelf Honduras in Honduras Room.\n\n[|Main||||||] Honduras Room entrance",
+      "description": "Description for shelf Honduras in Honduras Room.\n\n[|Entrance||] Honduras Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "18_building_K-KGE": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "18_building_K-KGE"
         }
       }
@@ -8816,12 +8816,12 @@ var gameData = {
     "18_building_K-KGG-KGG1-9800": {
       "firstVisit": true,
       "displayName": "Nicaragua shelf",
-      "description": "Description for shelf Nicaragua in Nicaragua Room.\n\n[|Main||||||] Nicaragua Room entrance",
+      "description": "Description for shelf Nicaragua in Nicaragua Room.\n\n[|Entrance||] Nicaragua Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "18_building_K-KGG": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "18_building_K-KGG"
         }
       }
@@ -8846,12 +8846,12 @@ var gameData = {
     "18_building_K-KHF-KHF1-9800": {
       "firstVisit": true,
       "displayName": "Chile shelf",
-      "description": "Description for shelf Chile in Chile Room.\n\n[|Main||||||] Chile Room entrance",
+      "description": "Description for shelf Chile in Chile Room.\n\n[|Entrance||] Chile Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "18_building_K-KHF": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "18_building_K-KHF"
         }
       }
@@ -8876,12 +8876,12 @@ var gameData = {
     "18_building_K-KHP-KHP1-9700": {
       "firstVisit": true,
       "displayName": "Paraguay shelf",
-      "description": "Description for shelf Paraguay in Paraguay Room.\n\n[|Main||||||] Paraguay Room entrance",
+      "description": "Description for shelf Paraguay in Paraguay Room.\n\n[|Entrance||] Paraguay Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "18_building_K-KHP": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "18_building_K-KHP"
         }
       }
@@ -8906,12 +8906,12 @@ var gameData = {
     "18_building_K-KKA-KKA3-9796": {
       "firstVisit": true,
       "displayName": "Law of East Germany shelf",
-      "description": "Description for shelf Law of East Germany in Law of East Germany Room.\n\n[|Main||||||] Law of East Germany Room entrance",
+      "description": "Description for shelf Law of East Germany in Law of East Germany Room.\n\n[|Entrance||] Law of East Germany Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "18_building_K-KKA": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "18_building_K-KKA"
         }
       }
@@ -8977,12 +8977,12 @@ var gameData = {
     "19_building_K-KKV-KKV": {
       "firstVisit": true,
       "displayName": "Law of Sweden shelf",
-      "description": "Description for shelf Law of Sweden in Law of Sweden Room.\n\n[|Main||||||] Law of Sweden Room entrance",
+      "description": "Description for shelf Law of Sweden in Law of Sweden Room.\n\n[|Entrance||] Law of Sweden Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "19_building_K-KKV": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "19_building_K-KKV"
         }
       }
@@ -9007,12 +9007,12 @@ var gameData = {
     "19_building_K-KSW-KSW1-4990": {
       "firstVisit": true,
       "displayName": "Morocco shelf",
-      "description": "Description for shelf Morocco in Morocco Room.\n\n[|Main||||||] Morocco Room entrance",
+      "description": "Description for shelf Morocco in Morocco Room.\n\n[|Entrance||] Morocco Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "19_building_K-KSW": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "19_building_K-KSW"
         }
       }
@@ -9037,12 +9037,12 @@ var gameData = {
     "19_building_K-KM-KM1-999": {
       "firstVisit": true,
       "displayName": "General shelf",
-      "description": "Description for shelf General in General Room.\n\n[|Main||||||] General Room entrance",
+      "description": "Description for shelf General in General Room.\n\n[|Entrance||] General Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "19_building_K-KM": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "19_building_K-KM"
         }
       }
@@ -9067,12 +9067,12 @@ var gameData = {
     "19_building_K-KLF-KLF1-490": {
       "firstVisit": true,
       "displayName": "Belarus (Republic) shelf",
-      "description": "Description for shelf Belarus (Republic) in Belarus (Republic) Room.\n\n[|Main||||||] Belarus (Republic) Room entrance",
+      "description": "Description for shelf Belarus (Republic) in Belarus (Republic) Room.\n\n[|Entrance||] Belarus (Republic) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "19_building_K-KLF": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "19_building_K-KLF"
         }
       }
@@ -9097,12 +9097,12 @@ var gameData = {
     "19_building_K-KH-KH1-999": {
       "firstVisit": true,
       "displayName": "General shelf",
-      "description": "Description for shelf General in General Room.\n\n[|Main||||||] General Room entrance",
+      "description": "Description for shelf General in General Room.\n\n[|Entrance||] General Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "19_building_K-KH": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "19_building_K-KH"
         }
       }
@@ -9127,12 +9127,12 @@ var gameData = {
     "19_building_K-KPT-KPT1-4990": {
       "firstVisit": true,
       "displayName": "Thailand shelf",
-      "description": "Description for shelf Thailand in Thailand Room.\n\n[|Main||||||] Thailand Room entrance",
+      "description": "Description for shelf Thailand in Thailand Room.\n\n[|Entrance||] Thailand Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "19_building_K-KPT": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "19_building_K-KPT"
         }
       }
@@ -9198,12 +9198,12 @@ var gameData = {
     "20_building_K-KPM-KPM1-4999": {
       "firstVisit": true,
       "displayName": "Philippines shelf",
-      "description": "Description for shelf Philippines in Philippines Room.\n\n[|Main||||||] Philippines Room entrance",
+      "description": "Description for shelf Philippines in Philippines Room.\n\n[|Entrance||] Philippines Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "20_building_K-KPM": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "20_building_K-KPM"
         }
       }
@@ -9228,12 +9228,12 @@ var gameData = {
     "20_building_K-KPV-KPV1-8094": {
       "firstVisit": true,
       "displayName": "Vietnam shelf",
-      "description": "Description for shelf Vietnam in Vietnam Room.\n\n[|Main||||||] Vietnam Room entrance",
+      "description": "Description for shelf Vietnam in Vietnam Room.\n\n[|Entrance||] Vietnam Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "20_building_K-KPV": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "20_building_K-KPV"
         }
       }
@@ -9258,12 +9258,12 @@ var gameData = {
     "20_building_K-KPP-KPP1-499": {
       "firstVisit": true,
       "displayName": "Singapore shelf",
-      "description": "Description for shelf Singapore in Singapore Room.\n\n[|Main||||||] Singapore Room entrance",
+      "description": "Description for shelf Singapore in Singapore Room.\n\n[|Entrance||] Singapore Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "20_building_K-KPP": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "20_building_K-KPP"
         }
       }
@@ -9288,12 +9288,12 @@ var gameData = {
     "20_building_K-KMH-KMH1-4990": {
       "firstVisit": true,
       "displayName": "Iran shelf",
-      "description": "Description for shelf Iran in Iran Room.\n\n[|Main||||||] Iran Room entrance",
+      "description": "Description for shelf Iran in Iran Room.\n\n[|Entrance||] Iran Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "20_building_K-KMH": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "20_building_K-KMH"
         }
       }
@@ -9318,12 +9318,12 @@ var gameData = {
     "20_building_K-KSV-KSV1-490": {
       "firstVisit": true,
       "displayName": "Mauritius shelf",
-      "description": "Description for shelf Mauritius in Mayotte Room.\n\n[|Main||||||] Mayotte Room entrance",
+      "description": "Description for shelf Mauritius in Mayotte Room.\n\n[|Entrance||] Mayotte Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "20_building_K-KSV": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "20_building_K-KSV"
         }
       }
@@ -9348,12 +9348,12 @@ var gameData = {
     "20_building_K-KSY-KSY1-4990": {
       "firstVisit": true,
       "displayName": "Namibia shelf",
-      "description": "Description for shelf Namibia in Namibia Room.\n\n[|Main||||||] Namibia Room entrance",
+      "description": "Description for shelf Namibia in Namibia Room.\n\n[|Entrance||] Namibia Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "20_building_K-KSY": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "20_building_K-KSY"
         }
       }
@@ -9419,12 +9419,12 @@ var gameData = {
     "21_building_K-KQK-KQK1-490": {
       "firstVisit": true,
       "displayName": "Botswana shelf",
-      "description": "Description for shelf Botswana in Botswana Room.\n\n[|Main||||||] Botswana Room entrance",
+      "description": "Description for shelf Botswana in Botswana Room.\n\n[|Entrance||] Botswana Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "21_building_K-KQK": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "21_building_K-KQK"
         }
       }
@@ -9449,12 +9449,12 @@ var gameData = {
     "21_building_K-KQH-KQH1-4990": {
       "firstVisit": true,
       "displayName": "Angola shelf",
-      "description": "Description for shelf Angola in Angola Room.\n\n[|Main||||||] Angola Room entrance",
+      "description": "Description for shelf Angola in Angola Room.\n\n[|Entrance||] Angola Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "21_building_K-KQH": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "21_building_K-KQH"
         }
       }
@@ -9479,12 +9479,12 @@ var gameData = {
     "21_building_K-KSX-KSX1-4990": {
       "firstVisit": true,
       "displayName": "Mozambique shelf",
-      "description": "Description for shelf Mozambique in Mozambique Room.\n\n[|Main||||||] Mozambique Room entrance",
+      "description": "Description for shelf Mozambique in Mozambique Room.\n\n[|Entrance||] Mozambique Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "21_building_K-KSX": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "21_building_K-KSX"
         }
       }
@@ -9509,12 +9509,12 @@ var gameData = {
     "21_building_K-KSK-KSK1-4990": {
       "firstVisit": true,
       "displayName": "Kenya shelf",
-      "description": "Description for shelf Kenya in Kenya Room.\n\n[|Main||||||] Kenya Room entrance",
+      "description": "Description for shelf Kenya in Kenya Room.\n\n[|Entrance||] Kenya Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "21_building_K-KSK": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "21_building_K-KSK"
         }
       }
@@ -9539,12 +9539,12 @@ var gameData = {
     "21_building_K-KRU-KRU1-490": {
       "firstVisit": true,
       "displayName": "Gabon shelf",
-      "description": "Description for shelf Gabon in Gabon Room.\n\n[|Main||||||] Gabon Room entrance",
+      "description": "Description for shelf Gabon in Gabon Room.\n\n[|Entrance||] Gabon Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "21_building_K-KRU": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "21_building_K-KRU"
         }
       }
@@ -9569,12 +9569,12 @@ var gameData = {
     "21_building_K-KSL-KSL1-490": {
       "firstVisit": true,
       "displayName": "Lesotho shelf",
-      "description": "Description for shelf Lesotho in Lesotho Room.\n\n[|Main||||||] Lesotho Room entrance",
+      "description": "Description for shelf Lesotho in Lesotho Room.\n\n[|Entrance||] Lesotho Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "21_building_K-KSL": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "21_building_K-KSL"
         }
       }
@@ -9640,12 +9640,12 @@ var gameData = {
     "22_building_K-KRX-KRX1-4990": {
       "firstVisit": true,
       "displayName": "Ghana shelf",
-      "description": "Description for shelf Ghana in Ghana Room.\n\n[|Main||||||] Ghana Room entrance",
+      "description": "Description for shelf Ghana in Ghana Room.\n\n[|Entrance||] Ghana Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "22_building_K-KRX": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "22_building_K-KRX"
         }
       }
@@ -9670,12 +9670,12 @@ var gameData = {
     "22_building_K-KSS-KSS1-490": {
       "firstVisit": true,
       "displayName": "Malawi shelf",
-      "description": "Description for shelf Malawi in Malawi Room.\n\n[|Main||||||] Malawi Room entrance",
+      "description": "Description for shelf Malawi in Malawi Room.\n\n[|Entrance||] Malawi Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "22_building_K-KSS": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "22_building_K-KSS"
         }
       }
@@ -9700,12 +9700,12 @@ var gameData = {
     "22_building_K-KTW-KTW1-490": {
       "firstVisit": true,
       "displayName": "Uganda shelf",
-      "description": "Description for shelf Uganda in Uganda Room.\n\n[|Main||||||] Uganda Room entrance",
+      "description": "Description for shelf Uganda in Uganda Room.\n\n[|Entrance||] Uganda Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "22_building_K-KTW": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "22_building_K-KTW"
         }
       }
@@ -9730,12 +9730,12 @@ var gameData = {
     "22_building_K-KTD-KTD1-490": {
       "firstVisit": true,
       "displayName": "Rwanda shelf",
-      "description": "Description for shelf Rwanda in Rwanda Room.\n\n[|Main||||||] Rwanda Room entrance",
+      "description": "Description for shelf Rwanda in Rwanda Room.\n\n[|Entrance||] Rwanda Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "22_building_K-KTD": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "22_building_K-KTD"
         }
       }
@@ -9760,12 +9760,12 @@ var gameData = {
     "22_building_K-KTX-KTX1-4990": {
       "firstVisit": true,
       "displayName": "Congo (Democratic Republic) shelf",
-      "description": "Description for shelf Congo (Democratic Republic) in Congo (Democratic Republic) Room.\n\n[|Main||||||] Congo (Democratic Republic) Room entrance",
+      "description": "Description for shelf Congo (Democratic Republic) in Congo (Democratic Republic) Room.\n\n[|Entrance||] Congo (Democratic Republic) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "22_building_K-KTX": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "22_building_K-KTX"
         }
       }
@@ -9790,12 +9790,12 @@ var gameData = {
     "22_building_K-KRS-KRS1-499": {
       "firstVisit": true,
       "displayName": "French West Africa shelf",
-      "description": "Description for shelf French West Africa in French West Africa Room.\n\n[|Main||||||] French West Africa Room entrance",
+      "description": "Description for shelf French West Africa in French West Africa Room.\n\n[|Entrance||] French West Africa Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "22_building_K-KRS": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "22_building_K-KRS"
         }
       }
@@ -9861,12 +9861,12 @@ var gameData = {
     "23_building_K-KTG-KTG1-4990": {
       "firstVisit": true,
       "displayName": "Senegal shelf",
-      "description": "Description for shelf Senegal in Senegal Room.\n\n[|Main||||||] Senegal Room entrance",
+      "description": "Description for shelf Senegal in Senegal Room.\n\n[|Entrance||] Senegal Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "23_building_K-KTG": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "23_building_K-KTG"
         }
       }
@@ -9891,12 +9891,12 @@ var gameData = {
     "23_building_K-KKX-KKX": {
       "firstVisit": true,
       "displayName": "Law of Turkey shelf",
-      "description": "Description for shelf Law of Turkey in Law of Turkey Room.\n\n[|Main||||||] Law of Turkey Room entrance",
+      "description": "Description for shelf Law of Turkey in Law of Turkey Room.\n\n[|Entrance||] Law of Turkey Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "23_building_K-KKX": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "23_building_K-KKX"
         }
       }
@@ -9921,12 +9921,12 @@ var gameData = {
     "23_building_K-KLE-KLE1-490": {
       "firstVisit": true,
       "displayName": "Azerbaijan shelf",
-      "description": "Description for shelf Azerbaijan in Azerbaijan Room.\n\n[|Main||||||] Azerbaijan Room entrance",
+      "description": "Description for shelf Azerbaijan in Azerbaijan Room.\n\n[|Entrance||] Azerbaijan Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "23_building_K-KLE": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "23_building_K-KLE"
         }
       }
@@ -9951,12 +9951,12 @@ var gameData = {
     "23_building_K-KRM-KRM1-4990": {
       "firstVisit": true,
       "displayName": "Egypt shelf",
-      "description": "Description for shelf Egypt in Egypt Room.\n\n[|Main||||||] Egypt Room entrance",
+      "description": "Description for shelf Egypt in Egypt Room.\n\n[|Entrance||] Egypt Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "23_building_K-KRM": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "23_building_K-KRM"
         }
       }
@@ -9981,12 +9981,12 @@ var gameData = {
     "23_building_K-KMN-KMN1-499": {
       "firstVisit": true,
       "displayName": "Kuwait shelf",
-      "description": "Description for shelf Kuwait in Kuwait Room.\n\n[|Main||||||] Kuwait Room entrance",
+      "description": "Description for shelf Kuwait in Kuwait Room.\n\n[|Entrance||] Kuwait Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "23_building_K-KMN": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "23_building_K-KMN"
         }
       }
@@ -10011,12 +10011,12 @@ var gameData = {
     "23_building_K-KMX-KMX1001-1526": {
       "firstVisit": true,
       "displayName": "Yemen shelf",
-      "description": "Description for shelf Yemen in Yemen Room.\n\n[|Main||||||] Yemen Room entrance",
+      "description": "Description for shelf Yemen in Yemen Room.\n\n[|Entrance||] Yemen Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "23_building_K-KMX": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "23_building_K-KMX"
         }
       }
@@ -10082,12 +10082,12 @@ var gameData = {
     "24_building_K-KTQ-KTQ1-4990": {
       "firstVisit": true,
       "displayName": "Sudan shelf",
-      "description": "Description for shelf Sudan in Sudan Room.\n\n[|Main||||||] Sudan Room entrance",
+      "description": "Description for shelf Sudan in Sudan Room.\n\n[|Entrance||] Sudan Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "24_building_K-KTQ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "24_building_K-KTQ"
         }
       }
@@ -10112,12 +10112,12 @@ var gameData = {
     "24_building_K-KQG-KQG1-4999": {
       "firstVisit": true,
       "displayName": "Algeria shelf",
-      "description": "Description for shelf Algeria in Algeria Room.\n\n[|Main||||||] Algeria Room entrance",
+      "description": "Description for shelf Algeria in Algeria Room.\n\n[|Entrance||] Algeria Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "24_building_K-KQG": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "24_building_K-KQG"
         }
       }
@@ -10142,12 +10142,12 @@ var gameData = {
     "24_building_K-KMV-KMV1-9870": {
       "firstVisit": true,
       "displayName": "United Arab Emirates shelf",
-      "description": "Description for shelf United Arab Emirates in United Arab Emirates Room.\n\n[|Main||||||] United Arab Emirates Room entrance",
+      "description": "Description for shelf United Arab Emirates in United Arab Emirates Room.\n\n[|Entrance||] United Arab Emirates Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "24_building_K-KMV": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "24_building_K-KMV"
         }
       }
@@ -10172,12 +10172,12 @@ var gameData = {
     "24_building_K-KHD-KHD1-9900": {
       "firstVisit": true,
       "displayName": "Brazil shelf",
-      "description": "Description for shelf Brazil in Brazil Room.\n\n[|Main||||||] Brazil Room entrance",
+      "description": "Description for shelf Brazil in Brazil Room.\n\n[|Entrance||] Brazil Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "24_building_K-KHD": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "24_building_K-KHD"
         }
       }
@@ -10202,12 +10202,12 @@ var gameData = {
     "24_building_K-KHN-KHN1-9000": {
       "firstVisit": true,
       "displayName": "Guyana shelf",
-      "description": "Description for shelf Guyana in Guyana Room.\n\n[|Main||||||] Guyana Room entrance",
+      "description": "Description for shelf Guyana in Guyana Room.\n\n[|Entrance||] Guyana Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "24_building_K-KHN": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "24_building_K-KHN"
         }
       }
@@ -10232,12 +10232,12 @@ var gameData = {
     "24_building_K-KHU-KHU1-9800": {
       "firstVisit": true,
       "displayName": "Uruguay shelf",
-      "description": "Description for shelf Uruguay in Uruguay Room.\n\n[|Main||||||] Uruguay Room entrance",
+      "description": "Description for shelf Uruguay in Uruguay Room.\n\n[|Entrance||] Uruguay Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "24_building_K-KHU": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "24_building_K-KHU"
         }
       }
@@ -10303,12 +10303,12 @@ var gameData = {
     "25_building_K-KLS-KLS1-490": {
       "firstVisit": true,
       "displayName": "Kyrgyzstan shelf",
-      "description": "Description for shelf Kyrgyzstan in Kyrgyzstan Room.\n\n[|Main||||||] Kyrgyzstan Room entrance",
+      "description": "Description for shelf Kyrgyzstan in Kyrgyzstan Room.\n\n[|Entrance||] Kyrgyzstan Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "25_building_K-KLS": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "25_building_K-KLS"
         }
       }
@@ -10333,12 +10333,12 @@ var gameData = {
     "25_building_K-KSA-KSA1-490": {
       "firstVisit": true,
       "displayName": "Guinea shelf",
-      "description": "Description for shelf Guinea in Guinea Room.\n\n[|Main||||||] Guinea Room entrance",
+      "description": "Description for shelf Guinea in Guinea Room.\n\n[|Entrance||] Guinea Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "25_building_K-KSA": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "25_building_K-KSA"
         }
       }
@@ -10363,12 +10363,12 @@ var gameData = {
     "25_building_K-KPF-KPF1-489": {
       "firstVisit": true,
       "displayName": "Macao shelf",
-      "description": "Description for shelf Macao in Macao Room.\n\n[|Main||||||] Macao Room entrance",
+      "description": "Description for shelf Macao in Macao Room.\n\n[|Entrance||] Macao Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "25_building_K-KPF": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "25_building_K-KPF"
         }
       }
@@ -10393,12 +10393,12 @@ var gameData = {
     "25_building_K-KLD-KLD1-490": {
       "firstVisit": true,
       "displayName": "Armenian SSR (to 1991) shelf",
-      "description": "Description for shelf Armenian SSR (to 1991) in Armenian SSR (to 1991) Room.\n\n[|Main||||||] Armenian SSR (to 1991) Room entrance",
+      "description": "Description for shelf Armenian SSR (to 1991) in Armenian SSR (to 1991) Room.\n\n[|Entrance||] Armenian SSR (to 1991) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "25_building_K-KLD": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "25_building_K-KLD"
         }
       }
@@ -10423,12 +10423,12 @@ var gameData = {
     "25_building_K-KTV-KTV1-4990": {
       "firstVisit": true,
       "displayName": "Tunisia shelf",
-      "description": "Description for shelf Tunisia in Tunisia Room.\n\n[|Main||||||] Tunisia Room entrance",
+      "description": "Description for shelf Tunisia in Tunisia Room.\n\n[|Entrance||] Tunisia Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "25_building_K-KTV": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "25_building_K-KTV"
         }
       }
@@ -10453,12 +10453,12 @@ var gameData = {
     "25_building_K-KMP-KMP1-490": {
       "firstVisit": true,
       "displayName": "Lebanon shelf",
-      "description": "Description for shelf Lebanon in Lebanon Room.\n\n[|Main||||||] Lebanon Room entrance",
+      "description": "Description for shelf Lebanon in Lebanon Room.\n\n[|Entrance||] Lebanon Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "25_building_K-KMP": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "25_building_K-KMP"
         }
       }
@@ -10524,12 +10524,12 @@ var gameData = {
     "26_building_K-KMF-KMF1001-1490": {
       "firstVisit": true,
       "displayName": "Bahrain shelf",
-      "description": "Description for shelf Bahrain in Bahrain Room.\n\n[|Main||||||] Bahrain Room entrance\n[|Next||||||] Armenia (Republic) shelf",
+      "description": "Description for shelf Bahrain in Bahrain Room.\n\n[|Entrance||] Bahrain Room entrance\n[|Next||||||] Armenia (Republic) shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "26_building_K-KMF": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "26_building_K-KMF"
         },
         "26_building_K-KMF-KMF1-489": {
@@ -10571,12 +10571,12 @@ var gameData = {
     "26_building_K-KKS-KKS": {
       "firstVisit": true,
       "displayName": "Law of Slovenia shelf",
-      "description": "Description for shelf Law of Slovenia in Law of Slovenia Room.\n\n[|Main||||||] Law of Slovenia Room entrance",
+      "description": "Description for shelf Law of Slovenia in Law of Slovenia Room.\n\n[|Entrance||] Law of Slovenia Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "26_building_K-KKS": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "26_building_K-KKS"
         }
       }
@@ -10601,12 +10601,12 @@ var gameData = {
     "26_building_K-KJW-KJW51-9600": {
       "firstVisit": true,
       "displayName": "French regions, provinces, cities, etc. shelf",
-      "description": "Description for shelf French regions, provinces, cities, etc. in French regions, provinces, cities, etc. Room.\n\n[|Main||||||] French regions, provinces, cities, etc. Room entrance",
+      "description": "Description for shelf French regions, provinces, cities, etc. in French regions, provinces, cities, etc. Room.\n\n[|Entrance||] French regions, provinces, cities, etc. Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "26_building_K-KJW": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "26_building_K-KJW"
         }
       }
@@ -10631,12 +10631,12 @@ var gameData = {
     "26_building_K-KJJ-KJJ": {
       "firstVisit": true,
       "displayName": "Law of Austria shelf",
-      "description": "Description for shelf Law of Austria in Law of Austria Room.\n\n[|Main||||||] Law of Austria Room entrance",
+      "description": "Description for shelf Law of Austria in Law of Austria Room.\n\n[|Entrance||] Law of Austria Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "26_building_K-KJJ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "26_building_K-KJJ"
         }
       }
@@ -10661,12 +10661,12 @@ var gameData = {
     "26_building_K-KZD-KZD1002-6715": {
       "firstVisit": true,
       "displayName": "Space law.  Law of outer space shelf",
-      "description": "Description for shelf Space law.  Law of outer space in Space law.  Law of outer space Room.\n\n[|Main||||||] Space law.  Law of outer space Room entrance",
+      "description": "Description for shelf Space law.  Law of outer space in Space law.  Law of outer space Room.\n\n[|Entrance||] Space law.  Law of outer space Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "26_building_K-KZD": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "26_building_K-KZD"
         }
       }
@@ -10691,12 +10691,12 @@ var gameData = {
     "26_building_K-KWW-KWW1-490": {
       "firstVisit": true,
       "displayName": "Western Samoa shelf",
-      "description": "Description for shelf Western Samoa in Western Samoa Room.\n\n[|Main||||||] Western Samoa Room entrance",
+      "description": "Description for shelf Western Samoa in Western Samoa Room.\n\n[|Entrance||] Western Samoa Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "26_building_K-KWW": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "26_building_K-KWW"
         }
       }
@@ -10762,12 +10762,12 @@ var gameData = {
     "27_building_K-KVP-KVP1-100": {
       "firstVisit": true,
       "displayName": "French Polynesia shelf",
-      "description": "Description for shelf French Polynesia in French Polynesia Room.\n\n[|Main||||||] French Polynesia Room entrance",
+      "description": "Description for shelf French Polynesia in French Polynesia Room.\n\n[|Entrance||] French Polynesia Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "27_building_K-KVP": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "27_building_K-KVP"
         }
       }
@@ -10792,12 +10792,12 @@ var gameData = {
     "27_building_K-KEO-KEO1-1199.5": {
       "firstVisit": true,
       "displayName": "Law of Ontario shelf",
-      "description": "Description for shelf Law of Ontario in Law of Ontario Room.\n\n[|Main||||||] Law of Ontario Room entrance",
+      "description": "Description for shelf Law of Ontario in Law of Ontario Room.\n\n[|Entrance||] Law of Ontario Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "27_building_K-KEO": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "27_building_K-KEO"
         }
       }
@@ -10822,12 +10822,12 @@ var gameData = {
     "27_building_K-KEA-KEA": {
       "firstVisit": true,
       "displayName": "Law of Alberta shelf",
-      "description": "Description for shelf Law of Alberta in Law of Alberta Room.\n\n[|Main||||||] Law of Alberta Room entrance",
+      "description": "Description for shelf Law of Alberta in Law of Alberta Room.\n\n[|Entrance||] Law of Alberta Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "27_building_K-KEA": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "27_building_K-KEA"
         }
       }
@@ -10852,12 +10852,12 @@ var gameData = {
     "27_building_K-KEB-KEB": {
       "firstVisit": true,
       "displayName": "Law of British Columbia shelf",
-      "description": "Description for shelf Law of British Columbia in Law of British Columbia Room.\n\n[|Main||||||] Law of British Columbia Room entrance",
+      "description": "Description for shelf Law of British Columbia in Law of British Columbia Room.\n\n[|Entrance||] Law of British Columbia Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "27_building_K-KEB": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "27_building_K-KEB"
         }
       }
@@ -10882,12 +10882,12 @@ var gameData = {
     "27_building_K-KEQ-KEQ1-1199.5": {
       "firstVisit": true,
       "displayName": "Law of Qu\u00e9bec shelf",
-      "description": "Description for shelf Law of Qu\u00e9bec in Law of Qu\u00e9bec Room.\n\n[|Main||||||] Law of Qu\u00e9bec Room entrance",
+      "description": "Description for shelf Law of Qu\u00e9bec in Law of Qu\u00e9bec Room.\n\n[|Entrance||] Law of Qu\u00e9bec Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "27_building_K-KEQ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "27_building_K-KEQ"
         }
       }
@@ -10912,12 +10912,12 @@ var gameData = {
     "27_building_K-KWH-KWH1-490": {
       "firstVisit": true,
       "displayName": "Papua New Guinea shelf",
-      "description": "Description for shelf Papua New Guinea in Papua New Guinea Room.\n\n[|Main||||||] Papua New Guinea Room entrance",
+      "description": "Description for shelf Papua New Guinea in Papua New Guinea Room.\n\n[|Entrance||] Papua New Guinea Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "27_building_K-KWH": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "27_building_K-KWH"
         }
       }
@@ -10983,12 +10983,12 @@ var gameData = {
     "28_building_K-KVS-KVS501-990": {
       "firstVisit": true,
       "displayName": "Micronesia (Federated States) shelf",
-      "description": "Description for shelf Micronesia (Federated States) in Midway Islands Room.\n\n[|Main||||||] Midway Islands Room entrance\n[|Next||||||] Marshall Islands shelf",
+      "description": "Description for shelf Micronesia (Federated States) in Midway Islands Room.\n\n[|Entrance||] Midway Islands Room entrance\n[|Next||||||] Marshall Islands shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "28_building_K-KVS": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "28_building_K-KVS"
         },
         "28_building_K-KVS-KVS1-490": {
@@ -11030,12 +11030,12 @@ var gameData = {
     "28_building_K-KWG-KWG1-490": {
       "firstVisit": true,
       "displayName": "Palau shelf",
-      "description": "Description for shelf Palau in Palau Room.\n\n[|Main||||||] Palau Room entrance",
+      "description": "Description for shelf Palau in Palau Room.\n\n[|Entrance||] Palau Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "28_building_K-KWG": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "28_building_K-KWG"
         }
       }
@@ -11060,12 +11060,12 @@ var gameData = {
     "28_building_K-KVQ-KVQ1-490": {
       "firstVisit": true,
       "displayName": "Guam shelf",
-      "description": "Description for shelf Guam in Guam Room.\n\n[|Main||||||] Guam Room entrance",
+      "description": "Description for shelf Guam in Guam Room.\n\n[|Entrance||] Guam Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "28_building_K-KVQ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "28_building_K-KVQ"
         }
       }
@@ -11090,12 +11090,12 @@ var gameData = {
     "28_building_K-KJN-KJN": {
       "firstVisit": true,
       "displayName": "Law of Cyprus shelf",
-      "description": "Description for shelf Law of Cyprus in Law of Cyprus Room.\n\n[|Main||||||] Law of Cyprus Room entrance",
+      "description": "Description for shelf Law of Cyprus in Law of Cyprus Room.\n\n[|Entrance||] Law of Cyprus Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "28_building_K-KJN": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "28_building_K-KJN"
         }
       }
@@ -11120,12 +11120,12 @@ var gameData = {
     "28_building_K-KKF-KKF": {
       "firstVisit": true,
       "displayName": "Law of Hungary shelf",
-      "description": "Description for shelf Law of Hungary in Law of Hungary Room.\n\n[|Main||||||] Law of Hungary Room entrance",
+      "description": "Description for shelf Law of Hungary in Law of Hungary Room.\n\n[|Entrance||] Law of Hungary Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "28_building_K-KKF": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "28_building_K-KKF"
         }
       }
@@ -11150,12 +11150,12 @@ var gameData = {
     "28_building_K-KHM-KHM1-9000": {
       "firstVisit": true,
       "displayName": "French Guiana shelf",
-      "description": "Description for shelf French Guiana in French Guiana Room.\n\n[|Main||||||] French Guiana Room entrance",
+      "description": "Description for shelf French Guiana in French Guiana Room.\n\n[|Entrance||] French Guiana Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "28_building_K-KHM": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "28_building_K-KHM"
         }
       }
@@ -11221,12 +11221,12 @@ var gameData = {
     "29_building_K-KKN-KKN": {
       "firstVisit": true,
       "displayName": "Law of Norway shelf",
-      "description": "Description for shelf Law of Norway in Law of Norway Room.\n\n[|Main||||||] Law of Norway Room entrance",
+      "description": "Description for shelf Law of Norway in Law of Norway Room.\n\n[|Entrance||] Law of Norway Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "29_building_K-KKN": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "29_building_K-KKN"
         }
       }
@@ -11251,12 +11251,12 @@ var gameData = {
     "29_building_K-KRB-KRB1-490": {
       "firstVisit": true,
       "displayName": "Central African Republic shelf",
-      "description": "Description for shelf Central African Republic in Central African Republic Room.\n\n[|Main||||||] Central African Republic Room entrance",
+      "description": "Description for shelf Central African Republic in Central African Republic Room.\n\n[|Entrance||] Central African Republic Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "29_building_K-KRB": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "29_building_K-KRB"
         }
       }
@@ -11281,12 +11281,12 @@ var gameData = {
     "29_building_K-KTU-KTU1-490": {
       "firstVisit": true,
       "displayName": "Togo shelf",
-      "description": "Description for shelf Togo in Togo Room.\n\n[|Main||||||] Togo Room entrance",
+      "description": "Description for shelf Togo in Togo Room.\n\n[|Entrance||] Togo Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "29_building_K-KTU": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "29_building_K-KTU"
         }
       }
@@ -11311,12 +11311,12 @@ var gameData = {
     "29_building_K-KQT-KQT1-490": {
       "firstVisit": true,
       "displayName": "Burkina Faso shelf",
-      "description": "Description for shelf Burkina Faso in Burkina Faso Room.\n\n[|Main||||||] Burkina Faso Room entrance",
+      "description": "Description for shelf Burkina Faso in Burkina Faso Room.\n\n[|Entrance||] Burkina Faso Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "29_building_K-KQT": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "29_building_K-KQT"
         }
       }
@@ -11341,12 +11341,12 @@ var gameData = {
     "29_building_K-KSH-KSH0-4990": {
       "firstVisit": true,
       "displayName": "C\u00f4te d\u2019Ivoire shelf",
-      "description": "Description for shelf C\u00f4te d\u2019Ivoire in C\u00f4te d\u2019Ivoire Room.\n\n[|Main||||||] C\u00f4te d\u2019Ivoire Room entrance",
+      "description": "Description for shelf C\u00f4te d\u2019Ivoire in C\u00f4te d\u2019Ivoire Room.\n\n[|Entrance||] C\u00f4te d\u2019Ivoire Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "29_building_K-KSH": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "29_building_K-KSH"
         }
       }
@@ -11371,12 +11371,12 @@ var gameData = {
     "29_building_K-KML-KML1-490": {
       "firstVisit": true,
       "displayName": "Jerusalem shelf",
-      "description": "Description for shelf Jerusalem in Jerusalem Room.\n\n[|Main||||||] Jerusalem Room entrance",
+      "description": "Description for shelf Jerusalem in Jerusalem Room.\n\n[|Entrance||] Jerusalem Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "29_building_K-KML": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "29_building_K-KML"
         }
       }
@@ -11442,12 +11442,12 @@ var gameData = {
     "30_building_K-KMJ-KMJ1-4990": {
       "firstVisit": true,
       "displayName": "Iraq shelf",
-      "description": "Description for shelf Iraq in Iraq Room.\n\n[|Main||||||] Iraq Room entrance",
+      "description": "Description for shelf Iraq in Iraq Room.\n\n[|Entrance||] Iraq Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "30_building_K-KMJ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "30_building_K-KMJ"
         }
       }
@@ -11472,12 +11472,12 @@ var gameData = {
     "30_building_K-KSP-KSP1-4990": {
       "firstVisit": true,
       "displayName": "Libya shelf",
-      "description": "Description for shelf Libya in Libya Room.\n\n[|Main||||||] Libya Room entrance",
+      "description": "Description for shelf Libya in Libya Room.\n\n[|Entrance||] Libya Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "30_building_K-KSP": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "30_building_K-KSP"
         }
       }
@@ -11502,12 +11502,12 @@ var gameData = {
     "30_building_K-KGH-KGH1-8000": {
       "firstVisit": true,
       "displayName": "Panama shelf",
-      "description": "Description for shelf Panama in Panama Room.\n\n[|Main||||||] Panama Room entrance\n[|Next||||||] Panama Canal Zone shelf",
+      "description": "Description for shelf Panama in Panama Room.\n\n[|Entrance||] Panama Room entrance\n[|Next||||||] Panama Canal Zone shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "30_building_K-KGH": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "30_building_K-KGH"
         },
         "30_building_K-KGH-KGH9001-9499": {
@@ -11549,12 +11549,12 @@ var gameData = {
     "30_building_K-KGQ-KGQ1-9800": {
       "firstVisit": true,
       "displayName": "Dominican Republic shelf",
-      "description": "Description for shelf Dominican Republic in Dominican Republic Room.\n\n[|Main||||||] Dominican Republic Room entrance",
+      "description": "Description for shelf Dominican Republic in Dominican Republic Room.\n\n[|Entrance||] Dominican Republic Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "30_building_K-KGQ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "30_building_K-KGQ"
         }
       }
@@ -11579,12 +11579,12 @@ var gameData = {
     "30_building_K-KGN-KGN1-9800": {
       "firstVisit": true,
       "displayName": "Cuba shelf",
-      "description": "Description for shelf Cuba in Cuba Room.\n\n[|Main||||||] Cuba Room entrance",
+      "description": "Description for shelf Cuba in Cuba Room.\n\n[|Entrance||] Cuba Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "30_building_K-KGN": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "30_building_K-KGN"
         }
       }
@@ -11609,12 +11609,12 @@ var gameData = {
     "30_building_K-KGC-KGC1-9800": {
       "firstVisit": true,
       "displayName": "El Salvador shelf",
-      "description": "Description for shelf El Salvador in El Salvador Room.\n\n[|Main||||||] El Salvador Room entrance",
+      "description": "Description for shelf El Salvador in El Salvador Room.\n\n[|Entrance||] El Salvador Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "30_building_K-KGC": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "30_building_K-KGC"
         }
       }
@@ -11680,12 +11680,12 @@ var gameData = {
     "31_building_K-KSN-KSN1-490": {
       "firstVisit": true,
       "displayName": "Liberia shelf",
-      "description": "Description for shelf Liberia in Liberia Room.\n\n[|Main||||||] Liberia Room entrance",
+      "description": "Description for shelf Liberia in Liberia Room.\n\n[|Entrance||] Liberia Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "31_building_K-KSN": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "31_building_K-KSN"
         }
       }
@@ -11710,12 +11710,12 @@ var gameData = {
     "31_building_K-KSZ-KSZ1-490": {
       "firstVisit": true,
       "displayName": "Niger shelf",
-      "description": "Description for shelf Niger in Niger Room.\n\n[|Main||||||] Niger Room entrance",
+      "description": "Description for shelf Niger in Niger Room.\n\n[|Entrance||] Niger Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "31_building_K-KSZ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "31_building_K-KSZ"
         }
       }
@@ -11740,12 +11740,12 @@ var gameData = {
     "31_building_K-KPC-KPC1-4990": {
       "firstVisit": true,
       "displayName": "Democratic People\u2019s Republic of Korea.  North Korea shelf",
-      "description": "Description for shelf Democratic People\u2019s Republic of Korea.  North Korea in Democratic People\u2019s Republic of Korea.  North Korea Room.\n\n[|Main||||||] Democratic People\u2019s Republic of Korea.  North Korea Room entrance",
+      "description": "Description for shelf Democratic People\u2019s Republic of Korea.  North Korea in Democratic People\u2019s Republic of Korea.  North Korea Room.\n\n[|Entrance||] Democratic People\u2019s Republic of Korea.  North Korea Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "31_building_K-KPC": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "31_building_K-KPC"
         }
       }
@@ -11770,12 +11770,12 @@ var gameData = {
     "31_building_K-KQ-KQ2010-9000": {
       "firstVisit": true,
       "displayName": "Law of indigenous peoples shelf",
-      "description": "Description for shelf Law of indigenous peoples in Law of indigenous peoples Room.\n\n[|Main||||||] Law of indigenous peoples Room entrance\n[|Next||||||] History of law shelf",
+      "description": "Description for shelf Law of indigenous peoples in Law of indigenous peoples Room.\n\n[|Entrance||] Law of indigenous peoples Room entrance\n[|Next||||||] History of law shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "31_building_K-KQ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "31_building_K-KQ"
         },
         "31_building_K-KQ-KQ2-197": {
@@ -11817,12 +11817,12 @@ var gameData = {
     "31_building_K-KWC-KWC1-490": {
       "firstVisit": true,
       "displayName": "Northern Mariana Islands shelf",
-      "description": "Description for shelf Northern Mariana Islands in Northern Mariana Islands Room.\n\n[|Main||||||] Northern Mariana Islands Room entrance",
+      "description": "Description for shelf Northern Mariana Islands in Northern Mariana Islands Room.\n\n[|Entrance||] Northern Mariana Islands Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "31_building_K-KWC": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "31_building_K-KWC"
         }
       }
@@ -11847,12 +11847,12 @@ var gameData = {
     "31_building_K-KNM-KNM1-4990": {
       "firstVisit": true,
       "displayName": "Cambodia shelf",
-      "description": "Description for shelf Cambodia in Cambodia Room.\n\n[|Main||||||] Cambodia Room entrance",
+      "description": "Description for shelf Cambodia in Cambodia Room.\n\n[|Entrance||] Cambodia Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "31_building_K-KNM": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "31_building_K-KNM"
         }
       }
@@ -11918,12 +11918,12 @@ var gameData = {
     "32_building_K-KBT-KBT3-4300": {
       "firstVisit": true,
       "displayName": "Canon law of Eastern Rite Churches in Communion with the shelf",
-      "description": "Description for shelf Canon law of Eastern Rite Churches in Communion with the in Canon law of Eastern Rite Churches in Communion with the Room.\n\n[|Main||||||] Canon law of Eastern Rite Churches in Communion with the Room entrance",
+      "description": "Description for shelf Canon law of Eastern Rite Churches in Communion with the in Canon law of Eastern Rite Churches in Communion with the Room.\n\n[|Entrance||] Canon law of Eastern Rite Churches in Communion with the Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "32_building_K-KBT": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "32_building_K-KBT"
         }
       }
@@ -11948,12 +11948,12 @@ var gameData = {
     "32_building_K-KJG-KJG": {
       "firstVisit": true,
       "displayName": "Law of Albania shelf",
-      "description": "Description for shelf Law of Albania in Law of Albania Room.\n\n[|Main||||||] Law of Albania Room entrance",
+      "description": "Description for shelf Law of Albania in Law of Albania Room.\n\n[|Entrance||] Law of Albania Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "32_building_K-KJG": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "32_building_K-KJG"
         }
       }
@@ -11978,12 +11978,12 @@ var gameData = {
     "32_building_K-KGX-KGX1-499": {
       "firstVisit": true,
       "displayName": "Trinidad and Tobago shelf",
-      "description": "Description for shelf Trinidad and Tobago in Trinidad and Tobago Room.\n\n[|Main||||||] Trinidad and Tobago Room entrance",
+      "description": "Description for shelf Trinidad and Tobago in Trinidad and Tobago Room.\n\n[|Entrance||] Trinidad and Tobago Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "32_building_K-KGX": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "32_building_K-KGX"
         }
       }
@@ -12008,12 +12008,12 @@ var gameData = {
     "32_building_K-KKR-KKR": {
       "firstVisit": true,
       "displayName": "Law of Romania shelf",
-      "description": "Description for shelf Law of Romania in Law of Romania Room.\n\n[|Main||||||] Law of Romania Room entrance",
+      "description": "Description for shelf Law of Romania in Law of Romania Room.\n\n[|Entrance||] Law of Romania Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "32_building_K-KKR": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "32_building_K-KKR"
         }
       }
@@ -12038,12 +12038,12 @@ var gameData = {
     "32_building_K-KJQ-KJQ": {
       "firstVisit": true,
       "displayName": "Law of Slovakia (1993-        ) shelf",
-      "description": "Description for shelf Law of Slovakia (1993-        ) in Law of Slovakia (1993-        ) Room.\n\n[|Main||||||] Law of Slovakia (1993-        ) Room entrance",
+      "description": "Description for shelf Law of Slovakia (1993-        ) in Law of Slovakia (1993-        ) Room.\n\n[|Entrance||] Law of Slovakia (1993-        ) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "32_building_K-KJQ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "32_building_K-KJQ"
         }
       }
@@ -12068,12 +12068,12 @@ var gameData = {
     "32_building_K-KLM-KLM1-490": {
       "firstVisit": true,
       "displayName": "Moldova shelf",
-      "description": "Description for shelf Moldova in Moldova Room.\n\n[|Main||||||] Moldova Room entrance",
+      "description": "Description for shelf Moldova in Moldova Room.\n\n[|Entrance||] Moldova Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "32_building_K-KLM": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "32_building_K-KLM"
         }
       }
@@ -12139,12 +12139,12 @@ var gameData = {
     "33_building_K-KDE-KDE21-580": {
       "firstVisit": true,
       "displayName": "Law of Northern Ireland shelf",
-      "description": "Description for shelf Law of Northern Ireland in Law of Northern Ireland Room.\n\n[|Main||||||] Law of Northern Ireland Room entrance",
+      "description": "Description for shelf Law of Northern Ireland in Law of Northern Ireland Room.\n\n[|Entrance||] Law of Northern Ireland Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "33_building_K-KDE": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "33_building_K-KDE"
         }
       }
@@ -12169,12 +12169,12 @@ var gameData = {
     "33_building_K-KES-KES": {
       "firstVisit": true,
       "displayName": "Law of Saskatchewan shelf",
-      "description": "Description for shelf Law of Saskatchewan in Law of Saskatchewan Room.\n\n[|Main||||||] Law of Saskatchewan Room entrance",
+      "description": "Description for shelf Law of Saskatchewan in Law of Saskatchewan Room.\n\n[|Entrance||] Law of Saskatchewan Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "33_building_K-KES": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "33_building_K-KES"
         }
       }
@@ -12199,12 +12199,12 @@ var gameData = {
     "33_building_K-KNK-KNK1-490": {
       "firstVisit": true,
       "displayName": "Brunei shelf",
-      "description": "Description for shelf Brunei in Brunei Room.\n\n[|Main||||||] Brunei Room entrance",
+      "description": "Description for shelf Brunei in Brunei Room.\n\n[|Entrance||] Brunei Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "33_building_K-KNK": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "33_building_K-KNK"
         }
       }
@@ -12229,12 +12229,12 @@ var gameData = {
     "33_building_K-KPE-KPE1-4990": {
       "firstVisit": true,
       "displayName": "Laos shelf",
-      "description": "Description for shelf Laos in Laos Room.\n\n[|Main||||||] Laos Room entrance",
+      "description": "Description for shelf Laos in Laos Room.\n\n[|Entrance||] Laos Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "33_building_K-KPE": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "33_building_K-KPE"
         }
       }
@@ -12259,12 +12259,12 @@ var gameData = {
     "33_building_K-KPS-KPS1-4990": {
       "firstVisit": true,
       "displayName": "Sri Lanka shelf",
-      "description": "Description for shelf Sri Lanka in Sri Lanka Room.\n\n[|Main||||||] Sri Lanka Room entrance",
+      "description": "Description for shelf Sri Lanka in Sri Lanka Room.\n\n[|Entrance||] Sri Lanka Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "33_building_K-KPS": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "33_building_K-KPS"
         }
       }
@@ -12289,12 +12289,12 @@ var gameData = {
     "33_building_K-KPJ-KPJ1-490": {
       "firstVisit": true,
       "displayName": "Nepal shelf",
-      "description": "Description for shelf Nepal in Nepal Room.\n\n[|Main||||||] Nepal Room entrance",
+      "description": "Description for shelf Nepal in Nepal Room.\n\n[|Entrance||] Nepal Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "33_building_K-KPJ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "33_building_K-KPJ"
         }
       }
@@ -12360,12 +12360,12 @@ var gameData = {
     "34_building_K-KNL-KNL1-4990": {
       "firstVisit": true,
       "displayName": "Burma shelf",
-      "description": "Description for shelf Burma in Burma Room.\n\n[|Main||||||] Burma Room entrance",
+      "description": "Description for shelf Burma in Burma Room.\n\n[|Entrance||] Burma Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "34_building_K-KNL": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "34_building_K-KNL"
         }
       }
@@ -12390,12 +12390,12 @@ var gameData = {
     "34_building_K-KNG-KNG1-4990": {
       "firstVisit": true,
       "displayName": "Bangladesh shelf",
-      "description": "Description for shelf Bangladesh in Bangladesh Room.\n\n[|Main||||||] Bangladesh Room entrance",
+      "description": "Description for shelf Bangladesh in Bangladesh Room.\n\n[|Entrance||] Bangladesh Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "34_building_K-KNG": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "34_building_K-KNG"
         }
       }
@@ -12420,12 +12420,12 @@ var gameData = {
     "34_building_K-KSE-KSE1-490": {
       "firstVisit": true,
       "displayName": "Equatorial Guinea shelf",
-      "description": "Description for shelf Equatorial Guinea in Equatorial Guinea Room.\n\n[|Main||||||] Equatorial Guinea Room entrance",
+      "description": "Description for shelf Equatorial Guinea in Equatorial Guinea Room.\n\n[|Entrance||] Equatorial Guinea Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "34_building_K-KSE": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "34_building_K-KSE"
         }
       }
@@ -12450,12 +12450,12 @@ var gameData = {
     "34_building_K-KLT-KLT1-490": {
       "firstVisit": true,
       "displayName": "Tajikistan shelf",
-      "description": "Description for shelf Tajikistan in Tajikistan Room.\n\n[|Main||||||] Tajikistan Room entrance",
+      "description": "Description for shelf Tajikistan in Tajikistan Room.\n\n[|Entrance||] Tajikistan Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "34_building_K-KLT": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "34_building_K-KLT"
         }
       }
@@ -12480,12 +12480,12 @@ var gameData = {
     "34_building_K-KLV-KLV1-490": {
       "firstVisit": true,
       "displayName": "Turkmenistan shelf",
-      "description": "Description for shelf Turkmenistan in Turkmenistan Room.\n\n[|Main||||||] Turkmenistan Room entrance",
+      "description": "Description for shelf Turkmenistan in Turkmenistan Room.\n\n[|Entrance||] Turkmenistan Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "34_building_K-KLV": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "34_building_K-KLV"
         }
       }
@@ -12510,12 +12510,12 @@ var gameData = {
     "34_building_K-KRE-KRE1-490": {
       "firstVisit": true,
       "displayName": "Comoros shelf",
-      "description": "Description for shelf Comoros in Comoros Room.\n\n[|Main||||||] Comoros Room entrance",
+      "description": "Description for shelf Comoros in Comoros Room.\n\n[|Entrance||] Comoros Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "34_building_K-KRE": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "34_building_K-KRE"
         }
       }
@@ -12581,12 +12581,12 @@ var gameData = {
     "35_building_K-KTH-KTH1-490": {
       "firstVisit": true,
       "displayName": "Seychelles shelf",
-      "description": "Description for shelf Seychelles in Seychelles Room.\n\n[|Main||||||] Seychelles Room entrance",
+      "description": "Description for shelf Seychelles in Seychelles Room.\n\n[|Entrance||] Seychelles Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "35_building_K-KTH": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "35_building_K-KTH"
         }
       }
@@ -12611,12 +12611,12 @@ var gameData = {
     "35_building_K-KSR-KSR1-490": {
       "firstVisit": true,
       "displayName": "Madagascar shelf",
-      "description": "Description for shelf Madagascar in Madagascar Room.\n\n[|Main||||||] Madagascar Room entrance",
+      "description": "Description for shelf Madagascar in Madagascar Room.\n\n[|Entrance||] Madagascar Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "35_building_K-KSR": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "35_building_K-KSR"
         }
       }
@@ -12641,12 +12641,12 @@ var gameData = {
     "35_building_K-KQE-KQE10-1249": {
       "firstVisit": true,
       "displayName": "Regional organization and integration shelf",
-      "description": "Description for shelf Regional organization and integration in Regional organization and integration Room.\n\n[|Main||||||] Regional organization and integration Room entrance",
+      "description": "Description for shelf Regional organization and integration in Regional organization and integration Room.\n\n[|Entrance||] Regional organization and integration Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "35_building_K-KQE": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "35_building_K-KQE"
         }
       }
@@ -12671,12 +12671,12 @@ var gameData = {
     "35_building_K-KRN-KRN1-499": {
       "firstVisit": true,
       "displayName": "Eritrea shelf",
-      "description": "Description for shelf Eritrea in Eritrea Room.\n\n[|Main||||||] Eritrea Room entrance",
+      "description": "Description for shelf Eritrea in Eritrea Room.\n\n[|Entrance||] Eritrea Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "35_building_K-KRN": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "35_building_K-KRN"
         }
       }
@@ -12701,12 +12701,12 @@ var gameData = {
     "35_building_K-KKG-KKG": {
       "firstVisit": true,
       "displayName": "Law of Iceland shelf",
-      "description": "Description for shelf Law of Iceland in Law of Iceland Room.\n\n[|Main||||||] Law of Iceland Room entrance",
+      "description": "Description for shelf Law of Iceland in Law of Iceland Room.\n\n[|Entrance||] Law of Iceland Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "35_building_K-KKG": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "35_building_K-KKG"
         }
       }
@@ -12731,12 +12731,12 @@ var gameData = {
     "35_building_K-KLH-KLH1-490": {
       "firstVisit": true,
       "displayName": "Georgia (Republic) shelf",
-      "description": "Description for shelf Georgia (Republic) in Georgia (Republic) Room.\n\n[|Main||||||] Georgia (Republic) Room entrance",
+      "description": "Description for shelf Georgia (Republic) in Georgia (Republic) Room.\n\n[|Entrance||] Georgia (Republic) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "35_building_K-KLH": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "35_building_K-KLH"
         }
       }
@@ -12802,12 +12802,12 @@ var gameData = {
     "36_building_K-KGA-KGA1-9000": {
       "firstVisit": true,
       "displayName": "Belize shelf",
-      "description": "Description for shelf Belize in Belize Room.\n\n[|Main||||||] Belize Room entrance",
+      "description": "Description for shelf Belize in Belize Room.\n\n[|Entrance||] Belize Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "36_building_K-KGA": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "36_building_K-KGA"
         }
       }
@@ -12832,12 +12832,12 @@ var gameData = {
     "36_building_K-KKI-KKI": {
       "firstVisit": true,
       "displayName": "Law of Latvia shelf",
-      "description": "Description for shelf Law of Latvia in Law of Latvia Room.\n\n[|Main||||||] Law of Latvia Room entrance",
+      "description": "Description for shelf Law of Latvia in Law of Latvia Room.\n\n[|Entrance||] Law of Latvia Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "36_building_K-KKI": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "36_building_K-KKI"
         }
       }
@@ -12862,12 +12862,12 @@ var gameData = {
     "36_building_K-KTF-KTF1-490": {
       "firstVisit": true,
       "displayName": "Sao Tome and Principe shelf",
-      "description": "Description for shelf Sao Tome and Principe in Sao Tome and Principe Room.\n\n[|Main||||||] Sao Tome and Principe Room entrance",
+      "description": "Description for shelf Sao Tome and Principe in Sao Tome and Principe Room.\n\n[|Entrance||] Sao Tome and Principe Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "36_building_K-KTF": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "36_building_K-KTF"
         }
       }
@@ -12892,12 +12892,12 @@ var gameData = {
     "36_building_K-KJH-KJH": {
       "firstVisit": true,
       "displayName": "Law of Andorra shelf",
-      "description": "Description for shelf Law of Andorra in Law of Andorra Room.\n\n[|Main||||||] Law of Andorra Room entrance",
+      "description": "Description for shelf Law of Andorra in Law of Andorra Room.\n\n[|Entrance||] Law of Andorra Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "36_building_K-KJH": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "36_building_K-KJH"
         }
       }
@@ -12922,12 +12922,12 @@ var gameData = {
     "36_building_K-KWL-KWL2001-2490": {
       "firstVisit": true,
       "displayName": "Solomon Islands shelf",
-      "description": "Description for shelf Solomon Islands in Solomon Islands Room.\n\n[|Main||||||] Solomon Islands Room entrance\n[|Next||||||] Pitcairn Island shelf",
+      "description": "Description for shelf Solomon Islands in Solomon Islands Room.\n\n[|Entrance||] Solomon Islands Room entrance\n[|Next||||||] Pitcairn Island shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "36_building_K-KWL": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "36_building_K-KWL"
         },
         "36_building_K-KWL-KWL1-489": {
@@ -12969,12 +12969,12 @@ var gameData = {
     "36_building_K-KGW-KGW5001-5499": {
       "firstVisit": true,
       "displayName": "Saint Vincent and the Grenadines shelf",
-      "description": "Description for shelf Saint Vincent and the Grenadines in Saint Lucia Room.\n\n[|Main||||||] Saint Lucia Room entrance\n[|Next||||||] Saint Lucia shelf",
+      "description": "Description for shelf Saint Vincent and the Grenadines in Saint Lucia Room.\n\n[|Entrance||] Saint Lucia Room entrance\n[|Next||||||] Saint Lucia shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "36_building_K-KGW": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "36_building_K-KGW"
         },
         "36_building_K-KGW-KGW3001-3499": {
@@ -13091,12 +13091,12 @@ var gameData = {
     "37_building_K-KGZ-KGZ1-499": {
       "firstVisit": true,
       "displayName": "Virgin Islands of the United States shelf",
-      "description": "Description for shelf Virgin Islands of the United States in Virgin Islands of the United States Room.\n\n[|Main||||||] Virgin Islands of the United States Room entrance",
+      "description": "Description for shelf Virgin Islands of the United States in Virgin Islands of the United States Room.\n\n[|Entrance||] Virgin Islands of the United States Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "37_building_K-KGZ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "37_building_K-KGZ"
         }
       }
@@ -13121,12 +13121,12 @@ var gameData = {
     "37_building_K-KGR-KGR1001-1499": {
       "firstVisit": true,
       "displayName": "Dutch West Indies (General) shelf",
-      "description": "Description for shelf Dutch West Indies (General) in Grenada Room.\n\n[|Main||||||] Grenada Room entrance\n[|Next||||||] Grenada shelf",
+      "description": "Description for shelf Dutch West Indies (General) in Grenada Room.\n\n[|Entrance||] Grenada Room entrance\n[|Next||||||] Grenada shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "37_building_K-KGR": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "37_building_K-KGR"
         },
         "37_building_K-KGR-KGR4001-4499": {
@@ -13219,12 +13219,12 @@ var gameData = {
     "37_building_K-KRV-KRV1-489": {
       "firstVisit": true,
       "displayName": "Gambia shelf",
-      "description": "Description for shelf Gambia in Gambia Room.\n\n[|Main||||||] Gambia Room entrance",
+      "description": "Description for shelf Gambia in Gambia Room.\n\n[|Entrance||] Gambia Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "37_building_K-KRV": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "37_building_K-KRV"
         }
       }
@@ -13249,12 +13249,12 @@ var gameData = {
     "37_building_K-KFZ-KFZ": {
       "firstVisit": true,
       "displayName": "Laws of the territories.  Laws of the Confederate States of shelf",
-      "description": "Description for shelf Laws of the territories.  Laws of the Confederate States of in Laws of the territories.  Laws of the Confederate States of Room.\n\n[|Main||||||] Laws of the territories.  Laws of the Confederate States of Room entrance",
+      "description": "Description for shelf Laws of the territories.  Laws of the Confederate States of in Laws of the territories.  Laws of the Confederate States of Room.\n\n[|Entrance||] Laws of the territories.  Laws of the Confederate States of Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "37_building_K-KFZ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "37_building_K-KFZ"
         }
       }
@@ -13279,12 +13279,12 @@ var gameData = {
     "37_building_K-KDG-KDG21-540": {
       "firstVisit": true,
       "displayName": "Law of Isle of Man.  Channel Islands shelf",
-      "description": "Description for shelf Law of Isle of Man.  Channel Islands in Law of Isle of Man.  Channel Islands Room.\n\n[|Main||||||] Law of Isle of Man.  Channel Islands Room entrance",
+      "description": "Description for shelf Law of Isle of Man.  Channel Islands in Law of Isle of Man.  Channel Islands Room.\n\n[|Entrance||] Law of Isle of Man.  Channel Islands Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "37_building_K-KDG": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "37_building_K-KDG"
         }
       }
@@ -13309,12 +13309,12 @@ var gameData = {
     "37_building_K-KGJ-KGJ1-999": {
       "firstVisit": true,
       "displayName": "General shelf",
-      "description": "Description for shelf General in General Room.\n\n[|Main||||||] General Room entrance\n[|Next||||||] Anguilla shelf",
+      "description": "Description for shelf General in General Room.\n\n[|Entrance||] General Room entrance\n[|Next||||||] Anguilla shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "37_building_K-KGJ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "37_building_K-KGJ"
         },
         "37_building_K-KGJ-KGJ7001-7499": {
@@ -13397,12 +13397,12 @@ var gameData = {
     "38_building_K-KLN-KLN1-489": {
       "firstVisit": true,
       "displayName": "Russian S.F.S.R. (to 1991) shelf",
-      "description": "Description for shelf Russian S.F.S.R. (to 1991) in Russian S.F.S.R. (to 1991) Room.\n\n[|Main||||||] Russian S.F.S.R. (to 1991) Room entrance",
+      "description": "Description for shelf Russian S.F.S.R. (to 1991) in Russian S.F.S.R. (to 1991) Room.\n\n[|Entrance||] Russian S.F.S.R. (to 1991) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "38_building_K-KLN": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "38_building_K-KLN"
         }
       }
@@ -13427,12 +13427,12 @@ var gameData = {
     "38_building_K-KMQ-KMQ1001-1499": {
       "firstVisit": true,
       "displayName": "Palestine (to 1948) shelf",
-      "description": "Description for shelf Palestine (to 1948) in Palestine (to 1948) Room.\n\n[|Main||||||] Palestine (to 1948) Room entrance\n[|Next||||||] Oman shelf",
+      "description": "Description for shelf Palestine (to 1948) in Palestine (to 1948) Room.\n\n[|Entrance||] Palestine (to 1948) Room entrance\n[|Next||||||] Oman shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "38_building_K-KMQ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "38_building_K-KMQ"
         },
         "38_building_K-KMQ-KMQ1-490": {
@@ -13474,12 +13474,12 @@ var gameData = {
     "38_building_K-KEY-KEY": {
       "firstVisit": true,
       "displayName": "Law of Yukon shelf",
-      "description": "Description for shelf Law of Yukon in Law of Yukon Room.\n\n[|Main||||||] Law of Yukon Room entrance",
+      "description": "Description for shelf Law of Yukon in Law of Yukon Room.\n\n[|Entrance||] Law of Yukon Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "38_building_K-KEY": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "38_building_K-KEY"
         }
       }
@@ -13504,12 +13504,12 @@ var gameData = {
     "38_building_K-KNV-KNV1-489": {
       "firstVisit": true,
       "displayName": "French Indochina.  Indochina (Federation) shelf",
-      "description": "Description for shelf French Indochina.  Indochina (Federation) in French Indochina.  Indochina (Federation) Room.\n\n[|Main||||||] French Indochina.  Indochina (Federation) Room entrance",
+      "description": "Description for shelf French Indochina.  Indochina (Federation) in French Indochina.  Indochina (Federation) Room.\n\n[|Entrance||] French Indochina.  Indochina (Federation) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "38_building_K-KNV": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "38_building_K-KNV"
         }
       }
@@ -13534,12 +13534,12 @@ var gameData = {
     "38_building_K-KMY-KMY1-489": {
       "firstVisit": true,
       "displayName": "Yeman (People\u2019s Democratic Republic) (to 1990) shelf",
-      "description": "Description for shelf Yeman (People\u2019s Democratic Republic) (to 1990) in Yeman (People\u2019s Democratic Republic) (to 1990) Room.\n\n[|Main||||||] Yeman (People\u2019s Democratic Republic) (to 1990) Room entrance",
+      "description": "Description for shelf Yeman (People\u2019s Democratic Republic) (to 1990) in Yeman (People\u2019s Democratic Republic) (to 1990) Room.\n\n[|Entrance||] Yeman (People\u2019s Democratic Republic) (to 1990) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "38_building_K-KMY": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "38_building_K-KMY"
         }
       }
@@ -13564,12 +13564,12 @@ var gameData = {
     "38_building_K-KHS-KHS1-9000": {
       "firstVisit": true,
       "displayName": "Surinam shelf",
-      "description": "Description for shelf Surinam in Surinam Room.\n\n[|Main||||||] Surinam Room entrance",
+      "description": "Description for shelf Surinam in Surinam Room.\n\n[|Entrance||] Surinam Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "38_building_K-KHS": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "38_building_K-KHS"
         }
       }
@@ -13635,12 +13635,12 @@ var gameData = {
     "39_building_K-KMU-KMU1-490": {
       "firstVisit": true,
       "displayName": "Syria shelf",
-      "description": "Description for shelf Syria in Syria Room.\n\n[|Main||||||] Syria Room entrance",
+      "description": "Description for shelf Syria in Syria Room.\n\n[|Entrance||] Syria Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "39_building_K-KMU": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "39_building_K-KMU"
         }
       }
@@ -13665,12 +13665,12 @@ var gameData = {
     "39_building_K-KKL-KKL": {
       "firstVisit": true,
       "displayName": "Law of Montenegro shelf",
-      "description": "Description for shelf Law of Montenegro in Law of Montenegro Room.\n\n[|Main||||||] Law of Montenegro Room entrance",
+      "description": "Description for shelf Law of Montenegro in Law of Montenegro Room.\n\n[|Entrance||] Law of Montenegro Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "39_building_K-KKL": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "39_building_K-KKL"
         }
       }
@@ -13695,12 +13695,12 @@ var gameData = {
     "39_building_K-KSG-KSG1001-1499": {
       "firstVisit": true,
       "displayName": "Italian Somaliland shelf",
-      "description": "Description for shelf Italian Somaliland in Italian Somaliland Room.\n\n[|Main||||||] Italian Somaliland Room entrance",
+      "description": "Description for shelf Italian Somaliland in Italian Somaliland Room.\n\n[|Entrance||] Italian Somaliland Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "39_building_K-KSG": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "39_building_K-KSG"
         }
       }
@@ -13725,12 +13725,12 @@ var gameData = {
     "39_building_K-KEZ-KEZ": {
       "firstVisit": true,
       "displayName": "Law of Law of cities, towns, etc. shelf",
-      "description": "Description for shelf Law of Law of cities, towns, etc. in Law of Law of cities, towns, etc. Room.\n\n[|Main||||||] Law of Law of cities, towns, etc. Room entrance",
+      "description": "Description for shelf Law of Law of cities, towns, etc. in Law of Law of cities, towns, etc. Room.\n\n[|Entrance||] Law of Law of cities, towns, etc. Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "39_building_K-KEZ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "39_building_K-KEZ"
         }
       }
@@ -13755,12 +13755,12 @@ var gameData = {
     "39_building_K-KEM-KEM": {
       "firstVisit": true,
       "displayName": "Law of Manitoba shelf",
-      "description": "Description for shelf Law of Manitoba in Law of Manitoba Room.\n\n[|Main||||||] Law of Manitoba Room entrance",
+      "description": "Description for shelf Law of Manitoba in Law of Manitoba Room.\n\n[|Entrance||] Law of Manitoba Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "39_building_K-KEM": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "39_building_K-KEM"
         }
       }
@@ -13785,12 +13785,12 @@ var gameData = {
     "39_building_K-KTK-KTK1-490": {
       "firstVisit": true,
       "displayName": "Somalia shelf",
-      "description": "Description for shelf Somalia in Somalia Room.\n\n[|Main||||||] Somalia Room entrance",
+      "description": "Description for shelf Somalia in Somalia Room.\n\n[|Entrance||] Somalia Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "39_building_K-KTK": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "39_building_K-KTK"
         }
       }
@@ -13856,12 +13856,12 @@ var gameData = {
     "40_building_K-KGT-KGT1-499": {
       "firstVisit": true,
       "displayName": "Jamaica shelf",
-      "description": "Description for shelf Jamaica in Jamaica Room.\n\n[|Main||||||] Jamaica Room entrance\n[|Next||||||] Montserrat shelf",
+      "description": "Description for shelf Jamaica in Jamaica Room.\n\n[|Entrance||] Jamaica Room entrance\n[|Next||||||] Montserrat shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "40_building_K-KGT": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "40_building_K-KGT"
         },
         "40_building_K-KGT-KGT2001-2499": {
@@ -13920,12 +13920,12 @@ var gameData = {
     "40_building_K-KGY-KGY1-499": {
       "firstVisit": true,
       "displayName": "Turks and Caicos Islands shelf",
-      "description": "Description for shelf Turks and Caicos Islands in Turks and Caicos Islands Room.\n\n[|Main||||||] Turks and Caicos Islands Room entrance",
+      "description": "Description for shelf Turks and Caicos Islands in Turks and Caicos Islands Room.\n\n[|Entrance||] Turks and Caicos Islands Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "40_building_K-KGY": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "40_building_K-KGY"
         }
       }
@@ -13950,12 +13950,12 @@ var gameData = {
     "40_building_K-KEP-KEP": {
       "firstVisit": true,
       "displayName": "Law of Law of Prince Edward Island shelf",
-      "description": "Description for shelf Law of Law of Prince Edward Island in Law of Law of Prince Edward Island Room.\n\n[|Main||||||] Law of Law of Prince Edward Island Room entrance",
+      "description": "Description for shelf Law of Law of Prince Edward Island in Law of Law of Prince Edward Island Room.\n\n[|Entrance||] Law of Law of Prince Edward Island Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "40_building_K-KEP": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "40_building_K-KEP"
         }
       }
@@ -13980,12 +13980,12 @@ var gameData = {
     "40_building_K-KQV-KQV1-490": {
       "firstVisit": true,
       "displayName": "Burundi shelf",
-      "description": "Description for shelf Burundi in Burundi Room.\n\n[|Main||||||] Burundi Room entrance",
+      "description": "Description for shelf Burundi in Burundi Room.\n\n[|Entrance||] Burundi Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "40_building_K-KQV": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "40_building_K-KQV"
         }
       }
@@ -14010,12 +14010,12 @@ var gameData = {
     "40_building_K-KWE-KWE1-499": {
       "firstVisit": true,
       "displayName": "Pacific Islands (Trust Territory) shelf",
-      "description": "Description for shelf Pacific Islands (Trust Territory) in Pacific Islands (Trust Territory) Room.\n\n[|Main||||||] Pacific Islands (Trust Territory) Room entrance",
+      "description": "Description for shelf Pacific Islands (Trust Territory) in Pacific Islands (Trust Territory) Room.\n\n[|Entrance||] Pacific Islands (Trust Territory) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "40_building_K-KWE": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "40_building_K-KWE"
         }
       }
@@ -14040,12 +14040,12 @@ var gameData = {
     "40_building_K-KPW-KPW1-489": {
       "firstVisit": true,
       "displayName": "Vietnam (Republic).  South Vietnam shelf",
-      "description": "Description for shelf Vietnam (Republic).  South Vietnam in Vietnam (Republic).  South Vietnam Room.\n\n[|Main||||||] Vietnam (Republic).  South Vietnam Room entrance",
+      "description": "Description for shelf Vietnam (Republic).  South Vietnam in Vietnam (Republic).  South Vietnam Room.\n\n[|Entrance||] Vietnam (Republic).  South Vietnam Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "40_building_K-KPW": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "40_building_K-KPW"
         }
       }
@@ -14111,12 +14111,12 @@ var gameData = {
     "41_building_K-KWX-KWX1-950": {
       "firstVisit": true,
       "displayName": "Antarctica shelf",
-      "description": "Description for shelf Antarctica in Antarctica Room.\n\n[|Main||||||] Antarctica Room entrance",
+      "description": "Description for shelf Antarctica in Antarctica Room.\n\n[|Entrance||] Antarctica Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "41_building_K-KWX": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "41_building_K-KWX"
         }
       }
@@ -14141,12 +14141,12 @@ var gameData = {
     "41_building_K-KVH-KVH1-490": {
       "firstVisit": true,
       "displayName": "American Samoa shelf",
-      "description": "Description for shelf American Samoa in British New Guinea (Territory of Papua) Room.\n\n[|Main||||||] British New Guinea (Territory of Papua) Room entrance",
+      "description": "Description for shelf American Samoa in British New Guinea (Territory of Papua) Room.\n\n[|Entrance||] British New Guinea (Territory of Papua) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "41_building_K-KVH": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "41_building_K-KVH"
         }
       }
@@ -14171,12 +14171,12 @@ var gameData = {
     "41_building_K-KWR-KWR1-490": {
       "firstVisit": true,
       "displayName": "Vanuatu shelf",
-      "description": "Description for shelf Vanuatu in Vanuatu Room.\n\n[|Main||||||] Vanuatu Room entrance",
+      "description": "Description for shelf Vanuatu in Vanuatu Room.\n\n[|Entrance||] Vanuatu Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "41_building_K-KWR": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "41_building_K-KWR"
         }
       }
@@ -14201,12 +14201,12 @@ var gameData = {
     "41_building_K-KWA-KWA1-489": {
       "firstVisit": true,
       "displayName": "Niue shelf",
-      "description": "Description for shelf Niue in Niue Room.\n\n[|Main||||||] Niue Room entrance",
+      "description": "Description for shelf Niue in Niue Room.\n\n[|Entrance||] Niue Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "41_building_K-KWA": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "41_building_K-KWA"
         }
       }
@@ -14231,12 +14231,12 @@ var gameData = {
     "41_building_K-KNF-KNF1-4990": {
       "firstVisit": true,
       "displayName": "Afghanistan shelf",
-      "description": "Description for shelf Afghanistan in Afghanistan Room.\n\n[|Main||||||] Afghanistan Room entrance",
+      "description": "Description for shelf Afghanistan in Afghanistan Room.\n\n[|Entrance||] Afghanistan Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "41_building_K-KNF": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "41_building_K-KNF"
         }
       }
@@ -14261,12 +14261,12 @@ var gameData = {
     "41_building_K-KRY-KRY1-499": {
       "firstVisit": true,
       "displayName": "Gibraltar shelf",
-      "description": "Description for shelf Gibraltar in Gibraltar Room.\n\n[|Main||||||] Gibraltar Room entrance",
+      "description": "Description for shelf Gibraltar in Gibraltar Room.\n\n[|Entrance||] Gibraltar Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "41_building_K-KRY": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "41_building_K-KRY"
         }
       }
@@ -14332,12 +14332,12 @@ var gameData = {
     "42_building_K-KRC-KRC1-490": {
       "firstVisit": true,
       "displayName": "Chad shelf",
-      "description": "Description for shelf Chad in Chad Room.\n\n[|Main||||||] Chad Room entrance",
+      "description": "Description for shelf Chad in Chad Room.\n\n[|Entrance||] Chad Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "42_building_K-KRC": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "42_building_K-KRC"
         }
       }
@@ -14362,12 +14362,12 @@ var gameData = {
     "42_building_K-KTJ-KTJ1-490": {
       "firstVisit": true,
       "displayName": "Sierra Leone shelf",
-      "description": "Description for shelf Sierra Leone in Sierra Leone Room.\n\n[|Main||||||] Sierra Leone Room entrance",
+      "description": "Description for shelf Sierra Leone in Sierra Leone Room.\n\n[|Entrance||] Sierra Leone Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "42_building_K-KTJ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "42_building_K-KTJ"
         }
       }
@@ -14392,12 +14392,12 @@ var gameData = {
     "42_building_K-KTR-KTR1-490": {
       "firstVisit": true,
       "displayName": "Swaziland shelf",
-      "description": "Description for shelf Swaziland in Swaziland Room.\n\n[|Main||||||] Swaziland Room entrance",
+      "description": "Description for shelf Swaziland in Swaziland Room.\n\n[|Entrance||] Swaziland Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "42_building_K-KTR": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "42_building_K-KTR"
         }
       }
@@ -14422,12 +14422,12 @@ var gameData = {
     "42_building_K-KTC-KTC1-489": {
       "firstVisit": true,
       "displayName": "R\u00e9union shelf",
-      "description": "Description for shelf R\u00e9union in R\u00e9union Room.\n\n[|Main||||||] R\u00e9union Room entrance",
+      "description": "Description for shelf R\u00e9union in R\u00e9union Room.\n\n[|Entrance||] R\u00e9union Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "42_building_K-KTC": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "42_building_K-KTC"
         }
       }
@@ -14452,12 +14452,12 @@ var gameData = {
     "42_building_K-KRK-KRK1-490": {
       "firstVisit": true,
       "displayName": "Djibouti shelf",
-      "description": "Description for shelf Djibouti in Djibouti Room.\n\n[|Main||||||] Djibouti Room entrance",
+      "description": "Description for shelf Djibouti in Djibouti Room.\n\n[|Entrance||] Djibouti Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "42_building_K-KRK": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "42_building_K-KRK"
         }
       }
@@ -14482,12 +14482,12 @@ var gameData = {
     "42_building_K-KGM-KGM0-499": {
       "firstVisit": true,
       "displayName": "Cayman Islands shelf",
-      "description": "Description for shelf Cayman Islands in Cayman Islands Room.\n\n[|Main||||||] Cayman Islands Room entrance",
+      "description": "Description for shelf Cayman Islands in Cayman Islands Room.\n\n[|Entrance||] Cayman Islands Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "42_building_K-KGM": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "42_building_K-KGM"
         }
       }
@@ -14553,12 +14553,12 @@ var gameData = {
     "43_building_K-KGP-KGP2001-2499": {
       "firstVisit": true,
       "displayName": "Dominica shelf",
-      "description": "Description for shelf Dominica in Dominica Room.\n\n[|Main||||||] Dominica Room entrance\n[|Next||||||] Cura\u00e7ao shelf",
+      "description": "Description for shelf Dominica in Dominica Room.\n\n[|Entrance||] Dominica Room entrance\n[|Next||||||] Cura\u00e7ao shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "43_building_K-KGP": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "43_building_K-KGP"
         },
         "43_building_K-KGP-KGP1-499": {
@@ -14600,12 +14600,12 @@ var gameData = {
     "43_building_K-KRG-KRG1-490": {
       "firstVisit": true,
       "displayName": "Congo (Brazzaville) shelf",
-      "description": "Description for shelf Congo (Brazzaville) in Congo (Brazzaville) Room.\n\n[|Main||||||] Congo (Brazzaville) Room entrance",
+      "description": "Description for shelf Congo (Brazzaville) in Congo (Brazzaville) Room.\n\n[|Entrance||] Congo (Brazzaville) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "43_building_K-KRG": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "43_building_K-KRG"
         }
       }
@@ -14630,12 +14630,12 @@ var gameData = {
     "43_building_K-KVU-KVU1-499": {
       "firstVisit": true,
       "displayName": "Nauru shelf",
-      "description": "Description for shelf Nauru in Nauru Room.\n\n[|Main||||||] Nauru Room entrance\n[|Next||||||] Netherlands New Guinea (to 1963) shelf",
+      "description": "Description for shelf Nauru in Nauru Room.\n\n[|Entrance||] Nauru Room entrance\n[|Next||||||] Netherlands New Guinea (to 1963) shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "43_building_K-KVU": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "43_building_K-KVU"
         },
         "43_building_K-KVU-KVU1001-1099": {
@@ -14677,12 +14677,12 @@ var gameData = {
     "43_building_K-KQJ-KQJ1-490": {
       "firstVisit": true,
       "displayName": "Benin shelf",
-      "description": "Description for shelf Benin in Benin Room.\n\n[|Main||||||] Benin Room entrance",
+      "description": "Description for shelf Benin in Benin Room.\n\n[|Entrance||] Benin Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "43_building_K-KQJ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "43_building_K-KQJ"
         }
       }
@@ -14707,12 +14707,12 @@ var gameData = {
     "43_building_K-KNE-KNE10-499": {
       "firstVisit": true,
       "displayName": "Regional organization and integration shelf",
-      "description": "Description for shelf Regional organization and integration in Regional organization and integration Room.\n\n[|Main||||||] Regional organization and integration Room entrance",
+      "description": "Description for shelf Regional organization and integration in Regional organization and integration Room.\n\n[|Entrance||] Regional organization and integration Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "43_building_K-KNE": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "43_building_K-KNE"
         }
       }
@@ -14737,12 +14737,12 @@ var gameData = {
     "43_building_K-KMS-KMS1-490": {
       "firstVisit": true,
       "displayName": "Qatar shelf",
-      "description": "Description for shelf Qatar in Qatar Room.\n\n[|Main||||||] Qatar Room entrance",
+      "description": "Description for shelf Qatar in Qatar Room.\n\n[|Entrance||] Qatar Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "43_building_K-KMS": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "43_building_K-KMS"
         }
       }
@@ -14808,12 +14808,12 @@ var gameData = {
     "44_building_K-KQM-KQM1-499": {
       "firstVisit": true,
       "displayName": "British Central Africa Protectorate shelf",
-      "description": "Description for shelf British Central Africa Protectorate in British Central Africa Protectorate Room.\n\n[|Main||||||] British Central Africa Protectorate Room entrance",
+      "description": "Description for shelf British Central Africa Protectorate in British Central Africa Protectorate Room.\n\n[|Entrance||] British Central Africa Protectorate Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "44_building_K-KQM": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "44_building_K-KQM"
         }
       }
@@ -14838,12 +14838,12 @@ var gameData = {
     "44_building_K-KNY-KNY10-220": {
       "firstVisit": true,
       "displayName": "Cities, etc. shelf",
-      "description": "Description for shelf Cities, etc. in Cities, etc. Room.\n\n[|Main||||||] Cities, etc. Room entrance",
+      "description": "Description for shelf Cities, etc. in Cities, etc. Room.\n\n[|Entrance||] Cities, etc. Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "44_building_K-KNY": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "44_building_K-KNY"
         }
       }
@@ -14868,12 +14868,12 @@ var gameData = {
     "44_building_K-KLP-KLP1-4989": {
       "firstVisit": true,
       "displayName": "Ukraine shelf",
-      "description": "Description for shelf Ukraine in Ukraine Room.\n\n[|Main||||||] Ukraine Room entrance",
+      "description": "Description for shelf Ukraine in Ukraine Room.\n\n[|Entrance||] Ukraine Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "44_building_K-KLP": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "44_building_K-KLP"
         }
       }
@@ -14898,12 +14898,12 @@ var gameData = {
     "44_building_K-KQX-KQX1-490": {
       "firstVisit": true,
       "displayName": "Cape Verde shelf",
-      "description": "Description for shelf Cape Verde in Cape Verde Room.\n\n[|Main||||||] Cape Verde Room entrance",
+      "description": "Description for shelf Cape Verde in Cape Verde Room.\n\n[|Entrance||] Cape Verde Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "44_building_K-KQX": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "44_building_K-KQX"
         }
       }
@@ -14928,12 +14928,12 @@ var gameData = {
     "44_building_K-KGK-KGK1001-1499": {
       "firstVisit": true,
       "displayName": "Aruba shelf",
-      "description": "Description for shelf Aruba in Aruba Room.\n\n[|Main||||||] Aruba Room entrance\n[|Next||||||] Antigua and Barbuda shelf",
+      "description": "Description for shelf Aruba in Aruba Room.\n\n[|Entrance||] Aruba Room entrance\n[|Next||||||] Antigua and Barbuda shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "44_building_K-KGK": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "44_building_K-KGK"
         },
         "44_building_K-KGK-KGK1-499": {
@@ -14975,12 +14975,12 @@ var gameData = {
     "44_building_K-KPH-KPH5001-5490": {
       "firstVisit": true,
       "displayName": "Maldives shelf",
-      "description": "Description for shelf Maldives in Maldives Room.\n\n[|Main||||||] Maldives Room entrance",
+      "description": "Description for shelf Maldives in Maldives Room.\n\n[|Entrance||] Maldives Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "44_building_K-KPH": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "44_building_K-KPH"
         }
       }
@@ -15046,12 +15046,12 @@ var gameData = {
     "45_building_K-KSU-KSU1-490": {
       "firstVisit": true,
       "displayName": "Mauritania shelf",
-      "description": "Description for shelf Mauritania in Mauritania Room.\n\n[|Main||||||] Mauritania Room entrance",
+      "description": "Description for shelf Mauritania in Mauritania Room.\n\n[|Entrance||] Mauritania Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "45_building_K-KSU": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "45_building_K-KSU"
         }
       }
@@ -15076,12 +15076,12 @@ var gameData = {
     "45_building_K-KSC-KSC1-490": {
       "firstVisit": true,
       "displayName": "Guinea-Bissau shelf",
-      "description": "Description for shelf Guinea-Bissau in Guinea-Bissau Room.\n\n[|Main||||||] Guinea-Bissau Room entrance",
+      "description": "Description for shelf Guinea-Bissau in Guinea-Bissau Room.\n\n[|Entrance||] Guinea-Bissau Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "45_building_K-KSC": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "45_building_K-KSC"
         }
       }
@@ -15106,12 +15106,12 @@ var gameData = {
     "45_building_K-KVL-KVL1-489": {
       "firstVisit": true,
       "displayName": "Cook Islands shelf",
-      "description": "Description for shelf Cook Islands in Cook Islands Room.\n\n[|Main||||||] Cook Islands Room entrance",
+      "description": "Description for shelf Cook Islands in Cook Islands Room.\n\n[|Entrance||] Cook Islands Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "45_building_K-KVL": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "45_building_K-KVL"
         }
       }
@@ -15136,12 +15136,12 @@ var gameData = {
     "45_building_K-KWP-KWP1-490": {
       "firstVisit": true,
       "displayName": "Tonga shelf",
-      "description": "Description for shelf Tonga in Tonga Room.\n\n[|Main||||||] Tonga Room entrance",
+      "description": "Description for shelf Tonga in Tonga Room.\n\n[|Entrance||] Tonga Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "45_building_K-KWP": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "45_building_K-KWP"
         }
       }
@@ -15166,12 +15166,12 @@ var gameData = {
     "45_building_K-KNH-KNH1-490": {
       "firstVisit": true,
       "displayName": "Bhutan shelf",
-      "description": "Description for shelf Bhutan in Bhutan Room.\n\n[|Main||||||] Bhutan Room entrance",
+      "description": "Description for shelf Bhutan in Bhutan Room.\n\n[|Entrance||] Bhutan Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "45_building_K-KNH": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "45_building_K-KNH"
         }
       }
@@ -15196,12 +15196,12 @@ var gameData = {
     "45_building_K-KMG-KMG1-489": {
       "firstVisit": true,
       "displayName": "Gaza shelf",
-      "description": "Description for shelf Gaza in Gaza Room.\n\n[|Main||||||] Gaza Room entrance",
+      "description": "Description for shelf Gaza in Gaza Room.\n\n[|Entrance||] Gaza Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "45_building_K-KMG": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "45_building_K-KMG"
         }
       }
@@ -15267,12 +15267,12 @@ var gameData = {
     "46_building_K-KHL-KHL1-9000": {
       "firstVisit": true,
       "displayName": "Falkland Islands shelf",
-      "description": "Description for shelf Falkland Islands in Falkland Islands Room.\n\n[|Main||||||] Falkland Islands Room entrance",
+      "description": "Description for shelf Falkland Islands in Falkland Islands Room.\n\n[|Entrance||] Falkland Islands Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "46_building_K-KHL": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "46_building_K-KHL"
         }
       }
@@ -15297,12 +15297,12 @@ var gameData = {
     "46_building_K-KWQ-KWQ1-490": {
       "firstVisit": true,
       "displayName": "Tuvalu shelf",
-      "description": "Description for shelf Tuvalu in Tuvalu Room.\n\n[|Main||||||] Tuvalu Room entrance",
+      "description": "Description for shelf Tuvalu in Tuvalu Room.\n\n[|Entrance||] Tuvalu Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "46_building_K-KWQ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "46_building_K-KWQ"
         }
       }
@@ -15327,12 +15327,12 @@ var gameData = {
     "46_building_K-KRR-KRR1-499": {
       "firstVisit": true,
       "displayName": "French Equatorial Africa shelf",
-      "description": "Description for shelf French Equatorial Africa in French Equatorial Africa Room.\n\n[|Main||||||] French Equatorial Africa Room entrance",
+      "description": "Description for shelf French Equatorial Africa in French Equatorial Africa Room.\n\n[|Entrance||] French Equatorial Africa Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "46_building_K-KRR": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "46_building_K-KRR"
         }
       }
@@ -15357,12 +15357,12 @@ var gameData = {
     "46_building_K-KVR-KVR1-490": {
       "firstVisit": true,
       "displayName": "Kiribati shelf",
-      "description": "Description for shelf Kiribati in Kiribati Room.\n\n[|Main||||||] Kiribati Room entrance",
+      "description": "Description for shelf Kiribati in Kiribati Room.\n\n[|Entrance||] Kiribati Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "46_building_K-KVR": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "46_building_K-KVR"
         }
       }
@@ -15387,12 +15387,12 @@ var gameData = {
     "46_building_K-KU-KU350-399": {
       "firstVisit": true,
       "displayName": "Law of Australian peoples.  Aborigines shelf",
-      "description": "Description for shelf Law of Australian peoples.  Aborigines in Law of Australian peoples.  Aborigines Room.\n\n[|Main||||||] Law of Australian peoples.  Aborigines Room entrance",
+      "description": "Description for shelf Law of Australian peoples.  Aborigines in Law of Australian peoples.  Aborigines Room.\n\n[|Entrance||] Law of Australian peoples.  Aborigines Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "46_building_K-KU": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "46_building_K-KU"
         }
       }
@@ -15467,12 +15467,12 @@ var gameData = {
     "building_L-LB-LB5-3640": {
       "firstVisit": true,
       "displayName": "Theory and practice of education shelf",
-      "description": "Description for shelf Theory and practice of education in Theory and practice of education Room.\n\n[|Main||||||] Theory and practice of education Room entrance",
+      "description": "Description for shelf Theory and practice of education in Theory and practice of education Room.\n\n[|Entrance||] Theory and practice of education Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_L-LB": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_L-LB"
         }
       }
@@ -15497,12 +15497,12 @@ var gameData = {
     "building_L-LT-LT6-1001": {
       "firstVisit": true,
       "displayName": "Textbooks shelf",
-      "description": "Description for shelf Textbooks in Textbooks Room.\n\n[|Main||||||] Textbooks Room entrance",
+      "description": "Description for shelf Textbooks in Textbooks Room.\n\n[|Entrance||] Textbooks Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_L-LT": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_L-LT"
         }
       }
@@ -15527,12 +15527,12 @@ var gameData = {
     "building_L-LA-LA5-2396": {
       "firstVisit": true,
       "displayName": "History of education shelf",
-      "description": "Description for shelf History of education in History of education Room.\n\n[|Main||||||] History of education Room entrance",
+      "description": "Description for shelf History of education in History of education Room.\n\n[|Entrance||] History of education Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_L-LA": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_L-LA"
         }
       }
@@ -15557,12 +15557,12 @@ var gameData = {
     "building_L-LD-LD13-7501": {
       "firstVisit": true,
       "displayName": "United States shelf",
-      "description": "Description for shelf United States in United States Room.\n\n[|Main||||||] United States Room entrance",
+      "description": "Description for shelf United States in United States Room.\n\n[|Entrance||] United States Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_L-LD": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_L-LD"
         }
       }
@@ -15587,12 +15587,12 @@ var gameData = {
     "building_L-LC-LC8-6691": {
       "firstVisit": true,
       "displayName": "Special aspects of education shelf",
-      "description": "Description for shelf Special aspects of education in Special aspects of education Room.\n\n[|Main||||||] Special aspects of education Room entrance",
+      "description": "Description for shelf Special aspects of education in Special aspects of education Room.\n\n[|Entrance||] Special aspects of education Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_L-LC": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_L-LC"
         }
       }
@@ -15617,12 +15617,12 @@ var gameData = {
     "building_L-L-L7-991": {
       "firstVisit": true,
       "displayName": "Education (General) shelf",
-      "description": "Description for shelf Education (General) in Education (General) Room.\n\n[|Main||||||] Education (General) Room entrance",
+      "description": "Description for shelf Education (General) in Education (General) Room.\n\n[|Entrance||] Education (General) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_L-L": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_L-L"
         }
       }
@@ -15688,12 +15688,12 @@ var gameData = {
     "2_building_L-LF-LF14-5627": {
       "firstVisit": true,
       "displayName": "Individual institutions shelf",
-      "description": "Description for shelf Individual institutions in Individual institutions Room.\n\n[|Main||||||] Individual institutions Room entrance",
+      "description": "Description for shelf Individual institutions in Individual institutions Room.\n\n[|Entrance||] Individual institutions Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_L-LF": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_L-LF"
         }
       }
@@ -15718,12 +15718,12 @@ var gameData = {
     "2_building_L-LG-LG21-961": {
       "firstVisit": true,
       "displayName": "Individual institutions shelf",
-      "description": "Description for shelf Individual institutions in Individual institutions Room.\n\n[|Main||||||] Individual institutions Room entrance",
+      "description": "Description for shelf Individual institutions in Individual institutions Room.\n\n[|Entrance||] Individual institutions Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_L-LG": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_L-LG"
         }
       }
@@ -15748,12 +15748,12 @@ var gameData = {
     "2_building_L-LJ-LJ3-165": {
       "firstVisit": true,
       "displayName": "Student fraternities and societies, United States shelf",
-      "description": "Description for shelf Student fraternities and societies, United States in Student fraternities and societies, United States Room.\n\n[|Main||||||] Student fraternities and societies, United States Room entrance",
+      "description": "Description for shelf Student fraternities and societies, United States in Student fraternities and societies, United States Room.\n\n[|Entrance||] Student fraternities and societies, United States Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_L-LJ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_L-LJ"
         }
       }
@@ -15778,12 +15778,12 @@ var gameData = {
     "2_building_L-LE-LE3-78": {
       "firstVisit": true,
       "displayName": "America (except United States) shelf",
-      "description": "Description for shelf America (except United States) in America (except United States) Room.\n\n[|Main||||||] America (except United States) Room entrance",
+      "description": "Description for shelf America (except United States) in America (except United States) Room.\n\n[|Entrance||] America (except United States) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_L-LE": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_L-LE"
         }
       }
@@ -15808,12 +15808,12 @@ var gameData = {
     "2_building_L-LH-LH1-9": {
       "firstVisit": true,
       "displayName": "College and school magazines and papers shelf",
-      "description": "Description for shelf College and school magazines and papers in College and school magazines and papers Room.\n\n[|Main||||||] College and school magazines and papers Room entrance",
+      "description": "Description for shelf College and school magazines and papers in College and school magazines and papers Room.\n\n[|Entrance||] College and school magazines and papers Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_L-LH": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_L-LH"
         }
       }
@@ -15888,12 +15888,12 @@ var gameData = {
     "building_M-ML-ML1-3930": {
       "firstVisit": true,
       "displayName": "Literature on music shelf",
-      "description": "Description for shelf Literature on music in Literature on music Room.\n\n[|Main||||||] Literature on music Room entrance",
+      "description": "Description for shelf Literature on music in Literature on music Room.\n\n[|Entrance||] Literature on music Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_M-ML": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_M-ML"
         }
       }
@@ -15918,12 +15918,12 @@ var gameData = {
     "building_M-MT-MT1-960": {
       "firstVisit": true,
       "displayName": "Instruction and study shelf",
-      "description": "Description for shelf Instruction and study in Instruction and study Room.\n\n[|Main||||||] Instruction and study Room entrance",
+      "description": "Description for shelf Instruction and study in Instruction and study Room.\n\n[|Entrance||] Instruction and study Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_M-MT": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_M-MT"
         }
       }
@@ -15948,12 +15948,12 @@ var gameData = {
     "building_M-M-M1-5000": {
       "firstVisit": true,
       "displayName": "Music shelf",
-      "description": "Description for shelf Music in Music Room.\n\n[|Main||||||] Music Room entrance",
+      "description": "Description for shelf Music in Music Room.\n\n[|Entrance||] Music Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_M-M": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_M-M"
         }
       }
@@ -16020,12 +16020,12 @@ var gameData = {
     "building_N-NA-NA1-9428": {
       "firstVisit": true,
       "displayName": "Architecture shelf",
-      "description": "Description for shelf Architecture in Architecture Room.\n\n[|Main||||||] Architecture Room entrance",
+      "description": "Description for shelf Architecture in Architecture Room.\n\n[|Entrance||] Architecture Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_N-NA": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_N-NA"
         }
       }
@@ -16050,12 +16050,12 @@ var gameData = {
     "building_N-N-N1-9211": {
       "firstVisit": true,
       "displayName": "Visual arts shelf",
-      "description": "Description for shelf Visual arts in Visual arts Room.\n\n[|Main||||||] Visual arts Room entrance",
+      "description": "Description for shelf Visual arts in Visual arts Room.\n\n[|Entrance||] Visual arts Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_N-N": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_N-N"
         }
       }
@@ -16080,12 +16080,12 @@ var gameData = {
     "building_N-NK-NK1-9990": {
       "firstVisit": true,
       "displayName": "Decorative arts shelf",
-      "description": "Description for shelf Decorative arts in Decorative arts Room.\n\n[|Main||||||] Decorative arts Room entrance",
+      "description": "Description for shelf Decorative arts in Decorative arts Room.\n\n[|Entrance||] Decorative arts Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_N-NK": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_N-NK"
         }
       }
@@ -16110,12 +16110,12 @@ var gameData = {
     "building_N-ND-ND25-3416": {
       "firstVisit": true,
       "displayName": "Painting shelf",
-      "description": "Description for shelf Painting in Painting Room.\n\n[|Main||||||] Painting Room entrance",
+      "description": "Description for shelf Painting in Painting Room.\n\n[|Entrance||] Painting Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_N-ND": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_N-ND"
         }
       }
@@ -16140,12 +16140,12 @@ var gameData = {
     "building_N-NC-NC1-1940": {
       "firstVisit": true,
       "displayName": "Drawing.    Design.    Illustration shelf",
-      "description": "Description for shelf Drawing.    Design.    Illustration in Drawing.    Design.    Illustration Room.\n\n[|Main||||||] Drawing.    Design.    Illustration Room entrance",
+      "description": "Description for shelf Drawing.    Design.    Illustration in Drawing.    Design.    Illustration Room.\n\n[|Entrance||] Drawing.    Design.    Illustration Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_N-NC": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_N-NC"
         }
       }
@@ -16170,12 +16170,12 @@ var gameData = {
     "building_N-NE-NE1-3002": {
       "firstVisit": true,
       "displayName": "Print media shelf",
-      "description": "Description for shelf Print media in Print media Room.\n\n[|Main||||||] Print media Room entrance",
+      "description": "Description for shelf Print media in Print media Room.\n\n[|Entrance||] Print media Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_N-NE": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_N-NE"
         }
       }
@@ -16241,12 +16241,12 @@ var gameData = {
     "2_building_N-NB-NB1-1952": {
       "firstVisit": true,
       "displayName": "Sculpture shelf",
-      "description": "Description for shelf Sculpture in Sculpture Room.\n\n[|Main||||||] Sculpture Room entrance",
+      "description": "Description for shelf Sculpture in Sculpture Room.\n\n[|Entrance||] Sculpture Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_N-NB": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_N-NB"
         }
       }
@@ -16271,12 +16271,12 @@ var gameData = {
     "2_building_N-NX-NX1-820": {
       "firstVisit": true,
       "displayName": "Arts in general shelf",
-      "description": "Description for shelf Arts in general in Arts in general Room.\n\n[|Main||||||] Arts in general Room entrance",
+      "description": "Description for shelf Arts in general in Arts in general Room.\n\n[|Entrance||] Arts in general Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_N-NX": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_N-NX"
         }
       }
@@ -16339,12 +16339,12 @@ var gameData = {
     "building_P-PZ-PZ1-90": {
       "firstVisit": true,
       "displayName": "Fiction and juvenile belles lettres shelf",
-      "description": "Description for shelf Fiction and juvenile belles lettres in Fiction and juvenile belles lettres Room.\n\n[|Main||||||] Fiction and juvenile belles lettres Room entrance",
+      "description": "Description for shelf Fiction and juvenile belles lettres in Fiction and juvenile belles lettres Room.\n\n[|Entrance||] Fiction and juvenile belles lettres Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_P-PZ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_P-PZ"
         }
       }
@@ -16369,12 +16369,12 @@ var gameData = {
     "building_P-PR-PR": {
       "firstVisit": true,
       "displayName": "English shelf",
-      "description": "Description for shelf English in English Room.\n\n[|Main||||||] English Room entrance",
+      "description": "Description for shelf English in English Room.\n\n[|Entrance||] English Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_P-PR": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_P-PR"
         }
       }
@@ -16399,12 +16399,12 @@ var gameData = {
     "building_P-PS-PS1-3576": {
       "firstVisit": true,
       "displayName": "American literature shelf",
-      "description": "Description for shelf American literature in American literature Room.\n\n[|Main||||||] American literature Room entrance\n[|Next||||||] Canadian    literature shelf",
+      "description": "Description for shelf American literature in American literature Room.\n\n[|Entrance||] American literature Room entrance\n[|Next||||||] Canadian    literature shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "building_P-PS": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_P-PS"
         },
         "building_P-PS-PS8001-8599": {
@@ -16446,12 +16446,12 @@ var gameData = {
     "building_P-PQ-PQ1-3999": {
       "firstVisit": true,
       "displayName": "French literature shelf",
-      "description": "Description for shelf French literature in French literature Room.\n\n[|Main||||||] French literature Room entrance\n[|Next||||||] Italian literature shelf",
+      "description": "Description for shelf French literature in French literature Room.\n\n[|Entrance||] French literature Room entrance\n[|Next||||||] Italian literature shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "building_P-PQ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_P-PQ"
         },
         "building_P-PQ-PQ4001-5999": {
@@ -16561,12 +16561,12 @@ var gameData = {
     "building_P-PE-PE1-3729": {
       "firstVisit": true,
       "displayName": "English shelf",
-      "description": "Description for shelf English in English Room.\n\n[|Main||||||] English Room entrance",
+      "description": "Description for shelf English in English Room.\n\n[|Entrance||] English Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_P-PE": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_P-PE"
         }
       }
@@ -16591,12 +16591,12 @@ var gameData = {
     "building_P-PN-PN1-6790": {
       "firstVisit": true,
       "displayName": "Literature (General) shelf",
-      "description": "Description for shelf Literature (General) in Literature (General) Room.\n\n[|Main||||||] Literature (General) Room entrance",
+      "description": "Description for shelf Literature (General) in Literature (General) Room.\n\n[|Entrance||] Literature (General) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_P-PN": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_P-PN"
         }
       }
@@ -16662,12 +16662,12 @@ var gameData = {
     "2_building_P-PT-PT1-4897": {
       "firstVisit": true,
       "displayName": "German literature shelf",
-      "description": "Description for shelf German literature in German literature Room.\n\n[|Main||||||] German literature Room entrance\n[|Next||||||] Norwegian literature shelf",
+      "description": "Description for shelf German literature in German literature Room.\n\n[|Entrance||] German literature Room entrance\n[|Next||||||] Norwegian literature shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_P-PT": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_P-PT"
         },
         "2_building_P-PT-PT8301-9155": {
@@ -16862,12 +16862,12 @@ var gameData = {
     "2_building_P-PA-PA2001-2915": {
       "firstVisit": true,
       "displayName": "Latin philology and language shelf",
-      "description": "Description for shelf Latin philology and language in Greek literature Room.\n\n[|Main||||||] Greek literature Room entrance\n[|Next||||||] Roman literature shelf",
+      "description": "Description for shelf Latin philology and language in Greek literature Room.\n\n[|Entrance||] Greek literature Room entrance\n[|Next||||||] Roman literature shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_P-PA": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_P-PA"
         },
         "2_building_P-PA-PA6000-6971": {
@@ -17028,12 +17028,12 @@ var gameData = {
     "2_building_P-PC-PC1-5498": {
       "firstVisit": true,
       "displayName": "Romance shelf",
-      "description": "Description for shelf Romance in Romance Room.\n\n[|Main||||||] Romance Room entrance",
+      "description": "Description for shelf Romance in Romance Room.\n\n[|Entrance||] Romance Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_P-PC": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_P-PC"
         }
       }
@@ -17058,12 +17058,12 @@ var gameData = {
     "2_building_P-PK-PK1-9601": {
       "firstVisit": true,
       "displayName": "Indo-Iranian philology and literature shelf",
-      "description": "Description for shelf Indo-Iranian philology and literature in Indo-Iranian philology and literature Room.\n\n[|Main||||||] Indo-Iranian philology and literature Room entrance",
+      "description": "Description for shelf Indo-Iranian philology and literature in Indo-Iranian philology and literature Room.\n\n[|Entrance||] Indo-Iranian philology and literature Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_P-PK": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_P-PK"
         }
       }
@@ -17088,12 +17088,12 @@ var gameData = {
     "2_building_P-P-P1-1091": {
       "firstVisit": true,
       "displayName": "Philology.    Linguistics shelf",
-      "description": "Description for shelf Philology.    Linguistics in Philology.    Linguistics Room.\n\n[|Main||||||] Philology.    Linguistics Room entrance",
+      "description": "Description for shelf Philology.    Linguistics in Philology.    Linguistics Room.\n\n[|Entrance||] Philology.    Linguistics Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_P-P": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_P-P"
         }
       }
@@ -17118,12 +17118,12 @@ var gameData = {
     "2_building_P-PF-PF1-5999": {
       "firstVisit": true,
       "displayName": "West Germanic shelf",
-      "description": "Description for shelf West Germanic in West Germanic Room.\n\n[|Main||||||] West Germanic Room entrance",
+      "description": "Description for shelf West Germanic in West Germanic Room.\n\n[|Entrance||] West Germanic Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_P-PF": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_P-PF"
         }
       }
@@ -17189,12 +17189,12 @@ var gameData = {
     "3_building_P-PJ-PJ1-9500": {
       "firstVisit": true,
       "displayName": "Oriental philology and literature shelf",
-      "description": "Description for shelf Oriental philology and literature in Oriental philology and literature Room.\n\n[|Main||||||] Oriental philology and literature Room entrance\n[|Next||||||] General shelf",
+      "description": "Description for shelf Oriental philology and literature in Oriental philology and literature Room.\n\n[|Entrance||] Oriental philology and literature Room entrance\n[|Next||||||] General shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_P-PJ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_P-PJ"
         },
         "3_building_P-PJ-PJ1-489": {
@@ -17236,12 +17236,12 @@ var gameData = {
     "3_building_P-PD-PD1-7159": {
       "firstVisit": true,
       "displayName": "Germanic shelf",
-      "description": "Description for shelf Germanic in Germanic Room.\n\n[|Main||||||] Germanic Room entrance",
+      "description": "Description for shelf Germanic in Germanic Room.\n\n[|Entrance||] Germanic Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_P-PD": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_P-PD"
         }
       }
@@ -17266,12 +17266,12 @@ var gameData = {
     "3_building_P-PG-PG1-7925": {
       "firstVisit": true,
       "displayName": "Slavic shelf",
-      "description": "Description for shelf Slavic in Slavic.    Baltic.    Albanian Room.\n\n[|Main||||||] Slavic.    Baltic.    Albanian Room entrance\n[|Next||||||] Slavic.    Baltic.    Albanian shelf",
+      "description": "Description for shelf Slavic in Slavic.    Baltic.    Albanian Room.\n\n[|Entrance||] Slavic.    Baltic.    Albanian Room entrance\n[|Next||||||] Slavic.    Baltic.    Albanian shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_P-PG": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_P-PG"
         },
         "3_building_P-PG-PG1-9665": {
@@ -17313,12 +17313,12 @@ var gameData = {
     "3_building_P-PH-PH1-5490": {
       "firstVisit": true,
       "displayName": "Uralic.    Basque shelf",
-      "description": "Description for shelf Uralic.    Basque in Uralic.    Basque Room.\n\n[|Main||||||] Uralic.    Basque Room entrance",
+      "description": "Description for shelf Uralic.    Basque in Uralic.    Basque Room.\n\n[|Entrance||] Uralic.    Basque Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_P-PH": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_P-PH"
         }
       }
@@ -17343,12 +17343,12 @@ var gameData = {
     "3_building_P-PL-PL1-8844": {
       "firstVisit": true,
       "displayName": "Languages of Eastern Asia, Africa, Oceania shelf",
-      "description": "Description for shelf Languages of Eastern Asia, Africa, Oceania in Languages of Eastern Asia, Africa, Oceania Room.\n\n[|Main||||||] Languages of Eastern Asia, Africa, Oceania Room entrance",
+      "description": "Description for shelf Languages of Eastern Asia, Africa, Oceania in Languages of Eastern Asia, Africa, Oceania Room.\n\n[|Entrance||] Languages of Eastern Asia, Africa, Oceania Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_P-PL": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_P-PL"
         }
       }
@@ -17373,12 +17373,12 @@ var gameData = {
     "3_building_P-PB-PB1-3029": {
       "firstVisit": true,
       "displayName": "Modern languages.    Celtic languages shelf",
-      "description": "Description for shelf Modern languages.    Celtic languages in Modern languages.    Celtic languages Room.\n\n[|Main||||||] Modern languages.    Celtic languages Room entrance",
+      "description": "Description for shelf Modern languages.    Celtic languages in Modern languages.    Celtic languages Room.\n\n[|Entrance||] Modern languages.    Celtic languages Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_P-PB": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_P-PB"
         }
       }
@@ -17444,12 +17444,12 @@ var gameData = {
     "4_building_P-PM-PM1-9021": {
       "firstVisit": true,
       "displayName": "Hyperborean, Indian, and artificial languages shelf",
-      "description": "Description for shelf Hyperborean, Indian, and artificial languages in Hyperborean, Indian, and artificial languages Room.\n\n[|Main||||||] Hyperborean, Indian, and artificial languages Room entrance",
+      "description": "Description for shelf Hyperborean, Indian, and artificial languages in Hyperborean, Indian, and artificial languages Room.\n\n[|Entrance||] Hyperborean, Indian, and artificial languages Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "4_building_P-PM": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "4_building_P-PM"
         }
       }
@@ -17508,12 +17508,12 @@ var gameData = {
     "building_Q-QR-QR1-502": {
       "firstVisit": true,
       "displayName": "Microbiology shelf",
-      "description": "Description for shelf Microbiology in Microbiology Room.\n\n[|Main||||||] Microbiology Room entrance",
+      "description": "Description for shelf Microbiology in Microbiology Room.\n\n[|Entrance||] Microbiology Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_Q-QR": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_Q-QR"
         }
       }
@@ -17538,12 +17538,12 @@ var gameData = {
     "building_Q-QK-QK1-989": {
       "firstVisit": true,
       "displayName": "Botany shelf",
-      "description": "Description for shelf Botany in Botany Room.\n\n[|Main||||||] Botany Room entrance",
+      "description": "Description for shelf Botany in Botany Room.\n\n[|Entrance||] Botany Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_Q-QK": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_Q-QK"
         }
       }
@@ -17568,12 +17568,12 @@ var gameData = {
     "building_Q-QL-QL1-991": {
       "firstVisit": true,
       "displayName": "Zoology shelf",
-      "description": "Description for shelf Zoology in Zoology Room.\n\n[|Main||||||] Zoology Room entrance",
+      "description": "Description for shelf Zoology in Zoology Room.\n\n[|Entrance||] Zoology Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_Q-QL": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_Q-QL"
         }
       }
@@ -17598,12 +17598,12 @@ var gameData = {
     "building_Q-QB-QB1-991": {
       "firstVisit": true,
       "displayName": "Astronomy shelf",
-      "description": "Description for shelf Astronomy in Astronomy Room.\n\n[|Main||||||] Astronomy Room entrance",
+      "description": "Description for shelf Astronomy in Astronomy Room.\n\n[|Entrance||] Astronomy Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_Q-QB": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_Q-QB"
         }
       }
@@ -17628,12 +17628,12 @@ var gameData = {
     "building_Q-QA-QA1-939": {
       "firstVisit": true,
       "displayName": "Mathematics shelf",
-      "description": "Description for shelf Mathematics in Mathematics Room.\n\n[|Main||||||] Mathematics Room entrance",
+      "description": "Description for shelf Mathematics in Mathematics Room.\n\n[|Entrance||] Mathematics Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_Q-QA": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_Q-QA"
         }
       }
@@ -17658,12 +17658,12 @@ var gameData = {
     "building_Q-Q-Q1-390": {
       "firstVisit": true,
       "displayName": "Science (General) shelf",
-      "description": "Description for shelf Science (General) in Science (General) Room.\n\n[|Main||||||] Science (General) Room entrance",
+      "description": "Description for shelf Science (General) in Science (General) Room.\n\n[|Entrance||] Science (General) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_Q-Q": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_Q-Q"
         }
       }
@@ -17729,12 +17729,12 @@ var gameData = {
     "2_building_Q-QP-QP1-981": {
       "firstVisit": true,
       "displayName": "Physiology shelf",
-      "description": "Description for shelf Physiology in Physiology Room.\n\n[|Main||||||] Physiology Room entrance",
+      "description": "Description for shelf Physiology in Physiology Room.\n\n[|Entrance||] Physiology Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_Q-QP": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_Q-QP"
         }
       }
@@ -17759,12 +17759,12 @@ var gameData = {
     "2_building_Q-QH-QH1-278.5": {
       "firstVisit": true,
       "displayName": "Natural history (General) shelf",
-      "description": "Description for shelf Natural history (General) in Biology (General) Room.\n\n[|Main||||||] Biology (General) Room entrance\n[|Next||||||] Biology (General) shelf",
+      "description": "Description for shelf Natural history (General) in Biology (General) Room.\n\n[|Entrance||] Biology (General) Room entrance\n[|Next||||||] Biology (General) shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_Q-QH": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_Q-QH"
         },
         "2_building_Q-QH-QH301-705.5": {
@@ -17806,12 +17806,12 @@ var gameData = {
     "2_building_Q-QD-QD1-999": {
       "firstVisit": true,
       "displayName": "Chemistry shelf",
-      "description": "Description for shelf Chemistry in Chemistry Room.\n\n[|Main||||||] Chemistry Room entrance",
+      "description": "Description for shelf Chemistry in Chemistry Room.\n\n[|Entrance||] Chemistry Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_Q-QD": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_Q-QD"
         }
       }
@@ -17836,12 +17836,12 @@ var gameData = {
     "2_building_Q-QE-QE1-996.5": {
       "firstVisit": true,
       "displayName": "Geology shelf",
-      "description": "Description for shelf Geology in Geology Room.\n\n[|Main||||||] Geology Room entrance",
+      "description": "Description for shelf Geology in Geology Room.\n\n[|Entrance||] Geology Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_Q-QE": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_Q-QE"
         }
       }
@@ -17866,12 +17866,12 @@ var gameData = {
     "2_building_Q-QC-QC1-999": {
       "firstVisit": true,
       "displayName": "Physics shelf",
-      "description": "Description for shelf Physics in Physics Room.\n\n[|Main||||||] Physics Room entrance",
+      "description": "Description for shelf Physics in Physics Room.\n\n[|Entrance||] Physics Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_Q-QC": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_Q-QC"
         }
       }
@@ -17896,12 +17896,12 @@ var gameData = {
     "2_building_Q-QM-QM1-695": {
       "firstVisit": true,
       "displayName": "Human anatomy shelf",
-      "description": "Description for shelf Human anatomy in Human anatomy Room.\n\n[|Main||||||] Human anatomy Room entrance",
+      "description": "Description for shelf Human anatomy in Human anatomy Room.\n\n[|Entrance||] Human anatomy Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_Q-QM": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_Q-QM"
         }
       }
@@ -17980,12 +17980,12 @@ var gameData = {
     "building_R-RX-RX1-681": {
       "firstVisit": true,
       "displayName": "Homeopathy shelf",
-      "description": "Description for shelf Homeopathy in Homeopathy Room.\n\n[|Main||||||] Homeopathy Room entrance",
+      "description": "Description for shelf Homeopathy in Homeopathy Room.\n\n[|Entrance||] Homeopathy Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_R-RX": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_R-RX"
         }
       }
@@ -18010,12 +18010,12 @@ var gameData = {
     "building_R-RA-RA1-1270": {
       "firstVisit": true,
       "displayName": "Public aspects of medicine shelf",
-      "description": "Description for shelf Public aspects of medicine in Public aspects of medicine Room.\n\n[|Main||||||] Public aspects of medicine Room entrance\n[|Next||||||] Medicine and the state shelf",
+      "description": "Description for shelf Public aspects of medicine in Public aspects of medicine Room.\n\n[|Entrance||] Public aspects of medicine Room entrance\n[|Next||||||] Medicine and the state shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "building_R-RA": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_R-RA"
         },
         "building_R-RA-RA1-418.5": {
@@ -18057,12 +18057,12 @@ var gameData = {
     "building_R-RD-RD1-811": {
       "firstVisit": true,
       "displayName": "Surgery shelf",
-      "description": "Description for shelf Surgery in Surgery Room.\n\n[|Main||||||] Surgery Room entrance",
+      "description": "Description for shelf Surgery in Surgery Room.\n\n[|Entrance||] Surgery Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_R-RD": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_R-RD"
         }
       }
@@ -18087,12 +18087,12 @@ var gameData = {
     "building_R-RE-RE1-994": {
       "firstVisit": true,
       "displayName": "Ophthalmology shelf",
-      "description": "Description for shelf Ophthalmology in Ophthalmology Room.\n\n[|Main||||||] Ophthalmology Room entrance",
+      "description": "Description for shelf Ophthalmology in Ophthalmology Room.\n\n[|Entrance||] Ophthalmology Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_R-RE": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_R-RE"
         }
       }
@@ -18117,12 +18117,12 @@ var gameData = {
     "building_R-RC-RC31-1245": {
       "firstVisit": true,
       "displayName": "Internal medicine shelf",
-      "description": "Description for shelf Internal medicine in Internal medicine Room.\n\n[|Main||||||] Internal medicine Room entrance",
+      "description": "Description for shelf Internal medicine in Internal medicine Room.\n\n[|Entrance||] Internal medicine Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_R-RC": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_R-RC"
         }
       }
@@ -18147,12 +18147,12 @@ var gameData = {
     "building_R-RG-RG1-991": {
       "firstVisit": true,
       "displayName": "Gynecology and obstetrics shelf",
-      "description": "Description for shelf Gynecology and obstetrics in Gynecology and obstetrics Room.\n\n[|Main||||||] Gynecology and obstetrics Room entrance",
+      "description": "Description for shelf Gynecology and obstetrics in Gynecology and obstetrics Room.\n\n[|Entrance||] Gynecology and obstetrics Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_R-RG": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_R-RG"
         }
       }
@@ -18218,12 +18218,12 @@ var gameData = {
     "2_building_R-RK-RK1-715": {
       "firstVisit": true,
       "displayName": "Dentistry shelf",
-      "description": "Description for shelf Dentistry in Dentistry Room.\n\n[|Main||||||] Dentistry Room entrance",
+      "description": "Description for shelf Dentistry in Dentistry Room.\n\n[|Entrance||] Dentistry Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_R-RK": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_R-RK"
         }
       }
@@ -18248,12 +18248,12 @@ var gameData = {
     "2_building_R-RJ-RJ1-570": {
       "firstVisit": true,
       "displayName": "Pediatrics shelf",
-      "description": "Description for shelf Pediatrics in Pediatrics Room.\n\n[|Main||||||] Pediatrics Room entrance",
+      "description": "Description for shelf Pediatrics in Pediatrics Room.\n\n[|Entrance||] Pediatrics Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_R-RJ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_R-RJ"
         }
       }
@@ -18278,12 +18278,12 @@ var gameData = {
     "2_building_R-RL-RL1-803": {
       "firstVisit": true,
       "displayName": "Dermatology shelf",
-      "description": "Description for shelf Dermatology in Dermatology Room.\n\n[|Main||||||] Dermatology Room entrance",
+      "description": "Description for shelf Dermatology in Dermatology Room.\n\n[|Entrance||] Dermatology Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_R-RL": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_R-RL"
         }
       }
@@ -18308,12 +18308,12 @@ var gameData = {
     "2_building_R-RS-RS1-441": {
       "firstVisit": true,
       "displayName": "Pharmacy and materia medica shelf",
-      "description": "Description for shelf Pharmacy and materia medica in Pharmacy and materia medica Room.\n\n[|Main||||||] Pharmacy and materia medica Room entrance",
+      "description": "Description for shelf Pharmacy and materia medica in Pharmacy and materia medica Room.\n\n[|Entrance||] Pharmacy and materia medica Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_R-RS": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_R-RS"
         }
       }
@@ -18338,12 +18338,12 @@ var gameData = {
     "2_building_R-RM-RM1-950": {
       "firstVisit": true,
       "displayName": "Therapeutics.    Pharmacology shelf",
-      "description": "Description for shelf Therapeutics.    Pharmacology in Therapeutics.    Pharmacology Room.\n\n[|Main||||||] Therapeutics.    Pharmacology Room entrance",
+      "description": "Description for shelf Therapeutics.    Pharmacology in Therapeutics.    Pharmacology Room.\n\n[|Entrance||] Therapeutics.    Pharmacology Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_R-RM": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_R-RM"
         }
       }
@@ -18368,12 +18368,12 @@ var gameData = {
     "2_building_R-R-R5-920": {
       "firstVisit": true,
       "displayName": "Medicine (General) shelf",
-      "description": "Description for shelf Medicine (General) in Medicine (General) Room.\n\n[|Main||||||] Medicine (General) Room entrance",
+      "description": "Description for shelf Medicine (General) in Medicine (General) Room.\n\n[|Entrance||] Medicine (General) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_R-R": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_R-R"
         }
       }
@@ -18439,12 +18439,12 @@ var gameData = {
     "3_building_R-RB-RB1-214": {
       "firstVisit": true,
       "displayName": "Pathology shelf",
-      "description": "Description for shelf Pathology in Pathology Room.\n\n[|Main||||||] Pathology Room entrance",
+      "description": "Description for shelf Pathology in Pathology Room.\n\n[|Entrance||] Pathology Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_R-RB": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_R-RB"
         }
       }
@@ -18469,12 +18469,12 @@ var gameData = {
     "3_building_R-RF-RF1-547": {
       "firstVisit": true,
       "displayName": "Otorhinolaryngology shelf",
-      "description": "Description for shelf Otorhinolaryngology in Otorhinolaryngology Room.\n\n[|Main||||||] Otorhinolaryngology Room entrance",
+      "description": "Description for shelf Otorhinolaryngology in Otorhinolaryngology Room.\n\n[|Entrance||] Otorhinolaryngology Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_R-RF": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_R-RF"
         }
       }
@@ -18499,12 +18499,12 @@ var gameData = {
     "3_building_R-RZ-RZ201-999": {
       "firstVisit": true,
       "displayName": "Other systems of medicine shelf",
-      "description": "Description for shelf Other systems of medicine in Other systems of medicine Room.\n\n[|Main||||||] Other systems of medicine Room entrance",
+      "description": "Description for shelf Other systems of medicine in Other systems of medicine Room.\n\n[|Entrance||] Other systems of medicine Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_R-RZ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_R-RZ"
         }
       }
@@ -18529,12 +18529,12 @@ var gameData = {
     "3_building_R-RT-RT1-120": {
       "firstVisit": true,
       "displayName": "Nursing shelf",
-      "description": "Description for shelf Nursing in Nursing Room.\n\n[|Main||||||] Nursing Room entrance",
+      "description": "Description for shelf Nursing in Nursing Room.\n\n[|Entrance||] Nursing Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_R-RT": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_R-RT"
         }
       }
@@ -18559,12 +18559,12 @@ var gameData = {
     "3_building_R-RV-RV1-431": {
       "firstVisit": true,
       "displayName": "Botanic, Thomsonian, and eclectic medicine shelf",
-      "description": "Description for shelf Botanic, Thomsonian, and eclectic medicine in Botanic, Thomsonian, and eclectic medicine Room.\n\n[|Main||||||] Botanic, Thomsonian, and eclectic medicine Room entrance",
+      "description": "Description for shelf Botanic, Thomsonian, and eclectic medicine in Botanic, Thomsonian, and eclectic medicine Room.\n\n[|Entrance||] Botanic, Thomsonian, and eclectic medicine Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_R-RV": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_R-RV"
         }
       }
@@ -18639,12 +18639,12 @@ var gameData = {
     "building_S-SF-SF1-1100": {
       "firstVisit": true,
       "displayName": "Animal culture shelf",
-      "description": "Description for shelf Animal culture in Animal culture Room.\n\n[|Main||||||] Animal culture Room entrance",
+      "description": "Description for shelf Animal culture in Animal culture Room.\n\n[|Entrance||] Animal culture Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_S-SF": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_S-SF"
         }
       }
@@ -18669,12 +18669,12 @@ var gameData = {
     "building_S-S-S1-972": {
       "firstVisit": true,
       "displayName": "Agriculture (General) shelf",
-      "description": "Description for shelf Agriculture (General) in Agriculture (General) Room.\n\n[|Main||||||] Agriculture (General) Room entrance",
+      "description": "Description for shelf Agriculture (General) in Agriculture (General) Room.\n\n[|Entrance||] Agriculture (General) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_S-S": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_S-S"
         }
       }
@@ -18699,12 +18699,12 @@ var gameData = {
     "building_S-SH-SH1-691": {
       "firstVisit": true,
       "displayName": "Aquaculture.    Fisheries.    Angling shelf",
-      "description": "Description for shelf Aquaculture.    Fisheries.    Angling in Aquaculture.    Fisheries.    Angling Room.\n\n[|Main||||||] Aquaculture.    Fisheries.    Angling Room entrance",
+      "description": "Description for shelf Aquaculture.    Fisheries.    Angling in Aquaculture.    Fisheries.    Angling Room.\n\n[|Entrance||] Aquaculture.    Fisheries.    Angling Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_S-SH": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_S-SH"
         }
       }
@@ -18729,12 +18729,12 @@ var gameData = {
     "building_S-SB-SB1-1110": {
       "firstVisit": true,
       "displayName": "Plant culture shelf",
-      "description": "Description for shelf Plant culture in Plant culture Room.\n\n[|Main||||||] Plant culture Room entrance",
+      "description": "Description for shelf Plant culture in Plant culture Room.\n\n[|Entrance||] Plant culture Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_S-SB": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_S-SB"
         }
       }
@@ -18759,12 +18759,12 @@ var gameData = {
     "building_S-SK-SK1-664": {
       "firstVisit": true,
       "displayName": "Hunting sports shelf",
-      "description": "Description for shelf Hunting sports in Hunting sports Room.\n\n[|Main||||||] Hunting sports Room entrance",
+      "description": "Description for shelf Hunting sports in Hunting sports Room.\n\n[|Entrance||] Hunting sports Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_S-SK": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_S-SK"
         }
       }
@@ -18789,12 +18789,12 @@ var gameData = {
     "building_S-SD-SD1-669.5": {
       "firstVisit": true,
       "displayName": "Forestry shelf",
-      "description": "Description for shelf Forestry in Forestry Room.\n\n[|Main||||||] Forestry Room entrance",
+      "description": "Description for shelf Forestry in Forestry Room.\n\n[|Entrance||] Forestry Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_S-SD": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_S-SD"
         }
       }
@@ -18873,12 +18873,12 @@ var gameData = {
     "building_T-TN-TN1-997": {
       "firstVisit": true,
       "displayName": "Mining engineering.    Metallurgy shelf",
-      "description": "Description for shelf Mining engineering.    Metallurgy in Mining engineering.    Metallurgy Room.\n\n[|Main||||||] Mining engineering.    Metallurgy Room entrance",
+      "description": "Description for shelf Mining engineering.    Metallurgy in Mining engineering.    Metallurgy Room.\n\n[|Entrance||] Mining engineering.    Metallurgy Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_T-TN": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_T-TN"
         }
       }
@@ -18903,12 +18903,12 @@ var gameData = {
     "building_T-TR-TR1-1050": {
       "firstVisit": true,
       "displayName": "Photography shelf",
-      "description": "Description for shelf Photography in Photography Room.\n\n[|Main||||||] Photography Room entrance",
+      "description": "Description for shelf Photography in Photography Room.\n\n[|Entrance||] Photography Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_T-TR": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_T-TR"
         }
       }
@@ -18933,12 +18933,12 @@ var gameData = {
     "building_T-TC-TC1-978": {
       "firstVisit": true,
       "displayName": "Hydraulic engineering shelf",
-      "description": "Description for shelf Hydraulic engineering in Hydraulic engineering Room.\n\n[|Main||||||] Hydraulic engineering Room entrance\n[|Next||||||] Ocean engineering shelf",
+      "description": "Description for shelf Hydraulic engineering in Hydraulic engineering Room.\n\n[|Entrance||] Hydraulic engineering Room entrance\n[|Next||||||] Ocean engineering shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "building_T-TC": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_T-TC"
         },
         "building_T-TC-TC1501-1800": {
@@ -18980,12 +18980,12 @@ var gameData = {
     "building_T-TD-TD1-1066": {
       "firstVisit": true,
       "displayName": "Environmental technology.    Sanitary engineering shelf",
-      "description": "Description for shelf Environmental technology.    Sanitary engineering in Environmental technology.    Sanitary engineering Room.\n\n[|Main||||||] Environmental technology.    Sanitary engineering Room entrance",
+      "description": "Description for shelf Environmental technology.    Sanitary engineering in Environmental technology.    Sanitary engineering Room.\n\n[|Entrance||] Environmental technology.    Sanitary engineering Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_T-TD": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_T-TD"
         }
       }
@@ -19010,12 +19010,12 @@ var gameData = {
     "building_T-TX-TX1-1110": {
       "firstVisit": true,
       "displayName": "Home economics shelf",
-      "description": "Description for shelf Home economics in Home economics Room.\n\n[|Main||||||] Home economics Room entrance",
+      "description": "Description for shelf Home economics in Home economics Room.\n\n[|Entrance||] Home economics Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_T-TX": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_T-TX"
         }
       }
@@ -19040,12 +19040,12 @@ var gameData = {
     "building_T-TP-TP1-1185": {
       "firstVisit": true,
       "displayName": "Chemical technology shelf",
-      "description": "Description for shelf Chemical technology in Chemical technology Room.\n\n[|Main||||||] Chemical technology Room entrance",
+      "description": "Description for shelf Chemical technology in Chemical technology Room.\n\n[|Entrance||] Chemical technology Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_T-TP": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_T-TP"
         }
       }
@@ -19111,12 +19111,12 @@ var gameData = {
     "2_building_T-TK-TK1-9971": {
       "firstVisit": true,
       "displayName": "Electrical engineering.    Electronics.    Nuclear shelf",
-      "description": "Description for shelf Electrical engineering.    Electronics.    Nuclear in Electrical engineering.    Electronics.    Nuclear Room.\n\n[|Main||||||] Electrical engineering.    Electronics.    Nuclear Room entrance",
+      "description": "Description for shelf Electrical engineering.    Electronics.    Nuclear in Electrical engineering.    Electronics.    Nuclear Room.\n\n[|Entrance||] Electrical engineering.    Electronics.    Nuclear Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_T-TK": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_T-TK"
         }
       }
@@ -19141,12 +19141,12 @@ var gameData = {
     "2_building_T-TA-TA1-2040": {
       "firstVisit": true,
       "displayName": "Engineering (General).    Civil engineering (General) shelf",
-      "description": "Description for shelf Engineering (General).    Civil engineering (General) in Engineering (General).    Civil engineering (General) Room.\n\n[|Main||||||] Engineering (General).    Civil engineering (General) Room entrance",
+      "description": "Description for shelf Engineering (General).    Civil engineering (General) in Engineering (General).    Civil engineering (General) Room.\n\n[|Entrance||] Engineering (General).    Civil engineering (General) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_T-TA": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_T-TA"
         }
       }
@@ -19171,12 +19171,12 @@ var gameData = {
     "2_building_T-TS-TS1-2301": {
       "firstVisit": true,
       "displayName": "Manufactures shelf",
-      "description": "Description for shelf Manufactures in Manufactures Room.\n\n[|Main||||||] Manufactures Room entrance",
+      "description": "Description for shelf Manufactures in Manufactures Room.\n\n[|Entrance||] Manufactures Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_T-TS": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_T-TS"
         }
       }
@@ -19201,12 +19201,12 @@ var gameData = {
     "2_building_T-TJ-TJ1-1570": {
       "firstVisit": true,
       "displayName": "Mechanical engineering and machinery shelf",
-      "description": "Description for shelf Mechanical engineering and machinery in Mechanical engineering and machinery Room.\n\n[|Main||||||] Mechanical engineering and machinery Room entrance",
+      "description": "Description for shelf Mechanical engineering and machinery in Mechanical engineering and machinery Room.\n\n[|Entrance||] Mechanical engineering and machinery Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_T-TJ": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_T-TJ"
         }
       }
@@ -19231,12 +19231,12 @@ var gameData = {
     "2_building_T-TT-TT1-999": {
       "firstVisit": true,
       "displayName": "Handicrafts.    Arts and crafts shelf",
-      "description": "Description for shelf Handicrafts.    Arts and crafts in Handicrafts.    Arts and crafts Room.\n\n[|Main||||||] Handicrafts.    Arts and crafts Room entrance",
+      "description": "Description for shelf Handicrafts.    Arts and crafts in Handicrafts.    Arts and crafts Room.\n\n[|Entrance||] Handicrafts.    Arts and crafts Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_T-TT": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_T-TT"
         }
       }
@@ -19261,12 +19261,12 @@ var gameData = {
     "2_building_T-T-T1-995": {
       "firstVisit": true,
       "displayName": "Technology (General) shelf",
-      "description": "Description for shelf Technology (General) in Technology (General) Room.\n\n[|Main||||||] Technology (General) Room entrance",
+      "description": "Description for shelf Technology (General) in Technology (General) Room.\n\n[|Entrance||] Technology (General) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_T-T": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_T-T"
         }
       }
@@ -19332,12 +19332,12 @@ var gameData = {
     "3_building_T-TH-TH1-9745": {
       "firstVisit": true,
       "displayName": "Building construction shelf",
-      "description": "Description for shelf Building construction in Building construction Room.\n\n[|Main||||||] Building construction Room entrance",
+      "description": "Description for shelf Building construction in Building construction Room.\n\n[|Entrance||] Building construction Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_T-TH": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_T-TH"
         }
       }
@@ -19362,12 +19362,12 @@ var gameData = {
     "3_building_T-TF-TF1-1620": {
       "firstVisit": true,
       "displayName": "Railroad engineering and operation shelf",
-      "description": "Description for shelf Railroad engineering and operation in Railroad engineering and operation Room.\n\n[|Main||||||] Railroad engineering and operation Room entrance",
+      "description": "Description for shelf Railroad engineering and operation in Railroad engineering and operation Room.\n\n[|Entrance||] Railroad engineering and operation Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_T-TF": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_T-TF"
         }
       }
@@ -19392,12 +19392,12 @@ var gameData = {
     "3_building_T-TL-TL1-4050": {
       "firstVisit": true,
       "displayName": "Motor vehicles.    Aeronautics.    Astronautics shelf",
-      "description": "Description for shelf Motor vehicles.    Aeronautics.    Astronautics in Motor vehicles.    Aeronautics.    Astronautics Room.\n\n[|Main||||||] Motor vehicles.    Aeronautics.    Astronautics Room entrance",
+      "description": "Description for shelf Motor vehicles.    Aeronautics.    Astronautics in Motor vehicles.    Aeronautics.    Astronautics Room.\n\n[|Entrance||] Motor vehicles.    Aeronautics.    Astronautics Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_T-TL": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_T-TL"
         }
       }
@@ -19422,12 +19422,12 @@ var gameData = {
     "3_building_T-TG-TG1-470": {
       "firstVisit": true,
       "displayName": "Bridge engineering shelf",
-      "description": "Description for shelf Bridge engineering in Bridge engineering Room.\n\n[|Main||||||] Bridge engineering Room entrance",
+      "description": "Description for shelf Bridge engineering in Bridge engineering Room.\n\n[|Entrance||] Bridge engineering Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_T-TG": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_T-TG"
         }
       }
@@ -19452,12 +19452,12 @@ var gameData = {
     "3_building_T-TE-TE1-450": {
       "firstVisit": true,
       "displayName": "Highway engineering.    Roads and pavements shelf",
-      "description": "Description for shelf Highway engineering.    Roads and pavements in Highway engineering.    Roads and pavements Room.\n\n[|Main||||||] Highway engineering.    Roads and pavements Room entrance",
+      "description": "Description for shelf Highway engineering.    Roads and pavements in Highway engineering.    Roads and pavements Room.\n\n[|Entrance||] Highway engineering.    Roads and pavements Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "3_building_T-TE": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "3_building_T-TE"
         }
       }
@@ -19532,12 +19532,12 @@ var gameData = {
     "building_U-U-U1-900": {
       "firstVisit": true,
       "displayName": "Military science (General) shelf",
-      "description": "Description for shelf Military science (General) in Military science (General) Room.\n\n[|Main||||||] Military science (General) Room entrance",
+      "description": "Description for shelf Military science (General) in Military science (General) Room.\n\n[|Entrance||] Military science (General) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_U-U": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_U-U"
         }
       }
@@ -19562,12 +19562,12 @@ var gameData = {
     "building_U-UG-UG1-620": {
       "firstVisit": true,
       "displayName": "Military engineering shelf",
-      "description": "Description for shelf Military engineering in Air forces.    Air warfare Room.\n\n[|Main||||||] Air forces.    Air warfare Room entrance\n[|Next||||||] Air forces.    Air warfare shelf",
+      "description": "Description for shelf Military engineering in Air forces.    Air warfare Room.\n\n[|Entrance||] Air forces.    Air warfare Room entrance\n[|Next||||||] Air forces.    Air warfare shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "building_U-UG": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_U-UG"
         },
         "building_U-UG-UG622-1435": {
@@ -19626,12 +19626,12 @@ var gameData = {
     "building_U-UA-UA10-997": {
       "firstVisit": true,
       "displayName": "Armies: Organization, distribution, military situation shelf",
-      "description": "Description for shelf Armies: Organization, distribution, military situation in Armies: Organization, distribution, military situation Room.\n\n[|Main||||||] Armies: Organization, distribution, military situation Room entrance",
+      "description": "Description for shelf Armies: Organization, distribution, military situation in Armies: Organization, distribution, military situation Room.\n\n[|Entrance||] Armies: Organization, distribution, military situation Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_U-UA": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_U-UA"
         }
       }
@@ -19656,12 +19656,12 @@ var gameData = {
     "building_U-UB-UB1-900": {
       "firstVisit": true,
       "displayName": "Military administration shelf",
-      "description": "Description for shelf Military administration in Military administration Room.\n\n[|Main||||||] Military administration Room entrance",
+      "description": "Description for shelf Military administration in Military administration Room.\n\n[|Entrance||] Military administration Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_U-UB": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_U-UB"
         }
       }
@@ -19686,12 +19686,12 @@ var gameData = {
     "building_U-UD-UD1-495": {
       "firstVisit": true,
       "displayName": "Infantry shelf",
-      "description": "Description for shelf Infantry in Infantry Room.\n\n[|Main||||||] Infantry Room entrance",
+      "description": "Description for shelf Infantry in Infantry Room.\n\n[|Entrance||] Infantry Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_U-UD": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_U-UD"
         }
       }
@@ -19716,12 +19716,12 @@ var gameData = {
     "building_U-UF-UF1-910": {
       "firstVisit": true,
       "displayName": "Artillery shelf",
-      "description": "Description for shelf Artillery in Artillery Room.\n\n[|Main||||||] Artillery Room entrance",
+      "description": "Description for shelf Artillery in Artillery Room.\n\n[|Entrance||] Artillery Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_U-UF": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_U-UF"
         }
       }
@@ -19787,12 +19787,12 @@ var gameData = {
     "2_building_U-UC-UC10-780": {
       "firstVisit": true,
       "displayName": "Maintenance and transportation shelf",
-      "description": "Description for shelf Maintenance and transportation in Maintenance and transportation Room.\n\n[|Main||||||] Maintenance and transportation Room entrance",
+      "description": "Description for shelf Maintenance and transportation in Maintenance and transportation Room.\n\n[|Entrance||] Maintenance and transportation Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_U-UC": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_U-UC"
         }
       }
@@ -19817,12 +19817,12 @@ var gameData = {
     "2_building_U-UH-UH20-910": {
       "firstVisit": true,
       "displayName": "Other services shelf",
-      "description": "Description for shelf Other services in Other services Room.\n\n[|Main||||||] Other services Room entrance",
+      "description": "Description for shelf Other services in Other services Room.\n\n[|Entrance||] Other services Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_U-UH": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_U-UH"
         }
       }
@@ -19847,12 +19847,12 @@ var gameData = {
     "2_building_U-UE-UE1-500": {
       "firstVisit": true,
       "displayName": "Cavalry.    Armor shelf",
-      "description": "Description for shelf Cavalry.    Armor in Cavalry.    Armor Room.\n\n[|Main||||||] Cavalry.    Armor Room entrance",
+      "description": "Description for shelf Cavalry.    Armor in Cavalry.    Armor Room.\n\n[|Entrance||] Cavalry.    Armor Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_U-UE": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_U-UE"
         }
       }
@@ -19919,12 +19919,12 @@ var gameData = {
     "building_V-VA-VA10-750": {
       "firstVisit": true,
       "displayName": "Navies: Organization, distribution, naval situation shelf",
-      "description": "Description for shelf Navies: Organization, distribution, naval situation in Navies: Organization, distribution, naval situation Room.\n\n[|Main||||||] Navies: Organization, distribution, naval situation Room entrance",
+      "description": "Description for shelf Navies: Organization, distribution, naval situation in Navies: Organization, distribution, naval situation Room.\n\n[|Entrance||] Navies: Organization, distribution, naval situation Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_V-VA": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_V-VA"
         }
       }
@@ -19949,12 +19949,12 @@ var gameData = {
     "building_V-VM-VM1-989": {
       "firstVisit": true,
       "displayName": "Naval architecture.    Shipbuilding.    Marine engineering shelf",
-      "description": "Description for shelf Naval architecture.    Shipbuilding.    Marine engineering in Naval architecture.    Shipbuilding.    Marine engineering Room.\n\n[|Main||||||] Naval architecture.    Shipbuilding.    Marine engineering Room entrance",
+      "description": "Description for shelf Naval architecture.    Shipbuilding.    Marine engineering in Naval architecture.    Shipbuilding.    Marine engineering Room.\n\n[|Entrance||] Naval architecture.    Shipbuilding.    Marine engineering Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_V-VM": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_V-VM"
         }
       }
@@ -19979,12 +19979,12 @@ var gameData = {
     "building_V-VK-VK1-1661": {
       "firstVisit": true,
       "displayName": "Navigation.    Merchant marine shelf",
-      "description": "Description for shelf Navigation.    Merchant marine in Navigation.    Merchant marine Room.\n\n[|Main||||||] Navigation.    Merchant marine Room entrance",
+      "description": "Description for shelf Navigation.    Merchant marine in Navigation.    Merchant marine Room.\n\n[|Entrance||] Navigation.    Merchant marine Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_V-VK": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_V-VK"
         }
       }
@@ -20009,12 +20009,12 @@ var gameData = {
     "building_V-VG-VG20-2029": {
       "firstVisit": true,
       "displayName": "Minor services of navies shelf",
-      "description": "Description for shelf Minor services of navies in Minor services of navies Room.\n\n[|Main||||||] Minor services of navies Room entrance",
+      "description": "Description for shelf Minor services of navies in Minor services of navies Room.\n\n[|Entrance||] Minor services of navies Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_V-VG": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_V-VG"
         }
       }
@@ -20039,12 +20039,12 @@ var gameData = {
     "building_V-V-V1-995": {
       "firstVisit": true,
       "displayName": "Naval science (General) shelf",
-      "description": "Description for shelf Naval science (General) in Naval science (General) Room.\n\n[|Main||||||] Naval science (General) Room entrance",
+      "description": "Description for shelf Naval science (General) in Naval science (General) Room.\n\n[|Entrance||] Naval science (General) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_V-V": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_V-V"
         }
       }
@@ -20069,12 +20069,12 @@ var gameData = {
     "building_V-VB-VB15-955": {
       "firstVisit": true,
       "displayName": "Naval administration shelf",
-      "description": "Description for shelf Naval administration in Naval administration Room.\n\n[|Main||||||] Naval administration Room entrance",
+      "description": "Description for shelf Naval administration in Naval administration Room.\n\n[|Entrance||] Naval administration Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_V-VB": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_V-VB"
         }
       }
@@ -20140,12 +20140,12 @@ var gameData = {
     "2_building_V-VE-VE7-500": {
       "firstVisit": true,
       "displayName": "Marines shelf",
-      "description": "Description for shelf Marines in Marines Room.\n\n[|Main||||||] Marines Room entrance",
+      "description": "Description for shelf Marines in Marines Room.\n\n[|Entrance||] Marines Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_V-VE": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_V-VE"
         }
       }
@@ -20170,12 +20170,12 @@ var gameData = {
     "2_building_V-VF-VF1-580": {
       "firstVisit": true,
       "displayName": "Naval ordnance shelf",
-      "description": "Description for shelf Naval ordnance in Naval ordnance Room.\n\n[|Main||||||] Naval ordnance Room entrance",
+      "description": "Description for shelf Naval ordnance in Naval ordnance Room.\n\n[|Entrance||] Naval ordnance Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_V-VF": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_V-VF"
         }
       }
@@ -20200,12 +20200,12 @@ var gameData = {
     "2_building_V-VC-VC10-580": {
       "firstVisit": true,
       "displayName": "Naval maintenance shelf",
-      "description": "Description for shelf Naval maintenance in Naval maintenance Room.\n\n[|Main||||||] Naval maintenance Room entrance",
+      "description": "Description for shelf Naval maintenance in Naval maintenance Room.\n\n[|Entrance||] Naval maintenance Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_V-VC": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_V-VC"
         }
       }
@@ -20230,12 +20230,12 @@ var gameData = {
     "2_building_V-VD-VD7-430": {
       "firstVisit": true,
       "displayName": "Naval personnel shelf",
-      "description": "Description for shelf Naval personnel in Naval personnel Room.\n\n[|Main||||||] Naval personnel Room entrance",
+      "description": "Description for shelf Naval personnel in Naval personnel Room.\n\n[|Entrance||] Naval personnel Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "2_building_V-VD": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "2_building_V-VD"
         }
       }
@@ -20306,12 +20306,12 @@ var gameData = {
     "building_Z-Z-Z1001-1121": {
       "firstVisit": true,
       "displayName": "General bibliography shelf",
-      "description": "Description for shelf General bibliography in National bibliography Room.\n\n[|Main||||||] National bibliography Room entrance\n[|Next||||||] Books (General).    Writing.    Paleography shelf",
+      "description": "Description for shelf General bibliography in National bibliography Room.\n\n[|Entrance||] National bibliography Room entrance\n[|Next||||||] Books (General).    Writing.    Paleography shelf",
       "interactables": {},
       "items": {},
       "exits": {
         "building_Z-Z": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_Z-Z"
         },
         "building_Z-Z-Z4-115.5": {
@@ -20438,12 +20438,12 @@ var gameData = {
     "building_Z-ZA-ZA3038-5190": {
       "firstVisit": true,
       "displayName": "Information resources (General) shelf",
-      "description": "Description for shelf Information resources (General) in Information resources (General) Room.\n\n[|Main||||||] Information resources (General) Room entrance",
+      "description": "Description for shelf Information resources (General) in Information resources (General) Room.\n\n[|Entrance||] Information resources (General) Room entrance",
       "interactables": {},
       "items": {},
       "exits": {
         "building_Z-ZA": {
-          "displayName": "Main",
+          "displayName": "Entrance",
           "destination": "building_Z-ZA"
         }
       }
