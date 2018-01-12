@@ -13,4 +13,4 @@ This MUD uses [Redis](https://redis.io) for session and state management.
 
 ## Changing the game file
 
-There's an [Jupyter notebook](python/mud-of-babel.ipynb) (Python) in the `python` folder that can give you an idea. Running it will output a `mud_of_babel_data.json` file which you can use to overwrite the `gameData` variable in [`cartridges/mud.js`](cartridges/mud.js) (just copy/paste the entirety of the data file as the value for that variable).
+There's a [Jupyter notebook](python/mud-of-babel.ipynb) (Python) in the `python` folder that can give you an idea. Running it will output a `mud_of_babel_data.json` file which you can use to overwrite the `gameData` variable in [`cartridges/mud.js`](cartridges/mud.js) (just copy/paste the entirety of the data file as the value for that variable).
