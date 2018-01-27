@@ -1,55 +1,69 @@
 * {
-	background: #000000;
-	color: #ddd;
-	margin: 0;
-	border: none;
+  background: #000000;
+  color: #ddd;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
 }
 *:focus {
-	outline: none;
+  outline: none;
 }
+
+html {
+  font-size: 20px;
+}
+
 html, body, #input, #display {
-	font-family: "Input Mono", "Courier New", Courier, monospace;
-	font-size: 16px;
+  font-family: "Input Mono", "Courier New", Courier, monospace;
 }
+
+@media screen and (min-width:480px) {
+  html {
+    font-size: 16px;
+  }
+}
+
 body {
-	position: relative;
-	height: 100%;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
 }
 #input {
-	height: 2.2rem;
-	position: absolute;
-	background-color: #333;
-	bottom: 0;
-	border-top: 0.05rem solid #ddd;
-	padding: 0.5rem;
-	width: 100%;
-	z-index: 2;
+  height: 2.2rem;
+  font-size: 1rem;
+  position: absolute;
+  background-color: #333;
+  bottom: 0;
+  border-top: 0.05rem solid #ddd;
+  padding: 0.5rem;
+  width: 100%;
+  z-index: 2;
+  border-radius: 0;
 }
 #display {
-	line-height: 1.5em;
-	padding: 0.7rem;
-	box-sizing: border-box;
-	overflow-y: scroll;
-	overflow-x: hidden;
-	top: 0;
-	left: 0;
-	bottom: 2.2rem;
-	right: 0;
-	position: absolute;
-	overflow-wrap: break-word;
+  line-height: 1.5em;
+  padding: 0.7rem;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+  bottom: 2.2rem;
+  right: 0;
+  position: absolute;
+  overflow-wrap: break-word;
   word-wrap: break-word;
-	z-index: 1;
+  z-index: 1;
+  -webkit-overflow-scrolling:touch
 }
 #display::-webkit-scrollbar {
-	width: 1rem;
+  width: 1rem;
 }
 #display::-webkit-scrollbar-thumb {
-	background-color: #209805;
-	border: 0.33rem solid #000000;
+  background-color: #209805;
+  border: 0.33rem solid #000000;
 }
 #display::-webkit-scrollbar-track {
-	background-color: #000000;
-}
-#enter {
-	display: none;
+  background-color: #000000;
 }

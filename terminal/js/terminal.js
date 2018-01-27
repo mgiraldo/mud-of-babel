@@ -9,6 +9,13 @@ function init() {
   document.getElementById("display").value = "";
 
   // ===== Event Handlers =============================================================
+  // ----- Input Focused ---------------------------------------------------------------
+  document.getElementById("input").addEventListener("focus", function(e) {
+    this.classList.add("fixed");
+  });
+  document.getElementById("input").addEventListener("blur", function (e) {
+    this.classList.remove("fixed");
+  });
   // ----- Input Submit ---------------------------------------------------------------
   document.getElementById("console").onsubmit = function(event) {
     event.preventDefault();
@@ -61,10 +68,13 @@ function messageServer(message) {
 }
 // ----- Write to Screen ----------------------------------------------------------------
 function toScreen(message, actor) {
+  document.getElementById("input").blur();
+
   if(actor == "user") {
     message = "<br />&gt; " + message;
   }
-  var displayString = document.getElementById("display").value + message + "<br />";
-  document.getElementById("display").innerHTML += displayString;
-  document.getElementById("display").scrollTop = document.getElementById("display").scrollHeight;
+  var newText = document.createElement("div");
+  newText.innerHTML = message + "<br />";
+  document.getElementById("display").appendChild(newText);
+  newText.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
 }
