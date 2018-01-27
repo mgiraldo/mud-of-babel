@@ -25,9 +25,12 @@ html, body, #input, #display {
 }
 
 body {
-  position: relative;
-  height: 100%;
+  position: absolute;
   overflow: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 #input {
   height: 2.2rem;
@@ -40,6 +43,9 @@ body {
   width: 100%;
   z-index: 2;
   border-radius: 0;
+}
+#input.fixed {
+  bottom: 2.2rem;
 }
 #display {
   line-height: 1.5em;

@@ -11,10 +11,14 @@ function init() {
   // ===== Event Handlers =============================================================
   // ----- Input Focused ---------------------------------------------------------------
   document.getElementById("input").addEventListener("focus", function(e) {
-    this.classList.add("fixed");
+    if ('ontouchstart' in window) {
+      setTimeout(() => {
+        document.getElementById("input").classList.add("fixed");
+      }, 200);
+    }
   });
   document.getElementById("input").addEventListener("blur", function (e) {
-    this.classList.remove("fixed");
+    document.getElementById("input").classList.remove("fixed");
   });
   // ----- Input Submit ---------------------------------------------------------------
   document.getElementById("console").onsubmit = function(event) {
@@ -68,8 +72,7 @@ function messageServer(message) {
 }
 // ----- Write to Screen ----------------------------------------------------------------
 function toScreen(message, actor) {
-  document.getElementById("input").blur();
-
+  
   if(actor == "user") {
     message = "<br />&gt; " + message;
   }
@@ -77,4 +80,5 @@ function toScreen(message, actor) {
   newText.innerHTML = message + "<br />";
   document.getElementById("display").appendChild(newText);
   newText.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+  document.getElementById("input").blur();
 }
