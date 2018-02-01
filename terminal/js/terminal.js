@@ -11,7 +11,7 @@ function init() {
   // ===== Event Handlers =============================================================
   // ----- Input Focused ---------------------------------------------------------------
   document.getElementById("input").addEventListener("focus", function(e) {
-    if ('ontouchstart' in window) {
+    if ("ontouchstart" in window) {
       setTimeout(() => {
         document.getElementById("input").classList.add("fixed");
       }, 200);
@@ -72,7 +72,6 @@ function messageServer(message) {
 }
 // ----- Write to Screen ----------------------------------------------------------------
 function toScreen(message, actor) {
-  
   if(actor == "user") {
     message = "<br />&gt; " + message;
   }
@@ -80,5 +79,4 @@ function toScreen(message, actor) {
   newText.innerHTML = message + "<br />";
   document.getElementById("display").appendChild(newText);
   newText.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
-  document.getElementById("input").blur();
 }
