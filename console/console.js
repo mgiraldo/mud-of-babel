@@ -97,10 +97,6 @@ var actions = {
     return { message: message, success: true };
   },
 
-  debug: function () {
-    return { message: JSON.stringify({hello: "world", "this":"älso"}) };
-  },
-
   // die: function (game) {
   //   delete games[game.gameID];
   //   return { message: "You are dead", success: true };
@@ -262,6 +258,10 @@ var actions = {
     } catch (itemNotInInventoryError) {
       return { message: "Can't do that.", success: false };
     }
+  },
+
+  debug: function () {
+    return { message: "" };
   }
 };
 
