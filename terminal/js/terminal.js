@@ -44,13 +44,13 @@ function init() {
       if(inputBufferIndex>0) {
         --inputBufferIndex;
       }
-      document.getElementById("input").value = inputBuffer[inputBufferIndex];
+      inputBuffer[inputBufferIndex] ? document.getElementById("input").value = inputBuffer[inputBufferIndex] : "";
       break;
     case 40: // down
       if(inputBufferIndex<inputBuffer.length) {
         ++inputBufferIndex;
       }
-      document.getElementById("input").value = inputBuffer[inputBufferIndex];
+      inputBuffer[inputBufferIndex] ? document.getElementById("input").value = inputBuffer[inputBufferIndex] : document.getElementById("input").value = "";
       break;
     default: return;
     }

@@ -198,6 +198,7 @@ var actions = {
   say: function (game, command) {
     var playersMessage = "What do you want to say?";
     if (!command.subject) {
+      // player didnt say anything
       return { message: playersMessage, success: true };
     }
     return { message: playersMessage, success: true };
@@ -206,6 +207,10 @@ var actions = {
   wave: function (game) {
     var playersMessage = "You wave.";
     return { message: playersMessage, success: true };
+  },
+
+  books: function (game, command) {
+    return { message: "Placeholder (happens server-side", success: true };
   },
 
   look: function (game, command) {

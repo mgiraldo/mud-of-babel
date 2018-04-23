@@ -1,6 +1,7 @@
 var dotenv = require("dotenv");
 dotenv.config();
 
+var fetch = require("isomorphic-fetch");
 var ansiHTML = require("ansi-html");
 var chalk = require("chalk");
 chalk.enabled = true;
@@ -110,6 +111,7 @@ io.on("connection", async (client) => {
   client.on("console", async (message) => {
     var sessionID = client.handshake.session.id;
     var name = client.handshake.session.name;
+    // location id (not lcc but game id)
     var location = client.handshake.session.currentLocation;
     debug(message + " -- from: " + sessionID);
     debug(" -- at: " + location);
@@ -118,15 +120,23 @@ io.on("connection", async (client) => {
     var value;
     // make sure location is correct in console
     mudconsole.setLocation(sessionID, location);
+    // lcation full info
+    var room = mudconsole.getGameData().map[location];
     if (exits.indexOf(message.toLowerCase()) !== -1) {
       message = "go " + message;
     }
     if (message.toLowerCase() === "look") {
       response = performConsoleCommand(message, sessionID);
       others = getOthers(client, location);
+      // show book count
+      response.response += await booksToDescription(room.id);
       response.response += othersToDescription(others);
       debug(location);
       client.emit("message", { response: cleanString(response.response) } );
+    } else if (message.toLowerCase() === "books") {
+      // check if it is a normal book room (not the plaza/porch/etc)
+      var bookResponse = await booksToDescription(room.id);
+      client.emit("message", { response: cleanString(bookResponse) });
     } else if (message.toLowerCase() === "players") {
       debug("  requesting player count");
       value = await store.getAsync("players");
@@ -185,6 +195,8 @@ io.on("connection", async (client) => {
         enterRoom(client, name, location, mudconsole.getGameData().map[oldLocation].displayName);
         saveLocation(client, location);
         others = getOthers(client, location);
+        room = mudconsole.getGameData().map[location];
+        response.response += await booksToDescription(room.id);
         response.response += othersToDescription(others);
       }
       client.emit("message", { response: cleanString(response.response) });
@@ -194,6 +206,31 @@ io.on("connection", async (client) => {
     }
   });
 });
+
+async function booksToDescription(roomid) {
+  if (!roomid) return "\n\nNo books here.";
+  console.log("get books for ", roomid);
+  // ping s3 for books
+  var res = await fetch(process.env.S3_BASEURL + roomid + "_titles.json");
+  var json = await res.json();
+  return parseBooks(json);
+}
+
+function parseBooks(booksJson) {
+  var authorsMax = 4;
+  var count = booksJson.titles.length;
+  var response = "\n\nThere are ";
+  response += chalk.red(booksJson.titles.length + " book" + (count !== 1 ? "s" : ""));
+  response += " including titles by ";
+  var authors = booksJson.titles.slice(0, authorsMax).map(title => title.author);
+  if (count > 1) authors[authors.length-1] = "and " + authors[authors.length-1];
+  if (count > 2) {
+    response += authors.join(", ");
+  } else {
+    response += authors.join(" ");
+  }
+  return response + ".";
+}
 
 function othersToDescription(others) {
   var description = "";

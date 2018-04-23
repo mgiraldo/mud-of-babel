@@ -1,0 +1,161 @@
+{
+    "name": "MUD of Babel",
+    "meta": {
+        "author": "Mauricio Giraldo Arteaga & Matt Miller",
+        "email": " *mauricio@pingpongestudio.com & thisismattmiller@gmail.com",
+        "tagline": "Based on the Library of Babel",
+        "welcome": "Welcome to the MUD of Babel"
+    },
+    "rooms": [
+        {
+            "alias": "A_AN",
+            "description": "The description for Newspapers",
+            "contextualHelp": "Help for Newspapers",
+            "actions": null,
+            "isExitRoom": false,
+            "objects": null,
+            "enemies": null,
+            "exits": {
+                "north": "-1",
+                "south": "A_AI",
+                "east": "-1",
+                "west": "-1"
+            }
+        },
+        {
+            "alias": "A_AI",
+            "description": "The description for Indexes",
+            "contextualHelp": "Help for Indexes",
+            "actions": null,
+            "isExitRoom": false,
+            "objects": null,
+            "enemies": null,
+            "exits": {
+                "north": "-1",
+                "south": "A_AY",
+                "east": "-1",
+                "west": "-1"
+            }
+        },
+        {
+            "alias": "A_AY",
+            "description": "The description for Yearbooks.  Almanacs.  Directories",
+            "contextualHelp": "Help for Yearbooks.  Almanacs.  Directories",
+            "actions": null,
+            "isExitRoom": false,
+            "objects": null,
+            "enemies": null,
+            "exits": {
+                "north": "-1",
+                "south": "A_AP",
+                "east": "-1",
+                "west": "-1"
+            }
+        },
+        {
+            "alias": "A_AP",
+            "description": "The description for Periodicals",
+            "contextualHelp": "Help for Periodicals",
+            "actions": null,
+            "isExitRoom": false,
+            "objects": null,
+            "enemies": null,
+            "exits": {
+                "north": "-1",
+                "south": "A_AS",
+                "east": "-1",
+                "west": "-1"
+            }
+        },
+        {
+            "alias": "A_AS",
+            "description": "The description for Academies and learned societies",
+            "contextualHelp": "Help for Academies and learned societies",
+            "actions": null,
+            "isExitRoom": false,
+            "objects": null,
+            "enemies": null,
+            "exits": {
+                "north": "-1",
+                "south": "A_AM",
+                "east": "-1",
+                "west": "-1"
+            }
+        },
+        {
+            "alias": "A_AM",
+            "description": "The description for Museums.  Collectors and collecting",
+            "contextualHelp": "Help for Museums.  Collectors and collecting",
+            "actions": null,
+            "isExitRoom": false,
+            "objects": null,
+            "enemies": null,
+            "exits": {
+                "north": "-1",
+                "south": "A_AZ",
+                "east": "-1",
+                "west": "-1"
+            }
+        },
+        {
+            "alias": "A_AZ",
+            "description": "The description for History of scholarship and learning.  The humanities",
+            "contextualHelp": "Help for History of scholarship and learning.  The humanities",
+            "actions": null,
+            "isExitRoom": false,
+            "objects": null,
+            "enemies": null,
+            "exits": {
+                "north": "-1",
+                "south": "A_AG",
+                "east": "-1",
+                "west": "-1"
+            }
+        },
+        {
+            "alias": "A_AG",
+            "description": "The description for Dictionaries and other general reference works",
+            "contextualHelp": "Help for Dictionaries and other general reference works",
+            "actions": null,
+            "isExitRoom": false,
+            "objects": null,
+            "enemies": null,
+            "exits": {
+                "north": "-1",
+                "south": "A_AE",
+                "east": "-1",
+                "west": "-1"
+            }
+        },
+        {
+            "alias": "A_AE",
+            "description": "The description for Encyclopedias",
+            "contextualHelp": "Help for Encyclopedias",
+            "actions": null,
+            "isExitRoom": false,
+            "objects": null,
+            "enemies": null,
+            "exits": {
+                "north": "-1",
+                "south": "A_AC",
+                "east": "-1",
+                "west": "-1"
+            }
+        },
+        {
+            "alias": "A_AC",
+            "description": "The description for Collections.  Series.  Collected works",
+            "contextualHelp": "Help for Collections.  Series.  Collected works",
+            "actions": null,
+            "isExitRoom": true,
+            "objects": null,
+            "enemies": null,
+            "exits": {
+                "north": "-1",
+                "south": "-1",
+                "east": "-1",
+                "west": "-1"
+            }
+        }
+    ]
+}
