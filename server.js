@@ -133,6 +133,10 @@ io.on("connection", async (client) => {
       response.response += othersToDescription(others);
       debug(location);
       client.emit("message", { response: cleanString(response.response) } );
+    } else if (message.toLowerCase() === "debug") {
+      var debugObj = Object.assign({}, client.handshake.session);
+      delete debugObj.cookie;
+      client.emit("message", { response: "<pre>" + JSON.stringify(debugObj, null, 2) + "</pre>" });
     } else if (message.toLowerCase() === "books") {
       // check if it is a normal book room (not the plaza/porch/etc)
       var bookResponse = await booksToDescription(room.id);

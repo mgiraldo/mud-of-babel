@@ -15,7 +15,7 @@ var baseData;
 // === Server Data Interaction ===
 exports.getGameData = () => {
   return baseData.gameData;
-}
+};
 
 exports.setLocation = (gameID, location) => {
   var game = initGame(gameID);
@@ -95,6 +95,10 @@ var actions = {
   help: function () {
     var message = "Try these commands: " + Object.keys(actions).join(", ") + ".";
     return { message: message, success: true };
+  },
+
+  debug: function () {
+    return { message: JSON.stringify({hello: "world", "this":"älso"}) };
   },
 
   // die: function (game) {
