@@ -65,6 +65,9 @@ function initSocket() {
   socket.on("message", function(data) {
     toScreen(data.response, "console");
   });
+  socket.on("debug", function (data) {
+    console.log(data.state);
+  })
 }
 // ----- Send Message to Server ---------------------------------------------------------
 function messageServer(message) {
@@ -79,4 +82,9 @@ function toScreen(message, actor) {
   newText.innerHTML = message + "<br />";
   document.getElementById("display").appendChild(newText);
   newText.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+}
+
+// for debugging
+function debug() {
+  socket.emit("debug");
 }

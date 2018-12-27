@@ -209,10 +209,14 @@ io.on("connection", async (client) => {
       client.emit("message", { response: cleanString(response.response) });
     }
   });
+  
+  client.on("debug", async (message) => {
+    client.emit("debug", {state: client.handshake.session})
+  });
 });
 
 async function booksToDescription(roomid) {
-  if (!roomid) return "\n\nNo books here.";
+  if (!roomid) return "";
   console.log("get books for ", roomid);
   // ping s3 for books
   var res = await fetch(process.env.S3_BASEURL + roomid + "_titles.json");
