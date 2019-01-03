@@ -5,6 +5,7 @@ var fetch = require("isomorphic-fetch");
 var ansiHTML = require("ansi-html");
 var chalk = require("chalk");
 chalk.enabled = true;
+chalk.level = 3;
 var express = require("express");
 var bodyParser = require("body-parser");
 var expressSession = require("express-session");
