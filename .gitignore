@@ -4,6 +4,9 @@ venv/
 venv3/
 .ipynb_checkpoints/
 
+# Redis DB
+dump.rdb
+
 # Logs
 logs
 *.log

@@ -26,7 +26,7 @@ var players = 0;
 var defaultLocation = "MAIN";
 var adjectives = ["Agreeable", "Alert", "Alluring", "Ambitious", "Amused", "Boundless", "Brave", "Bright", "Calm", "Capable", "Charming", "Cheerful", "Coherent", "Comfortable", "Confident", "Cooperative", "Courageous", "Credible", "Cultured", "Dashing", "Dazzling", "Debonair", "Decisive", "Decorous", "Delightful", "Detailed", "Determined", "Diligent", "Discreet", "Dynamic", "Eager", "Efficient", "Elated", "Eminent", "Enchanting", "Encouraging", "Endurable", "Energetic", "Entertaining", "Enthusiastic", "Excellent", "Excited", "Exclusive", "Exuberant", "Fabulous", "Fair", "Faithful", "Fantastic", "Fearless", "Fine", "Frank", "Friendly", "Funny", "Generous", "Gentle", "Glorious", "Good", "Happy", "Harmonious", "Helpful", "Hilarious", "Honorable", "Impartial", "Industrious", "Instinctive", "Jolly", "Joyous", "Kind", "Kind-hearted", "Knowledgeable", "Level", "Likeable", "Lively", "Lovely", "Loving", "Lucky", "Mature", "Modern", "Nice", "Obedient", "Painstaking", "Peaceful", "Perfect", "Placid", "Plausible", "Pleasant", "Plucky", "Productive", "Protective", "Proud", "Punctual", "Quiet", "Receptive", "Reflective", "Relieved", "Resolute", "Responsible", "Rhetorical", "Righteous", "Romantic", "Sedate", "Seemly", "Selective", "Self-assured", "Sensitive", "Shrewd", "Silly", "Sincere", "Skillful", "Smiling", "Splendid", "Steadfast", "Stimulating", "Successful", "Succinct", "Talented", "Thoughtful", "Thrifty", "Tough", "Trustworthy", "Unbiased", "Unusual", "Upbeat", "Vigorous", "Vivacious", "Warm", "Willing", "Wise", "Witty", "Wonderful"];
 var treeNames = ["Alder", "Apple", "Pear", "Ash", "Aspen", "Cottonwood", "Poplar", "Basswood", "Birch", "Buckeye", "Buckthorn", "California-laurel", "Catalpa", "Cedar", "Cherry", "Plum", "Chestnut", "Chinkapin", "Cottonwood", "Poplar", "Aspen", "Cypress", "Dogwood", "Douglas-fir", "Elm", "Fir", "Filbert", "Hazel", "Giant Sequoia", "Hawthorn", "Hazel", "Filbert", "Hemlock", "Honeylocust", "Holly", "Horsechestnut", "Incense-cedar", "Juniper", "Larch", "Locust", "Madrone", "Maple", "Mountain-ash", "Mountain-mahogany", "Oak", "Oregon-myrtle", "Pear", "Apple", "Pine", "Plum", "Cherry", "Poplar", "Aspen", "Cottonwood", "Redcedar", "Redwood", "Russian-olive", "Spruce", "Sweetgum", "Sycamore", "Tanoak", "True Cedar", "True Fir", "Walnut", "White-cedar", "Willow", "Yellow-poplar", "Yew"];
-var exits = ["a", "b", "c", "d", "e", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "u", "v", "z", "entrance", "shelf", "next", "previous", "exit", "enter", "main", "south", "north", "east", "west", "northeast", "northwest", "southeast", "southwest", "up", "down"];
+var exits = ["a", "b", "c", "d", "e", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "u", "v", "z", "entrance", "annex", "shelf", "next", "previous", "exit", "enter", "main", "south", "north", "east", "west", "northeast", "northwest", "southeast", "southwest", "up", "down"];
 
 // === Initialize Servers ===
 var app = express();
@@ -71,6 +71,7 @@ io.use(sharedSession(session, {
   autoSave: true
 }));
 app.use(express.static(__dirname + "/terminal"));
+app.use(express.static(__dirname + "/python"));
 
 // === Start Server ===
 var server_port = process.env.PORT || 3001;
