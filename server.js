@@ -1,6 +1,7 @@
 var dotenv = require("dotenv");
 dotenv.config();
 
+var fs = require("fs");
 var fetch = require("isomorphic-fetch");
 var ansiHTML = require("ansi-html");
 var chalk = require("chalk");
@@ -22,11 +23,12 @@ var cookieParser = require("cookie-parser")(process.env.SECRET);
 var debugMode = true;
 
 // === Game Variables ===
+let lccData = JSON.parse(fs.readFileSync(__dirname + "/python/lcc_simple_count.json", "utf8"));
 var players = 0;
 var defaultLocation = "MAIN";
 var adjectives = ["Agreeable", "Alert", "Alluring", "Ambitious", "Amused", "Boundless", "Brave", "Bright", "Calm", "Capable", "Charming", "Cheerful", "Coherent", "Comfortable", "Confident", "Cooperative", "Courageous", "Credible", "Cultured", "Dashing", "Dazzling", "Debonair", "Decisive", "Decorous", "Delightful", "Detailed", "Determined", "Diligent", "Discreet", "Dynamic", "Eager", "Efficient", "Elated", "Eminent", "Enchanting", "Encouraging", "Endurable", "Energetic", "Entertaining", "Enthusiastic", "Excellent", "Excited", "Exclusive", "Exuberant", "Fabulous", "Fair", "Faithful", "Fantastic", "Fearless", "Fine", "Frank", "Friendly", "Funny", "Generous", "Gentle", "Glorious", "Good", "Happy", "Harmonious", "Helpful", "Hilarious", "Honorable", "Impartial", "Industrious", "Instinctive", "Jolly", "Joyous", "Kind", "Kind-hearted", "Knowledgeable", "Level", "Likeable", "Lively", "Lovely", "Loving", "Lucky", "Mature", "Modern", "Nice", "Obedient", "Painstaking", "Peaceful", "Perfect", "Placid", "Plausible", "Pleasant", "Plucky", "Productive", "Protective", "Proud", "Punctual", "Quiet", "Receptive", "Reflective", "Relieved", "Resolute", "Responsible", "Rhetorical", "Righteous", "Romantic", "Sedate", "Seemly", "Selective", "Self-assured", "Sensitive", "Shrewd", "Silly", "Sincere", "Skillful", "Smiling", "Splendid", "Steadfast", "Stimulating", "Successful", "Succinct", "Talented", "Thoughtful", "Thrifty", "Tough", "Trustworthy", "Unbiased", "Unusual", "Upbeat", "Vigorous", "Vivacious", "Warm", "Willing", "Wise", "Witty", "Wonderful"];
 var treeNames = ["Alder", "Apple", "Pear", "Ash", "Aspen", "Cottonwood", "Poplar", "Basswood", "Birch", "Buckeye", "Buckthorn", "California-laurel", "Catalpa", "Cedar", "Cherry", "Plum", "Chestnut", "Chinkapin", "Cottonwood", "Poplar", "Aspen", "Cypress", "Dogwood", "Douglas-fir", "Elm", "Fir", "Filbert", "Hazel", "Giant Sequoia", "Hawthorn", "Hazel", "Filbert", "Hemlock", "Honeylocust", "Holly", "Horsechestnut", "Incense-cedar", "Juniper", "Larch", "Locust", "Madrone", "Maple", "Mountain-ash", "Mountain-mahogany", "Oak", "Oregon-myrtle", "Pear", "Apple", "Pine", "Plum", "Cherry", "Poplar", "Aspen", "Cottonwood", "Redcedar", "Redwood", "Russian-olive", "Spruce", "Sweetgum", "Sycamore", "Tanoak", "True Cedar", "True Fir", "Walnut", "White-cedar", "Willow", "Yellow-poplar", "Yew"];
-var exits = ["a", "b", "c", "d", "e", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "u", "v", "z", "entrance", "annex", "shelf", "next", "previous", "exit", "enter", "main", "south", "north", "east", "west", "northeast", "northwest", "southeast", "southwest", "up", "down"];
+var exits = ["a", "b", "c", "d", "e", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "u", "v", "z", "entrance", "annex", "next", "previous", "exit", "enter", "main", "south", "north", "east", "west", "northeast", "northwest", "southeast", "southwest", "up", "down"];
 
 // === Initialize Servers ===
 var app = express();
@@ -115,8 +117,6 @@ io.on("connection", async (client) => {
     var name = client.handshake.session.name;
     // location id (not lcc but game id)
     var location = client.handshake.session.currentLocation;
-    debug(message + " -- from: " + sessionID);
-    debug(" -- at: " + location);
     var response;
     var others;
     var value;
@@ -130,21 +130,55 @@ io.on("connection", async (client) => {
     if (message.toLowerCase() === "look") {
       response = performConsoleCommand(message, sessionID);
       others = getOthers(client, location);
-      // show book count
-      response.response += await booksToDescription(room.id);
       response.response += othersToDescription(others);
-      debug(location);
       client.emit("message", { response: cleanString(response.response) } );
     } else if (message.toLowerCase() === "debug") {
       var debugObj = Object.assign({}, client.handshake.session);
       delete debugObj.cookie;
       client.emit("message", { response: "<pre>" + cleanString(chalk.green(JSON.stringify(debugObj, null, 2))) + "</pre>" });
+    } else if (message.toLowerCase().indexOf("shelf") === 0) {
+      // TODO: there's some edge cases not being considered
+      if (message.length <= 5) {
+        client.emit("message", { response: "What shelf are you looking at?" });
+        return
+      }
+      // get the shelf number
+      let shelfNumber = message.substring(6);
+      // get current room lcc id
+      let lcc = ""
+      if (location.indexOf("#") === -1 && location.indexOf("_") === -1) {
+        lcc = location;
+      } else if (location.indexOf("#") !== -1) {
+        lcc = location.substring(location.lastIndexOf("#")+1)
+      } else if (location.indexOf("_") !== -1) {
+        lcc = location.substring(location.lastIndexOf("_") + 1)
+      }
+      // get data from json file
+      let tree = [location];
+      let shelfData = JSON.parse(JSON.stringify(lccData));
+      if (location.indexOf("#") !== -1 || location.indexOf("_") !== -1) {
+        tree = location.substring(location.lastIndexOf("_") + 1).split("#");
+        // console.log(tree)
+        while (tree.length > 0) {
+          shelfData = JSON.parse(JSON.stringify(shelfData[tree.shift()].children))
+        }
+        // check to see if it's a shallow room (no children)
+        if (Object.keys(shelfData).length !== 0 && shelfData.constructor === Object) {
+          // get books for the shelfNumber-th child (minus one)
+          let shelfKeys = Object.keys(shelfData);
+          let selectedShelfKey = shelfKeys[shelfNumber - 1];
+          let selectedShelf = shelfData[selectedShelfKey]
+          lcc = selectedShelf.id
+        }
+        let bookResponse = await booksToDescription(lcc);
+        client.emit("message", { response: cleanString(bookResponse) });
+      }
+      // console.log(lcc, shelfNumber)
     } else if (message.toLowerCase() === "books") {
       // check if it is a normal book room (not the plaza/porch/etc)
       var bookResponse = await booksToDescription(room.id);
       client.emit("message", { response: cleanString(bookResponse) });
     } else if (message.toLowerCase() === "players") {
-      debug("  requesting player count");
       value = await store.getAsync("players");
       message = message + " " + value;
       response = performConsoleCommand(message, sessionID);
@@ -202,7 +236,6 @@ io.on("connection", async (client) => {
         saveLocation(client, location);
         others = getOthers(client, location);
         room = mudconsole.getGameData().map[location];
-        response.response += await booksToDescription(room.id);
         response.response += othersToDescription(others);
       }
       client.emit("message", { response: cleanString(response.response) });
@@ -353,7 +386,7 @@ function performConsoleCommand(command, sessionID) {
 function cleanString(string) {
   if (string.indexOf("---") !== -1 && string.indexOf("[") !== -1 && string.indexOf("Exit") !== -1) {
     // check to see if it is “normal” room description
-    var lines = string.split("\n");
+    let lines = string.split("\n");
     string = lines.map((line, index) => {
       if (index === 1) {
         // get title
@@ -362,21 +395,28 @@ function cleanString(string) {
       } else if (line.indexOf("---") === 0) {
         // get underline
         return chalk.gray(line);
+      } else if (line.indexOf("(") === 0) {
+        // it's a shelf description
+        let numberStart = 1;
+        let numberEnd = line.indexOf(")");
+        let shelfNumber = line.substring(numberStart, numberEnd);
+        line = line.substring(0, numberStart) + chalk.magenta(shelfNumber) + line.substring(numberEnd);
+        return line;
       } else if (line.indexOf("[") === 0) {
         // check to see if it has exit texts
-        var exitStart = line.indexOf("|");
-        var exitEnd = line.lastIndexOf("|");
-        var exit = line.substring(exitStart, exitEnd);
-        var roomStart = line.indexOf("]") + 1;
-        var room = line.substring(roomStart);
+        let exitStart = line.indexOf("|");
+        let exitEnd = line.lastIndexOf("|");
+        let exit = line.substring(exitStart, exitEnd);
+        let roomStart = line.indexOf("]") + 1;
+        let room = line.substring(roomStart);
         line = line.substring(0, exitStart) + chalk.cyan(exit) + line.substring(exitEnd, roomStart) + chalk.yellow(room);
         return line;
       } else if (line.indexOf("Exits are:") === 0 || line.indexOf("Exit is:") === 0) {
-        var intro = line.substring(0,line.indexOf(":")+1);
-        var exits = line.substring(line.indexOf(":")+1).split(",");
+        let intro = line.substring(0,line.indexOf(":")+1);
+        let exits = line.substring(line.indexOf(":")+1).split(",");
         line = intro + exits.map(exit => {
           if (exit.indexOf(" and ") !== -1) {
-            var twoExits = exit.split(" and ");
+            let twoExits = exit.split(" and ");
             exit = twoExits.map(e => {
               return chalk.cyan(e.replace(".", ""));
             }).join(" and ");
@@ -395,8 +435,8 @@ function cleanString(string) {
   } else if (string.indexOf("* ") !== -1 && string.indexOf("yell") !== -1) {
     string = chalk.red(string);
   } else if (string.indexOf("Try these commands") === 0) {
-    var intro = string.substring(0, string.indexOf(":") + 1);
-    var commands = string.substring(string.indexOf(":") + 1).split(",");
+    let intro = string.substring(0, string.indexOf(":") + 1);
+    let commands = string.substring(string.indexOf(":") + 1).split(",");
     string = intro + commands.map(command => {
       return chalk.green(command.replace(".",""));
     }).join(",") + ".";
