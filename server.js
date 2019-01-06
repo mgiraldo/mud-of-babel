@@ -547,7 +547,13 @@ function parseBooks(booksJson) {
   response += ' in the “' + booksJson.subject + '” shelf:\n';
   var books = booksJson.titles.map(
     (book, index) =>
-      '(' + chalk.green(index) + ') “' + book.title + '” by ' + book.author
+      '(' +
+      chalk.green(index + 1) +
+      ') “' +
+      book.title +
+      '”' +
+      ' by ' +
+      chalk.cyan(book.author)
   );
   response += books.join('\n');
   return response;
