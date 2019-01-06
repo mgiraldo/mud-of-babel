@@ -2,7 +2,7 @@
 var debugMode = false;
 
 // === Import Necessary Functionality ===
-var parser = require("./parser.js");
+var parser = require('./parser.js');
 
 // === Creat Necessary Variables ===
 var games = {};
@@ -22,7 +22,7 @@ exports.setLocation = (gameID, location) => {
   game.gameData.player.currentLocation = location;
 };
 
-exports.getLocation = (gameID) => {
+exports.getLocation = gameID => {
   var game = initGame(gameID);
   return game.gameData.player.currentLocation;
 };
@@ -32,13 +32,13 @@ exports.setName = (gameID, name) => {
   game.gameData.player.name = name;
 };
 
-exports.loadDefaultGameData = (data) => {
+exports.loadDefaultGameData = data => {
   try {
     // each user session has different game id based on the cookie
     baseData = data;
-    return "Loaded base data";
+    return 'Loaded base data';
   } catch (error) {
-    return "Could not load base game";
+    return 'Could not load base game';
   }
 };
 
@@ -55,30 +55,35 @@ exports.input = (input, gameID) => {
   var returnString;
   try {
     try {
-      debug("---Attempting to run cartridge command \"" + command.action + "\"");
-      returnString = eval("gameActions." + command.action + "(game,command,consoleInterface)");
+      debug('---Attempting to run cartridge command "' + command.action + '"');
+      returnString = eval(
+        'gameActions.' + command.action + '(game,command,consoleInterface)'
+      );
     } catch (cartridgeCommandError) {
-      debug("-----" + cartridgeCommandError);
-      debug("---Attempting to run cartridge command \"" + command.action + "\"");
-      returnString = eval("actions." + command.action + "(game,command)").message;
+      debug('-----' + cartridgeCommandError);
+      debug('---Attempting to run cartridge command "' + command.action + '"');
+      returnString = eval('actions.' + command.action + '(game,command)')
+        .message;
     }
   } catch (consoleCommandError) {
     try {
-      debug("-----" + consoleCommandError);
-      debug("---Attempting to perform " + command.action + " interaction");
+      debug('-----' + consoleCommandError);
+      debug('---Attempting to perform ' + command.action + ' interaction');
       returnString = interact(game, command.action, command.subject);
     } catch (interactionError) {
-      debug("-----" + interactionError);
+      debug('-----' + interactionError);
     }
   }
   if (returnString === undefined) {
     returnString = "I don't know how to do that.";
   } else {
     try {
-      var updateLocationString = getCurrentLocation(game).updateLocation(command);
+      var updateLocationString = getCurrentLocation(game).updateLocation(
+        command
+      );
     } catch (updateLocationError) {
-      debug("---Failed to Perform updateLocation()");
-      debug("-----" + updateLocationError);
+      debug('---Failed to Perform updateLocation()');
+      debug('-----' + updateLocationError);
     }
   }
   if (updateLocationString !== undefined) {
@@ -91,9 +96,9 @@ exports.input = (input, gameID) => {
 // === Console Actions =================================================================================================
 // ----------------------------/
 var actions = {
-
-  help: function () {
-    var message = "Try these commands: " + Object.keys(actions).join(", ") + ".";
+  help: function() {
+    var message =
+      'Try these commands: ' + Object.keys(actions).join(', ') + '.';
     return { message: message, success: true };
   },
 
@@ -102,28 +107,34 @@ var actions = {
   //   return { message: "You are dead", success: true };
   // },
 
-  drop: function (game, command) {
+  drop: function(game, command) {
     if (!command.subject) {
-      return { message: "What do you want to drop?", success: false };
+      return { message: 'What do you want to drop?', success: false };
     }
     try {
-      return { message: interact(game, "drop", command.subject), success: true };
+      return {
+        message: interact(game, 'drop', command.subject),
+        success: true,
+      };
     } catch (error) {
       try {
         var currentLocation = getCurrentLocation(game);
         moveItem(command.subject, game.player.inventory, currentLocation.items);
         var item = getItem(currentLocation.items, command.subject);
         item.hidden = false;
-        return { message: command.subject + " dropped", success: true };
+        return { message: command.subject + ' dropped', success: true };
       } catch (error2) {
-        return { message: "You do not have a " + command.subject + " to drop.", success: false };
+        return {
+          message: 'You do not have a ' + command.subject + ' to drop.',
+          success: false,
+        };
       }
     }
   },
 
-  go: function (game, command) {
+  go: function(game, command) {
     if (!command.subject) {
-      return { message: "Where do you want to go?", success: false };
+      return { message: 'Where do you want to go?', success: false };
     }
     var exits = getCurrentLocation(game).exits;
     var playerDestination = null;
@@ -151,52 +162,55 @@ var actions = {
     return { message: getLocationDescription(game, true), success: true };
   },
 
-  inventory: function (game) {
-    var inventoryList = "Your inventory contains:";
+  inventory: function(game) {
+    var inventoryList = 'Your inventory contains:';
     for (var item in game.player.inventory) {
       var itemObject = game.player.inventory[item];
       var itemName = itemObject.displayName;
       if (itemObject.quantity > 1) {
-        itemName = itemName.concat(" x" + itemObject.quantity);
+        itemName = itemName.concat(' x' + itemObject.quantity);
       }
-      inventoryList = inventoryList.concat("\n" + itemName);
+      inventoryList = inventoryList.concat('\n' + itemName);
     }
-    if (inventoryList === "Your inventory contains:") {
-      return { message: "Your inventory is empty.", success: true };
+    if (inventoryList === 'Your inventory contains:') {
+      return { message: 'Your inventory is empty.', success: true };
     } else {
       return { message: inventoryList, success: true };
     }
   },
 
-  players: function (game, command) {
-    var playersMessage = Number(command.subject) !== 1 ? command.subject + " players online." : "Just you online.";
+  players: function(game, command) {
+    var playersMessage =
+      Number(command.subject) !== 1
+        ? command.subject + ' players online.'
+        : 'Just you online.';
     return { message: playersMessage, success: true };
   },
 
-  name: function (game) {
-    var message = "Your name is: " + game.player.name + ".";
+  name: function(game) {
+    var message = 'Your name is: ' + game.player.name + '.';
     return { message: message, success: true };
   },
 
-  newname: function (game) {
-    var message = "Your new name is: " + game.player.name + ".";
+  newname: function(game) {
+    var message = 'Your new name is: ' + game.player.name + '.';
     return { message: message, success: true };
   },
 
-  yell: function (game, command) {
-    var playersMessage = "Shhh! This is a library. You cannot just scream.";
+  yell: function(game, command) {
+    var playersMessage = 'Shhh! This is a library. You cannot just scream.';
     if (!command.subject) {
       return { message: playersMessage, success: true };
-    } else if (command.subject === "denied") {
-      playersMessage = "You can only yell once per minute.";
+    } else if (command.subject === 'denied') {
+      playersMessage = 'You can only yell once per minute.';
     } else {
-      playersMessage = "Everyone in the library has received your message.";
+      playersMessage = 'Everyone in the library has received your message.';
     }
     return { message: playersMessage, success: true };
   },
 
-  say: function (game, command) {
-    var playersMessage = "What do you want to say?";
+  say: function(game, command) {
+    var playersMessage = 'What do you want to say?';
     if (!command.subject) {
       // player didnt say anything
       return { message: playersMessage, success: true };
@@ -204,71 +218,96 @@ var actions = {
     return { message: playersMessage, success: true };
   },
 
-  wave: function (game) {
-    var playersMessage = "You wave.";
+  wave: function(game) {
+    var playersMessage = 'You wave.';
     return { message: playersMessage, success: true };
   },
 
-  books: function (game, command) {
-    return { message: "Placeholder (happens server-side)", success: true };
+  book: function(game, command) {
+    return { message: 'Placeholder (happens server-side)', success: true };
   },
 
-  shelf: function (game, command) {
-    return { message: "Placeholder (happens server-side)", success: true };
+  shelf: function(game, command) {
+    return { message: 'Placeholder (happens server-side)', success: true };
   },
 
-  look: function (game, command) {
+  look: function(game, command) {
     if (!command.subject) {
       return { message: getLocationDescription(game, true), success: true };
     }
     try {
       try {
-        return { message: getItem(game.player.inventory, command.subject).description, success: true };
+        return {
+          message: getItem(game.player.inventory, command.subject).description,
+          success: true,
+        };
       } catch (itemNotInInventoryError) {
-        return { message: getItem(getCurrentLocation(game).items, command.subject).description, success: true };
+        return {
+          message: getItem(getCurrentLocation(game).items, command.subject)
+            .description,
+          success: true,
+        };
       }
     } catch (isNotAnItemError) {
       try {
-        return { message: interact(game, "look", command.subject), success: true };
-      } catch (subjectNotFound
-      ) {
-        return { message: "There is nothing important about the " + command.subject + ".", success: false };
+        return {
+          message: interact(game, 'look', command.subject),
+          success: true,
+        };
+      } catch (subjectNotFound) {
+        return {
+          message:
+            'There is nothing important about the ' + command.subject + '.',
+          success: false,
+        };
       }
     }
   },
 
-  take: function (game, command) {
+  take: function(game, command) {
     if (!command.subject) {
-      return { message: "What do you want to take?", success: false };
+      return { message: 'What do you want to take?', success: false };
     }
     try {
-      return { message: interact(game, "take", command.subject), success: true };
+      return {
+        message: interact(game, 'take', command.subject),
+        success: true,
+      };
     } catch (error) {
       try {
-        moveItem(command.subject, getCurrentLocation(game).items, game.player.inventory);
-        return { message: command.subject + " taken", success: true };
+        moveItem(
+          command.subject,
+          getCurrentLocation(game).items,
+          game.player.inventory
+        );
+        return { message: command.subject + ' taken', success: true };
       } catch (error2) {
-        return { message: "Best just to leave the " + command.subject + " as it is.", success: false };
+        return {
+          message: 'Best just to leave the ' + command.subject + ' as it is.',
+          success: false,
+        };
       }
     }
   },
 
-  use: function (game, command) {
+  use: function(game, command) {
     if (!command.subject) {
-      return { message: "What would you like to use?", success: false };
+      return { message: 'What would you like to use?', success: false };
     }
     try {
-      return { message: getItem(game.player.inventory, command.subject).use(), success: true };
+      return {
+        message: getItem(game.player.inventory, command.subject).use(),
+        success: true,
+      };
     } catch (itemNotInInventoryError) {
       return { message: "Can't do that.", success: false };
     }
   },
 
-  debug: function () {
-    return { message: "" };
-  }
+  debug: function() {
+    return { message: '' };
+  },
 };
-
 
 // ----------------------------\
 // === Helper Functions ===============================================================================================
@@ -281,21 +320,24 @@ function initGame(gameID) {
 }
 
 function loadBaseGameForID(gameID) {
-  games[gameID] = { gameData: baseData.gameData, gameActions: baseData.gameActions };
+  games[gameID] = {
+    gameData: baseData.gameData,
+    gameActions: baseData.gameActions,
+  };
   games[gameID].gameData.gameID = gameID;
   return games[gameID];
 }
 
 function checkForGameEnd(game, returnString) {
   if (game.gameOver) {
-    returnString = returnString + "\n" + game.outroText;
-    actions.die(game, { action: "die" });
+    returnString = returnString + '\n' + game.outroText;
+    actions.die(game, { action: 'die' });
   }
   return returnString;
 }
 
 function clone(obj) {
-  if (obj == null || typeof (obj) != "object") {
+  if (obj == null || typeof obj != 'object') {
     return obj;
   }
   var temp = obj.constructor();
@@ -308,7 +350,7 @@ function clone(obj) {
 }
 
 function consoleInterface(game, command) {
-  return eval("actions." + command.action + "(game,command);");
+  return eval('actions.' + command.action + '(game,command);');
 }
 
 function debug(debugText) {
@@ -320,7 +362,7 @@ function debug(debugText) {
 function exitsToString(exitsObject) {
   var numOfExits = Object.keys(exitsObject).length;
   if (numOfExits === 0) {
-    return "";
+    return '';
   }
   var visibleExits = [];
   for (var exit in exitsObject) {
@@ -331,22 +373,22 @@ function exitsToString(exitsObject) {
   }
   var returnString;
   switch (visibleExits.length) {
-  case 0:
-    return "";
-  case 1:
-    returnString = "\n\nExit is: ";
-    break;
-  default:
-    returnString = "\n\nExits are: ";
+    case 0:
+      return '';
+    case 1:
+      returnString = '\n\nExit is: ';
+      break;
+    default:
+      returnString = '\n\nExits are: ';
   }
   for (var i = 0; i < visibleExits.length; ++i) {
     returnString = returnString.concat(visibleExits[i]);
     if (i === visibleExits.length - 2) {
-      returnString = returnString.concat(" and ");
+      returnString = returnString.concat(' and ');
     } else if (i === visibleExits.length - 1) {
-      returnString = returnString.concat(".");
+      returnString = returnString.concat('.');
     } else {
-      returnString = returnString.concat(", ");
+      returnString = returnString.concat(', ');
     }
   }
   return returnString;
@@ -360,8 +402,10 @@ function getLocationDescription(game, forcedLongDescription) {
   var currentLocation = getCurrentLocation(game);
   var description;
   if (currentLocation.firstVisit || forcedLongDescription) {
-    description = currentLocation.displayName + "\n";
-    description = description.concat("-".repeat(currentLocation.displayName.length) + "\n");
+    description = currentLocation.displayName + '\n';
+    description = description.concat(
+      '-'.repeat(currentLocation.displayName.length) + '\n'
+    );
     description = description.concat(currentLocation.description);
     if (currentLocation.items) {
       description = description.concat(itemsToString(currentLocation.items));
@@ -372,7 +416,7 @@ function getLocationDescription(game, forcedLongDescription) {
   } else {
     description = currentLocation.displayName;
   }
-  description = "\n".concat(description);
+  description = '\n'.concat(description);
   return description;
 }
 
@@ -395,36 +439,41 @@ function getItemName(itemLocation, itemName) {
 function itemsToString(itemsObject) {
   var numOfItems = Object.keys(itemsObject).length;
   if (numOfItems === 0) {
-    return "";
+    return '';
   }
   var visibleItems = [];
   for (var item in itemsObject) {
     var itemObject = itemsObject[item];
     if (!itemObject.hidden) {
-      visibleItems.push({ name: itemObject.displayName, quantity: itemObject.quantity });
+      visibleItems.push({
+        name: itemObject.displayName,
+        quantity: itemObject.quantity,
+      });
     }
   }
   if (visibleItems.length === 0) {
-    return "";
+    return '';
   }
   var returnString;
   if (visibleItems[0].quantity === 1) {
-    returnString = " There is ";
+    returnString = ' There is ';
   } else {
-    returnString = " There are ";
+    returnString = ' There are ';
   }
   for (var i = 0; i < visibleItems.length; ++i) {
     if (visibleItems[i].quantity > 1) {
-      returnString = returnString.concat(visibleItems[i].quantity + " " + visibleItems[i].name + "s");
+      returnString = returnString.concat(
+        visibleItems[i].quantity + ' ' + visibleItems[i].name + 's'
+      );
     } else {
-      returnString = returnString.concat("a " + visibleItems[i].name);
+      returnString = returnString.concat('a ' + visibleItems[i].name);
     }
     if (i === visibleItems.length - 2) {
-      returnString = returnString.concat(" and ");
+      returnString = returnString.concat(' and ');
     } else if (i === visibleItems.length - 1) {
-      returnString = returnString.concat(" here.");
+      returnString = returnString.concat(' here.');
     } else {
-      returnString = returnString.concat(", ");
+      returnString = returnString.concat(', ');
     }
   }
   return returnString;
@@ -441,7 +490,7 @@ function interact(game, interaction, subject) {
 function moveItem(itemName, startLocation, endLocation) {
   var itemAtOrigin = getItem(startLocation, itemName);
   if (itemAtOrigin === undefined) {
-    throw "itemDoesNotExist";
+    throw 'itemDoesNotExist';
   }
   var itemAtDestination = getItem(endLocation, itemName);
   if (itemAtDestination === undefined) {
@@ -450,7 +499,7 @@ function moveItem(itemName, startLocation, endLocation) {
   } else {
     ++endLocation[itemName].quantity;
   }
-  if (itemAtOrigin.hasOwnProperty("quantity")) {
+  if (itemAtOrigin.hasOwnProperty('quantity')) {
     --itemAtOrigin.quantity;
     if (itemAtOrigin.quantity === 0) {
       delete startLocation[itemName];

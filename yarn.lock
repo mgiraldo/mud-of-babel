@@ -540,6 +540,11 @@ node-fetch@^1.0.1:
     encoding "^0.1.11"
     is-stream "^1.0.1"
 
+num-words@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/num-words/-/num-words-1.0.1.tgz#44cd90523ce1f32f30dd096959d83df1ae927bec"
+  integrity sha512-NI9d8aeFYXs1i3LTkv+o3vqDp0XuP9OT1sNzaCtEMyU3ofaDFfd0GZSPelN+cRHTh7ldJfq6uAIRCQzIZPJMzw==
+
 object-component@0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/object-component/-/object-component-0.0.3.tgz#f0c69aa50efc95b866c186f400a33769cb2f1291"
