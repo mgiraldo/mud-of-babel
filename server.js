@@ -337,7 +337,7 @@ io.on('connection', async client => {
   // new player arrived
   debug('player connected! ' + client.handshake.session.id);
   client.handshake.session.lastLocation = defaultLocation;
-  var playerInfo = await initPlayer(client.handshake.session, client);
+  let playerInfo = await initPlayer(client.handshake.session, client);
   client.broadcast.to(playerInfo.location).emit('message', {
     response: cleanString('\n' + playerInfo.name + ' connected.'),
   });
@@ -397,6 +397,7 @@ io.on('connection', async client => {
           '</pre>',
       });
     } else if (message.toLowerCase().indexOf('shelf') === 0) {
+      // TODO: mention that there are no shelves to look at
       // TODO: check if it is a normal book room (not the plaza/porch/etc)
       // TODO: add another shelf for books of the current room (count > 0)
       // TODO: there's some edge cases not being considered
@@ -414,11 +415,9 @@ io.on('connection', async client => {
         lcc = location.substring(location.lastIndexOf('#') + 1);
       } else if (location.indexOf('_') !== -1) {
         lcc = location.substring(location.lastIndexOf('_') + 1);
-      }
-      if (location.indexOf('#') !== -1 || location.indexOf('_') !== -1) {
+      } else if (location.indexOf('#') !== -1 || location.indexOf('_') !== -1) {
         lcc = getLccFromLocation(location, shelfNumber);
       }
-      store.set('sess:' + sessionID + '.lastShelf', lcc);
       client.handshake.session.lastShelf = lcc;
       client.handshake.session.save();
       let bookResponse = await booksToDescription(lcc);
@@ -432,16 +431,31 @@ io.on('connection', async client => {
         return;
       }
       let lcc = '';
+      let bookNumber = Number(message.substring(5));
       try {
         lcc = client.handshake.session.lastShelf;
       } catch {
         lcc = room.id;
       }
-      // get n-th book from titles endpoint
-      // var bookResponse = await booksToDescription(lcc);
-      // client.emit('message', {
-      //   response: cleanString(bookResponse),
-      // });
+      let booksJson = await getBooks(lcc);
+      if (booksJson && booksJson.titles && booksJson.titles.length > 0) {
+        // get n-th book from titles endpoint
+        let theBook = booksJson.titles[bookNumber - 1];
+        if (theBook) {
+          client.emit('message', {
+            response:
+              'You take “' + theBook.title + '” by ' + theBook.author + '',
+          });
+        } else {
+          client.emit('message', {
+            response: 'Book not found!',
+          });
+        }
+      } else {
+        client.emit('message', {
+          response: 'There are no books!',
+        });
+      }
     } else if (message.toLowerCase() === 'players') {
       value = await store.getAsync('players');
       message = message + ' ' + value;
@@ -458,7 +472,7 @@ io.on('connection', async client => {
       });
     } else if (message.toLowerCase().indexOf('yell ') === 0) {
       // yelling can only be done once a minute
-      value = await store.getAsync('sess:' + sessionID + '.lastYell');
+      value = client.handshake.session.lastYell;
       if (value) {
         var yell = Number(value);
         var canYell = Date.now() - yell > 60000;
@@ -471,7 +485,8 @@ io.on('connection', async client => {
           return;
         }
       }
-      store.set('sess:' + sessionID + '.lastYell', Date.now());
+      client.handshake.session.lastYell = Date.now();
+      client.handshake.session.save();
       response = performConsoleCommand(message, sessionID);
       var yellMessage = message.substring(5);
       var yellEmit = '\n* ' + name + ' (yelling): ' + yellMessage + ' *';
@@ -486,7 +501,7 @@ io.on('connection', async client => {
         response: cleanString(response.response),
       });
     } else if (message.toLowerCase().indexOf('say ') === 0) {
-      value = await store.getAsync('sess:' + sessionID + '.currentLocation');
+      value = client.handshake.session.currentLocation;
       location = value;
       response = performConsoleCommand(message, sessionID);
       var sayMessage = message.substring(4);
@@ -499,7 +514,7 @@ io.on('connection', async client => {
         response: cleanString(sayMyself),
       });
     } else if (message.toLowerCase() === 'wave') {
-      value = await store.getAsync('sess:' + sessionID + '.currentLocation');
+      value = client.handshake.session.currentLocation;
       location = value;
       response = performConsoleCommand(message, sessionID);
       var waveEmit = '\n+ ' + name + ' waves. +';
@@ -568,13 +583,18 @@ function getLccFromLocation(location, shelfNumber) {
   return lcc;
 }
 
-async function booksToDescription(roomid) {
+async function getBooks(roomid) {
   if (!roomid) return '';
   console.log('get books for ', roomid);
   // ping s3 for books
-  var res = await fetch(process.env.S3_BASEURL + roomid + '_titles.json');
-  var json = await res.json();
-  return parseBooks(json);
+  let res = await fetch(process.env.S3_BASEURL + roomid + '_titles.json');
+  let json = await res.json();
+  return json;
+}
+
+async function booksToDescription(roomid) {
+  let booksJson = await getBooks(roomid);
+  return parseBooks(booksJson);
 }
 
 function parseBooks(booksJson) {
@@ -647,7 +667,7 @@ function createName() {
 
 async function initName(session) {
   var sessionID = session.id;
-  var name = await store.getAsync('sess:' + sessionID + '.name');
+  var name = session.name;
   if (name) {
     session.name = name;
     session.save();
@@ -661,7 +681,6 @@ async function initName(session) {
 function changeName(session) {
   var sessionID = session.id;
   var name = createName();
-  store.set('sess:' + sessionID + '.name', name);
   session.name = name;
   session.save();
   mudconsole.setName(sessionID, name);
@@ -671,7 +690,7 @@ function changeName(session) {
 async function initLocation(session, socket) {
   // get last location from redis
   let currentLocation = defaultLocation; // the default location
-  let value = await store.getAsync(session.id + '.currentLocation');
+  let value = session.currentLocation;
   if (value !== null) {
     // get last know location (in db)
     debug('    location found: ' + value);
@@ -810,8 +829,6 @@ function cleanString(string) {
 }
 
 async function saveLocation(client, location) {
-  var sessionID = client.handshake.session.id;
-  await store.setAsync('sess:' + sessionID + '.currentLocation', location);
   changeLocation(client, location, '');
 }
 
