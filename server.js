@@ -422,6 +422,20 @@ io.on('connection', async client => {
       client.handshake.session.save();
       let bookResponse = await booksToDescription(lcc);
       client.emit('message', { response: cleanString(bookResponse) });
+    } else if (message.toLowerCase() === 'books') {
+      if (
+        client.handshake.session.books &&
+        Object.keys(client.handshake.session.books).length > 0
+      ) {
+        let response = formatBookList(client.handshake.session.books);
+        client.emit('message', {
+          response: cleanString(response),
+        });
+      } else {
+        client.emit('message', {
+          response: 'You have no books.',
+        });
+      }
     } else if (message.toLowerCase().indexOf('book') === 0) {
       // TODO: there's some edge cases not being considered
       if (message.length <= 4) {
@@ -444,7 +458,8 @@ io.on('connection', async client => {
         if (theBook) {
           if (
             !client.handshake.session.books ||
-            client.handshake.session.books.indexOf(theBook.lccn) == -1
+            Object.keys(client.handshake.session.books).indexOf(theBook.lccn) ==
+              -1
           ) {
             takeBook(client.handshake.session, theBook);
             client.emit('message', {
@@ -628,11 +643,18 @@ function parseBooks(booksJson) {
 }
 
 function takeBook(session, bookJson) {
-  let books = session.books ? session.books : [];
-  books.push(bookJson.lccn);
-  books = [...new Set(books)]; // uniques only
+  let books = session.books ? session.books : {};
+  books[bookJson.lccn] = bookJson;
   session.books = books;
   session.save();
+}
+
+function formatBookList(books) {
+  let formatted = Object.values(books).map(
+    book => '“' + book.title + '” by ' + book.author
+  );
+  let response = '\nYou have:\n' + formatted.join('\n');
+  return response;
 }
 
 function othersToDescription(others) {
@@ -712,6 +734,9 @@ async function initLocation(session, socket) {
   if (value !== null) {
     // get last know location (in db)
     debug('    location found: ' + value);
+    if (Object.keys(mudconsole.getGameData().map).indexOf(value) === -1) {
+      value = defaultLocation;
+    }
     currentLocation = value;
   }
 

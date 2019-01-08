@@ -227,6 +227,10 @@ var actions = {
     return { message: 'Placeholder (happens server-side)', success: true };
   },
 
+  books: function(game, command) {
+    return { message: 'Placeholder (happens server-side)', success: true };
+  },
+
   shelf: function(game, command) {
     return { message: 'Placeholder (happens server-side)', success: true };
   },
