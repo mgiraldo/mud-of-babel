@@ -442,10 +442,20 @@ io.on('connection', async client => {
         // get n-th book from titles endpoint
         let theBook = booksJson.titles[bookNumber - 1];
         if (theBook) {
-          client.emit('message', {
-            response:
-              'You take “' + theBook.title + '” by ' + theBook.author + '',
-          });
+          if (
+            !client.handshake.session.books ||
+            client.handshake.session.books.indexOf(theBook.lccn) == -1
+          ) {
+            takeBook(client.handshake.session, theBook);
+            client.emit('message', {
+              response:
+                'You take “' + theBook.title + '” by ' + theBook.author + '',
+            });
+          } else {
+            client.emit('message', {
+              response: 'You already have that book!',
+            });
+          }
         } else {
           client.emit('message', {
             response: 'Book not found!',
@@ -615,6 +625,14 @@ function parseBooks(booksJson) {
   );
   response += books.join('\n');
   return response;
+}
+
+function takeBook(session, bookJson) {
+  let books = session.books ? session.books : [];
+  books.push(bookJson.lccn);
+  books = [...new Set(books)]; // uniques only
+  session.books = books;
+  session.save();
 }
 
 function othersToDescription(others) {
