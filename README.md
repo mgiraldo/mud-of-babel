@@ -2,6 +2,8 @@
 
 Based on [TextAdventure.js](https://github.com/TheBroox/TextAdventure.js)
 
+I talked about the background on this project during a ligtning talk in <a href="https://2018.code4lib.org/">Code4lib 2018</a>. <a href="https://docs.google.com/presentation/d/1dUykBduQxtdpqEn4dh3ePcAj5meFc1NXiqr0n3uTa40/present?includes_info_params=1#slide=id.p3">View the slides</a>.
+
 ## Installing and running
 
 This MUD uses [Redis](https://redis.io) for session and state management.

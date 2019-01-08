@@ -218,6 +218,12 @@ var actions = {
     return { message: playersMessage, success: true };
   },
 
+  about: function(game) {
+    var playersMessage =
+      'MUD of Babel by <a href="https://twitter.com/mgiraldo">Mauricio Giraldo</a>. Data from Library of Congress via <a href="https://twitter.com/thisismmiller">Matt Miller</a>. Code available in <a href="https://github.com/mgiraldo/mud-of-babel">Github</a>.';
+    return { message: playersMessage, success: true };
+  },
+
   wave: function(game) {
     var playersMessage = 'You wave.';
     return { message: playersMessage, success: true };

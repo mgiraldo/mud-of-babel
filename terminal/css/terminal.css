@@ -14,11 +14,14 @@ html {
   font-size: 20px;
 }
 
-html, body, #input, #display {
-  font-family: "Input Mono", "Courier New", Courier, monospace;
+html,
+body,
+#input,
+#display {
+  font-family: 'Input Mono', 'Courier New', Courier, monospace;
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px) {
   html {
     font-size: 16px;
   }
@@ -61,7 +64,7 @@ body {
   overflow-wrap: break-word;
   word-wrap: break-word;
   z-index: 1;
-  -webkit-overflow-scrolling:touch
+  -webkit-overflow-scrolling: touch;
 }
 #display::-webkit-scrollbar {
   width: 1rem;
@@ -72,4 +75,7 @@ body {
 }
 #display::-webkit-scrollbar-track {
   background-color: #000000;
+}
+#display a {
+  color: yellow;
 }

@@ -387,6 +387,9 @@ io.on('connection', async client => {
       others = getOthers(client, location);
       response.response += othersToDescription(others);
       client.emit('message', { response: cleanString(response.response) });
+    } else if (message.toLowerCase() === 'about') {
+      response = performConsoleCommand(message, sessionID);
+      client.emit('message', { response: cleanString(response.response) });
     } else if (message.toLowerCase() === 'debug') {
       var debugObj = Object.assign({}, client.handshake.session);
       delete debugObj.cookie;
