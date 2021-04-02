@@ -274,7 +274,15 @@ let exits = [
 // === Initialize Servers ===
 let app = express();
 let server = http.createServer(app);
-let io = socketIO(server);
+let io = socketIO(server, {
+  upgrade: true,
+  cors: {
+    origin: "*",
+    methods: ["GET", "POST"],
+    allowedHeaders: ["content-type"],
+    credentials: true
+  }
+});
 let sessionStore = connectRedis(expressSession);
 
 // === Initialize Redis ===
@@ -335,7 +343,7 @@ debug(status);
 
 io.on('connection', async client => {
   // new player arrived
-  debug('player connected! ' + client.handshake.session.id);
+  debug('player connected! ' + client.handshake.session.id + ' version: ' + client.conn.protocol);
   client.handshake.session.lastLocation = defaultLocation;
   let playerInfo = await initPlayer(client.handshake.session, client);
   client.broadcast.to(playerInfo.location).emit('message', {
