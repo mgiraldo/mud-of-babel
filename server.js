@@ -289,9 +289,10 @@ let sessionStore = connectRedis(expressSession);
 bluebird.promisifyAll(redis.RedisClient.prototype);
 bluebird.promisifyAll(redis.Multi.prototype);
 
-let store = redis.createClient(process.env.REDIS_TLS_URL);
-let pub = redis.createClient(process.env.REDIS_TLS_URL);
-let sub = redis.createClient(process.env.REDIS_TLS_URL);
+const redisOptions = process.env.NODE_ENV === "production" ? {tls: {}} : {}
+let store = redis.createClient(process.env.REDIS_TLS_URL, redisOptions);
+let pub = redis.createClient(process.env.REDIS_TLS_URL, redisOptions);
+let sub = redis.createClient(process.env.REDIS_TLS_URL, redisOptions);
 
 // === Session Stuff
 let session = expressSession({
