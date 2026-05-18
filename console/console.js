@@ -96,7 +96,7 @@ exports.input = (input, gameID) => {
 // === Console Actions =================================================================================================
 // ----------------------------/
 var actions = {
-  help: function() {
+  help: function () {
     var message =
       'Try these commands: ' + Object.keys(actions).join(', ') + '.';
     return { message: message, success: true };
@@ -107,7 +107,7 @@ var actions = {
   //   return { message: "You are dead", success: true };
   // },
 
-  drop: function(game, command) {
+  drop: function (game, command) {
     if (!command.subject) {
       return { message: 'What do you want to drop?', success: false };
     }
@@ -132,7 +132,7 @@ var actions = {
     }
   },
 
-  go: function(game, command) {
+  go: function (game, command) {
     if (!command.subject) {
       return { message: 'Where do you want to go?', success: false };
     }
@@ -162,7 +162,7 @@ var actions = {
     return { message: getLocationDescription(game, true), success: true };
   },
 
-  inventory: function(game) {
+  inventory: function (game) {
     var inventoryList = 'Your inventory contains:';
     for (var item in game.player.inventory) {
       var itemObject = game.player.inventory[item];
@@ -179,7 +179,7 @@ var actions = {
     }
   },
 
-  players: function(game, command) {
+  players: function (game, command) {
     var playersMessage =
       Number(command.subject) !== 1
         ? command.subject + ' players online.'
@@ -187,17 +187,17 @@ var actions = {
     return { message: playersMessage, success: true };
   },
 
-  name: function(game) {
+  name: function (game) {
     var message = 'Your name is: ' + game.player.name + '.';
     return { message: message, success: true };
   },
 
-  newname: function(game) {
+  newname: function (game) {
     var message = 'Your new name is: ' + game.player.name + '.';
     return { message: message, success: true };
   },
 
-  yell: function(game, command) {
+  yell: function (game, command) {
     var playersMessage = 'Shhh! This is a library. You cannot just scream.';
     if (!command.subject) {
       return { message: playersMessage, success: true };
@@ -209,7 +209,7 @@ var actions = {
     return { message: playersMessage, success: true };
   },
 
-  say: function(game, command) {
+  say: function (game, command) {
     var playersMessage = 'What do you want to say?';
     if (!command.subject) {
       // player didnt say anything
@@ -218,30 +218,30 @@ var actions = {
     return { message: playersMessage, success: true };
   },
 
-  about: function(game) {
+  about: function (game) {
     var playersMessage =
-      'MUD of Babel by <a href="https://twitter.com/mgiraldo">Mauricio Giraldo</a>. Data from Library of Congress via <a href="https://twitter.com/thisismmiller">Matt Miller</a>. Code available in <a href="https://github.com/mgiraldo/mud-of-babel">Github</a>.';
+      'MUD of Babel by <a href="https://twitter.com/mgiraldo">Mauricio Giraldo</a>. Data from Library of Congress via <a href="https://twitter.com/thisismmiller">Matt Miller</a>. Code available in <a href="https://github.com/mgiraldo/mud-of-babel">Github</a>. <a href="https://tarpit.mudofbabel.com/">See also</a>.';
     return { message: playersMessage, success: true };
   },
 
-  wave: function(game) {
+  wave: function (game) {
     var playersMessage = 'You wave.';
     return { message: playersMessage, success: true };
   },
 
-  book: function(game, command) {
+  book: function (game, command) {
     return { message: 'Placeholder (happens server-side)', success: true };
   },
 
-  books: function(game, command) {
+  books: function (game, command) {
     return { message: 'Placeholder (happens server-side)', success: true };
   },
 
-  shelf: function(game, command) {
+  shelf: function (game, command) {
     return { message: 'Placeholder (happens server-side)', success: true };
   },
 
-  look: function(game, command) {
+  look: function (game, command) {
     if (!command.subject) {
       return { message: getLocationDescription(game, true), success: true };
     }
@@ -274,7 +274,7 @@ var actions = {
     }
   },
 
-  take: function(game, command) {
+  take: function (game, command) {
     if (!command.subject) {
       return { message: 'What do you want to take?', success: false };
     }
@@ -300,7 +300,7 @@ var actions = {
     }
   },
 
-  use: function(game, command) {
+  use: function (game, command) {
     if (!command.subject) {
       return { message: 'What would you like to use?', success: false };
     }
@@ -314,7 +314,7 @@ var actions = {
     }
   },
 
-  debug: function() {
+  debug: function () {
     return { message: '' };
   },
 };
