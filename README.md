@@ -21,4 +21,6 @@ There's a [Jupyter notebook](python/mud-of-babel.ipynb) (Python) in the `python`
 
 ## Credits
 
-Built on a heavily-modified version of [TextAdventure.js](https://github.com/TheBroox/TextAdventure.js). [See also](https://tarpit.mudofbabel.com).
+Built on a heavily-modified version of [TextAdventure.js](https://github.com/TheBroox/TextAdventure.js).
+
+[See also](https://tarpit.mudofbabel.com).
