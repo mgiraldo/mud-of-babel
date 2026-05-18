@@ -297,9 +297,9 @@ const redisOptions = {
   }
 }
 
-let store = redis.createClient({ url: process.env.REDIS_URL, ...redisOptions });
-let pub = redis.createClient({ url: process.env.REDIS_URL, ...redisOptions });
-let sub = redis.createClient({ url: process.env.REDIS_URL, ...redisOptions });
+let store = redis.createClient(`${process.env.REDIS_URL}?ssl_cert_reqs=none`, redisOptions);
+let pub = redis.createClient(`${process.env.REDIS_URL}?ssl_cert_reqs=none`, redisOptions);
+let sub = redis.createClient(`${process.env.REDIS_URL}?ssl_cert_reqs=none`, redisOptions);
 
 // === Session Stuff
 let session = expressSession({
