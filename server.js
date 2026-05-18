@@ -292,7 +292,6 @@ bluebird.promisifyAll(redis.Multi.prototype);
 // const redisOptions = process.env.NODE_ENV === "production" ? {tls: {}} : {}
 const redisOptions = {
   socket: {
-    tls: (process.env.REDIS_URL.match(/rediss:/) != null),
     rejectUnauthorized: false
   }
 }
