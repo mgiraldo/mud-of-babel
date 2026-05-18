@@ -291,8 +291,7 @@ bluebird.promisifyAll(redis.Multi.prototype);
 
 const redisOptions = {
   url: process.env.REDIS_URL,
-  socket: {
-    tls: (process.env.REDIS_URL.match(/rediss:/) != null),
+  tls: {
     rejectUnauthorized: false,
   }
 }
