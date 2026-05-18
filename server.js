@@ -292,7 +292,7 @@ bluebird.promisifyAll(redis.Multi.prototype);
 // const redisOptions = process.env.NODE_ENV === "production" ? {tls: {}} : {}
 const redisOptions = {
   socket: {
-    tls: true,
+    tls: (process.env.REDIS_URL.match(/rediss:/) != null),
     rejectUnauthorized: false
   }
 }
@@ -314,13 +314,13 @@ let session = expressSession({
 
 // === Base Redis Listeners
 store.set('players', players); // start with 0 players
-store.on('error', function(err) {
+store.on('error', function (err) {
   debug('Store error: ' + err);
 });
-pub.on('error', function(err) {
+pub.on('error', function (err) {
   debug('Pub error: ' + err);
 });
-sub.on('error', function(err) {
+sub.on('error', function (err) {
   debug('Sub error: ' + err);
 });
 sub.subscribe('mud');
@@ -340,7 +340,7 @@ app.use(express.static(__dirname + '/python'));
 
 // === Start Server ===
 let server_port = process.env.PORT || 3001;
-server.listen(server_port, function() {
+server.listen(server_port, function () {
   debug('Listening on server_port ' + server_port);
 });
 
@@ -358,7 +358,7 @@ io.on('connection', async client => {
     response: cleanString('\n' + playerInfo.name + ' connected.'),
   });
 
-  store.incr('players', function(err, reply) {
+  store.incr('players', function (err, reply) {
     players = reply;
     debug('players: ' + players);
   });
@@ -367,7 +367,7 @@ io.on('connection', async client => {
     debug('message: ' + message);
   });
 
-  client.on('disconnect', function() {
+  client.on('disconnect', function () {
     debug('player left');
     client.broadcast
       .to(client.handshake.session.currentLocation)
@@ -376,7 +376,7 @@ io.on('connection', async client => {
           '\n' + client.handshake.session.name + ' disconnected.'
         ),
       });
-    store.decr('players', function(err, reply) {
+    store.decr('players', function (err, reply) {
       players = reply;
       debug('players: ' + players);
     });
@@ -478,7 +478,7 @@ io.on('connection', async client => {
           if (
             !client.handshake.session.books ||
             Object.keys(client.handshake.session.books).indexOf(theBook.lccn) ==
-              -1
+            -1
           ) {
             takeBook(client.handshake.session, theBook);
             client.emit('message', {
