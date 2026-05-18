@@ -292,15 +292,14 @@ bluebird.promisifyAll(redis.Multi.prototype);
 // const redisOptions = process.env.NODE_ENV === "production" ? {tls: {}} : {}
 const redisOptions = {
   socket: {
-    tls: {
-      rejectUnauthorized: false
-    }
+    tls: true,
+    rejectUnauthorized: false
   }
 }
 
-let store = redis.createClient(process.env.REDIS_URL, redisOptions);
-let pub = redis.createClient(process.env.REDIS_URL, redisOptions);
-let sub = redis.createClient(process.env.REDIS_URL, redisOptions);
+let store = redis.createClient({ url: process.env.REDIS_URL, ...redisOptions });
+let pub = redis.createClient({ url: process.env.REDIS_URL, ...redisOptions });
+let sub = redis.createClient({ url: process.env.REDIS_URL, ...redisOptions });
 
 // === Session Stuff
 let session = expressSession({
