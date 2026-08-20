@@ -9,11 +9,10 @@ I talked about the background on this project during a ligtning talk in <a href=
 This MUD uses [Redis](https://redis.io) for session and state management.
 
 1. Rename the `.env.example` file to `.env` and provide the applicable values
-1. Install [Yarn](https://yarnpkg.com) (`brew install yarn` if you have Homebrew)
-1. Run your Redis server (usually `redis-server`)
-1. Clone/download this repository
-1. Run `yarn` to install necessary packages.
-1. Run `yarn start` to start the server which is now available in port 3001 (to run the server in debug mode use `yarn debug` instead)
+2. Install [Yarn](https://yarnpkg.com) (`brew install yarn` if you have Homebrew)
+3. Run your Redis server (usually `redis-server`)
+4. Run `yarn` to install necessary packages.
+5. Run `yarn start` to start the server which is now available in port 3001 (to run the server in debug mode use `yarn debug` instead)
 
 ## Changing the game file
 
