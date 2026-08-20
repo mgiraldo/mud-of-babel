@@ -3,20 +3,17 @@ dotenv.config();
 
 let numWords = require('num-words');
 let fs = require('fs');
-let fetch = require('isomorphic-fetch');
 let ansiHTML = require('ansi-html');
 let chalk = require('chalk');
 chalk.enabled = true;
 chalk.level = 3;
 let express = require('express');
-let bodyParser = require('body-parser');
 let expressSession = require('express-session');
 let redis = require('redis');
 let http = require('http');
 const { createClient } = redis;
-const RedisStore = require('connect-redis').default;
+const { RedisStore } = require('connect-redis');
 let socketIO = require('socket.io');
-let sharedSession = require('express-socket.io-session');
 let cookieParser = require('cookie-parser')(process.env.SECRET);
 
 // === Server Flags ===
@@ -300,8 +297,8 @@ pub.on('error', function (err) { debug('Pub error: ' + err); });
 sub.on('error', function (err) { debug('Sub error: ' + err); });
 
 // === App Stuff ==
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser);
 
 // === Start Server ===
@@ -324,11 +321,16 @@ let mudconsole;
   });
 
   app.use(session);
-  io.use(
-    sharedSession(session, {
-      autoSave: true,
-    })
-  );
+  // Inline session sharing for socket.io (replaces express-socket.io-session)
+  io.use((socket, next) => {
+    socket.request.res = socket.request.res || socket.handshake;
+    session(socket.request, socket.request.res, err => {
+      if (err) return next(err);
+      socket.handshake.session = socket.request.session;
+      socket.handshake.sessionID = socket.request.sessionID;
+      next();
+    });
+  });
   app.use(express.static(__dirname + '/terminal'));
   app.use(express.static(__dirname + '/python'));
 
