@@ -44,10 +44,9 @@
   ],
   "dependencies": {
     "ansi-html": "^0.0.7",
-    "bluebird": "^3.5.1",
     "body-parser": "^1.12.0",
     "chalk": "^4.1.0",
-    "connect-redis": "^5.1.0",
+    "connect-redis": "^7.1.1",
     "cookie-parser": "^1.4.3",
     "dotenv": "^8.2.0",
     "express": "^4.12.0",
@@ -56,7 +55,7 @@
     "isomorphic-fetch": "^3.0.0",
     "num-words": "^1.0.1",
     "open": "^8.0.4",
-    "redis": "^3.1.0",
+    "redis": "^4.7.0",
     "socket.io": "^4.0.1"
   }
 }

@@ -12,9 +12,9 @@ let express = require('express');
 let bodyParser = require('body-parser');
 let expressSession = require('express-session');
 let redis = require('redis');
-let bluebird = require('bluebird');
 let http = require('http');
-let connectRedis = require('connect-redis');
+const { createClient } = redis;
+const RedisStore = require('connect-redis').default;
 let socketIO = require('socket.io');
 let sharedSession = require('express-socket.io-session');
 let cookieParser = require('cookie-parser')(process.env.SECRET);
@@ -283,70 +283,63 @@ let io = socketIO(server, {
     credentials: true
   }
 });
-let sessionStore = connectRedis(expressSession);
-
 // === Initialize Redis ===
-bluebird.promisifyAll(redis.RedisClient.prototype);
-bluebird.promisifyAll(redis.Multi.prototype);
-
 const redisOptions = {
   url: process.env.REDIS_URL,
-  tls: {
+  socket: {
     rejectUnauthorized: false,
   }
-}
+};
 
-let store = redis.createClient(redisOptions);
-let pub = redis.createClient(redisOptions);
-let sub = redis.createClient(redisOptions);
+let store = createClient(redisOptions);
+let pub = createClient(redisOptions);
+let sub = createClient(redisOptions);
 
-// === Session Stuff
-let session = expressSession({
-  store: new sessionStore({ client: store }),
-  secret: process.env.SECRET,
-  resave: true,
-  saveUninitialized: true,
-  cookie: {
-    maxAge: new Date(Date.now() + 60000 * 60 * 24 * 365),
-  },
-});
-
-// === Base Redis Listeners
-store.set('players', players); // start with 0 players
-store.on('error', function (err) {
-  debug('Store error: ' + err);
-});
-pub.on('error', function (err) {
-  debug('Pub error: ' + err);
-});
-sub.on('error', function (err) {
-  debug('Sub error: ' + err);
-});
-sub.subscribe('mud');
+store.on('error', function (err) { debug('Store error: ' + err); });
+pub.on('error', function (err) { debug('Pub error: ' + err); });
+sub.on('error', function (err) { debug('Sub error: ' + err); });
 
 // === App Stuff ==
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser);
-app.use(session);
-io.use(
-  sharedSession(session, {
-    autoSave: true,
-  })
-);
-app.use(express.static(__dirname + '/terminal'));
-app.use(express.static(__dirname + '/python'));
 
 // === Start Server ===
 let server_port = process.env.PORT || 3001;
-server.listen(server_port, function () {
-  debug('Listening on server_port ' + server_port);
-});
+let mudconsole;
 
-// === Create Console ===
-let mudconsole = require('./console/console.js');
-let status = mudconsole.loadDefaultGameData(getBaseGameData());
-debug(status);
+(async () => {
+  await Promise.all([store.connect(), pub.connect(), sub.connect()]);
+  await sub.subscribe('mud', () => { });
+  await store.set('players', players);
+
+  let session = expressSession({
+    store: new RedisStore({ client: store }),
+    secret: process.env.SECRET,
+    resave: true,
+    saveUninitialized: true,
+    cookie: {
+      maxAge: new Date(Date.now() + 60000 * 60 * 24 * 365),
+    },
+  });
+
+  app.use(session);
+  io.use(
+    sharedSession(session, {
+      autoSave: true,
+    })
+  );
+  app.use(express.static(__dirname + '/terminal'));
+  app.use(express.static(__dirname + '/python'));
+
+  mudconsole = require('./console/console.js');
+  let status = mudconsole.loadDefaultGameData(getBaseGameData());
+  debug(status);
+
+  server.listen(server_port, function () {
+    debug('Listening on server_port ' + server_port);
+  });
+})().catch(err => { console.error('Failed to start server: ' + err); process.exit(1); });
 
 io.on('connection', async client => {
   // new player arrived
@@ -357,16 +350,14 @@ io.on('connection', async client => {
     response: cleanString('\n' + playerInfo.name + ' connected.'),
   });
 
-  store.incr('players', function (err, reply) {
-    players = reply;
-    debug('players: ' + players);
-  });
+  players = await store.incr('players');
+  debug('players: ' + players);
 
   client.on('message', message => {
     debug('message: ' + message);
   });
 
-  client.on('disconnect', function () {
+  client.on('disconnect', async function () {
     debug('player left');
     client.broadcast
       .to(client.handshake.session.currentLocation)
@@ -375,10 +366,8 @@ io.on('connection', async client => {
           '\n' + client.handshake.session.name + ' disconnected.'
         ),
       });
-    store.decr('players', function (err, reply) {
-      players = reply;
-      debug('players: ' + players);
-    });
+    players = await store.decr('players');
+    debug('players: ' + players);
   });
 
   // === Respond to AJAX calls ===
@@ -500,7 +489,7 @@ io.on('connection', async client => {
         });
       }
     } else if (message.toLowerCase() === 'players') {
-      value = await store.getAsync('players');
+      value = await store.get('players');
       message = message + ' ' + value;
       response = performConsoleCommand(message, sessionID);
       client.emit('message', {
